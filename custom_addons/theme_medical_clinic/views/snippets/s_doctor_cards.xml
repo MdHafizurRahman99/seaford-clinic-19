@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_doctor_cards" name="Doctor Team Cards">
+    <section class="s_doctor_cards pt64 pb64">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">
+                    OUR TEAM
+                </p>
+                <h2 class="h2-fs s_section_heading" style="font-weight: 800; color: #1A3C34;">
+                    Meet Our Doctors
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    Experienced and dedicated healthcare professionals committed
+                    to providing the highest standard of care.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Doctor 1 -->
+                <div class="col-lg-4 col-md-6" data-name="Doctor">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body pt-4 pb-4">
+                            <div class="mb-3">
+                                <img alt="Doctor" class="rounded-circle s_doctor_img o_editable_media"
+                                     src="/web/image/theme_medical_clinic.img_doctor_placeholder"
+                                     style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                            </div>
+                            <h3 class="h5-fs" style="font-weight: 700; color: #1A3C34;">Dr. Sarah Johnson</h3>
+                            <p class="s_doctor_specialty mb-2">General Practitioner</p>
+                            <p class="small text-muted">Specialising in family medicine with
+                            over 15 years of comprehensive healthcare experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="col-lg-4 col-md-6" data-name="Doctor">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body pt-4 pb-4">
+                            <div class="mb-3">
+                                <img alt="Doctor" class="rounded-circle s_doctor_img o_editable_media"
+                                     src="/web/image/theme_medical_clinic.img_doctor_placeholder"
+                                     style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                            </div>
+                            <h3 class="h5-fs" style="font-weight: 700; color: #1A3C34;">Dr. Michael Chen</h3>
+                            <p class="s_doctor_specialty mb-2">Paediatrician</p>
+                            <p class="small text-muted">Dedicated to providing gentle, thorough
+                            care for children from newborns to adolescents.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="col-lg-4 col-md-6" data-name="Doctor">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body pt-4 pb-4">
+                            <div class="mb-3">
+                                <img alt="Doctor" class="rounded-circle s_doctor_img o_editable_media"
+                                     src="/web/image/theme_medical_clinic.img_doctor_placeholder"
+                                     style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                            </div>
+                            <h3 class="h5-fs" style="font-weight: 700; color: #1A3C34;">Dr. Emily Williams</h3>
+                            <p class="s_doctor_specialty mb-2">Dermatologist</p>
+                            <p class="small text-muted">Expert in skin health, offering
+                            diagnostic and cosmetic dermatology services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

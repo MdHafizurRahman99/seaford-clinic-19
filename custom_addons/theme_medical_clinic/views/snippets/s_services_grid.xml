@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_services_grid" name="Medical Services Grid">
+    <section class="s_services_grid pt64 pb64 o_cc o_cc3">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">
+                    WHAT WE OFFER
+                </p>
+                <h2 class="h2-fs s_section_heading" style="font-weight: 800; color: #1A3C34;">
+                    Our Medical Services
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    Comprehensive healthcare services for the whole family, delivered
+                    by experienced professionals in a caring environment.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Service 1: General Practice -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-stethoscope"/>
+                        </div>
+                        <h3>General Practice</h3>
+                        <p>Comprehensive primary healthcare for all ages, including
+                        health assessments and chronic disease management.</p>
+                    </div>
+                </div>
+                <!-- Service 2: Family Health -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-users"/>
+                        </div>
+                        <h3>Family Health</h3>
+                        <p>Child health checks, immunisations, developmental
+                        assessments and complete family healthcare.</p>
+                    </div>
+                </div>
+                <!-- Service 3: Women's Health -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-female"/>
+                        </div>
+                        <h3>Women's Health</h3>
+                        <p>Cervical screening, contraception, antenatal care,
+                        postnatal support and menopause management.</p>
+                    </div>
+                </div>
+                <!-- Service 4: Men's Health -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-male"/>
+                        </div>
+                        <h3>Men's Health</h3>
+                        <p>Prostate checks, cardiovascular screening, mental
+                        health support and preventive care.</p>
+                    </div>
+                </div>
+                <!-- Service 5: Skin Checks -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-sun-o"/>
+                        </div>
+                        <h3>Skin Cancer Checks</h3>
+                        <p>Full body skin examinations, mole mapping, biopsy
+                        and excision of suspicious lesions.</p>
+                    </div>
+                </div>
+                <!-- Service 6: Mental Health -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-heart"/>
+                        </div>
+                        <h3>Mental Health</h3>
+                        <p>Mental health care plans, counselling referrals,
+                        anxiety and depression management.</p>
+                    </div>
+                </div>
+                <!-- Service 7: Travel Medicine -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-plane"/>
+                        </div>
+                        <h3>Travel Medicine</h3>
+                        <p>Pre-travel consultations, vaccinations, malaria
+                        prevention and travel health advice.</p>
+                    </div>
+                </div>
+                <!-- Service 8: Minor Procedures -->
+                <div class="col-lg-3 col-md-6" data-name="Service">
+                    <div class="s_service_card bg-white h-100 rounded-3">
+                        <div class="s_service_icon">
+                            <i class="fa fa-medkit"/>
+                        </div>
+                        <h3>Minor Procedures</h3>
+                        <p>Wound care, suturing, injections, ear syringing
+                        and other in-clinic procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

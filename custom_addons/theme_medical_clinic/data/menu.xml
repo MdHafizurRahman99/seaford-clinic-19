@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Home -->
+    <record id="menu_home" model="website.menu">
+        <field name="name">Home</field>
+        <field name="url">/</field>
+        <field name="page_id" ref="theme_medical_clinic.page_home"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">10</field>
+    </record>
+
+    <!-- About Us -->
+    <record id="menu_about" model="website.menu">
+        <field name="name">About Us</field>
+        <field name="url">/about-us</field>
+        <field name="page_id" ref="theme_medical_clinic.page_about_us"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">20</field>
+    </record>
+
+    <!-- Services -->
+    <record id="menu_services" model="website.menu">
+        <field name="name">Services</field>
+        <field name="url">/services</field>
+        <field name="page_id" ref="theme_medical_clinic.page_services"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">30</field>
+    </record>
+
+    <!-- Our Team -->
+    <record id="menu_team" model="website.menu">
+        <field name="name">Our Team</field>
+        <field name="url">/our-team</field>
+        <field name="page_id" ref="theme_medical_clinic.page_our_team"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">40</field>
+    </record>
+
+    <!-- Contact Us -->
+    <record id="menu_contact" model="website.menu">
+        <field name="name">Contact Us</field>
+        <field name="url">/contact</field>
+        <field name="page_id" ref="theme_medical_clinic.page_contact"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="website_id">1</field>
+        <field name="sequence" type="int">50</field>
+    </record>
+
+</odoo>

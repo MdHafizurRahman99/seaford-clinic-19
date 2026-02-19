@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_home" model="website.page">
+    <field name="name">Home</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic.page_home</field>
+    <field name="url">/</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic.page_home">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Seaford Central Medical Clinic</t>
+                <div id="wrap" class="oe_structure">
+
+                    <!-- ==================== HERO SECTION ==================== -->
+                    <section class="s_medical_hero o_cc pt0 pb0" data-snippet="s_cover"
+                             style="min-height: 600px; background-image: url('/theme_medical_clinic/static/src/img/content/hero_bg.jpg'); background-size: cover; background-position: center;">
+                        <div class="s_medical_gradient_overlay" style="position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg, rgba(26,60,52,0.9) 0%, rgba(46,139,87,0.7) 100%);z-index:0;"/>
+                        <div class="container" style="position:relative;z-index:1;">
+                            <div class="row align-items-center" style="min-height: 600px;">
+                                <div class="col-lg-7 py-5">
+                                    <p class="text-uppercase small fw-bold mb-2" style="color: #66CDAA; letter-spacing: 3px;">
+                                        SEAFORD CENTRAL MEDICAL CLINIC
+                                    </p>
+                                    <h1 style="color: white; font-weight: 800; font-size: 3.2rem; line-height: 1.15;">
+                                        Compassionate Care<br/>for Your Family
+                                    </h1>
+                                    <p class="lead mt-3" style="color: rgba(255,255,255,0.9); max-width: 520px; line-height: 1.8;">
+                                        Your trusted local medical clinic providing comprehensive
+                                        healthcare services with warmth, expertise and professionalism.
+                                    </p>
+                                    <div class="mt-4">
+                                        <a href="/contactus" class="btn btn-lg me-2 mb-2"
+                                           style="background-color: #66CDAA; color: #1A3C34; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.25rem; border: none;">
+                                            Book Appointment
+                                        </a>
+                                        <a href="/services" class="btn btn-lg mb-2"
+                                           style="background-color: transparent; color: white; border: 2px solid rgba(255,255,255,0.5); border-radius: 14px 0px 14px 0px; padding: 0.85rem 2.25rem;">
+                                            Our Services
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ==================== SERVICES SECTION ==================== -->
+                    <section class="s_services_grid pt80 pb80" data-snippet="s_text_block"
+                             style="background-color: #F0FAF5;">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">WHAT WE OFFER</p>
+                                <h2 style="font-weight: 800; color: #1A3C34; font-size: 2.2rem;">Our Medical Services</h2>
+                                <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #2E8B57, #66CDAA); border-radius: 2px; margin: 1rem auto;"/>
+                                <p class="text-muted mx-auto" style="max-width: 600px;">
+                                    Comprehensive healthcare services for the whole family, delivered
+                                    by experienced professionals in a caring environment.
+                                </p>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05); transition: all 0.35s ease;">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-stethoscope" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">General Practice</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Comprehensive primary healthcare including health assessments and chronic disease management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-users" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">Family Health</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Child health checks, immunisations, developmental assessments and complete family care.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-female" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">Women's Health</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Cervical screening, contraception, antenatal care, postnatal support and menopause management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-male" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">Men's Health</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Prostate checks, cardiovascular screening, mental health support and preventive care.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-sun-o" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">Skin Cancer Checks</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Full body skin examinations, mole mapping, biopsy and excision of suspicious lesions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-heart" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">Mental Health</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Mental health care plans, counselling referrals, anxiety and depression management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-plane" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">Travel Medicine</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Pre-travel consultations, vaccinations, malaria prevention and travel health advice.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <div style="margin-bottom: 1.25rem;"><i class="fa fa-medkit" style="font-size: 2.5rem; color: #66CDAA;"/></div>
+                                        <h4 style="font-weight: 700; font-size: 1.1rem; color: #1A3C34;">Minor Procedures</h4>
+                                        <p style="font-size: 0.9rem; color: #666; line-height: 1.6;">Wound care, suturing, injections, ear syringing and other in-clinic procedures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ==================== ABOUT / WHY CHOOSE US ==================== -->
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row align-items-center g-5">
+                                <div class="col-lg-6">
+                                    <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">WHY CHOOSE US</p>
+                                    <h2 style="font-weight: 800; color: #1A3C34; font-size: 2.2rem;">Trusted Healthcare in Seaford</h2>
+                                    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #2E8B57, #66CDAA); border-radius: 2px; margin: 1rem 0;"/>
+                                    <p style="color: #555; line-height: 1.8;">
+                                        Seaford Central Medical Clinic has been a cornerstone of the local community,
+                                        providing quality healthcare with a patient-first approach. Our modern facilities
+                                        and experienced team ensure you receive the best possible care.
+                                    </p>
+                                    <div class="row mt-4">
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fa fa-check-circle me-2 mt-1" style="color: #2E8B57;"/>
+                                                <span style="color: #1A3C34; font-weight: 600;">Experienced GPs</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fa fa-check-circle me-2 mt-1" style="color: #2E8B57;"/>
+                                                <span style="color: #1A3C34; font-weight: 600;">Modern Facilities</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fa fa-check-circle me-2 mt-1" style="color: #2E8B57;"/>
+                                                <span style="color: #1A3C34; font-weight: 600;">Online Bookings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fa fa-check-circle me-2 mt-1" style="color: #2E8B57;"/>
+                                                <span style="color: #1A3C34; font-weight: 600;">Bulk Billing Available</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="/about-us" class="btn mt-3" style="background-color: #2E8B57; color: white; border-radius: 14px 0px 14px 0px; padding: 0.75rem 2rem; font-weight: 600;">
+                                        Learn More About Us
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="rounded-3 overflow-hidden" style="box-shadow: 0 12px 40px rgba(46,139,87,0.15);">
+                                        <img src="/theme_medical_clinic/static/src/img/content/hero_bg.jpg"
+                                             class="img-fluid w-100" alt="Our Clinic" style="height: 400px; object-fit: cover;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ==================== DOCTORS SECTION ==================== -->
+                    <section class="s_doctor_cards pt80 pb80" data-snippet="s_text_block"
+                             style="background-color: #F0FAF5;">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">OUR TEAM</p>
+                                <h2 style="font-weight: 800; color: #1A3C34; font-size: 2.2rem;">Meet Our Doctors</h2>
+                                <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #2E8B57, #66CDAA); border-radius: 2px; margin: 1rem auto;"/>
+                                <p class="text-muted mx-auto" style="max-width: 600px;">
+                                    Experienced and dedicated healthcare professionals committed
+                                    to providing the highest standard of care.
+                                </p>
+                            </div>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3"
+                                                 src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png"
+                                                 style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                                            <h4 style="font-weight: 700; color: #1A3C34;">Dr. Sarah Johnson</h4>
+                                            <p style="color: #2E8B57; font-weight: 600; font-size: 0.875rem;">General Practitioner</p>
+                                            <p class="small text-muted">Specialising in family medicine with over 15 years of comprehensive healthcare experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3"
+                                                 src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png"
+                                                 style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                                            <h4 style="font-weight: 700; color: #1A3C34;">Dr. Michael Chen</h4>
+                                            <p style="color: #2E8B57; font-weight: 600; font-size: 0.875rem;">Paediatrician</p>
+                                            <p class="small text-muted">Dedicated to providing gentle, thorough care for children from newborns to adolescents.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3"
+                                                 src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png"
+                                                 style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                                            <h4 style="font-weight: 700; color: #1A3C34;">Dr. Emily Williams</h4>
+                                            <p style="color: #2E8B57; font-weight: 600; font-size: 0.875rem;">Dermatologist</p>
+                                            <p class="small text-muted">Expert in skin health, offering diagnostic and cosmetic dermatology services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="/our-team" class="btn" style="background-color: #2E8B57; color: white; border-radius: 14px 0px 14px 0px; padding: 0.75rem 2rem; font-weight: 600;">
+                                    View Full Team
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+                    <section class="s_patient_testimonials pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">TESTIMONIALS</p>
+                                <h2 style="font-weight: 800; color: #1A3C34; font-size: 2.2rem;">What Our Patients Say</h2>
+                                <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #2E8B57, #66CDAA); border-radius: 2px; margin: 1rem auto;"/>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="s_testimonial_card bg-white h-100" style="border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); position: relative;">
+                                        <div class="mb-3"><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/></div>
+                                        <p style="font-style: italic; color: #555; line-height: 1.7;">"The doctors here genuinely care about their patients. I've been coming for years and always receive excellent, thorough care. Highly recommend!"</p>
+                                        <p style="font-weight: 700; color: #1A3C34;" class="mb-0">— Sarah M.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="s_testimonial_card bg-white h-100" style="border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); position: relative;">
+                                        <div class="mb-3"><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/></div>
+                                        <p style="font-style: italic; color: #555; line-height: 1.7;">"Wonderful clinic with a warm and welcoming atmosphere. The staff are friendly, professional and the online booking system is so convenient."</p>
+                                        <p style="font-weight: 700; color: #1A3C34;" class="mb-0">— James T.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="s_testimonial_card bg-white h-100" style="border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); position: relative;">
+                                        <div class="mb-3"><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/><i class="fa fa-star" style="color: #FFB800;"/></div>
+                                        <p style="font-style: italic; color: #555; line-height: 1.7;">"As a new patient, I felt immediately at ease. The doctor took the time to listen and explain everything. Best medical experience I've had."</p>
+                                        <p style="font-weight: 700; color: #1A3C34;" class="mb-0">— Rachel K.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ==================== CLINIC HOURS + LOCATION ==================== -->
+                    <section class="s_clinic_hours pt80 pb80" data-snippet="s_text_block" style="background-color: #F0FAF5;">
+                        <div class="container">
+                            <div class="row align-items-start g-5">
+                                <div class="col-lg-6">
+                                    <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">VISIT US</p>
+                                    <h2 style="font-weight: 800; color: #1A3C34; font-size: 2.2rem;">Opening Hours</h2>
+                                    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #2E8B57, #66CDAA); border-radius: 2px; margin: 1rem 0;"/>
+                                    <div class="mt-4" style="max-width: 450px;">
+                                        <div class="d-flex justify-content-between py-3" style="border-bottom: 1px solid rgba(46,139,87,0.12);"><span style="font-weight: 600; color: #1A3C34;">Monday</span><span style="color: #2E8B57; font-weight: 500;">8:00 AM - 6:00 PM</span></div>
+                                        <div class="d-flex justify-content-between py-3" style="border-bottom: 1px solid rgba(46,139,87,0.12);"><span style="font-weight: 600; color: #1A3C34;">Tuesday</span><span style="color: #2E8B57; font-weight: 500;">8:00 AM - 6:00 PM</span></div>
+                                        <div class="d-flex justify-content-between py-3" style="border-bottom: 1px solid rgba(46,139,87,0.12);"><span style="font-weight: 600; color: #1A3C34;">Wednesday</span><span style="color: #2E8B57; font-weight: 500;">8:00 AM - 6:00 PM</span></div>
+                                        <div class="d-flex justify-content-between py-3" style="border-bottom: 1px solid rgba(46,139,87,0.12);"><span style="font-weight: 600; color: #1A3C34;">Thursday</span><span style="color: #2E8B57; font-weight: 500;">8:00 AM - 6:00 PM</span></div>
+                                        <div class="d-flex justify-content-between py-3" style="border-bottom: 1px solid rgba(46,139,87,0.12);"><span style="font-weight: 600; color: #1A3C34;">Friday</span><span style="color: #2E8B57; font-weight: 500;">8:00 AM - 6:00 PM</span></div>
+                                        <div class="d-flex justify-content-between py-3" style="border-bottom: 1px solid rgba(46,139,87,0.12);"><span style="font-weight: 600; color: #1A3C34;">Saturday</span><span style="color: #2E8B57; font-weight: 500;">9:00 AM - 1:00 PM</span></div>
+                                        <div class="d-flex justify-content-between py-3"><span style="font-weight: 600; color: #1A3C34;">Sunday</span><span style="color: #999; font-weight: 500;">Closed</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="rounded-3 p-4 mb-4" style="background: linear-gradient(135deg, #2E8B57, #1A3C34); color: white;">
+                                        <div class="text-center">
+                                            <i class="fa fa-phone-square d-block mb-2" style="font-size: 1.5rem; color: #66CDAA;"/>
+                                            <h4 style="color: white; font-weight: 700;">After Hours</h4>
+                                            <p class="mb-1" style="color: rgba(255,255,255,0.85);">For medical emergencies call <strong>000</strong></p>
+                                            <p class="mb-0" style="color: rgba(255,255,255,0.85);">After-hours GP helpline: <strong>1800 022 222</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white rounded-3 p-4" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h5 style="font-weight: 700; color: #1A3C34;"><i class="fa fa-map-marker me-2" style="color: #2E8B57;"/>Our Location</h5>
+                                        <p class="text-muted mb-2">Seaford, VIC 3198, Australia</p>
+                                        <p class="text-muted mb-0"><i class="fa fa-phone me-2" style="color: #2E8B57;"/>(03) 0000 0000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ==================== CTA SECTION ==================== -->
+                    <section class="s_appointment_cta pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, #1A3C34 0%, #2E8B57 100%);">
+                        <div class="container text-center" style="position: relative; z-index: 1;">
+                            <h2 style="color: white; font-weight: 800; font-size: 2.4rem;">Ready to Book Your Appointment?</h2>
+                            <p class="lead mb-4 mx-auto" style="color: rgba(255,255,255,0.85); max-width: 600px;">
+                                Our friendly team is here to help. Book online or call us
+                                to schedule your visit at Seaford Central Medical Clinic.
+                            </p>
+                            <div>
+                                <a href="/contactus" class="btn btn-lg me-2 mb-2"
+                                   style="background-color: #FFFFFF; color: #2E8B57; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.5rem; border: none;">
+                                    Book Online
+                                </a>
+                                <a href="tel:+61300000000" class="btn btn-lg mb-2"
+                                   style="background-color: transparent; color: white; border: 2px solid rgba(255,255,255,0.5); border-radius: 14px 0px 14px 0px; padding: 0.85rem 2.5rem;">
+                                    <i class="fa fa-phone me-2"/>Call Us
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

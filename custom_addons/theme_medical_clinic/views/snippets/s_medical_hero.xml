@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_medical_hero" name="Medical Hero Banner">
+    <section class="s_medical_hero o_cc o_cc5 pt0 pb0"
+             style="min-height: 550px; background-image: url('/web/image/theme_medical_clinic.img_hero_bg'); background-size: cover; background-position: center;">
+        <div class="s_medical_gradient_overlay"/>
+        <div class="container s_allow_columns" style="position: relative; z-index: 1;">
+            <div class="row align-items-center" style="min-height: 550px;">
+                <div class="col-lg-7 py-5">
+                    <p class="text-uppercase small fw-bold mb-2" style="color: #66CDAA; letter-spacing: 2px;">
+                        SEAFORD CENTRAL MEDICAL CLINIC
+                    </p>
+                    <h1 class="display-3" style="color: white; font-weight: 800;">
+                        Compassionate Care<br/>for Your Family
+                    </h1>
+                    <p class="lead" style="color: rgba(255,255,255,0.9); max-width: 500px;">
+                        Your trusted local medical clinic providing comprehensive
+                        healthcare services with warmth and professionalism.
+                    </p>
+                    <div class="mt-4">
+                        <a href="/contactus" class="btn btn-lg me-2 mb-2"
+                           style="background-color: #66CDAA; color: #1A3C34; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.25rem;">
+                            Book Appointment
+                        </a>
+                        <a href="/our-services" class="btn btn-outline-light btn-lg mb-2"
+                           style="border-radius: 14px 0px 14px 0px; padding: 0.85rem 2.25rem;">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

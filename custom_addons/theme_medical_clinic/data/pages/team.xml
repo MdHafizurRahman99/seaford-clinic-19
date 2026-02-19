@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_our_team" model="website.page">
+    <field name="name">Our Team</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic.page_our_team</field>
+    <field name="url">/our-team</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic.page_our_team">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Our Team</t>
+                <div id="wrap" class="oe_structure">
+
+                    <!-- Page Banner -->
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,60,52,0.92) 0%, rgba(46,139,87,0.75) 100%), url('/theme_medical_clinic/static/src/img/content/hero_bg.jpg'); background-size: cover; background-position: center;">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Meet Our Team</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">Experienced healthcare professionals dedicated to your wellbeing</p>
+                        </div>
+                    </section>
+
+                    <!-- Doctors -->
+                    <section class="pt80 pb48" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">DOCTORS</p>
+                                <h2 style="font-weight: 800; color: #1A3C34;">Our General Practitioners</h2>
+                                <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #2E8B57, #66CDAA); border-radius: 2px; margin: 1rem auto;"/>
+                            </div>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                                            <h4 style="font-weight: 700; color: #1A3C34;">Dr. Sarah Johnson</h4>
+                                            <p style="color: #2E8B57; font-weight: 600; font-size: 0.875rem;">MBBS, FRACGP</p>
+                                            <p class="text-muted">Dr. Johnson has over 15 years of experience in family medicine. She has special interests in women's health, chronic disease management and preventive care.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                                            <h4 style="font-weight: 700; color: #1A3C34;">Dr. Michael Chen</h4>
+                                            <p style="color: #2E8B57; font-weight: 600; font-size: 0.875rem;">MBBS, FRACP</p>
+                                            <p class="text-muted">Dr. Chen specialises in paediatric medicine and has a passion for children's developmental health. He provides gentle, thorough care for patients of all ages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #66CDAA;"/>
+                                            <h4 style="font-weight: 700; color: #1A3C34;">Dr. Emily Williams</h4>
+                                            <p style="color: #2E8B57; font-weight: 600; font-size: 0.875rem;">MBBS, FACD</p>
+                                            <p class="text-muted">Dr. Williams is a skilled dermatologist with expertise in skin cancer detection, cosmetic dermatology and management of chronic skin conditions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Support Staff -->
+                    <section class="pt48 pb80" data-snippet="s_text_block" style="background-color: #F0FAF5;">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">SUPPORT TEAM</p>
+                                <h2 style="font-weight: 800; color: #1A3C34;">Nurses &amp; Administration</h2>
+                                <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #2E8B57, #66CDAA); border-radius: 2px; margin: 1rem auto;"/>
+                            </div>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png" style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #66CDAA;"/>
+                                        <h5 style="font-weight: 700; color: #1A3C34;">Nurse Jane</h5>
+                                        <p style="color: #2E8B57; font-size: 0.85rem; font-weight: 600;">Practice Nurse</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <img alt="Staff" class="rounded-circle mb-3" src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png" style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #66CDAA;"/>
+                                        <h5 style="font-weight: 700; color: #1A3C34;">Reception Team</h5>
+                                        <p style="color: #2E8B57; font-size: 0.85rem; font-weight: 600;">Front Desk</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <img alt="Manager" class="rounded-circle mb-3" src="/theme_medical_clinic/static/src/img/content/doctor_placeholder.png" style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #66CDAA;"/>
+                                        <h5 style="font-weight: 700; color: #1A3C34;">Practice Manager</h5>
+                                        <p style="color: #2E8B57; font-size: 0.85rem; font-weight: 600;">Administration</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

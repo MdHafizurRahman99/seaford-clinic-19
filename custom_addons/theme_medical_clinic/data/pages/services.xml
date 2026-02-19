@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_services" model="website.page">
+    <field name="name">Our Services</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic.page_services</field>
+    <field name="url">/services</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic.page_services">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Our Services</t>
+                <div id="wrap" class="oe_structure">
+
+                    <!-- Page Banner -->
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,60,52,0.92) 0%, rgba(46,139,87,0.75) 100%), url('/theme_medical_clinic/static/src/img/content/hero_bg.jpg'); background-size: cover; background-position: center;">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Our Services</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">Comprehensive healthcare under one roof</p>
+                        </div>
+                    </section>
+
+                    <!-- Services Grid -->
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-stethoscope d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">General Practice</h4>
+                                        <p style="color: #555; line-height: 1.7;">Our experienced GPs provide comprehensive primary healthcare including health assessments, chronic disease management, care plans, prescriptions and referrals.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-users d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Family Health</h4>
+                                        <p style="color: #555; line-height: 1.7;">Complete family healthcare including child health checks, immunisations, developmental assessments, and elderly care management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-female d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Women's Health</h4>
+                                        <p style="color: #555; line-height: 1.7;">Cervical screening, contraception advice, antenatal and postnatal care, breastfeeding support, fertility and menopause management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-male d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Men's Health</h4>
+                                        <p style="color: #555; line-height: 1.7;">Prostate screening, cardiovascular risk assessment, mental health support, testosterone checks and preventive health care.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-sun-o d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Skin Cancer Checks</h4>
+                                        <p style="color: #555; line-height: 1.7;">Comprehensive full-body skin examinations, dermoscopy, mole mapping, biopsies and excision of suspicious lesions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-heart d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Mental Health</h4>
+                                        <p style="color: #555; line-height: 1.7;">Mental health care plans, psychological support, counselling referrals, anxiety and depression management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-plane d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Travel Medicine</h4>
+                                        <p style="color: #555; line-height: 1.7;">Pre-travel health consultations, travel vaccinations, malaria prevention, altitude sickness advice and travel health kits.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-medkit d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Minor Procedures</h4>
+                                        <p style="color: #555; line-height: 1.7;">Wound care, suturing, cryotherapy, injections, ear syringing, iron infusions and other in-clinic procedures.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="s_service_card bg-white h-100 rounded-3" style="padding: 2rem 1.5rem; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <i class="fa fa-heartbeat d-block mb-3" style="font-size: 2.5rem; color: #66CDAA;"/>
+                                        <h4 style="font-weight: 700; color: #1A3C34;">Health &amp; Wellness</h4>
+                                        <p style="color: #555; line-height: 1.7;">Weight management, smoking cessation, nutrition advice, health screenings, sleep studies and preventive wellness programs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1A3C34, #2E8B57);">
+                        <div class="container text-center">
+                            <h2 style="color: white; font-weight: 800;">Need a Consultation?</h2>
+                            <p style="color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 1.5rem;">
+                                Book an appointment with our experienced team today.
+                            </p>
+                            <a href="/contactus" class="btn btn-lg" style="background-color: #FFFFFF; color: #2E8B57; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.5rem;">
+                                Book Appointment
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

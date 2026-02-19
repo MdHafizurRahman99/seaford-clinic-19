@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="snippets" inherit_id="website.snippets">
+    <!-- Register snippets in the Structure section -->
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="theme_medical_clinic.s_medical_hero"
+           string="Medical Hero Banner">
+            <keywords>medical, clinic, hero, banner, health, healthcare, welcome, appointment, hospital</keywords>
+        </t>
+        <t t-snippet="theme_medical_clinic.s_services_grid"
+           string="Medical Services Grid">
+            <keywords>services, medical, healthcare, treatment, specialty, department, grid, cards</keywords>
+        </t>
+        <t t-snippet="theme_medical_clinic.s_doctor_cards"
+           string="Doctor Team Cards">
+            <keywords>doctor, team, staff, medical, physician, specialist, healthcare, profile</keywords>
+        </t>
+        <t t-snippet="theme_medical_clinic.s_clinic_hours"
+           string="Clinic Opening Hours">
+            <keywords>hours, schedule, opening, clinic, availability, timetable, time, visit</keywords>
+        </t>
+        <t t-snippet="theme_medical_clinic.s_appointment_cta"
+           string="Book Appointment CTA">
+            <keywords>appointment, booking, schedule, contact, CTA, call to action, medical, book</keywords>
+        </t>
+        <t t-snippet="theme_medical_clinic.s_patient_testimonials"
+           string="Patient Testimonials">
+            <keywords>testimonials, reviews, patients, feedback, rating, quotes, stars</keywords>
+        </t>
+        <t t-snippet="theme_medical_clinic.s_accreditations"
+           string="Accreditations">
+            <keywords>accreditations, partners, logos, affiliations, trust, certified</keywords>
+        </t>
+    </xpath>
+</template>
+
+</odoo>

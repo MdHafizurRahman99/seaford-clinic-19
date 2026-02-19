@@ -1,0 +1,45 @@
+.s_patient_testimonials {
+    .s_testimonial_card {
+        border: none;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        position: relative;
+
+        &::before {
+            content: '\201C';
+            font-size: 4rem;
+            color: #66CDAA;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+            font-family: Georgia, serif;
+            opacity: 0.5;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(46, 139, 87, 0.1);
+        }
+
+        .s_testimonial_text {
+            font-style: italic;
+            color: #555;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .s_testimonial_author {
+            font-weight: 700;
+            color: #1A3C34;
+        }
+
+        .s_testimonial_stars i {
+            color: #FFB800;
+            font-size: 0.875rem;
+        }
+    }
+}

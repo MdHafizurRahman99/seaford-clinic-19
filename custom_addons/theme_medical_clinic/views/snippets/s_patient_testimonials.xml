@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_patient_testimonials" name="Patient Testimonials">
+    <section class="s_patient_testimonials pt64 pb64">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-uppercase small fw-bold mb-2" style="color: #2E8B57; letter-spacing: 2px;">
+                    TESTIMONIALS
+                </p>
+                <h2 class="h2-fs s_section_heading" style="font-weight: 800; color: #1A3C34;">
+                    What Our Patients Say
+                </h2>
+            </div>
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-lg-4" data-name="Testimonial">
+                    <div class="s_testimonial_card bg-white h-100">
+                        <div class="s_testimonial_stars mb-3">
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                        </div>
+                        <p class="s_testimonial_text mb-3">
+                            "The doctors here genuinely care about their patients.
+                            I've been coming for years and always receive excellent,
+                            thorough care. Highly recommend!"
+                        </p>
+                        <p class="s_testimonial_author mb-0">— Sarah M.</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-lg-4" data-name="Testimonial">
+                    <div class="s_testimonial_card bg-white h-100">
+                        <div class="s_testimonial_stars mb-3">
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                        </div>
+                        <p class="s_testimonial_text mb-3">
+                            "Wonderful clinic with a warm and welcoming atmosphere.
+                            The staff are friendly, professional and the online
+                            booking system is so convenient."
+                        </p>
+                        <p class="s_testimonial_author mb-0">— James T.</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-lg-4" data-name="Testimonial">
+                    <div class="s_testimonial_card bg-white h-100">
+                        <div class="s_testimonial_stars mb-3">
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                            <i class="fa fa-star"/>
+                        </div>
+                        <p class="s_testimonial_text mb-3">
+                            "As a new patient, I felt immediately at ease. The
+                            doctor took the time to listen and explain everything.
+                            Best medical experience I've had."
+                        </p>
+                        <p class="s_testimonial_author mb-0">— Rachel K.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>
