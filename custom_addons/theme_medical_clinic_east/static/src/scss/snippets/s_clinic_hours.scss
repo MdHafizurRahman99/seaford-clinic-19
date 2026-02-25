@@ -1,0 +1,40 @@
+.s_clinic_hours {
+    .s_hours_table {
+        max-width: 500px;
+        margin: 0 auto;
+
+        .s_hours_row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(46, 139, 87, 0.12);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            .s_day {
+                font-weight: 600;
+                color: #1A3C34;
+            }
+
+            .s_time {
+                color: #007f7c;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .s_emergency_info {
+        background: linear-gradient(135deg, #007f7c, #1A3C34);
+        border-radius: 12px;
+        padding: 1.5rem;
+        color: white;
+        text-align: center;
+
+        i {
+            font-size: 1.5rem;
+            color: #007f7c;
+        }
+    }
+}

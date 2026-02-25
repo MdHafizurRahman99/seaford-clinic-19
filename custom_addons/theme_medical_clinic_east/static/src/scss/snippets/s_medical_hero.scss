@@ -1,0 +1,40 @@
+.s_medical_hero {
+    min-height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .s_medical_gradient_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(26, 60, 52, 0.88) 0%, rgba(46, 139, 87, 0.65) 100%);
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-weight: 800;
+        line-height: 1.15;
+        margin-bottom: 1.25rem;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .lead {
+        font-weight: 400;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        max-width: 550px;
+    }
+
+    .btn {
+        padding: 0.85rem 2.25rem;
+        font-size: 1rem;
+    }
+}

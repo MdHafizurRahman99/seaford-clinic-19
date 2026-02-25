@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Hero background placeholder -->
+<record id="img_hero_bg" model="ir.attachment">
+    <field name="public" eval="True"/>
+    <field name="name">img_hero_bg.jpg</field>
+    <field name="type">url</field>
+    <field name="url">/theme_medical_clinic_east/static/src/img/content/hero_bg.jpg</field>
+</record>
+
+<!-- Doctor placeholder image -->
+<record id="img_doctor_placeholder" model="ir.attachment">
+    <field name="public" eval="True"/>
+    <field name="name">img_doctor_placeholder.png</field>
+    <field name="type">url</field>
+    <field name="url">/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png</field>
+</record>
+
+</odoo>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_accreditations" name="Accreditations and Partners">
+    <section class="s_accreditations pt48 pb48 o_cc o_cc3">
+        <div class="container">
+            <div class="text-center mb-4">
+                <p class="text-uppercase small fw-bold mb-2" style="color: #007f7c; letter-spacing: 2px;">
+                    TRUSTED &amp; ACCREDITED
+                </p>
+                <h2 class="h4-fs" style="font-weight: 700; color: #1A3C34;">
+                    Our Affiliations &amp; Accreditations
+                </h2>
+            </div>
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-6 col-md-3 col-lg-2 text-center" data-name="Logo">
+                    <div class="p-3">
+                        <span class="fw-bold text-muted small">AGPAL</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center" data-name="Logo">
+                    <div class="p-3">
+                        <span class="fw-bold text-muted small">RACGP</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center" data-name="Logo">
+                    <div class="p-3">
+                        <span class="fw-bold text-muted small">AMA</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center" data-name="Logo">
+                    <div class="p-3">
+                        <span class="fw-bold text-muted small">Medicare</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-center" data-name="Logo">
+                    <div class="p-3">
+                        <span class="fw-bold text-muted small">AHPRA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

@@ -1,0 +1,59 @@
+// ============================================================
+// Seaford East Medical Clinic - Sea Green Color Palette
+// ============================================================
+
+// Base color variables (used directly by Odoo)
+$o-color-1: #007f7c !default;  // Sea Green (Primary)
+$o-color-2: #007f7c !default;  // Medium Aquamarine (Accent)
+$o-color-3: #F0FAF5 !default;  // Mint Cream (Light Background)
+$o-color-4: #FFFFFF !default;  // White
+$o-color-5: #1A3C34 !default;  // Dark Teal (Dark)
+
+// Extended brand colors
+$clinic-green: #007f7c !default;
+$clinic-green-light: #007f7c !default;
+$clinic-green-dark: #1A3C34 !default;
+$clinic-mint: #F0FAF5 !default;
+
+// Color Palette for Website Builder
+$o-color-palettes: (
+    'medical-clinic': (
+        'o-color-1': $o-color-1,
+        'o-color-2': $o-color-2,
+        'o-color-3': $o-color-3,
+        'o-color-4': $o-color-4,
+        'o-color-5': $o-color-5,
+        'menu': 1,
+        'footer': 5,
+        'copyright': 5,
+    ),
+) !default;
+
+// User color palette override
+$o-user-color-palette: (
+    'o-color-1': $o-color-1,
+    'o-color-2': $o-color-2,
+    'o-color-3': $o-color-3,
+    'o-color-4': $o-color-4,
+    'o-color-5': $o-color-5,
+) !default;
+
+// Typography
+$o-theme-font-configs: (
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),
+        'url': 'Montserrat:100,200,300,400,500,600,700,800,900',
+    ),
+) !default;
+
+// Override Bootstrap colors
+$primary: $o-color-1 !default;
+$secondary: $o-color-5 !default;
+
+// Button customization
+$btn-border-radius: 0.375rem !default;
+$btn-font-weight: 600 !default;
+
+// Card customization
+$card-border-radius: 0.75rem !default;
+$card-border-color: #e9ecef !default;

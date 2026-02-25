@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_medical_hero" name="Medical Hero Banner">
+    <section class="s_medical_hero o_cc o_cc5 pt-0 pb-0" data-snippet="s_medical_hero"
+             style="min-height: 720px; background-image: url('/theme_medical_clinic_east/static/src/img/content/hero_bg.jpg'); background-size: cover; background-position: center;">
+        
+        <!-- Gradient overlay -->
+        <div class="s_medical_gradient_overlay position-absolute top-0 start-0 end-0 bottom-0" 
+             style="background: linear-gradient(135deg, rgba(26,60,52,0.82) 0%, rgba(0,127,124,0.68) 100%); z-index: 0;"></div>
+        
+        <!-- Content -->
+        <div class="container position-relative h-100 d-flex align-items-center" style="z-index: 1;">
+            <div class="row align-items-center w-100">
+                <div class="col-lg-7 col-xl-6 py-5 my-5">
+                    <p class="text-uppercase small fw-bold mb-4" style="color: #ffffff; letter-spacing: 4px; opacity: 0.95;">
+                        SEAFORD EAST MEDICAL CLINIC
+                    </p>
+                    <h1 class="display-4 fw-extrabold text-white mb-4" style="line-height: 1.1; letter-spacing: -0.6px;">
+                        Compassionate Care<br/>Rooted in Excellence
+                    </h1>
+                    <p class="lead fs-4 text-white opacity-90 mb-5" style="max-width: 580px; line-height: 1.65;">
+                        Your trusted local medical centre providing personalised, high-quality healthcare with warmth and professionalism for every member of your family.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+<<<<<<< HEAD
+                        <a href="/appointment" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow"
+=======
+                        <a href="/contact" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow"
+>>>>>>> 077fa0b0955f8af048e5bfa659d281723c832f32
+                           style="background: #007f7c; color: white; border-radius: 14px 0 14px 0; border: none; transition: all 0.3s;">
+                            Book Appointment
+                        </a>
+                        <a href="/services" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold"
+                           style="border-radius: 14px 0 14px 0; border-width: 2px; transition: all 0.3s;">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

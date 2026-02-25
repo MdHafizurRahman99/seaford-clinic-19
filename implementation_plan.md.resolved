@@ -1,0 +1,48 @@
+# Custom Themes Analysis
+
+I have completed the analysis of your two custom theme addons: [theme_medical_clinic](file:///d:/Office/EPR/seaford-clinic-19/custom_addons/theme_medical_clinic_east/models/theme_medical_clinic.py#7-11) and `theme_medical_clinic_east`. As suspected, these themes are built in a way that modifies **global** Odoo templates and assets rather than being isolated per website. This is the root cause of why changing one theme affects both sites.
+
+## Core Issues Found
+
+### 1. Global Asset Registration ([__manifest__.py](file:///d:/Office/EPR/seaford-clinic-19/custom_addons/theme_medical_clinic/__manifest__.py))
+Both themes inject their SCSS directly into the global frontend bundles (`web.assets_frontend` and `web._assets_primary_variables`).
+- When both are installed, the SCSS variables and styles from the last loaded theme overwrite the previous one for the entire database.
+- Standard Odoo isolated themes do this differently—they register assets under specific theme bundles, and Odoo compiles them per website when the theme is selected.
+
+### 2. Global View Overrides ([views/theme_medical_clinic_templates.xml](file:///d:/Office/EPR/seaford-clinic-19/custom_addons/theme_medical_clinic/views/theme_medical_clinic_templates.xml))
+Both themes use standard `inherit_id="website.layout"` to replace the global `#top` header and `#footer`. 
+- Since these views do not have `website_id` applied in the XML, they override the layout globally across all websites.
+- Both themes are fighting for the same XPath positions.
+
+### 3. Python Model Conflict ([models/theme_medical_clinic.py](file:///d:/Office/EPR/seaford-clinic-19/custom_addons/theme_medical_clinic/models/theme_medical_clinic.py))
+There is a direct Python collision between the two themes:
+- Both declare the exact same class name: `class ThemeMedicalClinic(models.AbstractModel):`.
+- `theme_medical_clinic_east` incorrectly defines its installation hook as `def _theme_medical_clinic_post_copy(self, mod):` (it should be `_theme_medical_clinic_east_post_copy`). This causes conflicts during theme initialization.
+
+### 4. Global Pages and Presets
+- Pages defined in `data/pages/*.xml` do not specify a `<field name="website_id"/>`, meaning they are shared globally upon creation.
+- [data/presets.xml](file:///d:/Office/EPR/seaford-clinic-19/custom_addons/theme_medical_clinic/data/presets.xml) globally deactivates the default `website.homepage` across the entire database.
+
+## Proposed Solutions
+
+To achieve true isolation for your two clinics on the same database, we have a few paths forward:
+
+### Path A: Refactor Themes for Odoo's Native Multi-Website Architecture
+We can modify both custom modules to adhere to strict Odoo theme guidelines:
+- Refactor the [__manifest__.py](file:///d:/Office/EPR/seaford-clinic-19/custom_addons/theme_medical_clinic/__manifest__.py) so that assets are not injected directly into `web.assets_frontend` but use proper theme asset loading.
+- Move header/footer modifications from raw XPaths to Odoo's standard Header/Footer templates.
+- Ensure XML IDs and Python class names (like `ThemeMedicalClinicEast`) are distinct.
+- Add `website_id` contexts where applicable.
+*Note: This requires significant structural changes to how the themes are implemented.*
+
+### Path B: Use a Third-Party Multi-Theme Addon (Recommended Workaround)
+Since you already have the structures in place, installing a module like `website_multi_theme` from OCA (if available for v19) forces Odoo to load separate asset bundles and views per website, mitigating the global overrides.
+
+### Path C: Separate Databases / Instances (Easiest & Safest)
+If the Seaford Clinic and Seaford East Clinic do not need to share internal operational data (like unified accounting or shared patient records in the exact same tables), running them as two completely separate Odoo instances or separate databases is the cleanest way to prevent theme bleed.
+
+## User Review Required
+> [!IMPORTANT]
+> How would you like to proceed?
+> 1. Do you want me to attempt **Path A** and refactor the code of both modules to try and make them properly isolated Odoo themes?
+> 2. Are you considering relying on an OCA module, or splitting them into separate databases?

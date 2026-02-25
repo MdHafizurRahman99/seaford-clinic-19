@@ -1,0 +1,139 @@
+// ============================================================
+// Seaford East Medical Clinic - Main Theme Styles
+// ============================================================
+
+// ---- Signature asymmetric button corners ----
+.btn-primary,
+.btn-secondary {
+    border-radius: 14px 0px 14px 0px !important;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+    border-radius: 14px 0px 14px 0px !important;
+}
+
+// ---- Sticky header styling ----
+header#top {
+    .navbar {
+        transition: all 0.3s ease;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .navbar-brand img {
+        transition: all 0.3s ease;
+    }
+}
+
+// ---- Top utility bar ----
+.o_top_bar {
+    font-size: 0.85rem;
+    padding: 0.4rem 0;
+    background-color: #1A3C34;
+    color: rgba(255, 255, 255, 0.85);
+
+    a {
+        color: #007f7c;
+        text-decoration: none;
+
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+}
+
+// ---- Section spacing ----
+#wrapwrap {
+    section {
+        &.s_medical_hero,
+        &.s_services_grid,
+        &.s_doctor_cards,
+        &.s_clinic_hours,
+        &.s_appointment_cta,
+        &.s_patient_testimonials,
+        &.s_accreditations {
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+
+// ---- Card hover effects ----
+.card.s_clinic_card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.35s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 30px rgba(46, 139, 87, 0.15);
+        background-color: rgba(102, 205, 170, 0.1);
+    }
+}
+
+// ---- Section headings ----
+.s_section_heading {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #007f7c, #007f7c);
+        border-radius: 2px;
+    }
+}
+
+// ---- Footer styling ----
+#footer {
+    .s_social_media i {
+        font-size: 1.25rem;
+        transition: color 0.3s ease;
+    }
+
+    a {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #007f7c !important;
+        }
+    }
+}
+
+// ---- Gradient overlay helper ----
+.s_medical_gradient_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 60, 52, 0.85) 0%, rgba(46, 139, 87, 0.7) 100%);
+    z-index: 0;
+}
+
+// ---- Smooth scrolling ----
+html {
+    scroll-behavior: smooth;
+}
+
+// ---- Responsive adjustments ----
+@media (max-width: 767px) {
+    .s_medical_hero {
+        min-height: 400px !important;
+
+        h1 {
+            font-size: 2rem !important;
+        }
+    }
+}

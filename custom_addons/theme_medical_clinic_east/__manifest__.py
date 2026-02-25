@@ -1,9 +1,9 @@
 {
-    'name': 'Seaford Medical Clinic Theme',
-    'description': 'Professional sea-green website theme for Seaford Central Medical Clinic',
+    'name': 'Seaford East medical clinic',
+    'description': 'Professional sea-green website theme for Seaford East Medical Clinic',
     'category': 'Theme/Medical',
     'sequence': 900,
-    'version': '19.0.1.0.0',
+    'version': '19.0.2.0.0',
     'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
@@ -26,22 +26,23 @@
     ],
     'assets': {
         'web._assets_primary_variables': [
-            'theme_medical_clinic/static/src/scss/primary_variables.scss',
+            'theme_medical_clinic_east/static/src/scss/primary_variables.scss',
         ],
         'web._assets_secondary_variables': [
-            'theme_medical_clinic/static/src/scss/secondary_variables.scss',
+            'theme_medical_clinic_east/static/src/scss/secondary_variables.scss',
         ],
         'web.assets_frontend': [
-            'theme_medical_clinic/static/src/scss/theme.scss',
-            'theme_medical_clinic/static/src/scss/snippets/*.scss',
+            'theme_medical_clinic_east/static/src/scss/theme.scss',
+            'theme_medical_clinic_east/static/src/scss/snippets/*.scss',
         ],
     },
     'images': [
         'static/description/cover.png',
     ],
     'configurator_snippets': {
-        'homepage': ['s_medical_hero', 's_services_grid', 's_doctor_cards',
-                     's_patient_testimonials', 's_appointment_cta'],
+        'homepage': [],
+        # 'homepage': ['s_medical_hero', 's_services_grid', 's_doctor_cards',
+        #              's_patient_testimonials', 's_appointment_cta'],
     },
     'new_page_templates': {
         'basic': {
@@ -49,7 +50,7 @@
                             's_doctor_cards', 's_appointment_cta'],
         },
     },
-    'author': 'Seaford Central Medical Clinic',
+    'author': 'Seaford East Medical Clinic',
     'license': 'LGPL-3',
     'installable': True,
     'auto_install': False,
