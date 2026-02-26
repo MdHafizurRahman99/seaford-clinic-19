@@ -1,6 +1,6 @@
 {
     'name': 'Seaford East medical clinic',
-    'description': 'Professional sea-green website theme for Seaford East Medical Clinic',
+    'description': 'Professional sea-green website theme for Seaford EastMedical Clinic',
     'category': 'Theme/Medical',
     'sequence': 900,
     'version': '19.0.2.0.0',
