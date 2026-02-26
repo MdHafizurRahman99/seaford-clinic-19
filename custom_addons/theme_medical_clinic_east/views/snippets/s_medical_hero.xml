@@ -23,11 +23,7 @@
                         Your trusted local medical centre providing personalised, high-quality healthcare with warmth and professionalism for every member of your family.
                     </p>
                     <div class="d-flex flex-wrap gap-3">
-<<<<<<< HEAD
-                        <a href="/appointment" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow"
-=======
                         <a href="/contact" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow"
->>>>>>> 077fa0b0955f8af048e5bfa659d281723c832f32
                            style="background: #007f7c; color: white; border-radius: 14px 0 14px 0; border: none; transition: all 0.3s;">
                             Book Appointment
                         </a>
