@@ -550,11 +550,7 @@
                                         healthcare with warmth and professionalism for every member of your family.
                                     </p>
                                     <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-<<<<<<< HEAD
-                                        <a href="/appointment" class="btn-teal">Book Appointment</a>
-=======
                                         <a href="/contact" class="btn-teal">Book Appointment</a>
->>>>>>> 077fa0b0955f8af048e5bfa659d281723c832f32
                                         <a href="/services" class="btn-ghost">Our Services</a>
                                     </div>
                                     <div class="hero-stats">
@@ -595,11 +591,7 @@
                                             <div class="hero-card-icon"><i class="fa fa-map-marker"></i></div>
                                             Seaford, VIC 3198
                                         </div>
-<<<<<<< HEAD
-                                        <a href="/appointment" class="btn-teal" style="margin-top: 24px; display: block; text-align: center;">
-=======
                                         <a href="/contact" class="btn-teal" style="margin-top: 24px; display: block; text-align: center;">
->>>>>>> 077fa0b0955f8af048e5bfa659d281723c832f32
                                             Book Now →
                                         </a>
                                     </div>
@@ -916,11 +908,7 @@
                                             info@seafordeastclinic.com.au
                                         </div>
                                     </div>
-<<<<<<< HEAD
-                                    <a href="/appointment" class="btn-teal" style="display: block; text-align: center; margin-top: 4px;">
-=======
                                     <a href="/contact" class="btn-teal" style="display: block; text-align: center; margin-top: 4px;">
->>>>>>> 077fa0b0955f8af048e5bfa659d281723c832f32
                                         Book an Appointment
                                     </a>
                                 </div>
@@ -940,11 +928,7 @@
                                 Our friendly team is here to help. Book online in seconds or give us a call today.
                             </p>
                             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-<<<<<<< HEAD
-                                <a href="/appointment" class="btn-white">Book Online Now</a>
-=======
                                 <a href="/contact" class="btn-white">Book Online Now</a>
->>>>>>> 077fa0b0955f8af048e5bfa659d281723c832f32
                                 <a href="tel:+61300000000" class="btn-ghost">
                                     <i class="fa fa-phone me-2"></i>Call Us
                                 </a>
