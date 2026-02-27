@@ -3,7 +3,7 @@
 
 <template id="s_appointment_cta" name="Book Appointment CTA">
     <section class="s_appointment_cta pt64 pb64 o_cc o_cc5"
-             style="background: linear-gradient(135deg, #1A3C34 0%, #007f7c 100%);">
+             style="background: linear-gradient(135deg, #1a4a54 0%, #3899ac 100%);">
         <div class="container">
             <div class="s_cta_content text-center">
                 <h2 class="display-5 mb-3" style="color: white; font-weight: 800;">

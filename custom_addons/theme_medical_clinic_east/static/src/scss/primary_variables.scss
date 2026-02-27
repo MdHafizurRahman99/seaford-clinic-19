@@ -1,19 +1,19 @@
 // ============================================================
-// Seaford East Medical Clinic - Sea Green Color Palette
+// Seaford East Medical Clinic - Teal Color Palette
 // ============================================================
 
 // Base color variables (used directly by Odoo)
-$o-color-1: #007f7c !default;  // Sea Green (Primary)
-$o-color-2: #007f7c !default;  // Medium Aquamarine (Accent)
-$o-color-3: #F0FAF5 !default;  // Mint Cream (Light Background)
+$o-color-1: #3899ac !default;  // Teal (Primary)
+$o-color-2: #5fb3c2 !default;  // Light Teal (Accent)
+$o-color-3: #e8f4f6 !default;  // Light Teal Background
 $o-color-4: #FFFFFF !default;  // White
-$o-color-5: #1A3C34 !default;  // Dark Teal (Dark)
+$o-color-5: #1a4a54 !default;  // Dark Teal (Dark)
 
 // Extended brand colors
-$clinic-green: #007f7c !default;
-$clinic-green-light: #007f7c !default;
-$clinic-green-dark: #1A3C34 !default;
-$clinic-mint: #F0FAF5 !default;
+$clinic-teal: #3899ac !default;
+$clinic-teal-light: #5fb3c2 !default;
+$clinic-teal-dark: #1a4a54 !default;
+$clinic-teal-pale: #e8f4f6 !default;
 
 // Color Palette for Website Builder
 $o-color-palettes: (

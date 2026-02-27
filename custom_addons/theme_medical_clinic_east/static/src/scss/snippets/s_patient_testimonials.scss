@@ -10,7 +10,7 @@
         &::before {
             content: '\201C';
             font-size: 4rem;
-            color: #007f7c;
+            color: #3899ac;
             position: absolute;
             top: 10px;
             left: 20px;
@@ -21,7 +21,7 @@
 
         &:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(46, 139, 87, 0.1);
+            box-shadow: 0 8px 25px rgba(56, 153, 172, 0.1);
         }
 
         .s_testimonial_text {
@@ -34,7 +34,7 @@
 
         .s_testimonial_author {
             font-weight: 700;
-            color: #1A3C34;
+            color: #1a4a54;
         }
 
         .s_testimonial_stars i {

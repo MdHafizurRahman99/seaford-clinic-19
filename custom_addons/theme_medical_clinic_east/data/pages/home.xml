@@ -16,9 +16,9 @@
                 <style>
                     /* ── Palette ────────────────────────────────────────── */
                     :root {
-                        --teal-900: #003d3b;   /* darkest – hero, nav */
-                        --teal-700: #007f7c;   /* primary brand teal  */
-                        --teal-500: #009e9a;   /* hover / accent       */
+                        --teal-900: #0d2e33;   /* darkest – hero, nav */
+                        --teal-700: #3899ac;   /* primary brand teal  */
+                        --teal-500: #5fb3c2;   /* hover / accent       */
                         --teal-200: #b2e8e7;   /* light accent         */
                         --teal-50:  #f0f9f9;   /* section backgrounds  */
                         --slate:    #4a6e6d;   /* body text muted      */

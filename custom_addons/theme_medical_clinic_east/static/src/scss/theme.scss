@@ -33,11 +33,11 @@ header#top {
 .o_top_bar {
     font-size: 0.85rem;
     padding: 0.4rem 0;
-    background-color: #1A3C34;
+    background-color: #1a4a54;
     color: rgba(255, 255, 255, 0.85);
 
     a {
-        color: #007f7c;
+        color: #3899ac;
         text-decoration: none;
 
         &:hover {
@@ -71,8 +71,8 @@ header#top {
 
     &:hover {
         transform: translateY(-4px);
-        box-shadow: 0 8px 30px rgba(46, 139, 87, 0.15);
-        background-color: rgba(102, 205, 170, 0.1);
+        box-shadow: 0 8px 30px rgba(56, 153, 172, 0.15);
+        background-color: rgba(95, 179, 194, 0.1);
     }
 }
 
@@ -90,7 +90,7 @@ header#top {
         transform: translateX(-50%);
         width: 60px;
         height: 3px;
-        background: linear-gradient(90deg, #007f7c, #007f7c);
+        background: linear-gradient(90deg, #3899ac, #5fb3c2);
         border-radius: 2px;
     }
 }
@@ -106,7 +106,7 @@ header#top {
         transition: color 0.3s ease;
 
         &:hover {
-            color: #007f7c !important;
+            color: #3899ac !important;
         }
     }
 }
@@ -118,7 +118,7 @@ header#top {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(26, 60, 52, 0.85) 0%, rgba(46, 139, 87, 0.7) 100%);
+    background: linear-gradient(135deg, rgba(26, 74, 84, 0.85) 0%, rgba(56, 153, 172, 0.7) 100%);
     z-index: 0;
 }
 

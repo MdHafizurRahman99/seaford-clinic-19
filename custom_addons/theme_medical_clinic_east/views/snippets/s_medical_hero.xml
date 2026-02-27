@@ -24,7 +24,7 @@
                     </p>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="/contact" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow"
-                           style="background: #007f7c; color: white; border-radius: 14px 0 14px 0; border: none; transition: all 0.3s;">
+                           style="background: #3899ac; color: white; border-radius: 14px 0 14px 0; border: none; transition: all 0.3s;">
                             Book Appointment
                         </a>
                         <a href="/services" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold"

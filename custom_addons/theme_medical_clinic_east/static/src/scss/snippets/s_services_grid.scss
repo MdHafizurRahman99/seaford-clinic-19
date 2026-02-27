@@ -9,11 +9,11 @@
 
         &:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(46, 139, 87, 0.15);
-            background-color: rgba(102, 205, 170, 0.08) !important;
+            box-shadow: 0 8px 30px rgba(56, 153, 172, 0.15);
+            background-color: rgba(56, 153, 172, 0.08) !important;
 
             .s_service_icon i {
-                color: #007f7c !important;
+                color: #3899ac !important;
                 transform: scale(1.1);
             }
         }
@@ -23,7 +23,7 @@
 
             i {
                 font-size: 2.5rem;
-                color: #007f7c;
+                color: #3899ac;
                 transition: all 0.3s ease;
             }
         }
