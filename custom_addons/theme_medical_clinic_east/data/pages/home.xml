@@ -42,7 +42,7 @@
                         letter-spacing: 3.5px;
                         text-transform: uppercase;
                         color: var(--teal-700);
-                        background: rgba(0,127,124,0.08);
+                        background: rgba(56,153,172,0.08);
                         padding: 6px 14px;
                         border-radius: 999px;
                         margin-bottom: 18px;
@@ -72,7 +72,7 @@
                         background: var(--teal-500);
                         color: var(--white);
                         transform: translateY(-2px);
-                        box-shadow: 0 8px 24px rgba(0,127,124,0.28);
+                        box-shadow: 0 8px 24px rgba(56,153,172,0.28);
                     }
                     .btn-ghost {
                         background: transparent;
@@ -119,22 +119,22 @@
                     }
                     .hero-bg {
                         position: absolute; inset: 0;
-                        background-image: url('/theme_medical_clinic_east/static/src/img/content/hero_bg.jpg');
+                        background-color: #3899ac;
                         background-size: cover;
                         background-position: center;
-                        opacity: 0.18;
+                        opacity: 0.25;
                     }
                     .hero-mesh {
                         position: absolute; inset: 0;
                         background:
-                            radial-gradient(ellipse 80% 60% at 70% 50%, rgba(0,158,154,0.22) 0%, transparent 70%),
-                            radial-gradient(ellipse 40% 50% at 10% 80%, rgba(0,127,124,0.18) 0%, transparent 60%);
+                            radial-gradient(ellipse 80% 60% at 70% 50%, rgba(95,179,194,0.25) 0%, transparent 70%),
+                            radial-gradient(ellipse 40% 50% at 10% 80%, rgba(56,153,172,0.2) 0%, transparent 60%);
                     }
                     .hero-badge {
                         display: inline-flex;
                         align-items: center;
                         gap: 8px;
-                        background: rgba(0,127,124,0.18);
+                        background: rgba(56,153,172,0.18);
                         border: 1px solid rgba(178,232,231,0.3);
                         color: var(--teal-200);
                         font-size: 0.72rem;
@@ -216,7 +216,7 @@
                     .hero-card-item:last-child { border-bottom: none; }
                     .hero-card-icon {
                         width: 34px; height: 34px;
-                        background: rgba(0,127,124,0.3);
+                        background: rgba(56,153,172,0.3);
                         border-radius: 8px;
                         display: flex; align-items: center; justify-content: center;
                         flex-shrink: 0;
@@ -227,7 +227,7 @@
                     /* ── Services ────────────────────────────────────────── */
                     .service-card {
                         background: var(--white);
-                        border: 1px solid rgba(0,127,124,0.1);
+                        border: 1px solid rgba(56,153,172,0.1);
                         border-radius: 20px;
                         padding: 36px 28px;
                         text-align: center;
@@ -237,7 +237,7 @@
                     .service-card:hover {
                         border-color: var(--teal-700);
                         transform: translateY(-6px);
-                        box-shadow: 0 20px 50px rgba(0,127,124,0.13);
+                        box-shadow: 0 20px 50px rgba(56,153,172,0.13);
                     }
                     .service-icon-wrap {
                         width: 72px; height: 72px;
@@ -272,7 +272,7 @@
                         align-items: flex-start;
                         gap: 16px;
                         padding: 20px 0;
-                        border-bottom: 1px solid rgba(0,127,124,0.08);
+                        border-bottom: 1px solid rgba(56,153,172,0.08);
                     }
                     .feature-item:last-child { border-bottom: none; }
                     .feature-num {
@@ -341,7 +341,7 @@
                     /* ── Doctors ─────────────────────────────────────────── */
                     .doctor-card {
                         background: var(--white);
-                        border: 1px solid rgba(0,127,124,0.1);
+                        border: 1px solid rgba(56,153,172,0.1);
                         border-radius: 24px;
                         overflow: hidden;
                         transition: all 0.3s ease;
@@ -349,7 +349,7 @@
                     }
                     .doctor-card:hover {
                         border-color: var(--teal-700);
-                        box-shadow: 0 20px 50px rgba(0,127,124,0.13);
+                        box-shadow: 0 20px 50px rgba(56,153,172,0.13);
                         transform: translateY(-4px);
                     }
                     .doctor-img-wrap {
@@ -392,7 +392,7 @@
                     /* ── Testimonials ────────────────────────────────────── */
                     .testi-card {
                         background: var(--white);
-                        border: 1px solid rgba(0,127,124,0.08);
+                        border: 1px solid rgba(56,153,172,0.08);
                         border-radius: 24px;
                         padding: 36px 32px;
                         height: 100%;
@@ -401,7 +401,7 @@
                     }
                     .testi-card:hover {
                         border-color: var(--teal-200);
-                        box-shadow: 0 16px 40px rgba(0,127,124,0.1);
+                        box-shadow: 0 16px 40px rgba(56,153,172,0.1);
                     }
                     .testi-quote-icon {
                         font-size: 3.5rem;
@@ -436,7 +436,7 @@
                         justify-content: space-between;
                         align-items: center;
                         padding: 14px 0;
-                        border-bottom: 1px solid rgba(0,127,124,0.08);
+                        border-bottom: 1px solid rgba(56,153,172,0.08);
                         font-size: 0.925rem;
                     }
                     .hours-row:last-child { border-bottom: none; }
@@ -444,15 +444,15 @@
                     .hours-time { color: var(--teal-700); font-weight: 500; }
                     .hours-closed { color: #b0c4c3; }
                     .today-row {
-                        background: rgba(0,127,124,0.05);
+                        background: rgba(56,153,172,0.05);
                         border-radius: 10px;
                         padding: 14px 16px;
                         margin: 0 -16px;
-                        border-bottom: 1px solid rgba(0,127,124,0.08);
+                        border-bottom: 1px solid rgba(56,153,172,0.08);
                     }
                     .contact-card {
                         background: var(--white);
-                        border: 1px solid rgba(0,127,124,0.1);
+                        border: 1px solid rgba(56,153,172,0.1);
                         border-radius: 20px;
                         padding: 28px;
                         margin-bottom: 20px;
@@ -506,7 +506,7 @@
                     .cta-mesh {
                         position: absolute; inset: 0;
                         background:
-                            radial-gradient(ellipse 60% 80% at 90% 50%, rgba(0,158,154,0.2) 0%, transparent 70%),
+                            radial-gradient(ellipse 60% 80% at 90% 50%, rgba(95,179,194,0.2) 0%, transparent 70%),
                             radial-gradient(ellipse 40% 60% at 5% 20%, rgba(178,232,231,0.08) 0%, transparent 60%);
                     }
                     .cta-section .btn-white {
@@ -855,7 +855,7 @@
                                         Opening Hours
                                     </h2>
                                     <div class="rule"></div>
-                                    <div style="background: var(--white); border: 1px solid rgba(0,127,124,0.1); border-radius: 20px; padding: 28px; max-width: 440px;">
+                                    <div style="background: var(--white); border: 1px solid rgba(56,153,172,0.1); border-radius: 20px; padding: 28px; max-width: 440px;">
                                         <div class="hours-row">
                                             <span class="hours-day">Monday</span>
                                             <span class="hours-time">8:00 AM – 6:00 PM</span>

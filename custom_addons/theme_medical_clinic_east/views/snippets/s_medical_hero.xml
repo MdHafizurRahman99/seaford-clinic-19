@@ -3,11 +3,11 @@
 
 <template id="s_medical_hero" name="Medical Hero Banner">
     <section class="s_medical_hero o_cc o_cc5 pt-0 pb-0" data-snippet="s_medical_hero"
-             style="min-height: 720px; background-image: url('/theme_medical_clinic_east/static/src/img/content/hero_bg.jpg'); background-size: cover; background-position: center;">
+             style="min-height: 720px; background-color: #3899ac; background-size: cover; background-position: center;">
         
         <!-- Gradient overlay -->
         <div class="s_medical_gradient_overlay position-absolute top-0 start-0 end-0 bottom-0" 
-             style="background: linear-gradient(135deg, rgba(26,60,52,0.82) 0%, rgba(0,127,124,0.68) 100%); z-index: 0;"></div>
+             style="background: linear-gradient(135deg, rgba(26,74,84,0.82) 0%, rgba(56,153,172,0.68) 100%); z-index: 0;"></div>
         
         <!-- Content -->
         <div class="container position-relative h-100 d-flex align-items-center" style="z-index: 1;">
