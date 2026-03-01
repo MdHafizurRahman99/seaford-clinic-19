@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- Top utility bar with phone and location -->
+<!-- Top utility bar with phone and location (DISABLED - using custom_header.xml instead) -->
 <template id="header_top_bar" inherit_id="website.layout" name="Medical Clinic Top Bar" active="False">
     <xpath expr="//header[@id='top']" position="before">
         <div class="o_top_bar d-none d-md-block" style="background-color: #1a4a54; color: rgba(255,255,255,0.85); font-size: 0.85rem; padding: 0.4rem 0;">
@@ -24,8 +24,8 @@
     </xpath>
 </template>
 
-<!-- Custom footer with clinic info -->
-<template id="custom_footer" inherit_id="website.layout" name="Medical Clinic Footer" active="False">
+<!-- Custom footer with clinic info (ENABLED - replaces default Odoo footer) -->
+<template id="custom_footer" inherit_id="website.layout" name="Medical Clinic Footer" active="True">
     <xpath expr="//div[@id='footer']" position="replace">
         <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
             <!-- Main Footer -->
@@ -44,10 +44,10 @@
                                     <i class="fa fa-map-marker me-2" style="color: #3899ac; width: 16px;"/>Seaford, VIC 3198, Australia
                                 </li>
                                 <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; font-size: 0.9rem;">
-                                    <i class="fa fa-phone me-2" style="color: #3899ac; width: 16px;"/>(03) 0000 0000
+                                    <i class="fa fa-phone me-2" style="color: #3899ac; width: 16px;"/>(03) 9875 6222
                                 </li>
                                 <li style="color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; font-size: 0.9rem;">
-                                    <i class="fa fa-envelope me-2" style="color: #3899ac; width: 16px;"/>info@seafordmedical.com.au
+                                    <i class="fa fa-envelope me-2" style="color: #3899ac; width: 16px;"/>reception@seafordmedical.com.au
                                 </li>
                             </ul>
                         </div>

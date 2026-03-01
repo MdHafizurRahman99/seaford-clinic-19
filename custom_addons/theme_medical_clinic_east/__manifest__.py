@@ -9,6 +9,7 @@
         'data/generate_primary_template.xml',
         'data/images.xml',
         'views/theme_medical_clinic_templates.xml',
+        'views/custom_header.xml',
         'views/snippets/s_medical_hero.xml',
         'views/snippets/s_services_grid.xml',
         'views/snippets/s_doctor_cards.xml',
