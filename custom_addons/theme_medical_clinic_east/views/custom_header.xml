@@ -47,10 +47,10 @@
             </div>
             
             <!-- Main Navigation Bar -->
-            <nav class="navbar navbar-expand-lg header-main-bar">
+            <nav class="navbar navbar-expand-lg header-main-bar" data-name="Custom Header">
                 <div class="container-fluid px-4">
                     <!-- Logo & Brand -->
-                    <a href="/" class="navbar-brand d-flex align-items-center text-decoration-none">
+                    <a href="/" class="navbar-brand d-flex align-items-center text-decoration-none" data-name="Brand">
                         <div class="logo-icon me-2">
                             <i class="fa fa-plus-square"/>
                         </div>
@@ -67,7 +67,7 @@
                     </button>
                     
                     <!-- Main Menu -->
-                    <div class="collapse navbar-collapse" id="medicalMainMenu">
+                    <div class="collapse navbar-collapse" id="medicalMainMenu" data-name="Main Menu">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <!-- About Us with Dropdown -->
                             <li class="nav-item dropdown">
@@ -78,10 +78,8 @@
                                 <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
                                     <li><a class="dropdown-item" href="/philosophy">Philosophy</a></li>
                                     <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="/patient-information" id="patientInfo">
-                                            Patient Information
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="patientInfo">
+                                        <a class="dropdown-item dropdown-toggle" href="/patient-information">Patient Information</a>
+                                        <ul class="dropdown-menu">
                                             <li class="dropdown-submenu">
                                                 <a class="dropdown-item dropdown-toggle" href="/patient-forms">Patient Forms</a>
                                                 <ul class="dropdown-menu">
@@ -146,7 +144,7 @@
                         </ul>
                         
                         <!-- Book Online Button -->
-                        <a href="/book-online" class="btn btn-book-online">
+                        <a href="/book-online" class="btn btn-book-online" data-name="Book Online Button">
                             <i class="fa fa-calendar-check-o me-1"/>
                             <span>Book Online</span>
                         </a>

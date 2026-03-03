@@ -27,7 +27,7 @@
 <!-- Custom footer with clinic info (ENABLED - replaces default Odoo footer) -->
 <template id="custom_footer" inherit_id="website.layout" name="Medical Clinic Footer" active="True">
     <xpath expr="//div[@id='footer']" position="replace">
-        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true">
             <!-- Main Footer -->
             <section style="background-color: #1a4a54; padding: 3rem 0 1.5rem;" data-snippet="s_text_block">
                 <div class="container">
