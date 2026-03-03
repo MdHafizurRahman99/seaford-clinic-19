@@ -3,7 +3,7 @@
     'description': 'Professional sea-green website theme for Seaford Central Medical Clinic',
     'category': 'Theme/Medical',
     'sequence': 900,
-    'version': '19.0.1.0.0',
+    'version': '19.0.2',
     'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',

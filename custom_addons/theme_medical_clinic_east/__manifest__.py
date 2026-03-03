@@ -3,7 +3,7 @@
     'description': 'Professional sea-green website theme for Seaford EastMedical Clinic',
     'category': 'Theme/Medical',
     'sequence': 900,
-    'version': '19.0.2.0.0',
+    'version': '19.0.3',
     'depends': ['website'],
     'data': [
         'data/generate_primary_template.xml',
