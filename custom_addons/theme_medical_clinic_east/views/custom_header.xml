@@ -24,6 +24,10 @@
                         <!-- Quick Links & Contact - Right -->
                         <div class="col text-md-end">
                             <div class="top-quick-links">
+                                <a href="/peri-menopause-appointment" class="top-link d-none d-lg-inline-block">
+                                    <i class="fa fa-venus me-1"/>
+                                    <span>Peri/Menopause Appointment</span>
+                                </a>
                                 <a href="/request-script" class="top-link d-none d-lg-inline-block">
                                     <i class="fa fa-flag me-1"/>
                                     <span>Request A Script</span>
