@@ -19,6 +19,67 @@
         <field name="sequence" type="int">20</field>
     </record>
 
+    <!-- Patient Information (child of About Us) -->
+    <record id="menu_patient_information" model="website.menu">
+        <field name="name">Patient Information</field>
+        <field name="url">/patient-information</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_patient_information"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_about"/>
+        <field name="sequence" type="int">10</field>
+    </record>
+
+    <!-- Fees (child of About Us) -->
+    <record id="menu_fees" model="website.menu">
+        <field name="name">Fees</field>
+        <field name="url">/fees</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_fees"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_about"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+
+    <!-- Patient Links (child of About Us) -->
+    <record id="menu_patient_links" model="website.menu">
+        <field name="name">Patient Links</field>
+        <field name="url">/patient-links</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_patient_links"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_about"/>
+        <field name="sequence" type="int">30</field>
+    </record>
+
+    <!-- MyMedicare (child of About Us) -->
+    <record id="menu_mymedicare_info" model="website.menu">
+        <field name="name">MyMedicare</field>
+        <field name="url">/mymedicare-info</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_mymedicare_info"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_about"/>
+        <field name="sequence" type="int">40</field>
+    </record>
+
+    <!-- COVID Info (child of About Us) -->
+    <record id="menu_covid_19_information" model="website.menu">
+        <field name="name">COVID-19 Information</field>
+        <field name="url">/covid-19-information</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_covid_19_information"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_about"/>
+        <field name="sequence" type="int">50</field>
+    </record>
+
+    <!-- Privacy Policy (child of About Us) -->
+    <record id="menu_privacy_policy" model="website.menu">
+        <field name="name">Privacy Policy</field>
+        <field name="url">/privacy-policy</field>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_about"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+
+    <!-- Terms of Service (child of About Us) -->
+    <record id="menu_terms_of_service" model="website.menu">
+        <field name="name">Terms of Service</field>
+        <field name="url">/terms-of-service</field>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_about"/>
+        <field name="sequence" type="int">70</field>
+    </record>
+
     <!-- Services -->
     <record id="menu_services" model="website.menu">
         <field name="name">Services</field>
@@ -26,6 +87,225 @@
         <field name="page_id" ref="theme_medical_clinic_east.page_services"/>
         <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">30</field>
+    </record>
+
+    <!-- Maternal & Child Health (child of Services) -->
+    <record id="menu_maternal_child_health" model="website.menu">
+        <field name="name">Maternal &amp; Child Health</field>
+        <field name="url">/maternal-child-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_maternal_child_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">10</field>
+    </record>
+
+    <!-- Women's & Men's Health (child of Services) -->
+    <record id="menu_womens_mens_health" model="website.menu">
+        <field name="name">Women's &amp; Men's Health</field>
+        <field name="url">/womens-mens-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_womens_mens_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+
+    <!-- Travel Medicine (child of Services) -->
+    <record id="menu_travel_medicine" model="website.menu">
+        <field name="name">Travel Medicine</field>
+        <field name="url">/travel</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_travel_medicine"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">30</field>
+    </record>
+
+    <!-- Medical Procedures (child of Services) -->
+    <record id="menu_medical_procedures" model="website.menu">
+        <field name="name">Medical Procedures</field>
+        <field name="url">/medical-procedures</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_medical_procedures"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">40</field>
+    </record>
+
+    <!-- Health & Wellness (child of Services) -->
+    <record id="menu_health_wellness" model="website.menu">
+        <field name="name">Health &amp; Wellness</field>
+        <field name="url">/health-wellness</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_health_wellness"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">50</field>
+    </record>
+
+    <!-- Exercise Physiology (child of Services) -->
+    <record id="menu_exercise_physiology" model="website.menu">
+        <field name="name">Exercise Physiology</field>
+        <field name="url">/exercise-physiology</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_exercise_physiology"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+
+    <!-- Allied Health (child of Services) -->
+    <record id="menu_allied_health" model="website.menu">
+        <field name="name">Allied Health</field>
+        <field name="url">/our-health-team-allied-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_allied_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">70</field>
+    </record>
+
+    <!-- Weight Loss (child of Services) -->
+    <record id="menu_weight_loss" model="website.menu">
+        <field name="name">Weight Loss</field>
+        <field name="url">/weight-loss</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_weight_loss"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">80</field>
+    </record>
+
+    <!-- Skin Checks (child of Services) -->
+    <record id="menu_skin_landing_page" model="website.menu">
+        <field name="name">Skin Checks</field>
+        <field name="url">/skin-landing-page</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_skin_landing_page"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">90</field>
+    </record>
+
+    <!-- Geriatric Resources (child of Services) -->
+    <record id="menu_geriatric_resources" model="website.menu">
+        <field name="name">Geriatric Resources</field>
+        <field name="url">/geriatric-medicine-65-aged-care-resources</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_geriatric_resources"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">100</field>
+    </record>
+
+    <!-- Sexual Health (child of Services) -->
+    <record id="menu_sexual_health" model="website.menu">
+        <field name="name">Sexual Health</field>
+        <field name="url">/sexual-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_sexual_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">110</field>
+    </record>
+
+    <!-- Antenatal Care (child of Services) -->
+    <record id="menu_antenatal_care" model="website.menu">
+        <field name="name">Antenatal Care</field>
+        <field name="url">/antenatal-care</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_antenatal_care"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">120</field>
+    </record>
+
+    <!-- Pregnancy & Breastfeeding (child of Services) -->
+    <record id="menu_pregnancy_breastfeeding" model="website.menu">
+        <field name="name">Pregnancy &amp; Breastfeeding</field>
+        <field name="url">/pregnancy-breastfeeding</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_pregnancy_breastfeeding"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">130</field>
+    </record>
+
+    <!-- Child Health (child of Services) -->
+    <record id="menu_child_health" model="website.menu">
+        <field name="name">Child Health</field>
+        <field name="url">/child-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_child_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">140</field>
+    </record>
+
+    <!-- Dedicated service pages for 1:1 header mapping -->
+    <record id="menu_telehealth" model="website.menu">
+        <field name="name">Telehealth</field>
+        <field name="url">/telehealth</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_telehealth"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">150</field>
+    </record>
+    <record id="menu_womens_health" model="website.menu">
+        <field name="name">Women's Health</field>
+        <field name="url">/womens-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_womens_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">160</field>
+    </record>
+    <record id="menu_mens_health" model="website.menu">
+        <field name="name">Men's Health</field>
+        <field name="url">/mens-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_mens_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">170</field>
+    </record>
+    <record id="menu_childrens_health" model="website.menu">
+        <field name="name">Children's Health</field>
+        <field name="url">/childrens-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_childrens_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">180</field>
+    </record>
+    <record id="menu_chronic_disease_management" model="website.menu">
+        <field name="name">Chronic Disease Management</field>
+        <field name="url">/chronic-disease-management</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_chronic_disease_management"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">190</field>
+    </record>
+    <record id="menu_preventative_health" model="website.menu">
+        <field name="name">Preventative Health</field>
+        <field name="url">/preventative-health</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_preventative_health"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">200</field>
+    </record>
+    <record id="menu_immunisations" model="website.menu">
+        <field name="name">Immunisations</field>
+        <field name="url">/immunisations</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_immunisations"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">210</field>
+    </record>
+    <record id="menu_corporate_flu_clinics" model="website.menu">
+        <field name="name">Corporate Flu Clinics</field>
+        <field name="url">/corporate-flu-clinics</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_corporate_flu_clinics"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">220</field>
+    </record>
+    <record id="menu_iron_infusions" model="website.menu">
+        <field name="name">Iron Infusions</field>
+        <field name="url">/iron-infusions</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_iron_infusions"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">230</field>
+    </record>
+    <record id="menu_shingles_vaccine" model="website.menu">
+        <field name="name">Shingles Vaccine</field>
+        <field name="url">/shingles-vaccine</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_shingles_vaccine"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">240</field>
+    </record>
+    <record id="menu_contraceptive_implant" model="website.menu">
+        <field name="name">Contraceptive Implant</field>
+        <field name="url">/contraceptive-implant</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_contraceptive_implant"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">250</field>
+    </record>
+    <record id="menu_menopause_perimenopause_care" model="website.menu">
+        <field name="name">Menopause/Perimenopause Care</field>
+        <field name="url">/menopause-perimenopause-care</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_menopause_perimenopause_care"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">260</field>
+    </record>
+    <record id="menu_fertility_support_family_planning" model="website.menu">
+        <field name="name">Fertility Support + Family Planning</field>
+        <field name="url">/fertility-support-family-planning</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_fertility_support_family_planning"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
+        <field name="sequence" type="int">270</field>
     </record>
 
     <!-- Our Team -->
@@ -37,6 +317,33 @@
         <field name="sequence" type="int">40</field>
     </record>
 
+    <!-- Doctors (child of Our Team) -->
+    <record id="menu_doctors" model="website.menu">
+        <field name="name">Doctors</field>
+        <field name="url">/our-health-team-doctors</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_doctors"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_team"/>
+        <field name="sequence" type="int">10</field>
+    </record>
+
+    <!-- Nurses (child of Our Team) -->
+    <record id="menu_nurses" model="website.menu">
+        <field name="name">Nurses</field>
+        <field name="url">/nurses</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_nurses"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_team"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+
+    <!-- Admin Team (child of Our Team) -->
+    <record id="menu_admin_team" model="website.menu">
+        <field name="name">Admin Team</field>
+        <field name="url">/admin-team</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_admin_team"/>
+        <field name="parent_id" ref="theme_medical_clinic_east.menu_team"/>
+        <field name="sequence" type="int">30</field>
+    </record>
+
     <!-- Contact Us -->
     <record id="menu_contact" model="website.menu">
         <field name="name">Contact Us</field>
@@ -44,6 +351,33 @@
         <field name="page_id" ref="theme_medical_clinic_east.page_contact"/>
         <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">50</field>
+    </record>
+
+    <!-- Appointments -->
+    <record id="menu_appointments" model="website.menu">
+        <field name="name">Appointments</field>
+        <field name="url">/appointments</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_appointments"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+
+    <!-- Newsletter -->
+    <record id="menu_newsletter" model="website.menu">
+        <field name="name">News</field>
+        <field name="url">/newsletter</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_newsletter"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">70</field>
+    </record>
+
+    <!-- Careers -->
+    <record id="menu_career" model="website.menu">
+        <field name="name">Careers</field>
+        <field name="url">/career</field>
+        <field name="page_id" ref="theme_medical_clinic_east.page_career"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">80</field>
     </record>
 
 </odoo>

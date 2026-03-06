@@ -85,6 +85,40 @@
                         </div>
                     </section>
 
+                    <section class="pt64 pb64" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Parking and Access</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                            <li>Please allow extra time during peak periods.</li>
+                                            <li>Accessible entry is available for mobility support.</li>
+                                            <li>Call reception ahead if you need access assistance.</li>
+                                            <li>Bring referral or booking details to speed check-in.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Pathology and Follow-up</h4>
+                                        <p style="color: #555; line-height: 1.8;">
+                                            For pathology collection times and result follow-up workflow, contact reception before attending.
+                                        </p>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                            Book a review appointment for discussion of results and treatment plans.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center" style="margin-top: 34px;">
+                                <a href="/appointments" class="btn btn-lg" style="background-color: #3899ac; color: #ffffff; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
+                                    Book an Appointment
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </t>
         </t>

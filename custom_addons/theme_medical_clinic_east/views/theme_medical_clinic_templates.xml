@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
 <!-- Top utility bar with phone and location (DISABLED - using custom_header.xml instead) -->
@@ -58,7 +58,7 @@
                                 <li style="margin-bottom: 0.5rem;"><a href="/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Home</a></li>
                                 <li style="margin-bottom: 0.5rem;"><a href="/about-us" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">About Us</a></li>
                                 <li style="margin-bottom: 0.5rem;"><a href="/services" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Services</a></li>
-                                <li style="margin-bottom: 0.5rem;"><a href="/our-team" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Our Team</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="/our-health-team-doctors" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Our Team</a></li>
                                 <li style="margin-bottom: 0.5rem;"><a href="/contact" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Contact Us</a></li>
                             </ul>
                         </div>
@@ -67,10 +67,10 @@
                             <h5 style="color: white; font-weight: 700; margin-bottom: 1rem;">Our Services</h5>
                             <ul style="list-style: none; padding: 0; margin: 0;">
                                 <li style="margin-bottom: 0.5rem;"><a href="/services" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">General Practice</a></li>
-                                <li style="margin-bottom: 0.5rem;"><a href="/services" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Family Health</a></li>
-                                <li style="margin-bottom: 0.5rem;"><a href="/services" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Women's Health</a></li>
-                                <li style="margin-bottom: 0.5rem;"><a href="/services" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Mental Health</a></li>
-                                <li style="margin-bottom: 0.5rem;"><a href="/services" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Skin Cancer Checks</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="/maternal-child-health" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Family Health</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="/womens-mens-health" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Women's Health</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="/health-wellness" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Mental Health</a></li>
+                                <li style="margin-bottom: 0.5rem;"><a href="/skin-landing-page" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem;">Skin Cancer Checks</a></li>
                             </ul>
                         </div>
                         <!-- Opening Hours -->
@@ -95,12 +95,12 @@
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 0;">
-                                © 2026 Seaford East Medical Clinic. All rights reserved.
+                                Copyright 2026 Seaford East Medical Clinic. All rights reserved.
                             </p>
                         </div>
                         <div class="col-md-6 text-md-end">
-                            <a href="#" style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-decoration: none; margin-left: 1rem;">Privacy Policy</a>
-                            <a href="#" style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-decoration: none; margin-left: 1rem;">Terms of Service</a>
+                            <a href="/privacy-policy" style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-decoration: none; margin-left: 1rem;">Privacy Policy</a>
+                            <a href="/terms-of-service" style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-decoration: none; margin-left: 1rem;">Terms of Service</a>
                         </div>
                     </div>
                 </div>
@@ -111,3 +111,4 @@
 
 
 </odoo>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_mymedicare_info" model="website.page">
+    <field name="name">MyMedicare Info</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_mymedicare_info</field>
+    <field name="url">/mymedicare-info</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_mymedicare_info">
+            <t t-call="website.layout">
+                <t t-set="additional_title">MyMedicare Info</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">MyMedicare Information</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Learn how voluntary registration can support continuity of care
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <h3 style="font-weight: 700; color: #1a4a54;">What is MyMedicare?</h3>
+                                    <p style="color: #555; line-height: 1.8;">
+                                        MyMedicare is a voluntary patient registration model that helps strengthen the relationship between patients, their preferred GP, and their regular clinic.
+                                    </p>
+                                    <h4 style="font-weight: 700; color: #1a4a54;">Potential Benefits</h4>
+                                    <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
+                                        <li>Improved continuity and coordination of care</li>
+                                        <li>Better support for long-term health needs</li>
+                                        <li>Potential access to additional funded services over time</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How to Register</h4>
+                                        <ol style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
+                                            <li>Confirm you are eligible to register.</li>
+                                            <li>Register through your Medicare online account or with reception support.</li>
+                                            <li>Select Seaford East Medical Clinic as your preferred practice.</li>
+                                        </ol>
+                                        <a href="https://www.servicesaustralia.gov.au/mymedicare" target="_blank"
+                                           class="btn mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">
+                                            Visit Official MyMedicare
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

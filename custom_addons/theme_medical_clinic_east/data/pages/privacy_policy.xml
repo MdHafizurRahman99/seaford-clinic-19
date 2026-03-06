@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_privacy_policy" model="website.page">
+    <field name="name">Privacy Policy</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_privacy_policy</field>
+    <field name="url">/privacy-policy</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_privacy_policy">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Privacy Policy</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Privacy Policy</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                How we collect, use, and protect your personal and health information
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="bg-white rounded-3 p-4 p-lg-5" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                <h4 style="font-weight: 700; color: #1a4a54;">Information Handling</h4>
+                                <p style="color: #555; line-height: 1.8;">
+                                    We collect information necessary to provide clinical care, manage appointments, and comply with legal and professional obligations.
+                                </p>
+                                <h4 style="font-weight: 700; color: #1a4a54;">Use and Disclosure</h4>
+                                <p style="color: #555; line-height: 1.8;">
+                                    Information is used for care delivery, practice administration, and relevant communication. Disclosure occurs only where clinically required or legally permitted.
+                                </p>
+                                <h4 style="font-weight: 700; color: #1a4a54;">Access and Corrections</h4>
+                                <p style="color: #555; line-height: 1.8;">
+                                    Patients may request access to their records and ask for correction of inaccurate information by contacting reception.
+                                </p>
+                                <h4 style="font-weight: 700; color: #1a4a54;">Contact</h4>
+                                <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                    For privacy queries, contact reception at <a href="mailto:reception@seafordmedical.com.au">reception@seafordmedical.com.au</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

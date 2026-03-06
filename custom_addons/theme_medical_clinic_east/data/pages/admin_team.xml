@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_admin_team" model="website.page">
+    <field name="name">Admin Team</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_admin_team</field>
+    <field name="url">/admin-team</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_admin_team">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Admin Team</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Admin Team</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">
+                                Friendly front-desk support to help your care journey run smoothly
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <img alt="Manager" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Practice Manager</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Operations &amp; Quality</p>
+                                        <p style="color: #555; line-height: 1.7;">Coordinates clinic systems, policy processes, and patient service quality improvements.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <img alt="Reception" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Reception Team</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Patient Services</p>
+                                        <p style="color: #555; line-height: 1.7;">Appointment management, recalls, document processing, and front-desk support.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <img alt="Admin Officer" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Admin Officer</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Billing &amp; Records</p>
+                                        <p style="color: #555; line-height: 1.7;">Supports billing workflow, record handling, and administrative coordination.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

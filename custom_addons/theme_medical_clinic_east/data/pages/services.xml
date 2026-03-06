@@ -93,6 +93,34 @@
                         </div>
                     </section>
 
+                    <section class="pt48 pb64" data-snippet="s_text_block" style="background: #f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Popular Service Pathways</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li><a href="/skin-landing-page">Skin Checks</a> and lesion follow-up</li>
+                                            <li><a href="/womens-health">Women's Health</a> and <a href="/mens-health">Men's Health</a> reviews</li>
+                                            <li><a href="/travel">Travel Medicine</a> consultations and vaccines</li>
+                                            <li><a href="/medical-procedures">Medical Procedures</a> including iron infusions</li>
+                                            <li><a href="/health-wellness">Health &amp; Wellness</a> with allied support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How to Choose the Right Appointment</h4>
+                                        <p style="color: #555; line-height: 1.8;">
+                                            Routine services can be booked online. For multiple concerns, complex care plans, or procedures, please call reception for a longer appointment slot.
+                                        </p>
+                                        <a href="/appointments" style="color: #3899ac; font-weight: 700; text-decoration: none;">Open appointment guide</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     <!-- CTA -->
                     <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
                         <div class="container text-center">
@@ -100,7 +128,7 @@
                             <p style="color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 1.5rem;">
                                 Book an appointment with our experienced team today.
                             </p>
-                            <a href="/contactus" class="btn btn-lg" style="background-color: #FFFFFF; color: #3899ac; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.5rem;">
+                            <a href="/appointments" class="btn btn-lg" style="background-color: #FFFFFF; color: #3899ac; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.5rem;">
                                 Book Appointment
                             </a>
                         </div>

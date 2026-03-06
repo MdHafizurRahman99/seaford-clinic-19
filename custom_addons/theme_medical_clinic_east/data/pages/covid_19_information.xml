@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_covid_19_information" model="website.page">
+    <field name="name">COVID-19 Information</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_covid_19_information</field>
+    <field name="url">/covid-19-information</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_covid_19_information">
+            <t t-call="website.layout">
+                <t t-set="additional_title">COVID-19 Information</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">COVID-19 Information</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Respiratory symptom and infection-control guidance for clinic visits
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="alert rounded-3" role="alert" style="background: #fff4e5; border: 1px solid #ffd7a6; color: #7a4d14;">
+                                If you have fever, cough, sore throat, or respiratory symptoms, please call reception before attending the clinic.
+                            </div>
+                            <div class="row g-4 mt-1">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before Attending</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
+                                            <li>Call ahead if unwell or recently exposed to infection.</li>
+                                            <li>Follow current clinic mask or isolation advice.</li>
+                                            <li>Use telehealth where clinically suitable.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Vaccination and Advice</h4>
+                                        <p style="color: #555; line-height: 1.8;">
+                                            For up-to-date Australian recommendations, refer to official guidance and discuss vaccination suitability with your GP.
+                                        </p>
+                                        <a href="https://www.health.gov.au/" target="_blank">Australian Government Department of Health</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

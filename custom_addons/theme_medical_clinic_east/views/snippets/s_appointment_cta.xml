@@ -14,7 +14,7 @@
                     to schedule your visit at Seaford East Medical Clinic.
                 </p>
                 <div>
-                    <a href="/contactus" class="btn btn-lg me-2 mb-2">
+                    <a href="/appointments" class="btn btn-lg me-2 mb-2">
                         Book Online
                     </a>
                     <a href="tel:+61300000000" class="btn btn-outline-light btn-lg mb-2"

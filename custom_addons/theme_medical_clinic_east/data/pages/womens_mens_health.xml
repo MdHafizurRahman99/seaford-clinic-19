@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_womens_mens_health" model="website.page">
+    <field name="name">Women's and Men's Health</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_womens_mens_health</field>
+    <field name="url">/womens-mens-health</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_womens_mens_health">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Women's and Men's Health</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Women's &amp; Men's Health</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Preventive and ongoing health care across all life stages
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h3 style="font-weight: 700; color: #1a4a54;">Women's Health</h3>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                            <li>Cervical screening and preventive checks</li>
+                                            <li>Contraception and family planning advice</li>
+                                            <li>Pregnancy, postnatal and breastfeeding support</li>
+                                            <li>Perimenopause and menopause care</li>
+                                            <li>Mental and emotional wellbeing support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h3 style="font-weight: 700; color: #1a4a54;">Men's Health</h3>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                            <li>Cardiovascular and metabolic risk review</li>
+                                            <li>General preventive health checks</li>
+                                            <li>Prostate and age-related screening guidance</li>
+                                            <li>Mental health consultations and care plans</li>
+                                            <li>Lifestyle medicine and long-term condition support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
+                        <div class="container text-center">
+                            <h3 style="color: white; font-weight: 800;">Need a Dedicated Health Review?</h3>
+                            <p style="color: rgba(255,255,255,0.85); max-width: 620px; margin: 0 auto 1.25rem;">
+                                For preventive screening and complex concerns, please book a longer consultation.
+                            </p>
+                            <a href="/appointments" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
+                                Book Consultation
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

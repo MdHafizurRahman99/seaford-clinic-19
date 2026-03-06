@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_fees" model="website.page">
+    <field name="name">Fees</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_fees</field>
+    <field name="url">/fees</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_fees">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Fees</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Fees &amp; Billing</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">
+                                Clear fee information for consultations and procedures
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb48" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="alert rounded-3" role="alert" style="background: #e8f4f6; border: 1px solid rgba(56,153,172,0.25); color: #1a4a54;">
+                                Fees below are indicative and may change over time. Please confirm current pricing with reception before your appointment.
+                            </div>
+                            <div class="table-responsive mt-4">
+                                <table class="table table-bordered bg-white" style="border-color: rgba(56,153,172,0.25);">
+                                    <thead style="background: #1a4a54; color: white;">
+                                        <tr>
+                                            <th>Consultation Type</th>
+                                            <th>Indicative Fee</th>
+                                            <th>Medicare Rebate</th>
+                                            <th>Out-of-Pocket</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Standard Consultation</td>
+                                            <td>$90.00</td>
+                                            <td>$41.40</td>
+                                            <td>$48.60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Long Consultation</td>
+                                            <td>$145.00</td>
+                                            <td>$80.10</td>
+                                            <td>$64.90</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Extended Consultation</td>
+                                            <td>$190.00</td>
+                                            <td>$118.95</td>
+                                            <td>$71.05</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mental Health / Care Plan</td>
+                                            <td>Varies</td>
+                                            <td>Item dependent</td>
+                                            <td>Varies</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Procedure Appointments</td>
+                                            <td>Varies</td>
+                                            <td>Item dependent</td>
+                                            <td>Varies</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block" style="background: #f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Billing Policy</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                            <li>Private billing applies unless otherwise advised.</li>
+                                            <li>Concession, pension, and children policy may vary by doctor.</li>
+                                            <li>Payment is required on the day of consultation.</li>
+                                            <li>On-the-spot Medicare claiming is available.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Cancellation &amp; Non-Attendance</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                            <li>Please provide notice if you cannot attend.</li>
+                                            <li>Late cancellation and non-attendance fees may apply.</li>
+                                            <li>Long and procedure appointments attract higher cancellation fees.</li>
+                                            <li>Repeated non-attendance may limit future bookings.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-7">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered bg-white" style="border-color: rgba(56,153,172,0.25);">
+                                            <thead style="background: #1a4a54; color: white;">
+                                                <tr>
+                                                    <th>Operational Detail</th>
+                                                    <th>Current Policy</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Payment timing</td>
+                                                    <td>Payment is required on the day of consultation.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Claiming support</td>
+                                                    <td>On-the-spot Medicare claiming available where eligible.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Procedure/facility fees</td>
+                                                    <td>May apply depending on treatment type and consumables.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Insurance / third-party</td>
+                                                    <td>TAC, WorkCover, and insurer billing rules vary by case.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before You Book</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                            <li>Ask reception about expected out-of-pocket costs.</li>
+                                            <li>Confirm if your appointment type is standard or long.</li>
+                                            <li>Check cancellation timeframes to avoid fees.</li>
+                                            <li>Bring concession cards if applicable.</li>
+                                        </ul>
+                                        <a href="/appointments" style="color: #3899ac; font-weight: 700; text-decoration: none;">Go to appointment guidance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
+                        <div class="container text-center">
+                            <h2 style="color: white; font-weight: 800;">Need a Specific Fee Quote?</h2>
+                            <p style="color: rgba(255,255,255,0.85); max-width: 640px; margin: 0 auto 1.5rem;">
+                                Contact reception for current consultation and procedure pricing, including Medicare and private billing details.
+                            </p>
+                            <a href="/contact" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
+                                Contact Reception
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

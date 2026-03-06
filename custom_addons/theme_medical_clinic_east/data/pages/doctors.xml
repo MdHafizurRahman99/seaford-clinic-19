@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_doctors" model="website.page">
+    <field name="name">Our Health Team - Doctors</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_doctors</field>
+    <field name="url">/our-health-team-doctors</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_doctors">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Our Doctors</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,60,52,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Our Doctors</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">
+                                Experienced GPs providing comprehensive, patient-centred care
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Sarah Johnson</h4>
+                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACGP</p>
+                                            <p style="margin: 0 0 8px; font-size: 0.8rem; font-weight: 700; color: #1a4a54;">Accepting New Patients</p>
+                                            <p class="text-muted">Women's health, chronic disease management, and preventive care.</p>
+                                            <a href="/appointments" class="btn btn-sm mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Michael Chen</h4>
+                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACP</p>
+                                            <p style="margin: 0 0 8px; font-size: 0.8rem; font-weight: 700; color: #1a4a54;">Accepting New Patients</p>
+                                            <p class="text-muted">Family medicine, child development, and long-term preventive health.</p>
+                                            <a href="/appointments" class="btn btn-sm mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <div class="card-body py-5">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Emily Williams</h4>
+                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FACD</p>
+                                            <p style="margin: 0 0 8px; font-size: 0.8rem; font-weight: 700; color: #1a4a54;">Skin Check Sessions Available</p>
+                                            <p class="text-muted">Skin checks, minor procedures, and management of chronic skin conditions.</p>
+                                            <a href="/appointments" class="btn btn-sm mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block" style="background: #f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How to Choose a GP</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Select by clinical interest that matches your concern.</li>
+                                            <li>Book a long consult for complex or multiple issues.</li>
+                                            <li>For continuity, try follow-ups with the same doctor.</li>
+                                            <li>Call reception if you need urgent or same-day triage.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Related Team Pages</h4>
+                                        <p style="color: #555; line-height: 1.8;">
+                                            Meet our broader care team including nursing and administration for complete clinic support.
+                                        </p>
+                                        <p style="margin: 0;">
+                                            <a href="/nurses" style="color: #3899ac; font-weight: 700; text-decoration: none;">Nurses</a>
+                                            <span style="color: #9aa;"> | </span>
+                                            <a href="/admin-team" style="color: #3899ac; font-weight: 700; text-decoration: none;">Admin Team</a>
+                                            <span style="color: #9aa;"> | </span>
+                                            <a href="/our-health-team-allied-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">Allied Health</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

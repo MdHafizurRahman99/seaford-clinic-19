@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<record id="page_patient_links" model="website.page">
+    <field name="name">Patient Links</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">theme_medical_clinic_east.page_patient_links</field>
+    <field name="url">/patient-links</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="theme_medical_clinic_east.page_patient_links">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Patient Links</t>
+                <div id="wrap" class="oe_structure">
+
+                    <section class="pt80 pb80" data-snippet="s_text_block"
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                        <div class="container text-center">
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Patient Links</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Trusted health resources for patient education and support
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb80" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Government Health</h5>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9;">
+                                            <li><a href="https://www.healthdirect.gov.au/" target="_blank">Healthdirect</a></li>
+                                            <li><a href="https://www.servicesaustralia.gov.au/medicare" target="_blank">Medicare</a></li>
+                                            <li><a href="https://www.betterhealth.vic.gov.au/" target="_blank">Better Health Channel</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Mental Health</h5>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9;">
+                                            <li><a href="https://www.beyondblue.org.au/" target="_blank">Beyond Blue</a></li>
+                                            <li><a href="https://www.lifeline.org.au/" target="_blank">Lifeline</a></li>
+                                            <li><a href="https://headspace.org.au/" target="_blank">Headspace</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic Conditions</h5>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9;">
+                                            <li><a href="https://www.diabetesaustralia.com.au/" target="_blank">Diabetes Australia</a></li>
+                                            <li><a href="https://www.heartfoundation.org.au/" target="_blank">Heart Foundation</a></li>
+                                            <li><a href="https://www.canceraustralia.gov.au/" target="_blank">Cancer Australia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

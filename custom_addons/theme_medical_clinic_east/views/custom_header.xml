@@ -3,10 +3,10 @@
 
 <!-- Custom Two-Tier Medical Clinic Header -->
 <template id="custom_medical_header" inherit_id="website.layout" name="Medical Clinic Custom Header" active="True">
-    <xpath expr="//header[@id='top']" position="replace">
+    <xpath expr="//header" position="replace">
         <header id="medical-clinic-header" class="medical-clinic-header">
             <!-- Top Info Bar -->
-            <div class="header-top-bar">
+            <div class="header-top-bar o_top_bar">
                 <div class="container-fluid px-4">
                     <div class="row align-items-center">
                         <!-- Social Icons - Left -->
@@ -24,15 +24,15 @@
                         <!-- Quick Links & Contact - Right -->
                         <div class="col text-md-end">
                             <div class="top-quick-links">
-                                <a href="/peri-menopause-appointment" class="top-link d-none d-lg-inline-block">
+                                <a href="/appointments" class="top-link d-none d-lg-inline-block">
                                     <i class="fa fa-venus me-1"/>
                                     <span>Peri/Menopause Appointment</span>
                                 </a>
-                                <a href="/request-script" class="top-link d-none d-lg-inline-block">
+                                <a href="/patient-information" class="top-link d-none d-lg-inline-block">
                                     <i class="fa fa-flag me-1"/>
                                     <span>Request A Script</span>
                                 </a>
-                                <a href="/request-referral" class="top-link d-none d-lg-inline-block">
+                                <a href="/patient-information" class="top-link d-none d-lg-inline-block">
                                     <i class="fa fa-users me-1"/>
                                     <span>Request A Referral</span>
                                 </a>
@@ -80,26 +80,20 @@
                                     About Us
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-                                    <li><a class="dropdown-item" href="/philosophy">Philosophy</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="/patient-information">Patient Information</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown-submenu">
-                                                <a class="dropdown-item dropdown-toggle" href="/patient-forms">Patient Forms</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="/download-patient-form">Download Patient Form</a></li>
-                                                    <li><a class="dropdown-item" href="/pt-transfer-medical-request-form">PT Transfer of Medical Request Form</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    <li><a class="dropdown-item" href="/about-us">Philosophy</a></li>
+                                    <li><a class="dropdown-item" href="/patient-information">Patient Information</a></li>
                                     <li><a class="dropdown-item" href="/fees">Fees</a></li>
+                                    <li><a class="dropdown-item" href="/patient-links">Patient Links</a></li>
+                                    <li><a class="dropdown-item" href="/mymedicare-info">MyMedicare</a></li>
+                                    <li><a class="dropdown-item" href="/covid-19-information">COVID-19 Information</a></li>
+                                    <li><a class="dropdown-item" href="/privacy-policy">Privacy Policy</a></li>
+                                    <li><a class="dropdown-item" href="/terms-of-service">Terms of Service</a></li>
                                 </ul>
                             </li>
                             
                             <!-- Doctors (Flat) -->
                             <li class="nav-item">
-                                <a href="/our-team" class="nav-link">Doctors</a>
+                                <a href="/our-health-team-doctors" class="nav-link">Doctors</a>
                             </li>
                             
                             <!-- Services with Dropdown -->
@@ -116,29 +110,33 @@
                                     <li><a class="dropdown-item" href="/chronic-disease-management">Chronic Disease Management</a></li>
                                     <li><a class="dropdown-item" href="/preventative-health">Preventative Health</a></li>
                                     <li><a class="dropdown-item" href="/immunisations">Immunisations</a></li>
-                                    <li><a class="dropdown-item" href="/travel-medicine">Travel Medicine</a></li>
+                                    <li><a class="dropdown-item" href="/travel">Travel Medicine</a></li>
                                     <li><a class="dropdown-item" href="/corporate-flu-clinics">Corporate Flu Clinics</a></li>
                                     <li><a class="dropdown-item" href="/iron-infusions">Iron Infusions</a></li>
                                     <li><a class="dropdown-item" href="/shingles-vaccine">Shingles Vaccine</a></li>
                                     <li><a class="dropdown-item" href="/contraceptive-implant">Contraceptive Implant</a></li>
                                     <li><a class="dropdown-item" href="/menopause-perimenopause-care">Menopause/Perimenopause Care</a></li>
                                     <li><a class="dropdown-item" href="/fertility-support-family-planning">Fertility Support + Family Planning</a></li>
+                                    <li><a class="dropdown-item" href="/skin-landing-page">Skin Checks</a></li>
+                                    <li><a class="dropdown-item" href="/sexual-health">Sexual Health</a></li>
+                                    <li><a class="dropdown-item" href="/antenatal-care">Antenatal Care</a></li>
+                                    <li><a class="dropdown-item" href="/pregnancy-breastfeeding">Pregnancy &amp; Breastfeeding</a></li>
                                 </ul>
                             </li>
                             
                             <!-- Allied Health (Flat) -->
                             <li class="nav-item">
-                                <a href="/allied-health" class="nav-link">Allied Health</a>
+                                <a href="/our-health-team-allied-health" class="nav-link">Allied Health</a>
                             </li>
                             
                             <!-- News (Flat) -->
                             <li class="nav-item">
-                                <a href="/news" class="nav-link">News</a>
+                                <a href="/newsletter" class="nav-link">News</a>
                             </li>
                             
                             <!-- GP Vacancies (Flat) -->
                             <li class="nav-item">
-                                <a href="/gp-vacancies" class="nav-link">GP Vacancies</a>
+                                <a href="/career" class="nav-link">GP Vacancies</a>
                             </li>
                             
                             <!-- Contact (Flat) -->
@@ -148,7 +146,7 @@
                         </ul>
                         
                         <!-- Book Online Button -->
-                        <a href="/book-online" class="btn btn-book-online" data-name="Book Online Button">
+                        <a href="/appointments" class="btn btn-book-online" data-name="Book Online Button">
                             <i class="fa fa-calendar-check-o me-1"/>
                             <span>Book Online</span>
                         </a>
