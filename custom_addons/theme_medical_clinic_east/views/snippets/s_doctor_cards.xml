@@ -12,8 +12,8 @@
                     Meet Our Doctors
                 </h2>
                 <p class="text-muted mx-auto" style="max-width: 600px;">
-                    Experienced and dedicated healthcare professionals committed
-                    to providing the highest standard of care.
+                    Seaford East Medical Clinic combines continuity, preventive care,
+                    and practical communication across every stage of care.
                 </p>
             </div>
             <div class="row g-4">
@@ -26,10 +26,10 @@
                                      src="/web/image/theme_medical_clinic_east.img_doctor_placeholder"
                                      style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #3899ac;"/>
                             </div>
-                            <h3 class="h5-fs" style="font-weight: 700; color: #1a4a54;">Dr. Sarah Johnson</h3>
-                            <p class="s_doctor_specialty mb-2">General Practitioner</p>
-                            <p class="small text-muted">Specialising in family medicine with
-                            over 15 years of comprehensive healthcare experience.</p>
+                            <h3 class="h5-fs" style="font-weight: 700; color: #1a4a54;">Dr Amelia Hart</h3>
+                            <p class="s_doctor_specialty mb-2">Family Medicine</p>
+                            <p class="small text-muted">Continuity-focused GP care with
+                            strengths in family medicine and preventive health planning.</p>
                         </div>
                     </div>
                 </div>
@@ -42,10 +42,10 @@
                                      src="/web/image/theme_medical_clinic_east.img_doctor_placeholder"
                                      style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #3899ac;"/>
                             </div>
-                            <h3 class="h5-fs" style="font-weight: 700; color: #1a4a54;">Dr. Michael Chen</h3>
-                            <p class="s_doctor_specialty mb-2">Paediatrician</p>
-                            <p class="small text-muted">Dedicated to providing gentle, thorough
-                            care for children from newborns to adolescents.</p>
+                            <h3 class="h5-fs" style="font-weight: 700; color: #1a4a54;">Dr Priya Menon</h3>
+                            <p class="s_doctor_specialty mb-2">Women's Health GP</p>
+                            <p class="small text-muted">Supportive care for screening,
+                            family health planning, and proactive long consult reviews.</p>
                         </div>
                     </div>
                 </div>
@@ -58,10 +58,10 @@
                                      src="/web/image/theme_medical_clinic_east.img_doctor_placeholder"
                                      style="width: 130px; height: 130px; object-fit: cover; border: 4px solid #3899ac;"/>
                             </div>
-                            <h3 class="h5-fs" style="font-weight: 700; color: #1a4a54;">Dr. Emily Williams</h3>
-                            <p class="s_doctor_specialty mb-2">Dermatologist</p>
-                            <p class="small text-muted">Expert in skin health, offering
-                            diagnostic and cosmetic dermatology services.</p>
+                            <h3 class="h5-fs" style="font-weight: 700; color: #1a4a54;">Dr Cameron Wells</h3>
+                            <p class="s_doctor_specialty mb-2">Skin and Procedure Care</p>
+                            <p class="small text-muted">Focused skin checks, lesion review,
+                            and minor procedure planning within a GP setting.</p>
                         </div>
                     </div>
                 </div>

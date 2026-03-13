@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
 
 <record id="page_home" model="website.page">
@@ -14,9 +14,9 @@
 
                 <!-- ====== GLOBAL STYLES ====== -->
                 <style>
-                    /* ── Palette ────────────────────────────────────────── */
+                    /* â”€â”€ Palette â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     :root {
-                        --teal-900: #0d2e33;   /* darkest – hero, nav */
+                        --teal-900: #0d2e33;   /* darkest - hero, nav */
                         --teal-700: #3899ac;   /* primary brand teal  */
                         --teal-500: #5fb3c2;   /* hover / accent       */
                         --teal-200: #b2e8e7;   /* light accent         */
@@ -26,14 +26,14 @@
                         --white:    #ffffff;
                     }
 
-                    /* ── Typography ─────────────────────────────────────── */
+                    /* â”€â”€ Typography â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700');
                     @import url('https://fonts.googleapis.com/css2?family=Sora:wght@700;800');
 
                     body { font-family: 'DM Sans', sans-serif; color: #2e3e3e; }
                     h1, h2, h3, h4 { font-family: 'Sora', sans-serif; color: var(--ink); }
 
-                    /* ── Utility ─────────────────────────────────────────── */
+                    /* â”€â”€ Utility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .py-section { padding: 100px 0; }
                     .tag-label {
                         display: inline-block;
@@ -55,7 +55,7 @@
                     }
                     .rule-center { margin: 18px auto 28px; }
 
-                    /* ── Buttons ─────────────────────────────────────────── */
+                    /* â”€â”€ Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .btn-teal {
                         background: var(--teal-700);
                         color: var(--white);
@@ -108,7 +108,7 @@
                         color: var(--white);
                     }
 
-                    /* ── Hero ────────────────────────────────────────────── */
+                    /* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .hero-section {
                         position: relative;
                         min-height: 760px;
@@ -224,7 +224,7 @@
                         font-size: 0.85rem;
                     }
 
-                    /* ── Services ────────────────────────────────────────── */
+                    /* â”€â”€ Services â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .service-card {
                         background: var(--white);
                         border: 1px solid rgba(56,153,172,0.1);
@@ -266,7 +266,7 @@
                         margin: 0;
                     }
 
-                    /* ── Why Choose Us ───────────────────────────────────── */
+                    /* â”€â”€ Why Choose Us â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .feature-item {
                         display: flex;
                         align-items: flex-start;
@@ -338,7 +338,7 @@
                         margin: 0;
                     }
 
-                    /* ── Doctors ─────────────────────────────────────────── */
+                    /* â”€â”€ Doctors â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .doctor-card {
                         background: var(--white);
                         border: 1px solid rgba(56,153,172,0.1);
@@ -389,7 +389,7 @@
                         margin: 0;
                     }
 
-                    /* ── Testimonials ────────────────────────────────────── */
+                    /* â”€â”€ Testimonials â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .testi-card {
                         background: var(--white);
                         border: 1px solid rgba(56,153,172,0.08);
@@ -430,7 +430,7 @@
                         color: var(--slate);
                     }
 
-                    /* ── Hours ───────────────────────────────────────────── */
+                    /* â”€â”€ Hours â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .hours-row {
                         display: flex;
                         justify-content: space-between;
@@ -497,7 +497,7 @@
                     .emergency-banner p { font-size: 0.875rem; color: rgba(255,255,255,0.78); margin: 0; }
                     .emergency-banner strong { color: #4eecea; }
 
-                    /* ── CTA ─────────────────────────────────────────────── */
+                    /* â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .cta-section {
                         background: linear-gradient(135deg, var(--teal-900) 0%, var(--teal-700) 100%);
                         position: relative;
@@ -526,6 +526,132 @@
                         transform: translateY(-2px);
                         box-shadow: 0 8px 24px rgba(0,0,0,0.15);
                     }
+
+                    /* Home-specific polish */
+                    .hero-actions {
+                        display: flex;
+                        gap: 16px;
+                        flex-wrap: wrap;
+                    }
+                    .hero-trust-list {
+                        margin-top: 22px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                    }
+                    .hero-trust-item {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                        padding: 8px 13px;
+                        border-radius: 999px;
+                        background: rgba(255,255,255,0.1);
+                        border: 1px solid rgba(255,255,255,0.18);
+                        color: rgba(255,255,255,0.86);
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        line-height: 1;
+                    }
+                    .hero-trust-item i {
+                        color: #4eecea;
+                        font-size: 0.78rem;
+                    }
+                    .section-subcopy {
+                        color: var(--slate);
+                        font-size: 1.02rem;
+                        max-width: 680px;
+                        margin: 0 auto;
+                        line-height: 1.75;
+                    }
+                    .services-footer-cta {
+                        margin-top: 34px;
+                        text-align: center;
+                    }
+                    .services-footer-cta p {
+                        font-size: 0.92rem;
+                        color: var(--slate);
+                        margin: 0 0 12px;
+                    }
+                    .pathway-link {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 7px;
+                        margin-top: 14px;
+                        font-weight: 700;
+                        color: var(--teal-700);
+                        text-decoration: none;
+                    }
+                    .pathway-link:hover { color: var(--teal-500); }
+                    .standards-card {
+                        border: 1px solid rgba(56,153,172,0.18);
+                        border-radius: 14px;
+                        padding: 16px 18px;
+                        height: 100%;
+                        background: rgba(255,255,255,0.65);
+                    }
+                    .standards-card p:first-child {
+                        margin: 0;
+                        font-weight: 700;
+                        color: var(--ink);
+                    }
+                    .standards-card p:last-child {
+                        margin: 6px 0 0;
+                        color: var(--slate);
+                        font-size: 0.92rem;
+                    }
+                    .quick-links-panel {
+                        background: linear-gradient(145deg, var(--teal-900), #113e46);
+                        border-radius: 22px;
+                        padding: 28px;
+                        height: 100%;
+                        box-shadow: 0 18px 40px rgba(13,46,51,0.24);
+                    }
+                    .quick-link-item {
+                        display: block;
+                        color: rgba(255,255,255,0.9);
+                        text-decoration: none;
+                        padding: 12px 0;
+                        border-bottom: 1px solid rgba(255,255,255,0.12);
+                        transition: color 0.2s ease, transform 0.2s ease;
+                    }
+                    .quick-link-item:last-of-type { border-bottom: none; }
+                    .quick-link-item:hover {
+                        color: #4eecea;
+                        transform: translateX(2px);
+                    }
+                    .hours-card {
+                        background: var(--white);
+                        border: 1px solid rgba(56,153,172,0.1);
+                        border-radius: 20px;
+                        padding: 28px;
+                        max-width: 440px;
+                    }
+
+                    @media (max-width: 991px) {
+                        .py-section { padding: 84px 0; }
+                        .hero-section { min-height: 690px; }
+                        .hero-stats { gap: 20px; }
+                    }
+
+                    @media (max-width: 767px) {
+                        .py-section { padding: 72px 0; }
+                        .hero-section { min-height: 620px; }
+                        .hero-h1 { font-size: clamp(2rem, 9vw, 2.6rem); }
+                        .hero-lead { font-size: 1rem; margin-bottom: 28px; }
+                        .hero-actions .btn-teal,
+                        .hero-actions .btn-ghost,
+                        .cta-section .btn-white,
+                        .cta-section .btn-ghost {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .hero-stats {
+                            margin-top: 34px;
+                            padding-top: 24px;
+                            flex-wrap: wrap;
+                        }
+                        .clinic-img-wrap img { height: 360px; }
+                    }
                 </style>
 
                 <div id="wrap" class="oe_structure">
@@ -546,12 +672,17 @@
                                         <span class="accent">Rooted in</span> Excellence
                                     </h1>
                                     <p class="hero-lead">
-                                        Your trusted local medical centre — providing personalised, high-quality
+                                        Your trusted local medical centre - providing personalised, high-quality
                                         healthcare with warmth and professionalism for every member of your family.
                                     </p>
-                                    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                                        <a href="/contact" class="btn-teal">Book Appointment</a>
+                                    <div class="hero-actions">
+                                        <a href="/appointments" class="btn-teal">Book Appointment</a>
                                         <a href="/services" class="btn-ghost">Our Services</a>
+                                    </div>
+                                    <div class="hero-trust-list">
+                                        <span class="hero-trust-item"><i class="fa fa-check-circle"></i>Same-Day Appointments</span>
+                                        <span class="hero-trust-item"><i class="fa fa-shield"></i>Accredited GP Care</span>
+                                        <span class="hero-trust-item"><i class="fa fa-heartbeat"></i>Family-Centred Practice</span>
                                     </div>
                                     <div class="hero-stats">
                                         <div>
@@ -581,18 +712,18 @@
                                         </div>
                                         <div class="hero-card-item">
                                             <div class="hero-card-icon"><i class="fa fa-clock-o"></i></div>
-                                            Mon–Fri: 8:00 AM – 6:00 PM
+                                            Mon-Fri: 8:00 AM - 6:00 PM
                                         </div>
                                         <div class="hero-card-item">
                                             <div class="hero-card-icon"><i class="fa fa-phone"></i></div>
-                                            (03) 0000 0000
+                                            (03) 9875 6222
                                         </div>
                                         <div class="hero-card-item">
                                             <div class="hero-card-icon"><i class="fa fa-map-marker"></i></div>
                                             Seaford, VIC 3198
                                         </div>
-                                        <a href="/contact" class="btn-teal" style="margin-top: 24px; display: block; text-align: center;">
-                                            Book Now →
+                                        <a href="/appointments" class="btn-teal" style="margin-top: 24px; display: block; text-align: center;">
+                                            Book Now ->
                                         </a>
                                     </div>
                                 </div>
@@ -610,7 +741,7 @@
                                 </h2>
                                 <div class="rule rule-center"></div>
                                 <p style="color: var(--slate); font-size: 1.05rem; max-width: 640px; margin: 0 auto; line-height: 1.7;">
-                                    From preventive care to specialised treatments — delivered by experienced professionals in a caring, modern environment.
+                                    From preventive care to specialised treatments - delivered by experienced professionals in a caring, modern environment.
                                 </p>
                             </div>
                             <div class="row g-4">
@@ -671,6 +802,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="services-footer-cta">
+                                <p>Need a full breakdown of consultations and treatment areas?</p>
+                                <a href="/services" class="btn-teal-outline">Explore All Services</a>
+                            </div>
                         </div>
                     </section>
 
@@ -697,7 +832,7 @@
                                     </h2>
                                     <div class="rule"></div>
                                     <p style="color: var(--slate); font-size: 1rem; line-height: 1.8; margin-bottom: 36px;">
-                                        We combine clinical expertise with genuine compassion in modern facilities —
+                                        We combine clinical expertise with genuine compassion in modern facilities -
                                         focused on listening, clear communication and your long-term wellbeing.
                                     </p>
                                     <div class="feature-item">
@@ -711,14 +846,14 @@
                                         <div class="feature-num">02</div>
                                         <div>
                                             <p class="feature-title">Bulk Billing Available</p>
-                                            <p class="feature-desc">We believe quality healthcare should be accessible — bulk billing for eligible patients.</p>
+                                            <p class="feature-desc">We believe quality healthcare should be accessible - bulk billing for eligible patients.</p>
                                         </div>
                                     </div>
                                     <div class="feature-item">
                                         <div class="feature-num">03</div>
                                         <div>
                                             <p class="feature-title">Online Booking 24/7</p>
-                                            <p class="feature-desc">Book your appointment anytime, anywhere — it takes less than 60 seconds.</p>
+                                            <p class="feature-desc">Book your appointment anytime, anywhere - it takes less than 60 seconds.</p>
                                         </div>
                                     </div>
                                     <div class="feature-item">
@@ -744,49 +879,49 @@
                                 </h2>
                                 <div class="rule rule-center"></div>
                                 <p style="color: var(--slate); font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.7;">
-                                    Dedicated professionals committed to providing the highest standard of personalised care.
+                                    A Seaford East care team focused on continuity, clear communication, and practical support close to home.
                                 </p>
                             </div>
                             <div class="row g-4 justify-content-center">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="doctor-card">
                                         <div class="doctor-img-wrap">
-                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr. Sarah Johnson"/>
-                                            <span class="doctor-specialty-badge">General Practitioner</span>
+                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr Amelia Hart"/>
+                                            <span class="doctor-specialty-badge">Family Medicine</span>
                                         </div>
                                         <div class="doctor-body">
-                                            <p class="doctor-name">Dr. Sarah Johnson</p>
-                                            <p class="doctor-desc">Over 15 years of experience in family medicine and preventive care.</p>
+                                            <p class="doctor-name">Dr Amelia Hart</p>
+                                            <p class="doctor-desc">Continuity-focused GP care with strengths in family medicine, prevention, and long-term health planning.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="doctor-card">
                                         <div class="doctor-img-wrap">
-                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr. Michael Chen"/>
-                                            <span class="doctor-specialty-badge">Paediatric &amp; Family Health</span>
+                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr Priya Menon"/>
+                                            <span class="doctor-specialty-badge">Women's &amp; Preventive Health</span>
                                         </div>
                                         <div class="doctor-body">
-                                            <p class="doctor-name">Dr. Michael Chen</p>
-                                            <p class="doctor-desc">Special interest in child development and family-centred medicine.</p>
+                                            <p class="doctor-name">Dr Priya Menon</p>
+                                            <p class="doctor-desc">Supportive consultations for women's health, screening, and proactive family health reviews.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="doctor-card">
                                         <div class="doctor-img-wrap">
-                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr. Emily Williams"/>
-                                            <span class="doctor-specialty-badge">Skin Health Specialist</span>
+                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr Cameron Wells"/>
+                                            <span class="doctor-specialty-badge">Skin &amp; Procedure Care</span>
                                         </div>
                                         <div class="doctor-body">
-                                            <p class="doctor-name">Dr. Emily Williams</p>
-                                            <p class="doctor-desc">Expert in skin cancer detection and dermatological procedures.</p>
+                                            <p class="doctor-name">Dr Cameron Wells</p>
+                                            <p class="doctor-desc">Focused skin checks, lesion review, and minor procedure planning within general practice.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center" style="margin-top: 48px;">
-                                <a href="/our-team" class="btn-teal-outline">View Full Team</a>
+                                <a href="/our-team" class="btn-teal-outline">Explore Our Team</a>
                             </div>
                         </div>
                     </section>
@@ -800,6 +935,9 @@
                                     What Our Patients Say
                                 </h2>
                                 <div class="rule rule-center"></div>
+                                <p class="section-subcopy">
+                                    We focus on continuity, clear explanations, and respectful care at every stage of your health journey.
+                                </p>
                             </div>
                             <div class="row g-4">
                                 <div class="col-lg-4">
@@ -810,7 +948,7 @@
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                         </div>
-                                        <p class="testi-text">The team here truly cares. Thorough, kind and professional — best clinic I've experienced. I always feel listened to and never rushed.</p>
+                                        <p class="testi-text">The team here truly cares. Thorough, kind and professional - best clinic I've experienced. I always feel listened to and never rushed.</p>
                                         <p class="testi-author">Sarah M.</p>
                                         <span class="testi-role">Patient since 2019</span>
                                     </div>
@@ -823,7 +961,7 @@
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                         </div>
-                                        <p class="testi-text" style="color: rgba(255,255,255,0.8);">Warm atmosphere, friendly staff and easy online booking. Found my new regular clinic — couldn't be happier.</p>
+                                        <p class="testi-text" style="color: rgba(255,255,255,0.8);">Warm atmosphere, friendly staff and easy online booking. Found my new regular clinic - couldn't be happier.</p>
                                         <p class="testi-author" style="color: white;">James T.</p>
                                         <span class="testi-role" style="color: rgba(255,255,255,0.5);">Patient since 2021</span>
                                     </div>
@@ -836,7 +974,7 @@
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                         </div>
-                                        <p class="testi-text">Listened carefully and explained everything clearly. As a new patient I felt immediately at ease — fantastic experience from start to finish.</p>
+                                        <p class="testi-text">Listened carefully and explained everything clearly. As a new patient I felt immediately at ease - fantastic experience from start to finish.</p>
                                         <p class="testi-author">Rachel K.</p>
                                         <span class="testi-role">Patient since 2023</span>
                                     </div>
@@ -866,7 +1004,7 @@
                                         </div>
                                         <h4>1. Book the Right Appointment</h4>
                                         <p>Choose online booking for routine visits, or call reception for long consults and procedures.</p>
-                                        <a href="/appointments" style="font-weight: 700; color: var(--teal-700); text-decoration: none;">View appointment guide</a>
+                                        <a href="/appointments" class="pathway-link">View appointment guide <i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
@@ -876,7 +1014,7 @@
                                         </div>
                                         <h4>2. Prepare Before You Attend</h4>
                                         <p>Review patient information, required documents, and request pathways for scripts and referrals.</p>
-                                        <a href="/patient-information" style="font-weight: 700; color: var(--teal-700); text-decoration: none;">Open patient information</a>
+                                        <a href="/patient-information" class="pathway-link">Open patient information <i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
@@ -886,7 +1024,7 @@
                                         </div>
                                         <h4>3. Understand Fees and Rebates</h4>
                                         <p>See consultation fee ranges, rebate notes, and cancellation policy before booking.</p>
-                                        <a href="/fees" style="font-weight: 700; color: var(--teal-700); text-decoration: none;">See fees</a>
+                                        <a href="/fees" class="pathway-link">See fees <i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -908,39 +1046,39 @@
                                     </p>
                                     <div class="row g-3" style="margin-top: 18px;">
                                         <div class="col-md-6">
-                                            <div style="border: 1px solid rgba(56,153,172,0.18); border-radius: 14px; padding: 16px 18px;">
-                                                <p style="margin: 0; font-weight: 700; color: var(--ink);">Accredited Practice</p>
-                                                <p style="margin: 6px 0 0; color: var(--slate); font-size: 0.92rem;">Committed to recognised quality and safety standards.</p>
+                                            <div class="standards-card">
+                                                <p>Accredited Practice</p>
+                                                <p>Committed to recognised quality and safety standards.</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="border: 1px solid rgba(56,153,172,0.18); border-radius: 14px; padding: 16px 18px;">
-                                                <p style="margin: 0; font-weight: 700; color: var(--ink);">Continuity of Care</p>
-                                                <p style="margin: 6px 0 0; color: var(--slate); font-size: 0.92rem;">Long-term GP relationships with coordinated follow-up.</p>
+                                            <div class="standards-card">
+                                                <p>Continuity of Care</p>
+                                                <p>Long-term GP relationships with coordinated follow-up.</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="border: 1px solid rgba(56,153,172,0.18); border-radius: 14px; padding: 16px 18px;">
-                                                <p style="margin: 0; font-weight: 700; color: var(--ink);">Privacy and Data Care</p>
-                                                <p style="margin: 6px 0 0; color: var(--slate); font-size: 0.92rem;">Patient information is handled under strict privacy policies.</p>
+                                            <div class="standards-card">
+                                                <p>Privacy and Data Care</p>
+                                                <p>Patient information is handled under strict privacy policies.</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="border: 1px solid rgba(56,153,172,0.18); border-radius: 14px; padding: 16px 18px;">
-                                                <p style="margin: 0; font-weight: 700; color: var(--ink);">After-Hours Guidance</p>
-                                                <p style="margin: 6px 0 0; color: var(--slate); font-size: 0.92rem;">Clear urgent-care and after-hours pathways for patients.</p>
+                                            <div class="standards-card">
+                                                <p>After-Hours Guidance</p>
+                                                <p>Clear urgent-care and after-hours pathways for patients.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5">
-                                    <div style="background: linear-gradient(145deg, var(--teal-900), #113e46); border-radius: 22px; padding: 28px; height: 100%;">
+                                    <div class="quick-links-panel">
                                         <p style="margin: 0 0 14px; color: #4eecea; font-size: 0.76rem; letter-spacing: 2px; font-weight: 700; text-transform: uppercase;">Important Links</p>
                                         <h4 style="font-family: 'Sora', sans-serif; color: white; font-size: 1.25rem; font-weight: 700; margin-bottom: 18px;">Need Help Quickly?</h4>
-                                        <a href="/contact" style="display: block; color: rgba(255,255,255,0.9); text-decoration: none; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.12);">Contact and Location</a>
-                                        <a href="/patient-links" style="display: block; color: rgba(255,255,255,0.9); text-decoration: none; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.12);">Patient Links and Resources</a>
-                                        <a href="/mymedicare-info" style="display: block; color: rgba(255,255,255,0.9); text-decoration: none; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.12);">MyMedicare Information</a>
-                                        <a href="/privacy-policy" style="display: block; color: rgba(255,255,255,0.9); text-decoration: none; padding: 12px 0;">Privacy Policy</a>
+                                        <a href="/contact" class="quick-link-item">Contact and Location</a>
+                                        <a href="/patient-links" class="quick-link-item">Patient Links and Resources</a>
+                                        <a href="/mymedicare-info" class="quick-link-item">MyMedicare Information</a>
+                                        <a href="/privacy-policy" class="quick-link-item">Privacy Policy</a>
                                         <a href="/appointments" class="btn-white" style="margin-top: 20px; width: 100%; text-align: center;">Book Appointment</a>
                                     </div>
                                 </div>
@@ -958,30 +1096,30 @@
                                         Opening Hours
                                     </h2>
                                     <div class="rule"></div>
-                                    <div style="background: var(--white); border: 1px solid rgba(56,153,172,0.1); border-radius: 20px; padding: 28px; max-width: 440px;">
+                                    <div class="hours-card">
                                         <div class="hours-row">
                                             <span class="hours-day">Monday</span>
-                                            <span class="hours-time">8:00 AM – 6:00 PM</span>
+                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
                                         </div>
                                         <div class="hours-row">
                                             <span class="hours-day">Tuesday</span>
-                                            <span class="hours-time">8:00 AM – 6:00 PM</span>
+                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
                                         </div>
                                         <div class="hours-row">
                                             <span class="hours-day">Wednesday</span>
-                                            <span class="hours-time">8:00 AM – 6:00 PM</span>
+                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
                                         </div>
                                         <div class="hours-row">
                                             <span class="hours-day">Thursday</span>
-                                            <span class="hours-time">8:00 AM – 6:00 PM</span>
+                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
                                         </div>
                                         <div class="hours-row">
                                             <span class="hours-day">Friday</span>
-                                            <span class="hours-time">8:00 AM – 6:00 PM</span>
+                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
                                         </div>
                                         <div class="hours-row">
                                             <span class="hours-day">Saturday</span>
-                                            <span class="hours-time">9:00 AM – 1:00 PM</span>
+                                            <span class="hours-time">9:00 AM - 1:00 PM</span>
                                         </div>
                                         <div class="hours-row">
                                             <span class="hours-day">Sunday</span>
@@ -1004,14 +1142,14 @@
                                         </div>
                                         <div class="contact-line">
                                             <div class="contact-line-icon"><i class="fa fa-phone"></i></div>
-                                            (03) 0000 0000
+                                            (03) 9875 6222
                                         </div>
                                         <div class="contact-line">
                                             <div class="contact-line-icon"><i class="fa fa-envelope"></i></div>
-                                            info@seafordeastclinic.com.au
+                                            reception@seafordmedical.com.au
                                         </div>
                                     </div>
-                                    <a href="/contact" class="btn-teal" style="display: block; text-align: center; margin-top: 4px;">
+                                    <a href="/appointments" class="btn-teal" style="display: block; text-align: center; margin-top: 4px;">
                                         Book an Appointment
                                     </a>
                                 </div>
@@ -1031,8 +1169,8 @@
                                 Our friendly team is here to help. Book online in seconds or give us a call today.
                             </p>
                             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                                <a href="/contact" class="btn-white">Book Online Now</a>
-                                <a href="tel:+61300000000" class="btn-ghost">
+                                <a href="/appointments" class="btn-white">Book Online Now</a>
+                                <a href="tel:+61398756222" class="btn-ghost">
                                     <i class="fa fa-phone me-2"></i>Call Us
                                 </a>
                             </div>
@@ -1046,3 +1184,5 @@
 </record>
 
 </odoo>
+
+

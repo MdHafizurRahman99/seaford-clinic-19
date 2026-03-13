@@ -29,7 +29,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Nurse Jane</h5>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Practice Nursing Team</h5>
                                         <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Practice Nurse</p>
                                         <p style="color: #555; line-height: 1.7;">Immunisations, wound care, care plan support, and preventive health checks.</p>
                                     </div>
@@ -37,16 +37,16 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Nurse Olivia</h5>
-                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Treatment Room Nurse</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Treatment Room Nursing Team</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Treatment Room Support</p>
                                         <p style="color: #555; line-height: 1.7;">Assists with procedures, recalls, chronic disease follow-up, and patient education.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Nurse Priya</h5>
-                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Chronic Care Nurse</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic Care Nursing Support</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Care Plan Support</p>
                                         <p style="color: #555; line-height: 1.7;">Supports diabetes, cardiovascular risk, and preventive care review pathways.</p>
                                     </div>
                                 </div>

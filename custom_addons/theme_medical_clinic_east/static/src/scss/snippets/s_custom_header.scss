@@ -1,399 +1,341 @@
 // ============================================================
 // Custom Medical Clinic Header Styles
-// Two-tier navbar for Seaford East Medical Clinic
 // ============================================================
 
-// Color Variables - Using Seaford East Medical Clinic colors
-$header-top-bg: #1a4a54;      // Dark Teal
-$header-top-text: #ffffff;
-$header-main-bg: #ffffff;
-$header-main-text: #1a4a54;
-$header-main-hover: #3899ac;   // Primary Teal
-$book-btn-bg: #3899ac;         // Primary Teal
-$book-btn-hover: #2d7a8c;      // Darker Teal
+$header-top-a: #103d45;
+$header-top-b: #1a5966;
+$header-main-text: #14363d;
+$header-main-hover: #2f90a2;
+$header-border: rgba(20, 54, 61, 0.1);
+$book-btn-a: #3899ac;
+$book-btn-b: #2e7f90;
+$book-btn-hover-a: #2d8697;
+$book-btn-hover-b: #256f7d;
 
-// ============================================================
-// Top Info Bar
-// ============================================================
-.header-top-bar {
-    background-color: $header-top-bg;
-    color: $header-top-text;
-    padding: 0.5rem 0;
-    font-size: 0.85rem;
-    border-radius: 0 0 15px 15px;
-    
-    @media (max-width: 991px) {
-        border-radius: 0;
-        padding: 0.4rem 0;
-        font-size: 0.8rem;
-    }
-    
-    .social-icons {
-        display: flex;
-        gap: 12px;
-        
-        a {
-            color: $header-top-text;
-            font-size: 1rem;
-            transition: opacity 0.3s ease;
-            
-            &:hover {
-                opacity: 0.8;
-            }
-        }
-    }
-    
-    .top-quick-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 0.5rem 1rem;
-        
-        @media (max-width: 991px) {
-            justify-content: flex-start;
-            gap: 0.3rem 0.8rem;
-        }
-    }
-    
-    .top-link, 
-    .top-contact {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        color: $header-top-text;
-        text-decoration: none;
-        transition: opacity 0.3s ease;
-        white-space: nowrap;
-        
-        i {
-            font-size: 0.9rem;
-            color: #5fb3c2; // Light teal accent
-        }
-        
-        &:hover {
-            opacity: 0.85;
-            color: $header-top-text;
-        }
-    }
-    
-    .top-link {
-        @media (max-width: 1199px) {
-            span {
-                display: none;
-            }
-            i {
-                font-size: 1rem;
-            }
-        }
-    }
-    
-    .top-contact {
-        font-weight: 500;
-        
-        @media (max-width: 767px) {
-            font-size: 0.75rem;
-        }
-    }
-}
+.medical-clinic-header {
+    position: relative;
+    z-index: 1030;
 
-// ============================================================
-// Main Navigation Bar
-// ============================================================
-.header-main-bar {
-    background-color: $header-main-bg;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    padding: 0.75rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
-    .navbar-brand {
-        text-decoration: none;
-        
-        .logo-icon {
-            width: 45px;
-            height: 45px;
-            background: linear-gradient(135deg, #3899ac, #5fb3c2);
-            border-radius: 8px;
+    .header-top-bar {
+        background: linear-gradient(135deg, $header-top-a 0%, $header-top-b 100%);
+        color: #ffffff;
+        padding: 0.45rem 0;
+        font-size: 0.82rem;
+        border-radius: 0 0 14px 14px;
+        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+
+        .social-icons {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            
-            @media (max-width: 576px) {
-                width: 38px;
-                height: 38px;
-                font-size: 1.2rem;
-            }
-        }
-        
-        .brand-text {
-            .brand-name {
-                font-size: 1.1rem;
-                font-weight: 700;
-                color: $header-main-text;
-                letter-spacing: 0.5px;
-                
-                @media (max-width: 576px) {
-                    font-size: 0.9rem;
+            gap: 0.55rem;
+
+            a {
+                color: rgba(255, 255, 255, 0.92);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.08);
+                transition: transform 0.2s ease, background-color 0.25s ease;
+
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2);
+                    transform: translateY(-1px);
                 }
             }
         }
-        
-        &:hover {
-            opacity: 0.9;
+
+        .top-quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0.45rem 1rem;
+        }
+
+        .top-link,
+        .top-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            white-space: nowrap;
+            font-weight: 500;
+            transition: color 0.2s ease;
+
+            i {
+                color: #8be0ec;
+                font-size: 0.86rem;
+            }
+
+            &:hover {
+                color: #ffffff;
+            }
         }
     }
-    
-    // Main Menu Items
-    .navbar-nav {
-        .nav-item {
-            margin: 0 0.15rem;
-            
+
+    .header-main-bar {
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid $header-border;
+        box-shadow: 0 8px 24px rgba(16, 48, 55, 0.08);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 0.72rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1030;
+
+        .navbar-brand {
+            text-decoration: none;
+
+            .logo-icon {
+                width: 46px;
+                height: 46px;
+                border-radius: 12px;
+                background: linear-gradient(145deg, #3899ac 0%, #5fb3c2 100%);
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;
+                box-shadow: 0 8px 20px rgba(56, 153, 172, 0.26);
+                transition: transform 0.2s ease;
+            }
+
+            .brand-name {
+                color: $header-main-text;
+                font-size: 1.02rem;
+                font-weight: 800;
+                letter-spacing: 0.3px;
+                line-height: 1.15;
+            }
+
+            &:hover .logo-icon {
+                transform: translateY(-1px);
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                margin: 0 0.08rem;
+            }
+
             .nav-link {
                 color: $header-main-text;
-                font-weight: 600;
-                font-size: 0.95rem;
-                padding: 0.5rem 0.8rem !important;
+                font-weight: 650;
+                font-size: 0.94rem;
+                padding: 0.52rem 0.78rem !important;
                 position: relative;
-                transition: color 0.3s ease;
-                
-                @media (max-width: 991px) {
-                    padding: 0.75rem 1rem !important;
-                }
-                
-                &::after {
-                    display: inline-block;
-                    margin-left: 0.3em;
-                    vertical-align: 0.1em;
+                transition: color 0.2s ease;
+
+                &::before {
                     content: "";
-                    border-top: 0.3em solid;
-                    border-right: 0.3em solid transparent;
-                    border-left: 0.3em solid transparent;
+                    position: absolute;
+                    left: 0.78rem;
+                    right: 0.78rem;
+                    bottom: 0.25rem;
+                    height: 2px;
+                    background: linear-gradient(90deg, #3899ac, #5fb3c2);
+                    border-radius: 999px;
+                    transform: scaleX(0);
+                    transform-origin: center;
+                    transition: transform 0.2s ease;
                 }
-                
+
                 &:hover,
                 &.show,
                 &.active {
                     color: $header-main-hover;
                 }
-                
-                // Remove arrow for items without dropdown
-                &.dropdown-toggle::after {
-                    display: inline-block;
+
+                &:hover::before,
+                &.show::before,
+                &.active::before {
+                    transform: scaleX(1);
                 }
             }
-            
-            // Items without dropdown
-            &:not(.dropdown) .nav-link::after {
-                display: none;
+
+            .dropdown-toggle::after {
+                margin-left: 0.35em;
+                vertical-align: 0.14em;
             }
-        }
-        
-        // Dropdown menu
-        .dropdown-menu {
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 0.5rem 0;
-            margin-top: 0.5rem;
-            
-            .dropdown-item {
-                color: $header-main-text;
-                font-weight: 500;
-                padding: 0.5rem 1rem;
-                transition: all 0.2s ease;
-                
-                &:hover, &:focus {
-                    background-color: rgba(56, 153, 172, 0.1);
-                    color: $header-main-hover;
-                }
-                
-                &.active, &:active {
-                    background-color: $header-main-hover;
-                    color: white;
-                }
-                
-                // Add arrow to items with submenu
-                &.dropdown-toggle::after {
-                    display: inline-block;
-                    margin-left: auto;
-                    vertical-align: 0.1em;
-                    content: "";
-                    border-top: 0.3em solid;
-                    border-right: 0.3em solid transparent;
-                    border-left: 0.3em solid transparent;
-                    transform: rotate(-90deg);
-                }
-            }
-        }
-    }
-    
-    // Navbar Toggler
-    .navbar-toggler {
-        border: none;
-        padding: 0.5rem;
-        
-        &:focus {
-            box-shadow: none;
-        }
-        
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 74, 84, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-    }
-    
-    // Book Online Button
-    .btn-book-online {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        background-color: $book-btn-bg;
-        color: white;
-        font-weight: 600;
-        padding: 0.6rem 1.25rem;
-        border-radius: 25px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        font-size: 0.95rem;
-        white-space: nowrap;
-        
-        i {
-            font-size: 1rem;
-        }
-        
-        &:hover {
-            background-color: $book-btn-hover;
-            color: white;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(56, 153, 172, 0.3);
-        }
-        
-        @media (max-width: 991px) {
-            margin-top: 0.5rem;
-            width: 100%;
-            justify-content: center;
-        }
-    }
-    
-    // Mobile Menu Styles
-    @media (max-width: 991px) {
-        .collapse {
-            margin-top: 1rem;
-            max-height: 80vh;
-            overflow-y: auto;
-            
-            &.show {
-                display: block;
-            }
-        }
-        
-        .navbar-nav {
-            margin-bottom: 0.5rem;
-            
-            .nav-link {
-                &::after {
-                    display: inline-block !important;
-                }
-            }
-            
+
             .dropdown-menu {
-                box-shadow: none;
-                border: none;
-                background-color: rgba(0, 0, 0, 0.03);
-                padding-left: 1rem;
-            }
-            
-            .nav-item {
-                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-                
-                &:last-child {
-                    border-bottom: none;
+                border: 1px solid rgba(20, 54, 61, 0.08);
+                border-radius: 12px;
+                padding: 0.5rem;
+                margin-top: 0.55rem;
+                box-shadow: 0 18px 34px rgba(15, 43, 49, 0.14);
+                min-width: 250px;
+
+                .dropdown-item {
+                    color: $header-main-text;
+                    font-weight: 550;
+                    border-radius: 8px;
+                    padding: 0.45rem 0.7rem;
+                    transition: background-color 0.2s ease, color 0.2s ease;
+
+                    &:hover,
+                    &:focus {
+                        color: $header-main-hover;
+                        background: rgba(56, 153, 172, 0.1);
+                    }
+
+                    &.active,
+                    &:active {
+                        background: $header-main-hover;
+                        color: #ffffff;
+                    }
                 }
+            }
+        }
+
+        .navbar-toggler {
+            border: 1px solid rgba(20, 54, 61, 0.2);
+            border-radius: 10px;
+            padding: 0.42rem 0.55rem;
+
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(56, 153, 172, 0.2);
+            }
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2820, 54, 61, 0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+        }
+
+        .btn-book-online {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.45rem;
+            background: linear-gradient(135deg, $book-btn-a 0%, $book-btn-b 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 0.62rem 1.18rem;
+            border-radius: 999px;
+            box-shadow: 0 10px 22px rgba(56, 153, 172, 0.22);
+            transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.25s ease;
+            white-space: nowrap;
+
+            &:hover {
+                color: #ffffff;
+                background: linear-gradient(135deg, $book-btn-hover-a 0%, $book-btn-hover-b 100%);
+                transform: translateY(-1px);
+                box-shadow: 0 14px 28px rgba(45, 122, 140, 0.3);
             }
         }
     }
 }
 
-// ============================================================
-// Nested Dropdown Submenus (Bootstrap 5 doesn't support natively)
-// ============================================================
 .dropdown-submenu {
     position: relative;
-    
+
     .dropdown-menu {
-        position: absolute;
         top: 0;
         left: 100%;
-        margin-top: -5px;
-        margin-left: 0;
-        
-        @media (max-width: 991px) {
-            position: relative;
-            left: 0;
-            margin-left: 1rem;
-        }
+        margin-top: -0.35rem;
+        margin-left: 0.3rem;
     }
-    
+
     &:hover > .dropdown-menu {
         display: block;
     }
-    
-    // Dropdown toggle arrow for submenu items
-    > .dropdown-toggle::after {
-        transform: rotate(-90deg) !important;
+}
+
+@media (min-width: 992px) {
+    .medical-clinic-header .header-main-bar .dropdown:hover > .dropdown-menu {
+        display: block;
     }
 }
 
-// ============================================================
-// Sticky Header Effect
-// ============================================================
-.medical-clinic-header {
-    .header-main-bar {
-        &.sticky {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+@media (max-width: 1199px) {
+    .medical-clinic-header .header-top-bar {
+        .top-link span {
+            display: none;
         }
     }
 }
 
-// ============================================================
-// Mobile Adjustments
-// ============================================================
-@media (max-width: 576px) {
-    .header-top-bar {
-        .top-quick-links {
-            .top-link, 
-            .top-contact {
-                font-size: 0.75rem;
-                padding: 0.2rem 0;
-                
-                i {
-                    font-size: 0.85rem;
+@media (max-width: 991px) {
+    .medical-clinic-header {
+        .header-top-bar {
+            border-radius: 0;
+            padding: 0.4rem 0;
+
+            .top-quick-links {
+                justify-content: flex-start;
+                gap: 0.4rem 0.75rem;
+            }
+
+            .top-contact span {
+                font-size: 0.76rem;
+            }
+        }
+
+        .header-main-bar {
+            padding: 0.58rem 0;
+
+            .collapse {
+                margin-top: 0.85rem;
+                padding: 0.65rem;
+                border: 1px solid rgba(20, 54, 61, 0.08);
+                border-radius: 12px;
+                background: #ffffff;
+                max-height: 78vh;
+                overflow-y: auto;
+            }
+
+            .navbar-nav {
+                .nav-item {
+                    margin: 0;
+                    border-bottom: 1px solid rgba(20, 54, 61, 0.06);
+                }
+
+                .nav-item:last-child {
+                    border-bottom: none;
+                }
+
+                .nav-link {
+                    padding: 0.7rem 0.2rem !important;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .dropdown-menu {
+                    border: none;
+                    box-shadow: none;
+                    padding: 0.2rem 0 0.4rem 0.75rem;
+                    margin-top: 0.1rem;
+                    min-width: auto;
                 }
             }
+
+            .btn-book-online {
+                margin-top: 0.7rem;
+                width: 100%;
+            }
         }
     }
-    
-    .header-main-bar {
-        padding: 0.5rem 0;
-        
-        .navbar-brand {
-            .logo-icon {
-                width: 35px;
-                height: 35px;
-                font-size: 1.1rem;
-            }
-            
-            .brand-text .brand-name {
-                font-size: 0.85rem;
-            }
+}
+
+@media (max-width: 576px) {
+    .medical-clinic-header .header-main-bar .navbar-brand {
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            font-size: 1.12rem;
+            border-radius: 10px;
         }
-        
-        .btn-book-online {
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
+
+        .brand-name {
+            font-size: 0.8rem;
         }
     }
 }

@@ -18,7 +18,7 @@
                              style="background: linear-gradient(135deg, rgba(26,60,52,0.92) 0%, rgba(56,153,172,0.75) 100%); background-size: cover; background-position: center;">
                         <div class="container text-center">
                             <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Meet Our Team</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">Experienced healthcare professionals dedicated to your wellbeing</p>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">Seaford East clinicians and support staff working together to deliver practical, local care.</p>
                         </div>
                     </section>
 
@@ -35,9 +35,9 @@
                                     <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <div class="card-body py-5">
                                             <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
-                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Sarah Johnson</h4>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Amelia Hart</h4>
                                             <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACGP</p>
-                                            <p class="text-muted">Dr. Johnson has over 15 years of experience in family medicine. She has special interests in women's health, chronic disease management and preventive care.</p>
+                                            <p class="text-muted">Continuity-focused GP care with special interests in family medicine, prevention, women's health, and chronic disease review.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -45,9 +45,9 @@
                                     <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <div class="card-body py-5">
                                             <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
-                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Michael Chen</h4>
-                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACP</p>
-                                            <p class="text-muted">Dr. Chen specialises in paediatric medicine and has a passion for children's developmental health. He provides gentle, thorough care for patients of all ages.</p>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Nathan Reid</h4>
+                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACGP</p>
+                                            <p class="text-muted">Children's health, immunisation support, and family medicine consults delivered with a calm, practical approach.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -55,9 +55,9 @@
                                     <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <div class="card-body py-5">
                                             <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
-                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Emily Williams</h4>
-                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FACD</p>
-                                            <p class="text-muted">Dr. Williams is a skilled dermatologist with expertise in skin cancer detection, cosmetic dermatology and management of chronic skin conditions.</p>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Cameron Wells</h4>
+                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACGP</p>
+                                            <p class="text-muted">Focused skin checks, lesion review, and minor procedure planning within a general practice setting.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -77,22 +77,22 @@
                                 <div class="col-lg-3 col-md-6">
                                     <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Nurse Jane</h5>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Practice Nursing Team</h5>
                                         <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Practice Nurse</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Staff" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Reception Team</h5>
-                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Front Desk</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Reception and Bookings</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Front Desk Coordination</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Manager" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Practice Manager</h5>
-                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Administration</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Operations and Administration</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Clinic Support</p>
                                     </div>
                                 </div>
                             </div>

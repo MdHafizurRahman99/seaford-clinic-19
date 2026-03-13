@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
 
 <record id="page_doctors" model="website.page">
@@ -14,51 +14,123 @@
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
-                             style="background: linear-gradient(135deg, rgba(26,60,52,0.92) 0%, rgba(56,153,172,0.75) 100%);">
+                             style="background: linear-gradient(135deg, rgba(18,54,60,0.95) 0%, rgba(56,153,172,0.8) 100%);">
                         <div class="container text-center">
                             <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Our Doctors</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">
-                                Experienced GPs providing comprehensive, patient-centred care
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.08rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                Seaford East Medical Clinic offers continuity-focused GP care across family medicine, prevention, skin health, and long consultations.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt48 pb32" data-snippet="s_text_block">
+                        <div class="container text-center">
+                            <p style="margin: 0; color: #5f7377; font-size: 0.92rem;">Common interests:</p>
+                            <div class="d-flex justify-content-center flex-wrap" style="gap: 10px; margin-top: 12px;">
+                                <span style="padding: 7px 12px; border-radius: 999px; background: #e9f6f8; color: #1a4a54; font-size: 0.82rem; font-weight: 700;">Family Medicine</span>
+                                <span style="padding: 7px 12px; border-radius: 999px; background: #e9f6f8; color: #1a4a54; font-size: 0.82rem; font-weight: 700;">Women's Health</span>
+                                <span style="padding: 7px 12px; border-radius: 999px; background: #e9f6f8; color: #1a4a54; font-size: 0.82rem; font-weight: 700;">Chronic Disease</span>
+                                <span style="padding: 7px 12px; border-radius: 999px; background: #e9f6f8; color: #1a4a54; font-size: 0.82rem; font-weight: 700;">Skin Health</span>
+                                <span style="padding: 7px 12px; border-radius: 999px; background: #e9f6f8; color: #1a4a54; font-size: 0.82rem; font-weight: 700;">Preventive Care</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt32 pb80" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4 justify-content-center">
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <div class="card-body py-5">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <div class="card-body py-5 px-4" id="card-doctor-sarah">
                                             <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
-                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Sarah Johnson</h4>
-                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACGP</p>
-                                            <p style="margin: 0 0 8px; font-size: 0.8rem; font-weight: 700; color: #1a4a54;">Accepting New Patients</p>
-                                            <p class="text-muted">Women's health, chronic disease management, and preventive care.</p>
-                                            <a href="/appointments" class="btn btn-sm mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Amelia Hart</h4>
+                                            <p style="color: #3899ac; font-weight: 700; font-size: 0.86rem;">MBBS, FRACGP</p>
+                                            <span style="display: inline-block; background: #eaf9f2; color: #217f59; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;">Accepting New Patients</span>
+                                            <p class="text-muted mt-3" style="line-height: 1.7;">Family medicine, women's health, preventive care, and long-term chronic disease planning.</p>
+                                            <div class="d-flex justify-content-center flex-wrap" style="gap: 8px;">
+                                                <a href="/appointments" class="btn btn-sm" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                                <a href="/our-health-team-doctors/dr-amelia-hart" class="btn btn-sm" style="background: #fff; color: #3899ac; border: 2px solid #3899ac; font-weight: 700; border-radius: 10px 0 10px 0;">Read Profile</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <div class="card-body py-5">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <div class="card-body py-5 px-4" id="card-doctor-michael">
                                             <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
-                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Michael Chen</h4>
-                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FRACP</p>
-                                            <p style="margin: 0 0 8px; font-size: 0.8rem; font-weight: 700; color: #1a4a54;">Accepting New Patients</p>
-                                            <p class="text-muted">Family medicine, child development, and long-term preventive health.</p>
-                                            <a href="/appointments" class="btn btn-sm mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Nathan Reid</h4>
+                                            <p style="color: #3899ac; font-weight: 700; font-size: 0.86rem;">MBBS, FRACGP</p>
+                                            <span style="display: inline-block; background: #eaf9f2; color: #217f59; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;">Appointments Available</span>
+                                            <p class="text-muted mt-3" style="line-height: 1.7;">Children's health, immunisation support, family medicine, and preventive checks.</p>
+                                            <div class="d-flex justify-content-center flex-wrap" style="gap: 8px;">
+                                                <a href="/appointments" class="btn btn-sm" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                                <a href="/our-health-team-doctors/dr-nathan-reid" class="btn btn-sm" style="background: #fff; color: #3899ac; border: 2px solid #3899ac; font-weight: 700; border-radius: 10px 0 10px 0;">Read Profile</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <div class="card-body py-5">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <div class="card-body py-5 px-4" id="card-doctor-emily">
                                             <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
-                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr. Emily Williams</h4>
-                                            <p style="color: #3899ac; font-weight: 600; font-size: 0.875rem;">MBBS, FACD</p>
-                                            <p style="margin: 0 0 8px; font-size: 0.8rem; font-weight: 700; color: #1a4a54;">Skin Check Sessions Available</p>
-                                            <p class="text-muted">Skin checks, minor procedures, and management of chronic skin conditions.</p>
-                                            <a href="/appointments" class="btn btn-sm mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Cameron Wells</h4>
+                                            <p style="color: #3899ac; font-weight: 700; font-size: 0.86rem;">MBBS, FRACGP</p>
+                                            <span style="display: inline-block; background: #fdf6e5; color: #8a6513; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;">Skin Clinic Sessions</span>
+                                            <p class="text-muted mt-3" style="line-height: 1.7;">Skin checks, lesion review, and minor procedure planning in a GP setting.</p>
+                                            <div class="d-flex justify-content-center flex-wrap" style="gap: 8px;">
+                                                <a href="/appointments" class="btn btn-sm" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                                <a href="/our-health-team-doctors/dr-cameron-wells" class="btn btn-sm" style="background: #fff; color: #3899ac; border: 2px solid #3899ac; font-weight: 700; border-radius: 10px 0 10px 0;">Read Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <div class="card-body py-5 px-4" id="card-doctor-laura">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Priya Menon</h4>
+                                            <p style="color: #3899ac; font-weight: 700; font-size: 0.86rem;">MBBS, FRACGP</p>
+                                            <span style="display: inline-block; background: #eaf9f2; color: #217f59; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;">Accepting New Patients</span>
+                                            <p class="text-muted mt-3" style="line-height: 1.7;">Women's health, screening, contraception advice, and proactive long consult reviews.</p>
+                                            <div class="d-flex justify-content-center flex-wrap" style="gap: 8px;">
+                                                <a href="/appointments" class="btn btn-sm" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                                <a href="/our-health-team-doctors/dr-priya-menon" class="btn btn-sm" style="background: #fff; color: #3899ac; border: 2px solid #3899ac; font-weight: 700; border-radius: 10px 0 10px 0;">Read Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <div class="card-body py-5 px-4" id="card-doctor-james">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Ethan Cole</h4>
+                                            <p style="color: #3899ac; font-weight: 700; font-size: 0.86rem;">MBBS, FRACGP</p>
+                                            <span style="display: inline-block; background: #eef5ff; color: #2c5ea8; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;">Limited New Patients</span>
+                                            <p class="text-muted mt-3" style="line-height: 1.7;">Men's health, cardiovascular risk reduction, and diabetes care planning.</p>
+                                            <div class="d-flex justify-content-center flex-wrap" style="gap: 8px;">
+                                                <a href="/appointments" class="btn btn-sm" style="background: #3899ac; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Book</a>
+                                                <a href="/our-health-team-doctors/dr-ethan-cole" class="btn btn-sm" style="background: #fff; color: #3899ac; border: 2px solid #3899ac; font-weight: 700; border-radius: 10px 0 10px 0;">Read Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100 text-center border-0 bg-white" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <div class="card-body py-5 px-4" id="card-doctor-anna">
+                                            <img alt="Doctor" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #3899ac;"/>
+                                            <h4 style="font-weight: 700; color: #1a4a54;">Dr Grace Nguyen</h4>
+                                            <p style="color: #3899ac; font-weight: 700; font-size: 0.86rem;">MBBS, FRACGP</p>
+                                            <span style="display: inline-block; background: #fdf6e5; color: #8a6513; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;">Returning Soon</span>
+                                            <p class="text-muted mt-3" style="line-height: 1.7;">Family medicine, adolescent support, and prevention-first reviews for ongoing care.</p>
+                                            <div class="d-flex justify-content-center flex-wrap" style="gap: 8px;">
+                                                <a href="tel:0398756222" class="btn btn-sm" style="background: #1a4a54; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Call</a>
+                                                <a href="/our-health-team-doctors/dr-grace-nguyen" class="btn btn-sm" style="background: #fff; color: #3899ac; border: 2px solid #3899ac; font-weight: 700; border-radius: 10px 0 10px 0;">Read Profile</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -66,35 +138,61 @@
                         </div>
                     </section>
 
-                    <section class="pt48 pb64" data-snippet="s_text_block" style="background: #f7fbfc;">
+                    <section class="pt48 pb80" data-snippet="s_text_block" style="background: #f7fbfc;">
                         <div class="container">
+                            <div class="text-center" style="margin-bottom: 34px;">
+                                <h3 style="font-weight: 800; color: #1a4a54; margin-bottom: 0;">Doctor Profiles</h3>
+                            </div>
                             <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">How to Choose a GP</h4>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
-                                            <li>Select by clinical interest that matches your concern.</li>
-                                            <li>Book a long consult for complex or multiple issues.</li>
-                                            <li>For continuity, try follow-ups with the same doctor.</li>
-                                            <li>Call reception if you need urgent or same-day triage.</li>
-                                        </ul>
+                                <div class="col-lg-6" id="doctor-sarah">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="border: 1px solid rgba(56,153,172,0.14); box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Dr Amelia Hart</h5>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">Interests: family medicine, women's health, preventive screening, and long-term continuity of care.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Related Team Pages</h4>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            Meet our broader care team including nursing and administration for complete clinic support.
-                                        </p>
-                                        <p style="margin: 0;">
-                                            <a href="/nurses" style="color: #3899ac; font-weight: 700; text-decoration: none;">Nurses</a>
-                                            <span style="color: #9aa;"> | </span>
-                                            <a href="/admin-team" style="color: #3899ac; font-weight: 700; text-decoration: none;">Admin Team</a>
-                                            <span style="color: #9aa;"> | </span>
-                                            <a href="/our-health-team-allied-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">Allied Health</a>
-                                        </p>
+                                <div class="col-lg-6" id="doctor-michael">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="border: 1px solid rgba(56,153,172,0.14); box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Dr Nathan Reid</h5>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">Interests: children's health, immunisation support, family medicine, and preventive health reviews.</p>
                                     </div>
                                 </div>
+                                <div class="col-lg-6" id="doctor-emily">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="border: 1px solid rgba(56,153,172,0.14); box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Dr Cameron Wells</h5>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">Interests: skin checks, lesion assessment, minor procedures, and preventive skin health management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" id="doctor-laura">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="border: 1px solid rgba(56,153,172,0.14); box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Dr Priya Menon</h5>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">Interests: cervical screening, contraception advice, preventive care, and long consultation planning.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" id="doctor-james">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="border: 1px solid rgba(56,153,172,0.14); box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Dr Ethan Cole</h5>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">Interests: men's health, cardiometabolic risk reduction, blood pressure care, and diabetes management plans.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" id="doctor-anna">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="border: 1px solid rgba(56,153,172,0.14); box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Dr Grace Nguyen</h5>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">Interests: family medicine, adolescent support, preventive health planning, and continuity reviews.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
+                        <div class="container text-center">
+                            <h2 style="color: white; font-weight: 800;">Need Help Choosing a Doctor?</h2>
+                            <p style="color: rgba(255,255,255,0.85); max-width: 640px; margin: 0 auto 1.5rem; line-height: 1.8;">
+                                Reception can help match your concern to the right GP and appointment length.
+                            </p>
+                            <div class="d-flex justify-content-center flex-wrap" style="gap: 12px;">
+                                <a href="/appointments" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.4rem;">Book Appointment</a>
+                                <a href="tel:0398756222" class="btn btn-lg" style="background: transparent; color: white; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.4rem;">Call Reception</a>
                             </div>
                         </div>
                     </section>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="page_team_hub" name="Seaford East Team Hub">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Our Team</t>
+            <div id="wrap" class="oe_structure">
+
+                <section class="pt80 pb80" style="background: linear-gradient(135deg, rgba(18,54,60,0.96) 0%, rgba(56,153,172,0.84) 100%);">
+                    <div class="container text-center">
+                        <h1 style="color: #fff; font-weight: 800; font-size: 2.7rem; margin-bottom: 14px;">
+                            Seaford East Medical Clinic Team
+                        </h1>
+                        <p style="color: rgba(255,255,255,0.88); max-width: 820px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8;">
+                            A local care team built around continuity, practical communication, and coordinated support across every stage of life.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="pt64 pb48">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6">
+                                <a href="/our-health-team-doctors" class="text-decoration-none">
+                                    <article class="h-100 bg-white p-4" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <p style="color: #3899ac; font-size: 0.8rem; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;">Doctors</p>
+                                        <h2 style="font-size: 1.35rem; color: #1a4a54; font-weight: 800;">General Practice Team</h2>
+                                        <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
+                                            Continuity-focused GPs supporting family medicine, prevention, chronic disease, women's health, and skin checks.
+                                        </p>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <a href="/our-health-team-allied-health" class="text-decoration-none">
+                                    <article class="h-100 bg-white p-4" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <p style="color: #3899ac; font-size: 0.8rem; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;">Allied Health</p>
+                                        <h2 style="font-size: 1.35rem; color: #1a4a54; font-weight: 800;">Integrated Support Services</h2>
+                                        <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
+                                            Psychology, nutrition, and diabetes education delivered alongside your treatment plan and GP reviews.
+                                        </p>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <a href="/nurses" class="text-decoration-none">
+                                    <article class="h-100 bg-white p-4" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <p style="color: #3899ac; font-size: 0.8rem; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;">Nursing</p>
+                                        <h2 style="font-size: 1.35rem; color: #1a4a54; font-weight: 800;">Clinical Nursing Support</h2>
+                                        <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
+                                            Vaccinations, wound care, chronic disease checks, and treatment room support delivered with clear follow-up.
+                                        </p>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <a href="/admin-team" class="text-decoration-none">
+                                    <article class="h-100 bg-white p-4" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                        <p style="color: #3899ac; font-size: 0.8rem; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;">Administration</p>
+                                        <h2 style="font-size: 1.35rem; color: #1a4a54; font-weight: 800;">Reception and Coordination</h2>
+                                        <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
+                                            Friendly front-desk support for appointments, reminders, forms, and helping patients navigate the clinic confidently.
+                                        </p>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pt48 pb48" style="background: #f7fbfc;">
+                    <div class="container">
+                        <div class="row g-4 align-items-start">
+                            <div class="col-lg-7">
+                                <div class="bg-white p-4 p-lg-5" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                    <p style="color: #3899ac; font-size: 0.82rem; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;">How We Work</p>
+                                    <h2 style="color: #1a4a54; font-weight: 800; margin-bottom: 14px;">Local care with practical coordination</h2>
+                                    <p style="color: #555; line-height: 1.8;">
+                                        The Seaford East model is built around access, continuity, and good handover between clinicians. Patients can book for routine reviews, longer planning consults, preventive health checks, and allied health follow-up through one connected practice team.
+                                    </p>
+                                    <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                        Every section on this page is written specifically for Seaford East Medical Clinic, with a local, practical tone that matches the rest of the website.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="bg-white p-4 p-lg-5" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                    <h3 style="color: #1a4a54; font-weight: 800;">Need help choosing?</h3>
+                                    <p style="color: #555; line-height: 1.8;">
+                                        Reception can help guide you to the right GP, nurse-led service, or allied health booking based on the reason for your visit.
+                                    </p>
+                                    <div class="d-flex flex-wrap" style="gap: 10px;">
+                                        <a href="/appointments" class="btn" style="background: #3899ac; color: #fff; border-radius: 12px 0 12px 0; font-weight: 700;">Book Appointment</a>
+                                        <a href="tel:0398756222" class="btn" style="background: transparent; color: #1a4a54; border: 2px solid rgba(26,74,84,0.3); border-radius: 12px 0 12px 0; font-weight: 700;">Call Reception</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pt48 pb80">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-7">
+                                <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 8px; margin-bottom: 18px;">
+                                    <h3 style="color: #1a4a54; font-weight: 800; margin: 0;">Doctor Preview</h3>
+                                    <a href="/our-health-team-doctors" style="color: #3899ac; font-weight: 700; text-decoration: none;">View all doctors</a>
+                                </div>
+                                <div class="row g-4">
+                                    <t t-foreach="doctor_preview" t-as="profile">
+                                        <div class="col-md-6">
+                                            <article class="h-100 bg-white p-4" style="border-radius: 14px; border: 1px solid rgba(56,153,172,0.14);">
+                                                <h4 style="font-size: 1.1rem; color: #1a4a54; font-weight: 800; margin-bottom: 4px;">
+                                                    <a t-att-href="profile.website_url" style="color: inherit; text-decoration: none;">
+                                                        <t t-esc="profile.name"/>
+                                                    </a>
+                                                </h4>
+                                                <p style="font-size: 0.86rem; color: #3899ac; font-weight: 700;">
+                                                    <t t-esc="profile.qualification"/>
+                                                </p>
+                                                <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
+                                                    <t t-esc="profile.summary"/>
+                                                </p>
+                                            </article>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 8px; margin-bottom: 18px;">
+                                    <h3 style="color: #1a4a54; font-weight: 800; margin: 0;">Allied Health Preview</h3>
+                                    <a href="/our-health-team-allied-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">View all allied health</a>
+                                </div>
+                                <div class="row g-4">
+                                    <t t-foreach="allied_preview" t-as="profile">
+                                        <div class="col-12">
+                                            <article class="h-100 bg-white p-4" style="border-radius: 14px; border: 1px solid rgba(56,153,172,0.14);">
+                                                <h4 style="font-size: 1.1rem; color: #1a4a54; font-weight: 800; margin-bottom: 4px;">
+                                                    <a t-att-href="profile.website_url" style="color: inherit; text-decoration: none;">
+                                                        <t t-esc="profile.name"/>
+                                                    </a>
+                                                </h4>
+                                                <p style="font-size: 0.86rem; color: #3899ac; font-weight: 700;">
+                                                    <t t-esc="profile.qualification"/>
+                                                </p>
+                                                <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
+                                                    <t t-esc="profile.summary"/>
+                                                </p>
+                                            </article>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <template id="page_profile_listing" name="Medical Team Listing Page">
+        <t t-call="website.layout">
+            <t t-set="additional_title" t-value="page_title"/>
+            <div id="wrap" class="oe_structure">
+
+                <section class="pt80 pb80" style="background: linear-gradient(135deg, rgba(18,54,60,0.96) 0%, rgba(56,153,172,0.84) 100%);">
+                    <div class="container text-center">
+                        <h1 style="color: #fff; font-weight: 800; font-size: 2.7rem; margin-bottom: 14px;">
+                            <t t-esc="page_title"/>
+                        </h1>
+                        <p style="color: rgba(255,255,255,0.88); max-width: 820px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8;">
+                            <t t-esc="page_subtitle"/>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="pt48 pb80">
+                    <div class="container">
+                        <t t-if="not profiles">
+                            <div class="text-center bg-white p-5 rounded-4" style="box-shadow: 0 6px 24px rgba(20,65,75,0.08);">
+                                <h3 style="color: #1a4a54; font-weight: 800;">Profiles will appear here soon</h3>
+                                <p style="color: #5b6a6e; margin-bottom: 0;">No published profiles are available yet for this section.</p>
+                            </div>
+                        </t>
+                        <t t-else="">
+                            <div class="row g-4">
+                                <t t-foreach="profiles" t-as="profile">
+                                    <div class="col-xl-4 col-md-6">
+                                        <article class="h-100 bg-white p-4" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(20,65,75,0.08);">
+                                            <div class="text-center mb-3">
+                                                <t t-if="profile.image_1920">
+                                                    <img
+                                                        t-att-src="'/web/image/medical.clinic.profile/%s/image_1920' % profile.id"
+                                                        t-att-alt="profile.name"
+                                                        style="width: 150px; height: 150px; object-fit: cover; border-radius: 999px; border: 4px solid #3899ac;"/>
+                                                </t>
+                                                <t t-else="">
+                                                    <img
+                                                        src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png"
+                                                        t-att-alt="profile.name"
+                                                        style="width: 150px; height: 150px; object-fit: cover; border-radius: 999px; border: 4px solid #3899ac;"/>
+                                                </t>
+                                            </div>
+                                            <h3 style="font-size: 1.2rem; font-weight: 800; color: #1a4a54; margin-bottom: 3px;">
+                                                <a t-att-href="profile.website_url" style="color: inherit; text-decoration: none;">
+                                                    <t t-esc="profile.name"/>
+                                                </a>
+                                            </h3>
+                                            <p style="color: #3899ac; font-size: 0.88rem; font-weight: 700; margin-bottom: 10px;">
+                                                <t t-esc="profile.qualification or 'General Practice'"/>
+                                            </p>
+                                            <span
+                                                t-att-style="'display:inline-block;padding:5px 11px;border-radius:999px;font-size:0.75rem;font-weight:700;background:%s;color:%s;' % (profile.availability_bg_color, profile.availability_text_color)">
+                                                <t t-esc="profile.availability_label"/>
+                                            </span>
+                                            <t t-if="profile.availability_note">
+                                                <p style="font-size: 0.82rem; color: #5f7377; margin-top: 9px; margin-bottom: 0;">
+                                                    <t t-esc="profile.availability_note"/>
+                                                </p>
+                                            </t>
+                                            <p style="color: #555; line-height: 1.75; margin-top: 12px; margin-bottom: 16px;">
+                                                <t t-esc="profile.summary or 'Comprehensive, patient-focused care with strong continuity support.'"/>
+                                            </p>
+                                            <div class="d-flex flex-wrap" style="gap: 9px;">
+                                                <a
+                                                    t-att-href="profile.website_url"
+                                                    class="btn btn-sm"
+                                                    style="background: #fff; color: #3899ac; border: 2px solid #3899ac; border-radius: 11px 0 11px 0; font-weight: 700;">
+                                                    Read Profile
+                                                </a>
+                                                <t t-if="profile.booking_available">
+                                                    <a
+                                                        t-att-href="profile.booking_url"
+                                                        class="btn btn-sm"
+                                                        style="background: #3899ac; color: #fff; border-radius: 11px 0 11px 0; font-weight: 700;"
+                                                        target="_blank"
+                                                        rel="noopener">
+                                                        Book Now
+                                                    </a>
+                                                </t>
+                                                <t t-else="">
+                                                    <a
+                                                        t-att-href="'tel:%s' % (profile.phone_fallback or '0398756222')"
+                                                        class="btn btn-sm"
+                                                        style="background: #1a4a54; color: #fff; border-radius: 11px 0 11px 0; font-weight: 700;">
+                                                        Call Reception
+                                                    </a>
+                                                </t>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </t>
+                            </div>
+                        </t>
+                    </div>
+                </section>
+
+                <section class="pt64 pb64" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
+                    <div class="container text-center">
+                        <h2 style="color: #fff; font-weight: 800;">Need Help Choosing the Right Clinician?</h2>
+                        <p style="color: rgba(255,255,255,0.86); max-width: 700px; margin: 0 auto 1.4rem; line-height: 1.8;">
+                            Our reception team can help match your concern with the right doctor or allied health practitioner.
+                        </p>
+                        <div class="d-flex justify-content-center flex-wrap" style="gap: 10px;">
+                            <a href="/appointments" class="btn btn-lg" style="background: #fff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700;">
+                                Book Appointment
+                            </a>
+                            <a href="tel:0398756222" class="btn btn-lg" style="background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700;">
+                                Call Reception
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <template id="page_profile_detail" name="Medical Team Profile Detail Page">
+        <t t-call="website.layout">
+            <t t-set="additional_title" t-value="profile.name"/>
+            <div id="wrap" class="oe_structure">
+
+                <section class="pt48 pb48" style="background: #f7fbfc; border-bottom: 1px solid rgba(56,153,172,0.15);">
+                    <div class="container">
+                        <div style="font-size: 0.86rem; color: #5d6f73;">
+                            <a href="/" style="color: #3899ac; text-decoration: none;">Home</a>
+                            <span> / </span>
+                            <a t-att-href="'/our-health-team-doctors' if profile_type == 'doctor' else '/our-health-team-allied-health'" style="color: #3899ac; text-decoration: none;">
+                                <t t-esc="'Doctors' if profile_type == 'doctor' else 'Allied Health'"/>
+                            </a>
+                            <span> / </span>
+                            <span t-esc="profile.name"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pt64 pb64">
+                    <div class="container">
+                        <div class="row g-4 align-items-start">
+                            <div class="col-lg-4">
+                                <div class="bg-white p-4 text-center" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                    <t t-if="profile.image_1920">
+                                        <img
+                                            t-att-src="'/web/image/medical.clinic.profile/%s/image_1920' % profile.id"
+                                            t-att-alt="profile.name"
+                                            style="width: 190px; height: 190px; object-fit: cover; border-radius: 999px; border: 5px solid #3899ac;"/>
+                                    </t>
+                                    <t t-else="">
+                                        <img
+                                            src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png"
+                                            t-att-alt="profile.name"
+                                            style="width: 190px; height: 190px; object-fit: cover; border-radius: 999px; border: 5px solid #3899ac;"/>
+                                    </t>
+                                    <h1 style="font-size: 1.7rem; color: #1a4a54; font-weight: 800; margin-top: 16px; margin-bottom: 5px;">
+                                        <t t-esc="profile.name"/>
+                                    </h1>
+                                    <p style="font-size: 0.93rem; color: #3899ac; font-weight: 700; margin-bottom: 8px;">
+                                        <t t-esc="profile.qualification or 'General Practice'"/>
+                                    </p>
+                                    <span
+                                        t-att-style="'display:inline-block;padding:6px 12px;border-radius:999px;font-size:0.75rem;font-weight:700;background:%s;color:%s;' % (profile.availability_bg_color, profile.availability_text_color)">
+                                        <t t-esc="profile.availability_label"/>
+                                    </span>
+                                    <t t-if="profile.availability_note">
+                                        <p style="margin-top: 10px; font-size: 0.85rem; color: #5f7377;">
+                                            <t t-esc="profile.availability_note"/>
+                                        </p>
+                                    </t>
+                                    <div class="d-grid gap-2 mt-3">
+                                        <t t-if="profile.booking_available">
+                                            <a
+                                                t-att-href="profile.booking_url"
+                                                class="btn"
+                                                style="background: #3899ac; color: #fff; border-radius: 12px 0 12px 0; font-weight: 700;"
+                                                target="_blank"
+                                                rel="noopener">
+                                                Book Now
+                                            </a>
+                                        </t>
+                                        <t t-else="">
+                                            <a
+                                                t-att-href="'tel:%s' % (profile.phone_fallback or '0398756222')"
+                                                class="btn"
+                                                style="background: #1a4a54; color: #fff; border-radius: 12px 0 12px 0; font-weight: 700;">
+                                                Call Reception
+                                            </a>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="bg-white p-4 p-lg-5" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
+                                    <h2 style="color: #1a4a54; font-weight: 800; margin-bottom: 10px;">About</h2>
+                                    <t t-if="profile.bio">
+                                        <div t-field="profile.bio"/>
+                                    </t>
+                                    <t t-else="">
+                                        <p style="color: #555; line-height: 1.85; margin-bottom: 0;">
+                                            <t t-esc="profile.summary or 'Comprehensive and continuity-focused care for patients and families.'"/>
+                                        </p>
+                                    </t>
+
+                                    <t t-set="interest_items" t-value="[item.strip() for item in (profile.special_interests or '').split(',') if item.strip()]"/>
+                                    <t t-if="interest_items">
+                                        <h3 style="color: #1a4a54; font-weight: 800; margin-top: 26px; margin-bottom: 10px;">Special Interests</h3>
+                                        <ul style="padding-left: 1.2rem; color: #555; line-height: 1.8; margin-bottom: 0;">
+                                            <li t-foreach="interest_items" t-as="interest">
+                                                <t t-esc="interest"/>
+                                            </li>
+                                        </ul>
+                                    </t>
+
+                                    <t t-if="profile.languages">
+                                        <h3 style="color: #1a4a54; font-weight: 800; margin-top: 26px; margin-bottom: 8px;">Languages</h3>
+                                        <p style="color: #555; margin-bottom: 0;">
+                                            <t t-esc="profile.languages"/>
+                                        </p>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pt48 pb80" style="background: #f7fbfc;">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 8px; margin-bottom: 18px;">
+                            <h3 style="color: #1a4a54; font-weight: 800; margin: 0;">Related Profiles</h3>
+                            <a
+                                t-att-href="'/our-health-team-doctors' if profile_type == 'doctor' else '/our-health-team-allied-health'"
+                                style="font-weight: 700; color: #3899ac; text-decoration: none;">
+                                View All
+                            </a>
+                        </div>
+                        <div class="row g-4">
+                            <t t-foreach="related_profiles" t-as="related">
+                                <div class="col-lg-4 col-md-6">
+                                    <article class="h-100 bg-white p-4" style="border-radius: 14px; border: 1px solid rgba(56,153,172,0.13);">
+                                        <h4 style="font-size: 1.1rem; color: #1a4a54; font-weight: 800; margin-bottom: 3px;">
+                                            <a t-att-href="related.website_url" style="color: inherit; text-decoration: none;">
+                                                <t t-esc="related.name"/>
+                                            </a>
+                                        </h4>
+                                        <p style="font-size: 0.86rem; color: #3899ac; font-weight: 700;">
+                                            <t t-esc="related.qualification or 'General Practice'"/>
+                                        </p>
+                                        <p style="color: #555; line-height: 1.7; margin-bottom: 0;">
+                                            <t t-esc="related.summary or 'Patient-focused continuity care.'"/>
+                                        </p>
+                                    </article>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+</odoo>

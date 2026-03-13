@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
 <template id="s_appointment_cta" name="Book Appointment CTA">
@@ -17,7 +17,7 @@
                     <a href="/appointments" class="btn btn-lg me-2 mb-2">
                         Book Online
                     </a>
-                    <a href="tel:+61300000000" class="btn btn-outline-light btn-lg mb-2"
+                    <a href="tel:+61398756222" class="btn btn-outline-light btn-lg mb-2"
                        style="border-radius: 14px 0px 14px 0px;">
                         <i class="fa fa-phone me-2"/>Call Us
                     </a>
@@ -28,3 +28,4 @@
 </template>
 
 </odoo>
+

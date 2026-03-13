@@ -5,7 +5,8 @@ class ThemeMedicalClinicEast(models.AbstractModel):
     _inherit = 'theme.utils'
 
     def _theme_medical_clinic_east_post_copy(self, mod):
-        self.enable_view('theme_medical_clinic_east.header_top_bar')
+        # The custom header view already provides the top utility bar.
+        self.disable_view('theme_medical_clinic_east.header_top_bar')
         self.enable_view('theme_medical_clinic_east.custom_footer')
         self.enable_view('website.option_footer_scrolltop')
 

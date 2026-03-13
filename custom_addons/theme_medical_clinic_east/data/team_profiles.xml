@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Doctor profiles -->
+    <record id="profile_doctor_dr_amir_abbass" model="medical.clinic.profile">
+        <field name="name">Dr Amelia Hart</field>
+        <field name="slug">dr-amelia-hart</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Continuity-focused GP care for families, women, and patients managing long-term health goals.</field>
+        <field name="special_interests">Family medicine,Women's health,Preventive health,Chronic disease care</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="profile_doctor_dr_alvin_ng" model="medical.clinic.profile">
+        <field name="name">Dr Lucas Bennett</field>
+        <field name="slug">dr-lucas-bennett</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">General practice support with a practical approach to health checks, chronic care, and regular review planning.</field>
+        <field name="special_interests">Preventive screening,Chronic disease management,Men's health,General practice</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">20</field>
+    </record>
+
+    <record id="profile_doctor_dr_naomi_kilov" model="medical.clinic.profile">
+        <field name="name">Dr Priya Menon</field>
+        <field name="slug">dr-priya-menon</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Supportive women's and family health consults with careful communication and long-term follow-up planning.</field>
+        <field name="special_interests">Women's health,Cervical screening,Contraception,Preventive care</field>
+        <field name="availability_status">limited</field>
+        <field name="availability_note">New patient appointments are currently limited.</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">30</field>
+    </record>
+
+    <record id="profile_doctor_dr_xinyu_liang" model="medical.clinic.profile">
+        <field name="name">Dr Ethan Cole</field>
+        <field name="slug">dr-ethan-cole</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">A calm, prevention-first GP focused on men's health, cardiometabolic risk, and longer planning appointments.</field>
+        <field name="special_interests">Men's health,Cardiovascular risk,Diabetes care,Health checks</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">40</field>
+    </record>
+
+    <record id="profile_doctor_dr_laura_robson" model="medical.clinic.profile">
+        <field name="name">Dr Grace Nguyen</field>
+        <field name="slug">dr-grace-nguyen</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Family medicine with strong continuity, patient education, and clear follow-up for routine and complex care.</field>
+        <field name="special_interests">Family medicine,Preventive health,Chronic disease,Women's health</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="languages">English, Vietnamese</field>
+        <field name="sequence">50</field>
+    </record>
+
+    <record id="profile_doctor_dr_greg_scher" model="medical.clinic.profile">
+        <field name="name">Dr Samuel Brooks</field>
+        <field name="slug">dr-samuel-brooks</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Structured GP care for blood pressure, diabetes, weight, and chronic condition review appointments.</field>
+        <field name="special_interests">Chronic disease care,Weight management,Preventive medicine,Men's health</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">60</field>
+    </record>
+
+    <record id="profile_doctor_dr_gemma_miller" model="medical.clinic.profile">
+        <field name="name">Dr Zara Patel</field>
+        <field name="slug">dr-zara-patel</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">General practice consultations with a strong focus on prevention, everyday health concerns, and continuity.</field>
+        <field name="special_interests">General practice,Women's health,Preventive screening,Family medicine</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">70</field>
+    </record>
+
+    <record id="profile_doctor_dr_srishti_dhir" model="medical.clinic.profile">
+        <field name="name">Dr Daniel Kim</field>
+        <field name="slug">dr-daniel-kim</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Patient-centred care for routine reviews, long consultations, and practical ongoing health planning.</field>
+        <field name="special_interests">General practice,Long consultations,Preventive health,Family medicine</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="languages">English, Korean</field>
+        <field name="sequence">80</field>
+    </record>
+
+    <record id="profile_doctor_dr_elizabeth_zammit" model="medical.clinic.profile">
+        <field name="name">Dr Olivia Marsh</field>
+        <field name="slug">dr-olivia-marsh</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Women's and adolescent health support with thoughtful care planning and preventive screening follow-up.</field>
+        <field name="special_interests">Women's health,Adolescent health,Sexual health,Preventive care</field>
+        <field name="availability_status">limited</field>
+        <field name="availability_note">Best suited to pre-booked long consults and follow-up reviews.</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">90</field>
+    </record>
+
+    <record id="profile_doctor_dr_claire_langford" model="medical.clinic.profile">
+        <field name="name">Dr Nathan Reid</field>
+        <field name="slug">dr-nathan-reid</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Family and children's health reviews with a gentle, practical approach to ongoing care.</field>
+        <field name="special_interests">Children's health,Family medicine,Immunisations,Preventive health</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">100</field>
+    </record>
+
+    <record id="profile_doctor_dr_trisha_nicholls" model="medical.clinic.profile">
+        <field name="name">Dr Chloe Mercer</field>
+        <field name="slug">dr-chloe-mercer</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Holistic GP care across sexual health, women health, and routine preventive appointments.</field>
+        <field name="special_interests">Sexual health,Women's health,Contraception,Preventive screening</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">110</field>
+    </record>
+
+    <record id="profile_doctor_dr_cora_mayer" model="medical.clinic.profile">
+        <field name="name">Dr Sophie Tran</field>
+        <field name="slug">dr-sophie-tran</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Travel preparation, vaccination planning, and general practice review support for patients before and after trips.</field>
+        <field name="special_interests">Travel medicine,Immunisations,Preventive health,General practice</field>
+        <field name="availability_status">on_leave</field>
+        <field name="availability_note">Travel clinics are temporarily covered by the wider Seaford East GP team.</field>
+        <field name="sequence">120</field>
+    </record>
+
+    <record id="profile_doctor_dr_roxana_courtney" model="medical.clinic.profile">
+        <field name="name">Dr Cameron Wells</field>
+        <field name="slug">dr-cameron-wells</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Focused skin checks, lesion review, and minor procedure planning within general practice care.</field>
+        <field name="special_interests">Skin checks,Minor procedures,Preventive health,General practice</field>
+        <field name="availability_status">limited</field>
+        <field name="availability_note">Skin clinic appointments are limited and may require a longer booking.</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">130</field>
+    </record>
+
+    <record id="profile_doctor_dr_kachig_malyan" model="medical.clinic.profile">
+        <field name="name">Dr Neha Kapoor</field>
+        <field name="slug">dr-neha-kapoor</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Supportive chronic disease reviews with a clear focus on practical day-to-day health management.</field>
+        <field name="special_interests">Chronic disease management,Health checks,Women's health,Preventive care</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">140</field>
+    </record>
+
+    <record id="profile_doctor_dr_jason_rajakulendran" model="medical.clinic.profile">
+        <field name="name">Dr Aiden Clarke</field>
+        <field name="slug">dr-aiden-clarke</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">GP support for older patients, care planning, medication review, and practical coordination.</field>
+        <field name="special_interests">Aged care,Care planning,Chronic disease management,Medication review</field>
+        <field name="availability_status">limited</field>
+        <field name="availability_note">Appointments are mainly reserved for planned review and care coordination consults.</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">150</field>
+    </record>
+
+    <record id="profile_doctor_dr_peter_cheng" model="medical.clinic.profile">
+        <field name="name">Dr Hannah Lewis</field>
+        <field name="slug">dr-hannah-lewis</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Pregnancy, postnatal, and family health consults supported by structured follow-up and continuity.</field>
+        <field name="special_interests">Pregnancy care,Postnatal care,Women's health,Family medicine</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">160</field>
+    </record>
+
+    <record id="profile_doctor_gp_registrar" model="medical.clinic.profile">
+        <field name="name">GP Registrar Clinic</field>
+        <field name="slug">gp-registrar-clinic</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS</field>
+        <field name="summary">Supervised registrar appointments for routine reviews, follow-up care, and longer continuity-based consults.</field>
+        <field name="special_interests">General practice training,Preventive care,Continuity appointments,Follow-up reviews</field>
+        <field name="availability_status">limited</field>
+        <field name="availability_note">Registrar appointments are released in selected sessions only.</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">170</field>
+    </record>
+
+    <!-- Allied health profiles -->
+    <record id="profile_allied_dr_alicia_papas" model="medical.clinic.profile">
+        <field name="name">Olivia Brooks</field>
+        <field name="slug">olivia-brooks</field>
+        <field name="profile_type">allied</field>
+        <field name="qualification">Senior Clinical Psychologist</field>
+        <field name="summary">Psychology support for stress, anxiety, adjustment, and everyday emotional wellbeing.</field>
+        <field name="special_interests">Anxiety,Stress management,Adjustment support,Emotional wellbeing</field>
+        <field name="availability_status">limited</field>
+        <field name="availability_note">Psychology sessions are limited and often booked in advance.</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">210</field>
+    </record>
+
+    <record id="profile_allied_gabriela_hercman" model="medical.clinic.profile">
+        <field name="name">Maya Dsouza</field>
+        <field name="slug">maya-dsouza</field>
+        <field name="profile_type">allied</field>
+        <field name="qualification">Clinical Psychologist</field>
+        <field name="summary">Evidence-based psychological care delivered alongside GP review and care planning.</field>
+        <field name="special_interests">Mental health,Coping skills,Behaviour support,Wellbeing planning</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">220</field>
+    </record>
+
+    <record id="profile_allied_sarah_smith" model="medical.clinic.profile">
+        <field name="name">Lauren Field</field>
+        <field name="slug">lauren-field</field>
+        <field name="profile_type">allied</field>
+        <field name="qualification">Dietitian</field>
+        <field name="summary">Practical nutrition support for gut health, weight goals, and chronic condition care plans.</field>
+        <field name="special_interests">Nutrition,Gut health,Weight management,Chronic disease support</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">230</field>
+    </record>
+
+    <record id="profile_allied_teresa_amoore" model="medical.clinic.profile">
+        <field name="name">Rebecca Ng</field>
+        <field name="slug">rebecca-ng</field>
+        <field name="profile_type">allied</field>
+        <field name="qualification">Diabetes Educator</field>
+        <field name="summary">Structured education and self-management guidance for patients living with diabetes.</field>
+        <field name="special_interests">Diabetes education,Self-management support,Lifestyle planning,Chronic disease care</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">240</field>
+    </record>
+
+</odoo>

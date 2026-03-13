@@ -1,82 +1,137 @@
 // ============================================================
-// Seaford East Medical Clinic - Main Theme Styles
+// Seaford East Medical Clinic - Global Theme Layer
 // ============================================================
 
-// ---- Signature asymmetric button corners ----
+:root {
+    --clinic-primary: #3899ac;
+    --clinic-primary-strong: #2d7a8c;
+    --clinic-primary-soft: #dff1f5;
+    --clinic-ink: #16353b;
+    --clinic-muted: #5b7278;
+    --clinic-surface: #ffffff;
+    --clinic-surface-alt: #f7fbfc;
+    --clinic-border: rgba(22, 53, 59, 0.12);
+    --clinic-shadow-sm: 0 8px 24px rgba(18, 58, 66, 0.08);
+    --clinic-shadow-md: 0 16px 40px rgba(18, 58, 66, 0.12);
+    --clinic-radius-sm: 12px;
+    --clinic-radius-md: 18px;
+    --clinic-radius-pill: 999px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--clinic-ink);
+    background:
+        radial-gradient(circle at 10% -10%, rgba(95, 179, 194, 0.14) 0%, transparent 32%),
+        radial-gradient(circle at 85% 2%, rgba(56, 153, 172, 0.1) 0%, transparent 36%),
+        #f8fcfd;
+}
+
+#wrapwrap {
+    background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--clinic-ink);
+    letter-spacing: -0.01em;
+}
+
+p {
+    color: var(--clinic-muted);
+}
+
+.text-muted {
+    color: var(--clinic-muted) !important;
+}
+
+a {
+    color: var(--clinic-primary);
+    transition: color 0.22s ease;
+
+    &:hover {
+        color: var(--clinic-primary-strong);
+    }
+}
+
+.btn {
+    font-weight: 700;
+    border-radius: 14px 0 14px 0;
+    transition: transform 0.2s ease, box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
 .btn-primary,
 .btn-secondary {
-    border-radius: 14px 0px 14px 0px !important;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    transition: all 0.3s ease;
+    border-radius: 14px 0 14px 0 !important;
 }
 
 .btn-outline-primary,
 .btn-outline-secondary {
-    border-radius: 14px 0px 14px 0px !important;
+    border-radius: 14px 0 14px 0 !important;
 }
 
-// ---- Sticky header styling ----
-header#top {
-    .navbar {
-        transition: all 0.3s ease;
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-    }
+.btn-primary {
+    background: linear-gradient(135deg, #3899ac 0%, #2e8898 100%);
+    border-color: #2e8898;
+    box-shadow: 0 10px 24px rgba(56, 153, 172, 0.24);
 
-    .navbar-brand img {
-        transition: all 0.3s ease;
-    }
-}
-
-// ---- Top utility bar ----
-.o_top_bar {
-    font-size: 0.85rem;
-    padding: 0.4rem 0;
-    background-color: #1a4a54;
-    color: rgba(255, 255, 255, 0.85);
-
-    a {
-        color: #3899ac;
-        text-decoration: none;
-
-        &:hover {
-            color: #FFFFFF;
-        }
+    &:hover,
+    &:focus {
+        background: linear-gradient(135deg, #2d7a8c 0%, #236b7b 100%);
+        border-color: #236b7b;
+        transform: translateY(-2px);
+        box-shadow: 0 14px 30px rgba(45, 122, 140, 0.3);
     }
 }
 
-// ---- Section spacing ----
-#wrapwrap {
-    section {
-        &.s_medical_hero,
-        &.s_services_grid,
-        &.s_doctor_cards,
-        &.s_clinic_hours,
-        &.s_appointment_cta,
-        &.s_patient_testimonials,
-        &.s_accreditations {
-            position: relative;
-            overflow: hidden;
-        }
-    }
+.btn-outline-light:hover {
+    color: var(--clinic-ink) !important;
 }
 
-// ---- Card hover effects ----
-.card.s_clinic_card {
-    border: none;
+input,
+textarea,
+select,
+.form-control,
+.form-select {
     border-radius: 12px;
-    transition: all 0.35s ease;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border-color: var(--clinic-border);
+    box-shadow: none;
+
+    &:focus {
+        border-color: rgba(56, 153, 172, 0.55);
+        box-shadow: 0 0 0 0.2rem rgba(56, 153, 172, 0.15);
+    }
+}
+
+section[data-snippet],
+.s_medical_hero,
+.s_services_grid,
+.s_doctor_cards,
+.s_clinic_hours,
+.s_appointment_cta,
+.s_patient_testimonials,
+.s_accreditations {
+    position: relative;
+    overflow: hidden;
+}
+
+.s_service_card,
+.s_doctor_cards .card,
+.card.s_clinic_card {
+    border: 1px solid rgba(56, 153, 172, 0.14);
+    border-radius: var(--clinic-radius-md);
+    box-shadow: var(--clinic-shadow-sm);
+    transition: transform 0.24s ease, box-shadow 0.3s ease, border-color 0.24s ease;
 
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 30px rgba(56, 153, 172, 0.15);
-        background-color: rgba(95, 179, 194, 0.1);
+        border-color: rgba(56, 153, 172, 0.36);
+        box-shadow: var(--clinic-shadow-md);
+        transform: translateY(-5px);
     }
 }
 
-// ---- Section headings ----
 .s_section_heading {
     position: relative;
     padding-bottom: 1rem;
@@ -88,49 +143,122 @@ header#top {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 60px;
+        width: 64px;
         height: 3px;
+        border-radius: var(--clinic-radius-pill);
         background: linear-gradient(90deg, #3899ac, #5fb3c2);
-        border-radius: 2px;
     }
 }
 
-// ---- Footer styling ----
-#footer {
-    .s_social_media i {
-        font-size: 1.25rem;
-        transition: color 0.3s ease;
+.s_medical_gradient_overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 58, 66, 0.88) 0%, rgba(56, 153, 172, 0.65) 100%);
+    z-index: 0;
+}
+
+// ============================================================
+// Footer - class-based modern styling
+// ============================================================
+.clinic-footer {
+    .clinic-footer-main {
+        background: linear-gradient(160deg, #12353c 0%, #1b4b56 100%);
+        padding: 3.5rem 0 2.1rem;
+        color: rgba(255, 255, 255, 0.75);
     }
 
-    a {
-        transition: color 0.3s ease;
+    .clinic-footer-bottom {
+        background: #102b31;
+        padding: 0.95rem 0;
+    }
+
+    .clinic-footer-heading {
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        font-size: 1.03rem;
+    }
+
+    .clinic-footer-copy {
+        line-height: 1.75;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.92rem;
+        margin-bottom: 1rem;
+    }
+
+    .clinic-footer-list,
+    .clinic-footer-links,
+    .clinic-footer-hours {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .clinic-footer-list li,
+    .clinic-footer-links li,
+    .clinic-footer-hours li {
+        margin-bottom: 0.55rem;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.9rem;
+    }
+
+    .clinic-footer-list i {
+        color: #5fb3c2;
+        width: 18px;
+        margin-right: 0.5rem;
+    }
+
+    .clinic-footer-links a {
+        color: rgba(255, 255, 255, 0.78);
+        text-decoration: none;
+        transition: color 0.2s ease, transform 0.2s ease;
+        display: inline-block;
 
         &:hover {
-            color: #3899ac !important;
+            color: #8be0ec;
+            transform: translateX(3px);
+        }
+    }
+
+    .clinic-footer-hours strong {
+        color: #8be0ec;
+        font-weight: 700;
+    }
+
+    .clinic-footer-bottom p {
+        color: rgba(255, 255, 255, 0.56);
+        font-size: 0.82rem;
+        margin: 0;
+    }
+
+    .clinic-footer-legal {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .clinic-footer-legal a {
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 0.82rem;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #8be0ec;
         }
     }
 }
 
-// ---- Gradient overlay helper ----
-.s_medical_gradient_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(26, 74, 84, 0.85) 0%, rgba(56, 153, 172, 0.7) 100%);
-    z-index: 0;
+@media (max-width: 991px) {
+    .clinic-footer .clinic-footer-legal {
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
 }
 
-// ---- Smooth scrolling ----
-html {
-    scroll-behavior: smooth;
-}
-
-// ---- Responsive adjustments ----
 @media (max-width: 767px) {
     .s_medical_hero {
-        min-height: 400px !important;
+        min-height: 440px !important;
 
         h1 {
             font-size: 2rem !important;
