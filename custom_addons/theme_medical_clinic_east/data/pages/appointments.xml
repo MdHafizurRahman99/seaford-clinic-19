@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
 
 <record id="page_appointments" model="website.page">
     <field name="name">Appointments</field>
@@ -10,15 +10,16 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_appointments">
             <t t-call="website.layout">
-                <t t-set="additional_title">Appointments</t>
+                <t t-set="additional_title">Appointments | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(18,54,60,0.95) 0%, rgba(56,153,172,0.8) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Appointments</h1>
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Booking Guidance</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Choose the right appointment type before you book</h1>
                             <p style="color: rgba(255,255,255,0.88); font-size: 1.08rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
-                                Choose the right consultation pathway for your concern. For urgent or complex issues, call reception so we can schedule the safest appointment type.
+                                Seaford East Medical Clinic uses appointment lengths to match the problem properly. Routine concerns can often be booked online. Longer, urgent, or more complex issues are best booked through reception.
                             </p>
                         </div>
                     </section>
@@ -27,52 +28,52 @@
                         <div class="container">
                             <div class="text-center" style="margin-bottom: 44px;">
                                 <p class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 2px; color: #3899ac; font-weight: 700; margin-bottom: 8px;">Booking Pathways</p>
-                                <h2 style="font-weight: 800; color: #1a4a54; margin-bottom: 0;">How Would You Like to Book?</h2>
+                                <h2 style="font-weight: 800; color: #1a4a54; margin-bottom: 0;">How should you book?</h2>
                             </div>
                             <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 8px 28px rgba(20,65,75,0.08); border: 1px solid rgba(56,153,172,0.12);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 8px 28px rgba(20,65,75,0.08); border: 1px solid rgba(56,153,172,0.12);">
                                         <i class="fa fa-calendar-check-o d-block mb-3" style="font-size: 2rem; color: #3899ac;"/>
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Online Booking</h4>
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Book Online</h4>
                                         <p style="color: #555; line-height: 1.75;">
-                                            Best for standard GP reviews, repeat care, and routine follow-up consultations.
+                                            Suitable for routine GP reviews, straightforward follow-up, repeat concerns already assessed, and general non-urgent appointments.
                                         </p>
                                         <ul style="color: #555; line-height: 1.8; padding-left: 1.1rem; margin-bottom: 1rem;">
-                                            <li>Routine consultations</li>
-                                            <li>Repeat issues already reviewed</li>
-                                            <li>General non-urgent appointments</li>
+                                            <li>Simple single-issue consults</li>
+                                            <li>Routine review appointments</li>
+                                            <li>Non-urgent care planning</li>
                                         </ul>
                                         <a href="#online-booking-guide" class="btn" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">Online Booking Steps</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4" id="contact-reception">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 8px 28px rgba(20,65,75,0.08); border: 1px solid rgba(56,153,172,0.12);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 8px 28px rgba(20,65,75,0.08); border: 1px solid rgba(56,153,172,0.12);">
                                         <i class="fa fa-phone d-block mb-3" style="font-size: 2rem; color: #3899ac;"/>
                                         <h4 style="font-weight: 700; color: #1a4a54;">Call Reception</h4>
                                         <p style="color: #555; line-height: 1.75;">
-                                            Call us for long consults, procedures, mental health care plans, complex cases, and same-day urgent triage.
+                                            Please call if you need a long consultation, procedure booking, mental health review, care plan, or help deciding what type of appointment is safest.
                                         </p>
                                         <ul style="color: #555; line-height: 1.8; padding-left: 1.1rem; margin-bottom: 1rem;">
-                                            <li>Multiple concerns in one visit</li>
-                                            <li>Care plans and procedural bookings</li>
-                                            <li>Uncertain appointment type</li>
+                                            <li>Multiple issues in one visit</li>
+                                            <li>Procedures or treatment room bookings</li>
+                                            <li>Complex or time-sensitive concerns</li>
                                         </ul>
                                         <a href="tel:0398756222" class="btn" style="background: #1a4a54; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">Call (03) 9875 6222</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 8px 28px rgba(20,65,75,0.08); border: 1px solid rgba(56,153,172,0.12);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 8px 28px rgba(20,65,75,0.08); border: 1px solid rgba(56,153,172,0.12);">
                                         <i class="fa fa-user-plus d-block mb-3" style="font-size: 2rem; color: #3899ac;"/>
                                         <h4 style="font-weight: 700; color: #1a4a54;">New Patients</h4>
                                         <p style="color: #555; line-height: 1.75;">
-                                            New patients are welcome. Bring Medicare card, photo ID, medication list, and relevant reports.
+                                            New patients are welcome. Bring your Medicare card, current medication list, and any recent letters, scans, or specialist reports relevant to the visit.
                                         </p>
                                         <ul style="color: #555; line-height: 1.8; padding-left: 1.1rem; margin-bottom: 1rem;">
-                                            <li>Arrive early for first visit</li>
-                                            <li>Request longer consult if needed</li>
-                                            <li>Bring referral/history documents</li>
+                                            <li>Arrive early for first visit paperwork</li>
+                                            <li>Ask for a longer appointment if needed</li>
+                                            <li>Bring clinical history documents</li>
                                         </ul>
-                                        <a href="/patient-information" class="btn" style="background: #ffffff; color: #3899ac; font-weight: 700; border: 2px solid #3899ac; border-radius: 12px 0 12px 0;">Patient Information</a>
+                                        <a href="/patient-information" class="btn" style="background: #ffffff; color: #3899ac; font-weight: 700; border: 2px solid #3899ac; border-radius: 12px 0 12px 0;">Prepare for Your Visit</a>
                                     </div>
                                 </div>
                             </div>
@@ -83,23 +84,26 @@
                         <div class="container">
                             <div class="row g-4 align-items-stretch">
                                 <div class="col-lg-7">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 4px 18px rgba(0,0,0,0.05);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 4px 18px rgba(0,0,0,0.05);">
                                         <h3 style="font-weight: 700; color: #1a4a54;">Online Booking Guide</h3>
                                         <ol style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>Select the appointment reason and preferred doctor.</li>
-                                            <li>Choose a suitable date/time and confirm your details.</li>
-                                            <li>If no suitable slot appears, call reception for manual triage support.</li>
+                                            <li>Choose the most accurate appointment reason and preferred clinician.</li>
+                                            <li>Select a time that fits the type of review you need.</li>
+                                            <li>If you cannot find a suitable option, contact reception for manual booking support.</li>
                                         </ol>
                                         <p style="margin: 14px 0 0; color: #555; line-height: 1.75;">
-                                            For telehealth, procedures, or complex reviews, reception can book a more appropriate consultation length.
+                                            Telehealth, procedures, mental health care plans, and complex reviews often need different booking lengths than a routine GP slot.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-5">
-                                    <div class="rounded-3 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color: white; font-weight: 700;">Need Help Right Now?</h4>
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">Urgent but not emergency?</h4>
                                         <p style="color: rgba(255,255,255,0.88); line-height: 1.8;">
-                                            If symptoms are worsening, or if you are unsure what to book, call us first for safe and timely triage.
+                                            If symptoms are worsening, or if you are unsure what category your problem fits into, call reception first so we can guide you to the safest next step.
+                                        </p>
+                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1rem;">
+                                            For emergencies, chest pain, severe breathing difficulty, stroke symptoms, or major trauma, call 000 immediately.
                                         </p>
                                         <a href="tel:0398756222" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0;">Call Reception</a>
                                     </div>
@@ -112,27 +116,27 @@
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">When to Book a Longer Appointment</h4>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">When to ask for a longer appointment</h4>
                                         <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
                                             <li>Mental health consultations and care plans</li>
-                                            <li>Multiple concerns in a single visit</li>
-                                            <li>Complex chronic disease review</li>
-                                            <li>Procedures and pre-procedure planning</li>
-                                            <li>First-time consult with extensive history</li>
+                                            <li>Several issues that need to be covered properly</li>
+                                            <li>Complex chronic disease review or medication discussion</li>
+                                            <li>Procedures and pre-procedure assessment</li>
+                                            <li>First consultation with substantial history to review</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Cancellation Policy</h4>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            Please provide as much notice as possible if you cannot attend. Missed appointments and short-notice cancellations may incur a fee.
-                                        </p>
-                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
-                                            Review current billing and cancellation notes before booking.
-                                        </p>
-                                        <a href="/fees" style="display: inline-block; margin-top: 10px; color: #3899ac; font-weight: 700; text-decoration: none;">See fees and billing policy</a>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before your appointment</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                            <li>Bring your Medicare card and concession cards if relevant</li>
+                                            <li>Bring reports, imaging, and medication details related to the problem</li>
+                                            <li>Arrive early if you are new to the practice</li>
+                                            <li>Check our billing and cancellation information before attending</li>
+                                        </ul>
+                                        <a href="/fees" style="display: inline-block; margin-top: 12px; color: #3899ac; font-weight: 700; text-decoration: none;">See fees and billing guidance</a>
                                     </div>
                                 </div>
                             </div>
@@ -141,13 +145,13 @@
 
                     <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
                         <div class="container text-center">
-                            <h2 style="color: white; font-weight: 800;">Need Help Choosing the Right Appointment?</h2>
+                            <h2 style="color: white; font-weight: 800;">Need help choosing the right appointment?</h2>
                             <p style="color: rgba(255,255,255,0.85); max-width: 680px; margin: 0 auto 1.5rem; line-height: 1.8;">
-                                Our reception team can match your concern to the right doctor and consultation length.
+                                Our reception team can help match your concern to the right clinician and booking length before you attend.
                             </p>
                             <div class="d-flex justify-content-center flex-wrap" style="gap: 12px;">
                                 <a href="tel:0398756222" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.2rem;">Call Reception</a>
-                                <a href="/patient-information" class="btn btn-lg" style="background: transparent; color: white; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.2rem;">Prepare for Visit</a>
+                                <a href="/patient-information" class="btn btn-lg" style="background: transparent; color: white; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.2rem;">Patient Information</a>
                             </div>
                         </div>
                     </section>

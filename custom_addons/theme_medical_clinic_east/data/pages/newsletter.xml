@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_newsletter" model="website.page">
     <field name="name">Newsletter</field>
@@ -10,42 +10,69 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_newsletter">
             <t t-call="website.layout">
-                <t t-set="additional_title">Newsletter</t>
+                <t t-set="additional_title">Clinic News | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Clinic News &amp; Newsletter</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                Practice updates, seasonal health reminders, and service announcements
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Clinic News</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Practice updates, service notices, and seasonal reminders</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                This page is used for non-urgent clinic announcements, practical service updates, and reminders that help patients stay informed about how the practice is operating.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <article class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <p style="font-size: 0.8rem; color: #3899ac; font-weight: 700;">March 2026</p>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Autumn Immunisation Reminder</h5>
-                                        <p style="color: #555; line-height: 1.7;">Seasonal vaccines and preventive health checks are now available.</p>
+                                    <article class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <p style="font-size: 0.8rem; color: #3899ac; font-weight: 700;">Service Updates</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Booking pathway changes</h5>
+                                        <p style="color: #555; line-height: 1.7; margin-bottom: 0;">Use this page to publish updates about longer consultations, telehealth availability, procedure booking changes, or temporary service adjustments.</p>
                                     </article>
                                 </div>
                                 <div class="col-lg-4">
-                                    <article class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <p style="font-size: 0.8rem; color: #3899ac; font-weight: 700;">February 2026</p>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Updated Appointment Pathways</h5>
-                                        <p style="color: #555; line-height: 1.7;">New pathways for long appointments and procedural bookings.</p>
+                                    <article class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <p style="font-size: 0.8rem; color: #3899ac; font-weight: 700;">Seasonal Care</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Vaccination and prevention reminders</h5>
+                                        <p style="color: #555; line-height: 1.7; margin-bottom: 0;">This page can also carry reminders about influenza clinics, travel health timing, preventive health campaigns, and other time-sensitive seasonal prompts.</p>
                                     </article>
                                 </div>
                                 <div class="col-lg-4">
-                                    <article class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <p style="font-size: 0.8rem; color: #3899ac; font-weight: 700;">January 2026</p>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Team Expansion Update</h5>
-                                        <p style="color: #555; line-height: 1.7;">Welcome updates about doctors, nurses, and allied health services.</p>
+                                    <article class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <p style="font-size: 0.8rem; color: #3899ac; font-weight: 700;">Practice News</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Team and operational announcements</h5>
+                                        <p style="color: #555; line-height: 1.7; margin-bottom: 0;">Use the section for clinician availability notes, new service announcements, clinic process changes, or other operational updates relevant to patients.</p>
                                     </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-lg-7">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">What belongs on this page</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Changes to appointment workflows or clinic hours</li>
+                                            <li>Seasonal vaccination or public health reminders</li>
+                                            <li>New team members or service availability notices</li>
+                                            <li>Patient-facing operational updates that are useful but not urgent</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">For urgent matters</h4>
+                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 0;">
+                                            This page is not monitored as an urgent communication channel. If your issue affects a booking, symptoms, or something time-sensitive, contact reception directly instead of relying on newsletter content.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

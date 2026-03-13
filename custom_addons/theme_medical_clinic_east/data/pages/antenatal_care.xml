@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_antenatal_care" model="website.page">
     <field name="name">Antenatal Care</field>
@@ -10,40 +10,109 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_antenatal_care">
             <t t-call="website.layout">
-                <t t-set="additional_title">Antenatal Care</t>
+                <t t-set="additional_title">Antenatal Care | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Antenatal Care</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                Supportive pregnancy care through each trimester
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Antenatal Care</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Pregnancy care planning, routine antenatal review, and shared-care support</h1>
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                Antenatal care at Seaford East Medical Clinic is designed to support early pregnancy review, routine antenatal check-ins, documentation, and practical shared-care coordination where appropriate.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt64 pb24" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/services/service-antenatal-care-01.jpg"
+                                             class="img-fluid w-100" alt="Antenatal consultation" style="height: 420px; object-fit: cover;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Early pregnancy review</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Initial visits can focus on pregnancy confirmation, baseline history, current symptoms, and the next steps for tests, scans, and planning.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Routine antenatal support</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Reviews may include ongoing maternal wellbeing checks, investigation follow-up, and discussion of practical questions that arise across pregnancy.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Shared care coordination</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            If shared-care or hospital-linked documentation is relevant, the appointment often needs proper time so records and planning are handled clearly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-lg-7">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">What helps when booking</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Tell reception that the visit is antenatal rather than a standard GP review</li>
+                                            <li>Bring recent results, letters, and scan reports where available</li>
+                                            <li>Ask for a longer booking if shared-care forms or multiple concerns need discussion</li>
+                                            <li>Use direct reception support if you are unsure how to structure the first antenatal visit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">When urgent help matters</h4>
+                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 0;">
+                                            If you have severe pain, heavy bleeding, reduced fetal movement later in pregnancy, or another urgent pregnancy concern, seek immediate clinical advice rather than waiting for a routine appointment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <h3 style="font-weight: 700; color: #1a4a54;">Pregnancy Care Pathway</h3>
-                                    <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
-                                        <li>Early pregnancy confirmation and baseline review</li>
-                                        <li>Routine antenatal checks and investigation planning</li>
-                                        <li>Shared care coordination where applicable</li>
-                                        <li>Maternal wellbeing and risk monitoring</li>
-                                    </ul>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Related pregnancy pathways</h4>
+                                        <p style="margin: 0; line-height: 1.9;">
+                                            <a href="/pregnancy-breastfeeding" style="color: #3899ac; font-weight: 700; text-decoration: none;">Pregnancy and Breastfeeding</a><br/>
+                                            <a href="/womens-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">Women's Health</a><br/>
+                                            <a href="/appointments" style="color: #3899ac; font-weight: 700; text-decoration: none;">Appointments</a>
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Booking Guidance</h4>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            Please call reception to arrange a longer antenatal consultation and discuss shared-care documentation requirements.
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Booking guidance</h4>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                            Antenatal appointments usually work better when booked with the correct length from the beginning. If you are unsure how to arrange the first visit, contact reception rather than choosing a routine short slot.
                                         </p>
-                                        <a href="/appointments" class="btn mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">
-                                            Book Antenatal Appointment
-                                        </a>
                                     </div>
                                 </div>
                             </div>

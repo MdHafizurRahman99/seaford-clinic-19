@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_covid_19_information" model="website.page">
     <field name="name">COVID-19 Information</field>
@@ -10,42 +10,46 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_covid_19_information">
             <t t-call="website.layout">
-                <t t-set="additional_title">COVID-19 Information</t>
+                <t t-set="additional_title">COVID-19 Information | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">COVID-19 Information</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                Respiratory symptom and infection-control guidance for clinic visits
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">COVID-19 Information</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Clinic access guidance for respiratory symptoms and current COVID information</h1>
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                This page is intentionally practical. If you have respiratory symptoms or think infection-control precautions may affect your visit, contact reception before attending and use current official guidance for up-to-date public-health advice.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
-                            <div class="alert rounded-3" role="alert" style="background: #fff4e5; border: 1px solid #ffd7a6; color: #7a4d14;">
-                                If you have fever, cough, sore throat, or respiratory symptoms, please call reception before attending the clinic.
+                            <div class="alert rounded-4" role="alert" style="background: #fff4e5; border: 1px solid #ffd7a6; color: #7a4d14;">
+                                If you have fever, cough, sore throat, or other respiratory symptoms, call reception before coming to the clinic so the safest appointment pathway can be arranged.
                             </div>
                             <div class="row g-4 mt-1">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Before Attending</h4>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
-                                            <li>Call ahead if unwell or recently exposed to infection.</li>
-                                            <li>Follow current clinic mask or isolation advice.</li>
-                                            <li>Use telehealth where clinically suitable.</li>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before attending</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Call ahead if you are unwell or have respiratory symptoms.</li>
+                                            <li>Ask whether telehealth or a modified attendance pathway is more appropriate.</li>
+                                            <li>Follow any clinic-specific instructions given by reception at the time of booking.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Vaccination and Advice</h4>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Current official information</h4>
                                         <p style="color: #555; line-height: 1.8;">
-                                            For up-to-date Australian recommendations, refer to official guidance and discuss vaccination suitability with your GP.
+                                            For current Australian advice on symptoms, vaccination, testing, and what to do next, use official Healthdirect and government health resources rather than relying on static website text alone.
                                         </p>
-                                        <a href="https://www.health.gov.au/" target="_blank">Australian Government Department of Health</a>
+                                        <p style="margin: 0; line-height: 1.9;">
+                                            <a href="https://www.healthdirect.gov.au/covid-19" target="_blank" style="color:#3899ac;font-weight:700;text-decoration:none;">Healthdirect COVID-19 information</a><br/>
+                                            <a href="https://www.health.gov.au/" target="_blank" style="color:#3899ac;font-weight:700;text-decoration:none;">Australian Government Department of Health</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_privacy_policy" model="website.page">
     <field name="name">Privacy Policy</field>
@@ -10,38 +10,97 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_privacy_policy">
             <t t-call="website.layout">
-                <t t-set="additional_title">Privacy Policy</t>
+                <t t-set="additional_title">Privacy Policy | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Privacy Policy</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                How we collect, use, and protect your personal and health information
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Privacy Policy</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">How Seaford East Medical Clinic handles personal and health information</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                Privacy matters in general practice. This page explains, at a practical level, how information is collected, used, protected, and accessed through the clinic.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
-                            <div class="bg-white rounded-3 p-4 p-lg-5" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                <h4 style="font-weight: 700; color: #1a4a54;">Information Handling</h4>
-                                <p style="color: #555; line-height: 1.8;">
-                                    We collect information necessary to provide clinical care, manage appointments, and comply with legal and professional obligations.
-                                </p>
-                                <h4 style="font-weight: 700; color: #1a4a54;">Use and Disclosure</h4>
-                                <p style="color: #555; line-height: 1.8;">
-                                    Information is used for care delivery, practice administration, and relevant communication. Disclosure occurs only where clinically required or legally permitted.
-                                </p>
-                                <h4 style="font-weight: 700; color: #1a4a54;">Access and Corrections</h4>
-                                <p style="color: #555; line-height: 1.8;">
-                                    Patients may request access to their records and ask for correction of inaccurate information by contacting reception.
-                                </p>
-                                <h4 style="font-weight: 700; color: #1a4a54;">Contact</h4>
-                                <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
-                                    For privacy queries, contact reception at <a href="mailto:reception@seafordmedical.com.au">reception@seafordmedical.com.au</a>.
-                                </p>
+                            <div class="bg-white rounded-4 p-4 p-lg-5" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">What information we collect</h4>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                            We collect the information needed to provide clinical care, manage appointments, process billing, communicate with patients, and meet professional or legal obligations linked to running a medical practice.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Why it is used</h4>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                            Information may be used for treatment, referrals, recalls, results follow-up, administrative tasks, and other processes directly connected to delivering safe and coordinated care.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Use and disclosure</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Information is not shared casually. Disclosure is limited to situations connected to care delivery, practice operations, or where law or professional obligations allow or require it.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Storage and protection</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            The clinic takes reasonable steps to protect records and limit access to authorised staff and clinicians who need the information to perform their role.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Access and correction</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Patients can contact reception to ask about access to records or to request correction of information that appears incomplete or inaccurate.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-7">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Questions or concerns</h4>
+                                        <p style="color: #555; line-height: 1.8;">
+                                            If you have a privacy-related question, concern, or request, start with reception so the issue can be directed through the correct clinic process.
+                                        </p>
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                            Email: <a href="mailto:reception@seafordmedical.com.au">reception@seafordmedical.com.au</a><br/>
+                                            Phone: <a href="tel:0398756222">(03) 9875 6222</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">Related pages</h4>
+                                        <p style="margin: 0; line-height: 1.9; color: rgba(255,255,255,0.88);">
+                                            <a href="/contact" style="color: #ffffff; font-weight: 700; text-decoration: none;">Contact</a><br/>
+                                            <a href="/terms-of-service" style="color: #ffffff; font-weight: 700; text-decoration: none;">Terms of Service</a><br/>
+                                            <a href="/patient-information" style="color: #ffffff; font-weight: 700; text-decoration: none;">Patient Information</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>

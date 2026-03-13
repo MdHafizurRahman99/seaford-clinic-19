@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_travel_medicine" model="website.page">
     <field name="name">Travel Medicine</field>
@@ -10,40 +10,94 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_travel_medicine">
             <t t-call="website.layout">
-                <t t-set="additional_title">Travel Medicine</t>
+                <t t-set="additional_title">Travel Medicine | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Travel Medicine</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                Destination-specific advice, vaccines, and prevention planning
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Travel Medicine</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Pre-travel advice, vaccine planning, and safer departure preparation</h1>
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                Travel appointments at Seaford East Medical Clinic help patients plan ahead for destination-specific risks, vaccination timing, medication considerations, and what to do if symptoms develop during or after travel.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <h3 style="font-weight: 700; color: #1a4a54;">Pre-Travel Consultation Includes</h3>
-                                    <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                    <h3 style="font-weight: 700; color: #1a4a54;">What a pre-travel consultation can cover</h3>
+                                    <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
                                         <li>Destination risk review and itinerary assessment</li>
                                         <li>Recommended and required travel vaccinations</li>
-                                        <li>Food, water, and mosquito-borne illness prevention advice</li>
-                                        <li>Travel medicine kit guidance and medication planning</li>
-                                        <li>Post-travel review advice if symptoms occur</li>
+                                        <li>Food, water, insect, and environmental risk advice</li>
+                                        <li>Medication and travel kit planning</li>
+                                        <li>Guidance on what to do if illness occurs during or after the trip</li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Before Your Appointment</h4>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">When to book</h4>
                                         <p style="color: #555; line-height: 1.8;">
-                                            Please bring your itinerary, previous immunisation records, and details of current medications.
+                                            Travel consults are best booked well ahead of departure, especially if your itinerary involves several countries, rural travel, trekking, or vaccine timing requirements.
                                         </p>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            Book at least 6 weeks before departure where possible, especially for multi-country travel.
+                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
+                                            If you are leaving soon, contact reception anyway so we can advise on the most useful next step.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Bring to your appointment</h4>
+                                        <p style="color:#555;line-height:1.8;margin:0;">Your itinerary, departure dates, immunisation history, medication list, and any relevant chronic health information.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Longer bookings matter</h4>
+                                        <p style="color:#555;line-height:1.8;margin:0;">Travel medicine often needs more discussion than a routine GP review, so please tell reception that the appointment is for pre-travel planning.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Related immunisation support</h4>
+                                        <p style="color:#555;line-height:1.8;margin:0;">Some travel reviews overlap with general immunisation and ongoing preventive care planning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Who should plan early</h4>
+                                        <ul style="color:#555;line-height:1.9;padding-left:1.2rem;margin:0;">
+                                            <li>Travellers visiting multiple destinations</li>
+                                            <li>People with chronic illness or regular medication needs</li>
+                                            <li>Travellers needing vaccine records or timing coordination</li>
+                                            <li>Families travelling with children or older relatives</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Related travel pathways</h4>
+                                        <p style="margin:0;line-height:1.9;">
+                                            <a href="/immunisations" style="color:#3899ac;font-weight:700;text-decoration:none;">Immunisations</a><br/>
+                                            <a href="/appointments" style="color:#3899ac;font-weight:700;text-decoration:none;">Appointments</a><br/>
+                                            <a href="/contact" style="color:#3899ac;font-weight:700;text-decoration:none;">Contact Reception</a>
                                         </p>
                                     </div>
                                 </div>
@@ -53,9 +107,9 @@
 
                     <section class="pt64 pb64" data-snippet="s_text_block" style="background: #e8f4f6;">
                         <div class="container text-center">
-                            <h3 style="font-weight: 800; color: #1a4a54;">Plan Early for Safer Travel</h3>
-                            <p style="color: #555; max-width: 620px; margin: 0 auto 1.25rem;">
-                                Travel consults are often longer appointments. Please call reception for booking support.
+                            <h3 style="font-weight: 800; color: #1a4a54;">Plan early for safer travel</h3>
+                            <p style="color: #555; max-width: 620px; margin: 0 auto 1.25rem; line-height: 1.8;">
+                                Travel consults often need a longer booking and may involve vaccine timing or medication planning, so please contact reception if you are unsure how to schedule it.
                             </p>
                             <a href="/appointments" class="btn btn-lg" style="background-color: #3899ac; color: white; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
                                 Book Travel Consultation

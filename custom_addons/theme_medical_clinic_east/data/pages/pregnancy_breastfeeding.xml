@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_pregnancy_breastfeeding" model="website.page">
     <field name="name">Pregnancy and Breastfeeding</field>
@@ -10,40 +10,112 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_pregnancy_breastfeeding">
             <t t-call="website.layout">
-                <t t-set="additional_title">Pregnancy and Breastfeeding</t>
+                <t t-set="additional_title">Pregnancy and Breastfeeding | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.4rem;">Pregnancy, Breastfeeding &amp; Postnatal Care</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                Ongoing support for mother and baby after delivery
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Pregnancy and Breastfeeding</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.4rem;">Postnatal review, breastfeeding support, and follow-up for mother and baby</h1>
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                This page focuses on the period after delivery, including maternal recovery, breastfeeding questions, postnatal wellbeing, and planning follow-up care for both mother and baby.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt64 pb24" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/services/service-pregnancy-breastfeeding-01.jpg"
+                                             class="img-fluid w-100" alt="Pregnancy and breastfeeding support" style="height: 420px; object-fit: cover;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Maternal recovery</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Postnatal appointments can cover physical recovery, mood, sleep, wound or pain issues, and the practical challenges of adjusting after delivery.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Breastfeeding support</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Reviews can help families discuss feeding concerns, pain, supply questions, and when additional support or follow-up may be needed.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Infant follow-up</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Postnatal care often overlaps with infant growth, feeding, and early child-health follow-up, so coordinated planning matters.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-lg-7">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">When to book early</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Feeding is painful, difficult, or not going as expected</li>
+                                            <li>Maternal wellbeing, mood, or recovery is causing concern</li>
+                                            <li>There are several postnatal issues to review together</li>
+                                            <li>You need coordinated follow-up rather than waiting for problems to escalate</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">Need help now?</h4>
+                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 0;">
+                                            If you have significant pain, fever, concerning bleeding, severe mood symptoms, or worries about the baby that feel urgent, seek timely clinical advice rather than waiting for a routine slot.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <h3 style="font-weight: 700; color: #1a4a54;">Postnatal Support</h3>
-                                    <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
-                                        <li>Maternal physical and emotional wellbeing review</li>
-                                        <li>Breastfeeding and feeding support</li>
-                                        <li>Sleep, recovery, and lifestyle guidance</li>
-                                        <li>Infant health and growth follow-up planning</li>
-                                    </ul>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Related pages</h4>
+                                        <p style="margin: 0; line-height: 1.9;">
+                                            <a href="/antenatal-care" style="color: #3899ac; font-weight: 700; text-decoration: none;">Antenatal Care</a><br/>
+                                            <a href="/child-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">Child Health</a><br/>
+                                            <a href="/womens-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">Women's Health</a>
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Need Help Now?</h4>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            If you have feeding concerns, pain, or postnatal wellbeing issues, book early for timely support.
-                                        </p>
-                                        <a href="/appointments" class="btn mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">
-                                            Book Postnatal Visit
-                                        </a>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before you attend</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Bring discharge information, medication details, and recent reports if available</li>
+                                            <li>Write down feeding or recovery concerns so the appointment stays focused</li>
+                                            <li>Ask for extra time if both maternal and infant concerns need review</li>
+                                            <li>Contact reception if you are unsure whether the booking should be postnatal, child health, or broader women's health</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
