@@ -67,6 +67,7 @@
         'data/pages/fertility_support_family_planning.xml',
         'data/pages/privacy_policy.xml',
         'data/pages/terms_of_service.xml',
+        'data/pages/coming_soon.xml',
         'data/menu.xml',
     ],
     'assets': {

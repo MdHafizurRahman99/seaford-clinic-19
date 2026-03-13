@@ -127,7 +127,337 @@ html {
     scroll-behavior: smooth;
 }
 
+// ---- Coming soon landing page ----
+.clinic-coming-soon--central {
+    --coming-primary: #2E8B57;
+    --coming-accent: #66CDAA;
+    --coming-ink: #173b31;
+    --coming-copy: #567269;
+    --coming-soft: #eef8f2;
+    --coming-border: rgba(46, 139, 87, 0.14);
+    --coming-shadow: 0 22px 60px rgba(26, 60, 52, 0.12);
+    background: linear-gradient(180deg, #f6fbf7 0%, #ffffff 56%, #eef7f1 100%);
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__hero {
+    position: relative;
+    padding: 7rem 0 4.75rem;
+    background: linear-gradient(135deg, #15372f 0%, #24614b 42%, #2E8B57 72%, #66CDAA 100%);
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    &::before {
+        width: 500px;
+        height: 500px;
+        top: -220px;
+        right: -140px;
+        background: rgba(255, 255, 255, 0.11);
+    }
+
+    &::after {
+        width: 360px;
+        height: 360px;
+        left: -120px;
+        bottom: -160px;
+        background: rgba(240, 250, 245, 0.1);
+    }
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__hero-media {
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.14;
+    mix-blend-mode: screen;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__title {
+    font-size: clamp(2.8rem, 5vw, 4.6rem);
+    font-weight: 800;
+    line-height: 1.05;
+    color: #ffffff;
+    max-width: 11ch;
+    margin-bottom: 1.2rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__copy {
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 40rem;
+    margin: 0;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__actions .btn {
+    min-width: 180px;
+    padding: 0.95rem 1.7rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__actions .btn-light {
+    color: var(--coming-ink);
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__actions .btn-outline-light:hover,
+.clinic-coming-soon--central .clinic-coming-soon__support-actions .btn-outline-light:hover {
+    color: var(--coming-ink) !important;
+    background: #ffffff;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__highlight {
+    background: rgba(255, 255, 255, 0.11);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 1.15rem;
+    backdrop-filter: blur(12px);
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__highlight strong,
+.clinic-coming-soon--central .clinic-coming-soon__highlight span {
+    display: block;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__highlight strong {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__highlight span {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__panel {
+    position: relative;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 28px;
+    padding: 2rem;
+    box-shadow: 0 28px 70px rgba(17, 42, 34, 0.22);
+    backdrop-filter: blur(16px);
+    color: #ffffff;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__panel-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: #d4ffee;
+    margin-bottom: 0.7rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__panel h2 {
+    color: #ffffff;
+    font-size: 1.65rem;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    display: grid;
+    gap: 0.95rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__checklist li {
+    display: flex;
+    gap: 0.7rem;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.6;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__checklist i {
+    color: #d4ffee;
+    font-size: 1.05rem;
+    margin-top: 0.15rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__progress {
+    height: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__progress-bar {
+    width: 72%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #ffffff 0%, #66CDAA 100%);
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__panel-note {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__details {
+    position: relative;
+    margin-top: -2.6rem;
+    padding-bottom: 4.25rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__info-card {
+    background: #ffffff;
+    border: 1px solid var(--coming-border);
+    border-radius: 24px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: var(--coming-shadow);
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__info-card h3 {
+    color: var(--coming-ink);
+    font-size: 1.35rem;
+    margin-bottom: 0.85rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__info-card p {
+    color: var(--coming-copy);
+    line-height: 1.75;
+    margin-bottom: 0;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__info-card a {
+    color: var(--coming-primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__info-icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #2E8B57 0%, #66CDAA 100%);
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__info-kicker {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: var(--coming-primary) !important;
+    margin-bottom: 0.6rem !important;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__support {
+    padding-bottom: 6rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__support-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: linear-gradient(140deg, #163b33 0%, #215144 55%, #2E8B57 100%);
+    border-radius: 32px;
+    padding: 3rem;
+    box-shadow: 0 26px 60px rgba(26, 60, 52, 0.18);
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__support-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: #66CDAA;
+    margin-bottom: 0.8rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__support h2 {
+    color: #ffffff;
+    font-size: clamp(1.8rem, 3vw, 2.55rem);
+    margin-bottom: 0.9rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__support-copy {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.8;
+    max-width: 42rem;
+    margin-bottom: 0;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__support-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.clinic-coming-soon--central .clinic-coming-soon__support-actions .btn {
+    min-width: 190px;
+    padding: 0.95rem 1.6rem;
+}
+
 // ---- Responsive adjustments ----
+@media (max-width: 991px) {
+    .clinic-coming-soon--central .clinic-coming-soon__hero {
+        padding-top: 6rem;
+    }
+
+    .clinic-coming-soon--central .clinic-coming-soon__highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .clinic-coming-soon--central .clinic-coming-soon__details {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+
+    .clinic-coming-soon--central .clinic-coming-soon__support-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 @media (max-width: 767px) {
     .s_medical_hero {
         min-height: 400px !important;
@@ -135,5 +465,24 @@ html {
         h1 {
             font-size: 2rem !important;
         }
+    }
+
+    .clinic-coming-soon--central .clinic-coming-soon__title {
+        font-size: 2.45rem;
+    }
+
+    .clinic-coming-soon--central .clinic-coming-soon__actions .btn,
+    .clinic-coming-soon--central .clinic-coming-soon__support-actions .btn {
+        width: 100%;
+    }
+
+    .clinic-coming-soon--central .clinic-coming-soon__highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .clinic-coming-soon--central .clinic-coming-soon__panel,
+    .clinic-coming-soon--central .clinic-coming-soon__info-card,
+    .clinic-coming-soon--central .clinic-coming-soon__support-inner {
+        padding: 1.5rem;
     }
 }
