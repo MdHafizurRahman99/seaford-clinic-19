@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_fees" model="website.page">
     <field name="name">Fees</field>
@@ -10,64 +10,59 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_fees">
             <t t-call="website.layout">
-                <t t-set="additional_title">Fees</t>
+                <t t-set="additional_title">Fees | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Fees &amp; Billing</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">
-                                Clear fee information for consultations and procedures
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Billing Information</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Fees and billing guidance before you attend</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 760px; margin: 0 auto;">
+                                We want patients to understand how billing works before arriving. Consultation fees can vary by doctor, appointment length, Medicare eligibility, and whether procedures or clinical paperwork are involved.
                             </p>
                         </div>
                     </section>
 
                     <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
-                            <div class="alert rounded-3" role="alert" style="background: #e8f4f6; border: 1px solid rgba(56,153,172,0.25); color: #1a4a54;">
-                                Fees below are indicative and may change over time. Please confirm current pricing with reception before your appointment.
+                            <div class="alert rounded-4" role="alert" style="background: #e8f4f6; border: 1px solid rgba(56,153,172,0.25); color: #1a4a54;">
+                                Current fees should always be confirmed with reception before booking. This page explains the billing structure and the questions patients should ask in advance.
                             </div>
                             <div class="table-responsive mt-4">
                                 <table class="table table-bordered bg-white" style="border-color: rgba(56,153,172,0.25);">
                                     <thead style="background: #1a4a54; color: white;">
                                         <tr>
-                                            <th>Consultation Type</th>
-                                            <th>Indicative Fee</th>
-                                            <th>Medicare Rebate</th>
-                                            <th>Out-of-Pocket</th>
+                                            <th>Appointment Type</th>
+                                            <th>How Billing Usually Works</th>
+                                            <th>What Can Affect Cost</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Standard Consultation</td>
-                                            <td>$90.00</td>
-                                            <td>$41.40</td>
-                                            <td>$48.60</td>
+                                            <td>Standard GP consultation</td>
+                                            <td>Private billing may apply, with Medicare rebates where eligible.</td>
+                                            <td>Doctor policy, consult length, concession status</td>
                                         </tr>
                                         <tr>
-                                            <td>Long Consultation</td>
-                                            <td>$145.00</td>
-                                            <td>$80.10</td>
-                                            <td>$64.90</td>
+                                            <td>Long or extended consultation</td>
+                                            <td>Usually billed higher than a standard appointment because of increased time and complexity.</td>
+                                            <td>Time used, number of issues, documentation needs</td>
                                         </tr>
                                         <tr>
-                                            <td>Extended Consultation</td>
-                                            <td>$190.00</td>
-                                            <td>$118.95</td>
-                                            <td>$71.05</td>
+                                            <td>Care plans and health assessments</td>
+                                            <td>Billing depends on the clinical item used and whether review components are included.</td>
+                                            <td>Item type, review needs, follow-up structure</td>
                                         </tr>
                                         <tr>
-                                            <td>Mental Health / Care Plan</td>
-                                            <td>Varies</td>
-                                            <td>Item dependent</td>
-                                            <td>Varies</td>
+                                            <td>Procedure appointments</td>
+                                            <td>May include consultation, procedure, and consumable-related billing elements.</td>
+                                            <td>Treatment type, facility use, dressings or consumables</td>
                                         </tr>
                                         <tr>
-                                            <td>Procedure Appointments</td>
-                                            <td>Varies</td>
-                                            <td>Item dependent</td>
-                                            <td>Varies</td>
+                                            <td>Third-party or insurer matters</td>
+                                            <td>WorkCover, TAC, and insurer matters may follow different billing workflows.</td>
+                                            <td>Claim status, paperwork, pre-approval rules</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -79,24 +74,24 @@
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Billing Policy</h4>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
-                                            <li>Private billing applies unless otherwise advised.</li>
-                                            <li>Concession, pension, and children policy may vary by doctor.</li>
-                                            <li>Payment is required on the day of consultation.</li>
-                                            <li>On-the-spot Medicare claiming is available.</li>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">What patients should expect</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                            <li>Private billing may apply unless advised otherwise</li>
+                                            <li>Payment is generally required on the day of service</li>
+                                            <li>Medicare rebates depend on eligibility and item type</li>
+                                            <li>Bulk billing or reduced-gap arrangements may vary by doctor and visit type</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Cancellation &amp; Non-Attendance</h4>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
-                                            <li>Please provide notice if you cannot attend.</li>
-                                            <li>Late cancellation and non-attendance fees may apply.</li>
-                                            <li>Long and procedure appointments attract higher cancellation fees.</li>
-                                            <li>Repeated non-attendance may limit future bookings.</li>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Cancellations and non-attendance</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                            <li>Please provide as much notice as possible if you cannot attend</li>
+                                            <li>Short-notice cancellation fees may apply</li>
+                                            <li>Long consultations and procedures are more likely to attract cancellation charges</li>
+                                            <li>Repeated missed appointments may affect future booking access</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -112,39 +107,39 @@
                                         <table class="table table-bordered bg-white" style="border-color: rgba(56,153,172,0.25);">
                                             <thead style="background: #1a4a54; color: white;">
                                                 <tr>
-                                                    <th>Operational Detail</th>
-                                                    <th>Current Policy</th>
+                                                    <th>Question to Ask Reception</th>
+                                                    <th>Why It Matters</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Payment timing</td>
-                                                    <td>Payment is required on the day of consultation.</td>
+                                                    <td>Is this a standard or long consultation?</td>
+                                                    <td>Time allocation usually affects billing and the quality of the review.</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Claiming support</td>
-                                                    <td>On-the-spot Medicare claiming available where eligible.</td>
+                                                    <td>Will any additional procedure or consumable fee apply?</td>
+                                                    <td>Procedure bookings can include more than one billing component.</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Procedure/facility fees</td>
-                                                    <td>May apply depending on treatment type and consumables.</td>
+                                                    <td>Is Medicare claiming available for this visit?</td>
+                                                    <td>Eligibility and item type influence the rebate process.</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Insurance / third-party</td>
-                                                    <td>TAC, WorkCover, and insurer billing rules vary by case.</td>
+                                                    <td>What happens if I need to cancel or move the booking?</td>
+                                                    <td>Understanding notice periods helps avoid avoidable charges.</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                                 <div class="col-lg-5">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Before You Book</h4>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
-                                            <li>Ask reception about expected out-of-pocket costs.</li>
-                                            <li>Confirm if your appointment type is standard or long.</li>
-                                            <li>Check cancellation timeframes to avoid fees.</li>
-                                            <li>Bring concession cards if applicable.</li>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before you book</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                            <li>Ask about the expected consult length</li>
+                                            <li>Explain if multiple problems need to be discussed</li>
+                                            <li>Mention if forms, reports, or procedures are likely</li>
+                                            <li>Check whether your visit needs a longer booking type</li>
                                         </ul>
                                         <a href="/appointments" style="color: #3899ac; font-weight: 700; text-decoration: none;">Go to appointment guidance</a>
                                     </div>
@@ -155,9 +150,9 @@
 
                     <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
                         <div class="container text-center">
-                            <h2 style="color: white; font-weight: 800;">Need a Specific Fee Quote?</h2>
+                            <h2 style="color: white; font-weight: 800;">Need a fee estimate before attending?</h2>
                             <p style="color: rgba(255,255,255,0.85); max-width: 640px; margin: 0 auto 1.5rem;">
-                                Contact reception for current consultation and procedure pricing, including Medicare and private billing details.
+                                Contact reception before booking if you want help understanding likely billing for a consultation, procedure, or longer review.
                             </p>
                             <a href="/contact" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
                                 Contact Reception

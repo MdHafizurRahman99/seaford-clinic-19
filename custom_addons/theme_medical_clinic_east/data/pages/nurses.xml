@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_nurses" model="website.page">
     <field name="name">Nurses</field>
@@ -10,44 +10,73 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_nurses">
             <t t-call="website.layout">
-                <t t-set="additional_title">Nurses</t>
+                <t t-set="additional_title">Nursing Team | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Our Nursing Team</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">
-                                Practical support for treatment, education, and continuity of care
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Nursing Team</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Nursing support that keeps treatment, recalls, and follow-up running well</h1>
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.1rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                The nursing team at Seaford East Medical Clinic supports treatment room care, preventive reviews, recalls, and patient education as part of the broader clinic workflow rather than as a separate service stream.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4 justify-content-center">
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
                                         <h5 style="font-weight: 700; color: #1a4a54;">Practice Nursing Team</h5>
-                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Practice Nurse</p>
-                                        <p style="color: #555; line-height: 1.7;">Immunisations, wound care, care plan support, and preventive health checks.</p>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Clinical Support</p>
+                                        <p style="color: #555; line-height: 1.7; margin: 0;">Supports immunisations, wound care, preventive reviews, recalls, and patient education linked to ongoing GP care.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Treatment Room Nursing Team</h5>
-                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Treatment Room Support</p>
-                                        <p style="color: #555; line-height: 1.7;">Assists with procedures, recalls, chronic disease follow-up, and patient education.</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Treatment Room Nursing</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Procedural Support</p>
+                                        <p style="color: #555; line-height: 1.7; margin: 0;">Assists with procedures, dressings, monitoring, and practical follow-up where treatment room care is part of the plan.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <img alt="Nurse" class="rounded-circle mb-3" src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" style="width: 110px; height: 110px; object-fit: cover; border: 3px solid #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic Care Nursing Support</h5>
-                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Care Plan Support</p>
-                                        <p style="color: #555; line-height: 1.7;">Supports diabetes, cardiovascular risk, and preventive care review pathways.</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic Care Support</h5>
+                                        <p style="color: #3899ac; font-size: 0.85rem; font-weight: 600;">Recall and Review Support</p>
+                                        <p style="color: #555; line-height: 1.7; margin: 0;">Helps keep chronic disease review, preventive care pathways, and follow-up communication coordinated and practical.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How the nursing pathway fits</h4>
+                                        <ol style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Start with the GP or reception pathway that fits your concern.</li>
+                                            <li>Use nursing support where treatment room care, monitoring, education, or recalls are appropriate.</li>
+                                            <li>Keep follow-up linked back to the wider care plan.</li>
+                                            <li>Return for review if the issue changes or more medical input is needed.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Related pages</h4>
+                                        <p style="margin: 0; line-height: 1.9;">
+                                            <a href="/medical-procedures" style="color: #3899ac; font-weight: 700; text-decoration: none;">Medical Procedures</a><br/>
+                                            <a href="/chronic-disease-management" style="color: #3899ac; font-weight: 700; text-decoration: none;">Chronic Disease Management</a><br/>
+                                            <a href="/immunisations" style="color: #3899ac; font-weight: 700; text-decoration: none;">Immunisations</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

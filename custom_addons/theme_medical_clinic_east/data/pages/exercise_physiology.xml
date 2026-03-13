@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_exercise_physiology" model="website.page">
     <field name="name">Exercise Physiology</field>
@@ -10,40 +10,112 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_exercise_physiology">
             <t t-call="website.layout">
-                <t t-set="additional_title">Exercise Physiology</t>
+                <t t-set="additional_title">Exercise Physiology | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Exercise Physiology</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                Clinical exercise planning for chronic disease, recovery, and strength
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Exercise Physiology</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Movement-based support for chronic conditions, mobility, and recovery</h1>
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                Exercise physiology within the Seaford East care model is about practical, clinically informed movement planning that supports recovery, chronic disease care, and safe progression over time.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt64 pb24" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/services/service-exercise-physiology-01.jpg"
+                                             class="img-fluid w-100" alt="Guided exercise physiology session" style="height: 420px; object-fit: cover;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Who may benefit</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Patients with chronic disease, metabolic conditions, reduced mobility, deconditioning, fatigue, or recovery needs may benefit from a more structured exercise pathway.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How the pathway works</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            The process usually starts with assessment, baseline function review, goal setting, and a plan that can work alongside GP care rather than separately from it.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Review matters</h4>
+                                        <p style="color: #555; line-height: 1.8; margin: 0;">
+                                            Programs work best when progress is reviewed, barriers are adjusted for, and changes are integrated into the wider health plan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-lg-7">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Common goals patients bring</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Improve strength, endurance, and mobility</li>
+                                            <li>Support chronic disease management through movement</li>
+                                            <li>Recover after illness, inactivity, or hospital care</li>
+                                            <li>Reduce falls risk and improve day-to-day function</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">Related care pathways</h4>
+                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8;">
+                                            Exercise physiology often overlaps with chronic disease management, weight support, and broader health and wellness planning.
+                                        </p>
+                                        <a href="/health-wellness" class="btn mt-2" style="background:#ffffff;color:#1a4a54;font-weight:700;border-radius:12px 0 12px 0;">Health and Wellness</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <h3 style="font-weight: 700; color: #1a4a54;">Who Can Benefit</h3>
-                                    <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
-                                        <li>Patients with diabetes, heart disease, and metabolic conditions</li>
-                                        <li>Musculoskeletal pain and reduced mobility</li>
-                                        <li>Post-injury and post-hospital recovery</li>
-                                        <li>Falls prevention and healthy ageing support</li>
-                                        <li>General deconditioning and fatigue</li>
-                                    </ul>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before you attend</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Bring recent results, letters, and medication details if they affect exercise planning</li>
+                                            <li>Think about the main movement or function goal you want to improve</li>
+                                            <li>Let reception know if the review is linked to a care plan or broader chronic disease pathway</li>
+                                            <li>Expect progress to be reviewed over time rather than solved in one session</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Program Approach</h4>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            Initial assessment, goal setting, individualized exercise plan, and regular progress review in collaboration with your GP.
-                                        </p>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            Referral pathways and rebates may be available depending on eligibility and care plan type.
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Useful links</h4>
+                                        <p style="margin: 0; line-height: 1.9;">
+                                            <a href="/chronic-disease-management" style="color: #3899ac; font-weight: 700; text-decoration: none;">Chronic Disease Management</a><br/>
+                                            <a href="/weight-loss" style="color: #3899ac; font-weight: 700; text-decoration: none;">Weight Loss</a><br/>
+                                            <a href="/our-health-team-allied-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">Allied Health Team</a>
                                         </p>
                                     </div>
                                 </div>

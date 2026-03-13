@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 <record id="page_telehealth" model="website.page">
     <field name="name">Telehealth</field>
     <field name="is_published" eval="True"/>
@@ -9,28 +9,112 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_telehealth">
             <t t-call="website.layout">
-                <t t-set="additional_title">Telehealth</t>
+                <t t-set="additional_title">Telehealth | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
                     <section class="pt80 pb80" data-snippet="s_text_block" style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color:white;font-weight:800;font-size:2.6rem;">Telehealth</h1>
-                            <p style="color:rgba(255,255,255,0.85);font-size:1.05rem;">Phone and video consultations for suitable clinical needs</p>
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Telehealth</p>
+                            <h1 style="color:white;font-weight:800;font-size:2.6rem;">Phone and video appointments when remote care is clinically appropriate</h1>
+                            <p style="color:rgba(255,255,255,0.88);font-size:1.05rem;max-width:760px;margin:0 auto;line-height:1.8;">Telehealth at Seaford East Medical Clinic can be useful for selected follow-up and review appointments, but not every problem is safe to assess remotely. This page helps patients understand when to ask for telehealth and when an in-person review may be the better choice.</p>
                         </div>
                     </section>
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+
+                    <section class="pt64 pb24" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/services/service-telehealth-01.jpg"
+                                             class="img-fluid w-100" alt="Doctor providing a telehealth consultation" style="height: 420px; object-fit: cover;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Often suitable for</h4>
+                                        <p style="color:#555;line-height:1.8;margin:0;">Results follow-up, medication review, selected mental health follow-up, and appointments where the main issue can be discussed safely without physical examination.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Often not suitable for</h4>
+                                        <p style="color:#555;line-height:1.8;margin:0;">Problems that may require examination, urgent worsening symptoms, procedures, wound care, or situations where the doctor needs to assess something directly in person.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Best way to confirm</h4>
+                                        <p style="color:#555;line-height:1.8;margin:0;">If you are unsure, contact reception and describe the reason for the booking so we can help decide whether telehealth or in-person review makes more sense.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-lg-7">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 12px rgba(0,0,0,0.05);">
+                                        <h3 style="font-weight:700;color:#1a4a54;">Common telehealth reasons</h3>
+                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
+                                            <li>Medication or script review after recent assessment</li>
+                                            <li>Results follow-up where in-person examination is not required</li>
+                                            <li>Mental health follow-up or care-plan review where clinically suitable</li>
+                                            <li>Ongoing chronic disease review that mainly needs discussion and planning</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color:white;font-weight:700;">Before your telehealth consult</h4>
+                                        <p style="color:rgba(255,255,255,0.88);line-height:1.8;">Keep your phone nearby, have a reliable connection if video is planned, and have medications, recent results, and questions ready so the remote appointment stays focused and useful.</p>
+                                        <a href="/appointments" class="btn mt-2" style="background:#ffffff;color:#1a4a54;font-weight:700;border-radius:12px 0 12px 0;">Appointment Guidance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <h3 style="font-weight:700;color:#1a4a54;">When Telehealth Is Suitable</h3>
-                                    <ul style="padding-left:1.2rem;line-height:1.9;color:#555;">
-                                        <li>Medication review and repeat scripts</li>
-                                        <li>Results follow-up and care plan review</li>
-                                        <li>Mental health follow-up consultations</li>
-                                        <li>When in-person examination is not required</li>
-                                    </ul>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">When to choose in-person instead</h4>
+                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
+                                            <li>New symptoms that may need examination</li>
+                                            <li>Skin, wound, or procedure-related issues</li>
+                                            <li>Urgent symptoms that are worsening</li>
+                                            <li>Any concern where remote review feels insufficient</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6"><div class="bg-white rounded-3 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);"><h4 style="font-weight:700;color:#1a4a54;">Booking Telehealth</h4><p style="color:#555;line-height:1.8;">Call reception if unsure whether telehealth is clinically appropriate for your concern.</p><a href="/appointments" class="btn mt-2" style="background:#3899ac;color:white;font-weight:700;border-radius:12px 0 12px 0;">Book Appointment</a></div></div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight:700;color:#1a4a54;">Related pathways</h4>
+                                        <p style="margin:0;line-height:1.9;">
+                                            <a href="/appointments" style="color:#3899ac;font-weight:700;text-decoration:none;">Appointments</a><br/>
+                                            <a href="/chronic-disease-management" style="color:#3899ac;font-weight:700;text-decoration:none;">Chronic Disease Management</a><br/>
+                                            <a href="/contact" style="color:#3899ac;font-weight:700;text-decoration:none;">Contact Reception</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </section>
+
+                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
+                        <div class="container text-center">
+                            <h3 style="color:white;font-weight:800;">Need a telehealth appointment?</h3>
+                            <p style="color:rgba(255,255,255,0.85);max-width:680px;margin:0 auto 1.25rem;">Book a suitable review or contact reception if you want help deciding whether telehealth is the right format for your concern.</p>
+                            <a href="/appointments" class="btn" style="background:#ffffff;color:#3899ac;font-weight:700;border-radius:12px 0 12px 0;padding:0.8rem 2.2rem;">Book Appointment</a>
                         </div>
                     </section>
                 </div>

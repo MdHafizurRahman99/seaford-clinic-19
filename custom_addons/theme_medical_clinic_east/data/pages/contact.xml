@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
 
 <record id="page_contact" model="website.page">
     <field name="name">Contact Us</field>
@@ -10,54 +10,68 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_contact">
             <t t-call="website.layout">
-                <t t-set="additional_title">Contact Us</t>
+                <t t-set="additional_title">Contact Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
-                    <!-- Page Banner -->
                     <section class="pt80 pb80" data-snippet="s_text_block"
-                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%); background-size: cover; background-position: center;">
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.95) 0%, rgba(56,153,172,0.78) 100%); background-size: cover; background-position: center;">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Contact Us</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">We'd love to hear from you</p>
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Visit, call, or email</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Contact Seaford East Medical Clinic</h1>
+                            <p style="color: rgba(255,255,255,0.88); font-size: 1.1rem; max-width: 720px; margin: 0 auto;">
+                                Use this page for bookings support, clinic visit details, reception enquiries, and after-hours guidance. For medical emergencies, call 000.
+                            </p>
                         </div>
                     </section>
 
-                    <!-- Contact Details + Hours -->
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt64 pb32" data-snippet="s_text_block">
                         <div class="container">
-                            <div class="row g-5">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/clinic/clinic-exterior-01.jpg"
+                                             class="img-fluid w-100" alt="Clinic exterior" style="height: 420px; object-fit: cover;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt80 pb64" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <div class="text-center mb-4">
                                             <i class="fa fa-map-marker d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                            <h5 style="font-weight: 700; color: #1a4a54;">Our Address</h5>
+                                            <h5 style="font-weight: 700; color: #1a4a54;">Clinic Location</h5>
                                         </div>
-                                        <p class="text-muted text-center">
+                                        <p class="text-muted text-center" style="line-height: 1.8; margin-bottom: 0;">
                                             Seaford, VIC 3198<br/>
                                             Australia
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <div class="text-center mb-4">
                                             <i class="fa fa-phone d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                            <h5 style="font-weight: 700; color: #1a4a54;">Phone</h5>
+                                            <h5 style="font-weight: 700; color: #1a4a54;">Reception</h5>
                                         </div>
-                                        <p class="text-muted text-center">
-                                            Phone: (03) 9875 6222<br/>
-                                            Fax: (03) 0000 0001
+                                        <p class="text-muted text-center" style="line-height: 1.8; margin-bottom: 0;">
+                                            Phone: <a href="tel:0398756222" style="color: #3899ac; text-decoration: none;">(03) 9875 6222</a><br/>
+                                            Email: <a href="mailto:reception@seafordmedical.com.au" style="color: #3899ac; text-decoration: none;">reception@seafordmedical.com.au</a>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
                                         <div class="text-center mb-4">
                                             <i class="fa fa-clock-o d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                            <h5 style="font-weight: 700; color: #1a4a54;">Hours</h5>
+                                            <h5 style="font-weight: 700; color: #1a4a54;">Opening Hours</h5>
                                         </div>
-                                        <p class="text-muted text-center">
-                                            Mon-Fri: 8:00 AM - 6:00 PM<br/>
+                                        <p class="text-muted text-center" style="line-height: 1.8; margin-bottom: 0;">
+                                            Monday to Friday: 8:00 AM - 6:00 PM<br/>
                                             Saturday: 9:00 AM - 1:00 PM<br/>
                                             Sunday: Closed
                                         </p>
@@ -67,17 +81,15 @@
                         </div>
                     </section>
 
-                    <!-- Emergency Info -->
                     <section class="pt48 pb48" data-snippet="s_text_block" style="background-color: #e8f4f6;">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <div class="rounded-3 p-4 text-center" style="background: linear-gradient(135deg, #3899ac, #1a4a54); color: white;">
-                                        <i class="fa fa-exclamation-triangle d-block mb-2" style="font-size: 1.5rem; color: #3899ac;"/>
-                                        <h4 style="color: white; font-weight: 700;">Emergency &amp; After Hours</h4>
-                                        <p style="color: rgba(255,255,255,0.85);">
-                                            For medical emergencies, please call <strong>000</strong><br/>
-                                            After-hours GP helpline: <strong>1800 022 222</strong>
+                                    <div class="rounded-4 p-4 text-center" style="background: linear-gradient(135deg, #3899ac, #1a4a54); color: white;">
+                                        <i class="fa fa-exclamation-triangle d-block mb-2" style="font-size: 1.5rem; color: #ffffff;"/>
+                                        <h4 style="color: white; font-weight: 700;">Urgent and After-Hours Care</h4>
+                                        <p style="color: rgba(255,255,255,0.88); margin-bottom: 0;">
+                                            For emergencies, call <strong>000</strong>. For after-hours health advice, call <strong>1800 022 222</strong>. If you are unsure whether your issue can wait, seek urgent advice rather than delaying care.
                                         </p>
                                     </div>
                                 </div>
@@ -88,25 +100,36 @@
                     <section class="pt64 pb64" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Parking and Access</h4>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Before You Arrive</h4>
                                         <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>Please allow extra time during peak periods.</li>
-                                            <li>Accessible entry is available for mobility support.</li>
-                                            <li>Call reception ahead if you need access assistance.</li>
-                                            <li>Bring referral or booking details to speed check-in.</li>
+                                            <li>Arrive a little early if you are new to the clinic.</li>
+                                            <li>Bring your Medicare card, concession details, and referral letters if relevant.</li>
+                                            <li>Bring a medication list if your appointment relates to regular treatment or review.</li>
+                                            <li>Call ahead if you need mobility or access support.</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Pathology and Follow-up</h4>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Reception Can Help With</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                            <li>Choosing the correct appointment length</li>
+                                            <li>Booking procedures or longer review appointments</li>
+                                            <li>General practice information, forms, and attendance guidance</li>
+                                            <li>Directing you to patient information, fees, and policy pages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Results and Follow-up</h4>
                                         <p style="color: #555; line-height: 1.8;">
-                                            For pathology collection times and result follow-up workflow, contact reception before attending.
+                                            Reception can help arrange review appointments, but clinical interpretation of results should happen with your doctor. If you are expecting test follow-up, book a review rather than relying on a message callback.
                                         </p>
                                         <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
-                                            Book a review appointment for discussion of results and treatment plans.
+                                            This helps keep treatment decisions accurate, documented, and properly explained.
                                         </p>
                                     </div>
                                 </div>
@@ -126,4 +149,3 @@
 </record>
 
 </odoo>
-

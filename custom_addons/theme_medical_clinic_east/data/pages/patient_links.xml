@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_patient_links" model="website.page">
     <field name="name">Patient Links</field>
@@ -10,26 +10,27 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_patient_links">
             <t t-call="website.layout">
-                <t t-set="additional_title">Patient Links</t>
+                <t t-set="additional_title">Patient Links | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Patient Links</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
-                                Trusted health resources for patient education and support
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Patient Links</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Trusted external resources patients may find useful between visits</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
+                                This page collects reputable external health resources that can support patient education, self-management, and practical system navigation. External sites operate under their own content and privacy settings.
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block">
+                    <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Government Health</h5>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9;">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Government and public health</h5>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; margin: 0;">
                                             <li><a href="https://www.healthdirect.gov.au/" target="_blank">Healthdirect</a></li>
                                             <li><a href="https://www.servicesaustralia.gov.au/medicare" target="_blank">Medicare</a></li>
                                             <li><a href="https://www.betterhealth.vic.gov.au/" target="_blank">Better Health Channel</a></li>
@@ -37,9 +38,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Mental Health</h5>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9;">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Mental health support</h5>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; margin: 0;">
                                             <li><a href="https://www.beyondblue.org.au/" target="_blank">Beyond Blue</a></li>
                                             <li><a href="https://www.lifeline.org.au/" target="_blank">Lifeline</a></li>
                                             <li><a href="https://headspace.org.au/" target="_blank">Headspace</a></li>
@@ -47,13 +48,41 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic Conditions</h5>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9;">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic condition resources</h5>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; margin: 0;">
                                             <li><a href="https://www.diabetesaustralia.com.au/" target="_blank">Diabetes Australia</a></li>
                                             <li><a href="https://www.heartfoundation.org.au/" target="_blank">Heart Foundation</a></li>
                                             <li><a href="https://www.canceraustralia.gov.au/" target="_blank">Cancer Australia</a></li>
                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block" style="background:#f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-lg-7">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How to use this page</h4>
+                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
+                                            <li>Use these links for reliable background information between appointments</li>
+                                            <li>Return to your GP for personalised interpretation and clinical advice</li>
+                                            <li>Do not rely on external websites alone for urgent or complex concerns</li>
+                                            <li>Contact reception if you are unsure which clinic page or service pathway fits your issue</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">Related clinic pages</h4>
+                                        <p style="margin: 0; line-height: 1.9; color: rgba(255,255,255,0.88);">
+                                            <a href="/patient-information" style="color: #ffffff; font-weight: 700; text-decoration: none;">Patient Information</a><br/>
+                                            <a href="/appointments" style="color: #ffffff; font-weight: 700; text-decoration: none;">Appointments</a><br/>
+                                            <a href="/contact" style="color: #ffffff; font-weight: 700; text-decoration: none;">Contact</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

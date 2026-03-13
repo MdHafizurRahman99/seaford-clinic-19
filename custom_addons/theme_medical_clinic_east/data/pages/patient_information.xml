@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_patient_information" model="website.page">
     <field name="name">Patient Information</field>
@@ -10,15 +10,16 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_patient_information">
             <t t-call="website.layout">
-                <t t-set="additional_title">Patient Information</t>
+                <t t-set="additional_title">Patient Information | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Patient Information</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">
-                                Everything you need before and after your visit
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Before and After Your Visit</p>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Patient information for first visits, follow-up, and clinic policies</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 760px; margin: 0 auto;">
+                                This page brings together the practical details patients usually need before attending Seaford East Medical Clinic, including what to bring, how results and documents are handled, and where to go for urgent help.
                             </p>
                         </div>
                     </section>
@@ -27,25 +28,25 @@
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">New Patient Checklist</h4>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">New patient checklist</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
                                             <li>Medicare card and photo ID</li>
-                                            <li>Current medication list</li>
-                                            <li>Relevant specialist letters or test results</li>
-                                            <li>Immunisation history if available</li>
-                                            <li>Arrive 10 minutes early for first appointment</li>
+                                            <li>Current medication list or medication boxes</li>
+                                            <li>Relevant specialist letters, imaging, or recent test results</li>
+                                            <li>Immunisation history if relevant to your visit</li>
+                                            <li>Arrive early for your first appointment</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Practice Policies</h4>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
-                                            <li>Private billing applies unless stated otherwise</li>
-                                            <li>Cancellation fees may apply for missed appointments</li>
-                                            <li>Please update reception if your details change</li>
-                                            <li>Zero tolerance for abusive behavior</li>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">General practice policies</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                            <li>Private billing may apply depending on the doctor and visit type</li>
+                                            <li>Cancellation fees may apply for missed or late-cancelled appointments</li>
+                                            <li>Please keep your contact details and Medicare information up to date</li>
+                                            <li>We maintain a respectful practice environment and do not tolerate abusive behaviour</li>
                                             <li>For emergencies, call <strong>000</strong></li>
                                         </ul>
                                     </div>
@@ -58,33 +59,33 @@
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
                                         <i class="fa fa-file-text-o d-block mb-2" style="font-size: 1.8rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Patient Forms</h5>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Forms and documents</h5>
                                         <p style="color: #555; line-height: 1.7;">
-                                            Download and complete forms before attending where possible.
+                                            If a form or administrative document is needed, contact reception before attending so we can confirm whether an appointment is required.
                                         </p>
-                                        <a href="/contact" style="color: #3899ac; font-weight: 700; text-decoration: none;">Request Forms</a>
+                                        <a href="/contact" style="color: #3899ac; font-weight: 700; text-decoration: none;">Contact Reception</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
                                         <i class="fa fa-flask d-block mb-2" style="font-size: 1.8rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Results &amp; Follow-up</h5>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Results and follow-up</h5>
                                         <p style="color: #555; line-height: 1.7;">
-                                            Please book a review appointment for result discussion and ongoing care planning.
+                                            Test results should usually be discussed in a review appointment so your doctor can explain the outcome and any next steps properly.
                                         </p>
                                         <a href="/appointments" style="color: #3899ac; font-weight: 700; text-decoration: none;">Book Follow-up</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
                                         <i class="fa fa-comment-o d-block mb-2" style="font-size: 1.8rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Feedback</h5>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Feedback and concerns</h5>
                                         <p style="color: #555; line-height: 1.7;">
-                                            We welcome patient feedback to improve care quality and patient experience.
+                                            We welcome patient feedback because it helps improve communication, access, and the overall clinic experience.
                                         </p>
-                                        <a href="/contact" style="color: #3899ac; font-weight: 700; text-decoration: none;">Send Feedback</a>
+                                        <a href="/contact" style="color: #3899ac; font-weight: 700; text-decoration: none;">Share Feedback</a>
                                     </div>
                                 </div>
                             </div>
@@ -95,25 +96,60 @@
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Scripts and Referrals Pathway</h4>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Scripts, referrals, and repeat documents</h4>
                                         <ol style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>Submit your request through reception or contact page.</li>
-                                            <li>Clinical team reviews eligibility and timing since your last consult.</li>
-                                            <li>If required, book a consultation before issuing documents.</li>
-                                            <li>Receive update when request is ready for collection or follow-up.</li>
+                                            <li>Contact reception with the type of request you need.</li>
+                                            <li>The clinical team will determine whether a consultation is required.</li>
+                                            <li>If your last review is outdated or the request needs assessment, an appointment may be needed before anything can be issued.</li>
+                                            <li>You will be updated once the next step is confirmed.</li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Hospital and Urgent Care Guidance</h4>
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Urgent care guidance</h4>
                                         <p style="color: #555; line-height: 1.8;">
-                                            For severe chest pain, breathing difficulty, stroke symptoms, or major trauma, call <strong>000</strong> immediately.
+                                            For severe chest pain, major breathing difficulty, stroke symptoms, collapse, or major trauma, call <strong>000</strong> immediately.
                                         </p>
                                         <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
-                                            For non-urgent issues, contact reception for next available GP appointment or after-hours advice.
+                                            For non-emergency concerns that still need guidance after hours, use the national health advice line on <strong>1800 022 222</strong> or contact reception for the next available appointment.
                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb64" data-snippet="s_text_block" style="background: #f7fbfc;">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Useful patient links</h4>
+                                        <p style="color: #555; line-height: 1.8;">
+                                            Before attending, it often helps to review appointment guidance, fees, and clinic contact details in one place.
+                                        </p>
+                                        <p style="margin: 0;">
+                                            <a href="/appointments" style="color: #3899ac; font-weight: 700; text-decoration: none;">Appointments</a>
+                                            <span style="color: #9aa;"> | </span>
+                                            <a href="/fees" style="color: #3899ac; font-weight: 700; text-decoration: none;">Fees</a>
+                                            <span style="color: #9aa;"> | </span>
+                                            <a href="/contact" style="color: #3899ac; font-weight: 700; text-decoration: none;">Contact</a>
+                                            <span style="color: #9aa;"> | </span>
+                                            <a href="/privacy-policy" style="color: #3899ac; font-weight: 700; text-decoration: none;">Privacy Policy</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">What helps us care for you well</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                            <li>Booking the correct appointment length</li>
+                                            <li>Bringing accurate medication and health information</li>
+                                            <li>Attending follow-up reviews when results need explanation</li>
+                                            <li>Letting reception know early if you need to cancel or reschedule</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -122,10 +158,10 @@
 
                     <section class="pt64 pb64" data-snippet="s_text_block">
                         <div class="container">
-                            <div class="rounded-3 p-4 p-lg-5 text-center" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
-                                <h3 style="color: white; font-weight: 800;">Scripts, Referrals, and Clinical Documents</h3>
+                            <div class="rounded-4 p-4 p-lg-5 text-center" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
+                                <h3 style="color: white; font-weight: 800;">Need help with a document, follow-up, or first visit question?</h3>
                                 <p style="color: rgba(255,255,255,0.85); max-width: 720px; margin: 0 auto 1.2rem;">
-                                    Requests for repeat prescriptions or referrals may require a consultation, depending on your clinical needs and the time since last review.
+                                    Contact reception if you are unsure whether you need a booking, need help preparing for your visit, or want guidance on the next step after a recent appointment.
                                 </p>
                                 <a href="/contact" class="btn" style="background: #ffffff; color: #3899ac; font-weight: 700; border-radius: 12px 0 12px 0; padding: 0.75rem 2rem;">
                                     Contact Reception
