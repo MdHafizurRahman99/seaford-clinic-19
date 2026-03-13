@@ -5,7 +5,7 @@
     <field name="name">Home</field>
     <field name="is_published" eval="True"/>
     <field name="key">theme_medical_clinic.page_home</field>
-    <field name="url">/</field>
+    <field name="url">/homepage</field>
     <field name="type">qweb</field>
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic.page_home">
