@@ -12,9 +12,14 @@ class ThemeMedicalClinicEast(models.AbstractModel):
 
         website = self.env['website'].get_current_website()
         if website:
-            # Bind pages and menus to this specific website
-            for record_id in ['menu_home', 'menu_about', 'menu_services', 'menu_team', 'menu_contact', 
-                              'page_home', 'page_about_us', 'page_services', 'page_our_team', 'page_contact']:
-                record = self.env.ref(f'theme_medical_clinic_east.{record_id}', raise_if_not_found=False)
-                if record:
-                    record.website_id = website.id
+            self._bind_theme_records_to_website('theme_medical_clinic_east', website.id)
+
+    def _bind_theme_records_to_website(self, module_name, website_id):
+        data_records = self.env['ir.model.data'].sudo().search([
+            ('module', '=', module_name),
+            ('model', 'in', ['website.menu', 'website.page']),
+        ])
+        for data_record in data_records:
+            record = self.env[data_record.model].browse(data_record.res_id).exists()
+            if record and 'website_id' in record._fields:
+                record.website_id = website_id
