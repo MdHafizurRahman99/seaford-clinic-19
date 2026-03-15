@@ -223,23 +223,6 @@ html {
     padding: 0.95rem 1.7rem;
 }
 
-.clinic-coming-soon--central .clinic-coming-soon__hero--simple {
-    min-height: calc(100vh - 120px);
-    display: flex;
-    align-items: center;
-}
-
-.clinic-coming-soon--central .clinic-coming-soon__title--simple {
-    max-width: none;
-    font-size: clamp(3.6rem, 11vw, 7.5rem);
-    letter-spacing: 0.08em;
-}
-
-.clinic-coming-soon--central .clinic-coming-soon__copy--simple {
-    max-width: 34rem;
-    margin: 0 auto;
-}
-
 .clinic-coming-soon--central .clinic-coming-soon__actions .btn-light {
     color: var(--coming-ink);
 }
@@ -460,10 +443,6 @@ html {
         padding-top: 6rem;
     }
 
-    .clinic-coming-soon--central .clinic-coming-soon__hero--simple {
-        min-height: 70vh;
-    }
-
     .clinic-coming-soon--central .clinic-coming-soon__highlights {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -490,10 +469,6 @@ html {
 
     .clinic-coming-soon--central .clinic-coming-soon__title {
         font-size: 2.45rem;
-    }
-
-    .clinic-coming-soon--central .clinic-coming-soon__title--simple {
-        font-size: 3.3rem;
     }
 
     .clinic-coming-soon--central .clinic-coming-soon__actions .btn,
