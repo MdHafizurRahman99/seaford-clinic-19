@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<function model="ir.model.data" name="write">
+    <value model="ir.model.data" search="[('module', '=', 'theme_medical_clinic_east'), ('name', '=', 'page_coming_soon')]"/>
+    <value eval="{'noupdate': False}"/>
+</function>
+
+</odoo>

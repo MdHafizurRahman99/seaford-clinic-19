@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
 <record id="page_coming_soon" model="website.page">
     <field name="name">Coming Soon</field>
@@ -13,120 +13,20 @@
                 <t t-set="additional_title">Coming Soon | Seaford East Medical Clinic</t>
                 <div id="wrap" class="oe_structure clinic-coming-soon clinic-coming-soon--east">
 
-                    <section class="clinic-coming-soon__hero">
+                    <section class="clinic-coming-soon__hero clinic-coming-soon__hero--simple">
                         <div class="clinic-coming-soon__hero-media"
                              style="background-image: url('/theme_medical_clinic_east/static/src/img/content/hero_bg.jpg');"/>
                         <div class="container position-relative">
-                            <div class="row align-items-center g-5">
-                                <div class="col-lg-7">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8 col-lg-9 text-center">
                                     <span class="clinic-coming-soon__eyebrow">Seaford East Medical Clinic</span>
-                                    <h1 class="clinic-coming-soon__title">A brighter, faster patient landing page is almost here.</h1>
-                                    <p class="clinic-coming-soon__copy">
-                                        We are building a clean launch page that makes it easier to reach the clinic,
-                                        review services, and get the practical information patients need without delay.
+                                    <h1 class="clinic-coming-soon__title clinic-coming-soon__title--simple">COMING SOON</h1>
+                                    <p class="clinic-coming-soon__copy clinic-coming-soon__copy--simple">
+                                        Our new website is on the way.
                                     </p>
                                     <div class="clinic-coming-soon__actions">
-                                        <a href="tel:+61398756222" class="btn btn-light">Call Reception</a>
-                                        <a href="/appointments" class="btn btn-outline-light">Book an Appointment</a>
+                                        <a href="/homepage" class="btn btn-light">View Current Homepage</a>
                                     </div>
-                                    <div class="clinic-coming-soon__highlights">
-                                        <div class="clinic-coming-soon__highlight">
-                                            <strong>Quick pathways</strong>
-                                            <span>Appointments, directions and updates surfaced immediately.</span>
-                                        </div>
-                                        <div class="clinic-coming-soon__highlight">
-                                            <strong>Mobile ready</strong>
-                                            <span>Optimised for patients checking details on the go.</span>
-                                        </div>
-                                        <div class="clinic-coming-soon__highlight">
-                                            <strong>Teal-led look</strong>
-                                            <span>Matching the East clinic theme with a fresher visual rhythm.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="clinic-coming-soon__panel">
-                                        <p class="clinic-coming-soon__panel-label">Launch Preview</p>
-                                        <h2>What is coming into focus</h2>
-                                        <ul class="clinic-coming-soon__checklist">
-                                            <li><i class="fa fa-check-circle"/>Clear links to appointments, fees and patient info</li>
-                                            <li><i class="fa fa-check-circle"/>Service-led browsing for faster patient navigation</li>
-                                            <li><i class="fa fa-check-circle"/>A cleaner first impression across desktop and mobile</li>
-                                        </ul>
-                                        <div class="clinic-coming-soon__progress">
-                                            <div class="clinic-coming-soon__progress-bar"/>
-                                        </div>
-                                        <p class="clinic-coming-soon__panel-note">
-                                            Until launch, patients can continue calling reception or using the appointment page
-                                            for help, bookings and important clinic details.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="clinic-coming-soon__details">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-4 col-md-6">
-                                    <article class="clinic-coming-soon__info-card">
-                                        <span class="clinic-coming-soon__info-icon">
-                                            <i class="fa fa-heartbeat"/>
-                                        </span>
-                                        <p class="clinic-coming-soon__info-kicker">Patient Access</p>
-                                        <h3>Essential links in one place</h3>
-                                        <p>
-                                            The new landing page will bring together appointments, patient information,
-                                            fees, service areas and key contact details from the first screen.
-                                        </p>
-                                    </article>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <article class="clinic-coming-soon__info-card">
-                                        <span class="clinic-coming-soon__info-icon">
-                                            <i class="fa fa-map-marker"/>
-                                        </span>
-                                        <p class="clinic-coming-soon__info-kicker">Local Presence</p>
-                                        <h3>Built for the East clinic brand</h3>
-                                        <p>
-                                            Teal surfaces, lighter contrast accents and clearer clinic pathways will keep
-                                            the page aligned with the rest of the East website theme.
-                                        </p>
-                                    </article>
-                                </div>
-                                <div class="col-lg-4 col-md-12">
-                                    <article class="clinic-coming-soon__info-card">
-                                        <span class="clinic-coming-soon__info-icon">
-                                            <i class="fa fa-envelope"/>
-                                        </span>
-                                        <p class="clinic-coming-soon__info-kicker">Contact Now</p>
-                                        <h3>Reception is already available</h3>
-                                        <p>
-                                            Call <a href="tel:+61398756222">(03) 9875 6222</a> or email
-                                            <a href="mailto:reception@seafordmedical.com.au">reception@seafordmedical.com.au</a>
-                                            for enquiries, bookings and support.
-                                        </p>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="clinic-coming-soon__support">
-                        <div class="container">
-                            <div class="clinic-coming-soon__support-inner">
-                                <div>
-                                    <p class="clinic-coming-soon__support-label">Available In The Meantime</p>
-                                    <h2>Need help before the new landing page launches?</h2>
-                                    <p class="clinic-coming-soon__support-copy">
-                                        Our clinic team is still here for appointments, service questions and practical support
-                                        while the refreshed digital experience is being prepared.
-                                    </p>
-                                </div>
-                                <div class="clinic-coming-soon__support-actions">
-                                    <a href="mailto:reception@seafordmedical.com.au" class="btn btn-light">Email Reception</a>
-                                    <a href="/patient-information" class="btn btn-outline-light">Patient Information</a>
                                 </div>
                             </div>
                         </div>
