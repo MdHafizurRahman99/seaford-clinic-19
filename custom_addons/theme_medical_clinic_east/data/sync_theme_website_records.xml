@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<function model="theme.utils" name="_theme_medical_clinic_east_sync_records"/>
+
+</odoo>
