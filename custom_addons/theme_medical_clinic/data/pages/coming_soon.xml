@@ -25,7 +25,7 @@
                                         Our new website is on the way.
                                     </p>
                                     <div class="clinic-coming-soon__actions">
-                                        <a href="/homepage" class="btn btn-light">View Current Homepage</a>
+                                        <a href="/" class="btn btn-light">View Current Homepage</a>
                                     </div>
                                 </div>
                             </div>

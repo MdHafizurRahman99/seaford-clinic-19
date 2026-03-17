@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<function model="theme.utils" name="_theme_medical_clinic_sync_records"/>
+<function model="theme.utils" name="_theme_medical_clinic_restore_baseline"/>
 
 </odoo>
