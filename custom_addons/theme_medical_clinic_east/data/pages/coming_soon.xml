@@ -5,7 +5,7 @@
     <field name="name">Coming Soon</field>
     <field name="is_published" eval="True"/>
     <field name="key">theme_medical_clinic_east.page_coming_soon</field>
-    <field name="url">/</field>
+    <field name="url">/coming-soon-east</field>
     <field name="type">qweb</field>
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_coming_soon">
