@@ -25,10 +25,13 @@ class ThemeMedicalClinic(models.AbstractModel):
             website = website_model.browse(context_website_id).exists()
             if website and self._website_matches_theme(website, module_name):
                 return website
+        theme_website = website_model.search([('theme_id.name', '=', module_name)], limit=1)
+        if theme_website:
+            return theme_website
         anchor_website = self._get_theme_anchor_website(module_name)
         if anchor_website:
             return anchor_website
-        return website_model.search([('theme_id.name', '=', module_name)], limit=1)
+        return website_model
 
     def _website_matches_theme(self, website, module_name):
         return bool(website and website.theme_id and website.theme_id.name == module_name)
