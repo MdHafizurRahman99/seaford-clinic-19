@@ -2,7 +2,7 @@
 <odoo>
 
 <function model="ir.model.data" name="write">
-    <value model="ir.model.data" search="[('module', '=', 'theme_medical_clinic_east'), ('name', 'in', ['page_home', 'page_coming_soon', 'menu_home'])]"/>
+    <value model="ir.model.data" search="[('module', '=', 'theme_medical_clinic_east'), ('model', 'in', ['website.page', 'website.menu'])]"/>
     <value eval="{'noupdate': False}"/>
 </function>
 

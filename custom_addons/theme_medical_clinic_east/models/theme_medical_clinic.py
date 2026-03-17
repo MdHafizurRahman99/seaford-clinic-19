@@ -29,6 +29,9 @@ class ThemeMedicalClinicEast(models.AbstractModel):
         theme_website = website_model.search([('theme_id.name', '=', module_name)], limit=1)
         if theme_website:
             return theme_website
+        clinic_website = self._get_clinic_website_candidate(website_model)
+        if clinic_website:
+            return clinic_website
         anchor_website = self._get_theme_anchor_website(module_name)
         if anchor_website:
             return anchor_website
@@ -54,6 +57,13 @@ class ThemeMedicalClinicEast(models.AbstractModel):
             if record and 'website_id' in record._fields and record.website_id:
                 return record.website_id
         return self.env['website']
+
+    def _get_clinic_website_candidate(self, website_model):
+        return website_model.search([
+            '|',
+            ('domain', 'ilike', 'seafordeastmedical'),
+            ('name', 'ilike', 'Seaford East Medical Clinic'),
+        ], limit=1)
 
     def _bind_theme_records_to_website(self, module_name, website_id):
         data_records = self.env['ir.model.data'].sudo().search([
