@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 <record id="page_chronic_disease_management" model="website.page">
     <field name="name">Chronic Disease Management</field>
     <field name="is_published" eval="True"/>
@@ -9,99 +9,10 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_chronic_disease_management">
             <t t-call="website.layout">
-                <t t-set="additional_title">Chronic Disease Management | Seaford East Medical Clinic</t>
+                <t t-set="additional_title">Chronic Disease Management</t>
                 <div id="wrap" class="oe_structure">
-                    <section class="pt80 pb80" data-snippet="s_text_block" style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
-                        <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Chronic Disease Management</p>
-                            <h1 style="color:white;font-weight:800;font-size:2.4rem;">Structured care planning for long-term conditions that need regular review</h1>
-                            <p style="color:rgba(255,255,255,0.88);font-size:1.05rem;max-width:760px;margin:0 auto;line-height:1.8;">Chronic disease management at Seaford East Medical Clinic is designed to support patients who need continuity, practical follow-up, coordinated referrals, and realistic goals over time rather than one-off care.</p>
-                        </div>
-                    </section>
-
-                    <section class="pt80 pb48" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Care plans and reviews</h4>
-                                        <p style="color:#555;line-height:1.8;margin:0;">Appointments can include GP management planning, review of goals, medication discussion, and changes to the next stage of care.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Monitoring and risk reduction</h4>
-                                        <p style="color:#555;line-height:1.8;margin:0;">Long-term care often involves reviewing risk factors, symptoms, investigations, and whether the current plan is actually working day to day.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Team-based support</h4>
-                                        <p style="color:#555;line-height:1.8;margin:0;">Some patients also benefit from nursing input, allied referrals, structured recalls, and more regular follow-up through the clinic team.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
-                        <div class="container">
-                            <div class="row g-4 align-items-stretch">
-                                <div class="col-lg-7">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 12px rgba(0,0,0,0.05);">
-                                        <h3 style="font-weight:700;color:#1a4a54;">Common reasons patients book</h3>
-                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
-                                            <li>GP Management Plans and Team Care Arrangements</li>
-                                            <li>Medication and symptom review</li>
-                                            <li>Goal tracking and follow-up on investigations</li>
-                                            <li>Review after specialist input or hospital discharge</li>
-                                            <li>Coordination of allied health or broader support pathways</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color:white;font-weight:700;">Longer reviews are often needed</h4>
-                                        <p style="color:rgba(255,255,255,0.88);line-height:1.8;">Chronic disease appointments often need more time than a routine short consult, especially when care plans, medications, test results, or referrals all need to be reviewed together.</p>
-                                        <a href="/appointments" class="btn mt-2" style="background:#ffffff;color:#1a4a54;font-weight:700;border-radius:12px 0 12px 0;">Appointment Guidance</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb64" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Conditions often managed through this pathway</h4>
-                                        <p style="color:#555;line-height:1.8;">Examples include diabetes, hypertension, cardiovascular risk, respiratory conditions, ongoing musculoskeletal issues, and other long-term problems that benefit from planned review.</p>
-                                        <p style="color:#555;line-height:1.8;margin-bottom:0;">The page is about the care structure rather than one diagnosis only.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Before you attend</h4>
-                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
-                                            <li>Bring medication lists, recent results, and specialist letters</li>
-                                            <li>Bring hospital discharge summaries if your care has recently changed</li>
-                                            <li>Ask for enough time if several management issues need review</li>
-                                            <li>Expect follow-up intervals to be part of the plan, not an afterthought</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
-                        <div class="container text-center">
-                            <h3 style="color:white;font-weight:800;">Need a chronic disease review?</h3>
-                            <p style="color:rgba(255,255,255,0.85);max-width:680px;margin:0 auto 1.25rem;">Book a planned review or contact reception if you need help arranging the right appointment length for care-plan or follow-up work.</p>
-                            <a href="/appointments" class="btn" style="background:#ffffff;color:#3899ac;font-weight:700;border-radius:12px 0 12px 0;padding:0.8rem 2.2rem;">Book Review</a>
-                        </div>
-                    </section>
+                    <section class="pt80 pb80" data-snippet="s_text_block" style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);"><div class="container text-center"><h1 style="color:white;font-weight:800;font-size:2.3rem;">Chronic Disease Management</h1><p style="color:rgba(255,255,255,0.85);font-size:1.05rem;">Coordinated care plans for long-term conditions</p></div></section>
+                    <section class="pt80 pb80" data-snippet="s_text_block"><div class="container"><div class="row g-4"><div class="col-lg-6"><ul style="padding-left:1.2rem;line-height:1.9;color:#555;"><li>GP Management Plans and Team Care Arrangements</li><li>Regular review appointments and goal tracking</li><li>Medication and risk-factor optimization</li><li>Allied health referrals</li></ul></div><div class="col-lg-6"><div class="bg-white rounded-3 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);"><h4 style="font-weight:700;color:#1a4a54;">Common Conditions</h4><p style="color:#555;line-height:1.8;">Diabetes, hypertension, cardiovascular risk, respiratory disease, and musculoskeletal conditions.</p><a href="/appointments" class="btn mt-2" style="background:#3899ac;color:white;font-weight:700;border-radius:12px 0 12px 0;">Book Review</a></div></div></div></div></section>
                 </div>
             </t>
         </t>

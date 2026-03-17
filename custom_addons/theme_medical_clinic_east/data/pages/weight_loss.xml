@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
 <record id="page_weight_loss" model="website.page">
     <field name="name">Weight Loss</field>
@@ -10,112 +10,41 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_weight_loss">
             <t t-call="website.layout">
-                <t t-set="additional_title">Weight Loss | Seaford East Medical Clinic</t>
+                <t t-set="additional_title">Weight Loss</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Weight Management</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Medically informed weight support built around realistic long-term change</h1>
-                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
-                                Weight management at Seaford East Medical Clinic is framed as a health pathway, not a quick-fix program. The aim is to connect weight goals with metabolic health, activity, chronic disease risk, and practical follow-up.
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Weight Management</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Practical, sustainable plans based on your health profile
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt64 pb24" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
-                                        <img src="/theme_medical_clinic_east/static/src/img/content/services/service-weight-management-01.jpg"
-                                             class="img-fluid w-100" alt="Weight management consultation" style="height: 420px; object-fit: cover;"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb48" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Medical review first</h4>
-                                        <p style="color: #555; line-height: 1.8; margin: 0;">
-                                            Useful planning starts with a medical review of weight history, current health risks, medications, and the broader context rather than focusing on a number alone.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Practical strategy</h4>
-                                        <p style="color: #555; line-height: 1.8; margin: 0;">
-                                            Plans may include activity, eating patterns, behaviour change, and allied or exercise support depending on what is realistic for the patient.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Review over time</h4>
-                                        <p style="color: #555; line-height: 1.8; margin: 0;">
-                                            Sustainable change usually needs review, adjustment, and support over time, especially when weight goals overlap with chronic disease or metabolic risk.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
-                        <div class="container">
-                            <div class="row g-4 align-items-stretch">
-                                <div class="col-lg-7">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">When this page is most useful</h4>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
-                                            <li>You want a medically grounded review rather than generic advice</li>
-                                            <li>Weight goals overlap with diabetes, cardiovascular risk, sleep, mobility, or chronic disease concerns</li>
-                                            <li>You need a realistic plan that can work with your current health profile</li>
-                                            <li>You want support that can connect with preventive health or allied pathways</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color: white; font-weight: 700;">Longer consults help</h4>
-                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 0;">
-                                            Weight-related care often needs more than a quick visit because history, goals, barriers, medications, and risk factors all affect the plan.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb64" data-snippet="s_text_block">
+                    <section class="pt80 pb80" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Related pathways</h4>
-                                        <p style="margin: 0; line-height: 1.9;">
-                                            <a href="/health-wellness" style="color: #3899ac; font-weight: 700; text-decoration: none;">Health and Wellness</a><br/>
-                                            <a href="/preventative-health" style="color: #3899ac; font-weight: 700; text-decoration: none;">Preventative Health</a><br/>
-                                            <a href="/exercise-physiology" style="color: #3899ac; font-weight: 700; text-decoration: none;">Exercise Physiology</a>
-                                        </p>
-                                    </div>
+                                    <h3 style="font-weight: 700; color: #1a4a54;">Our Approach</h3>
+                                    <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                        <li>Medical assessment and metabolic risk review</li>
+                                        <li>Diet and physical activity planning</li>
+                                        <li>Behavior and habit-based goal setting</li>
+                                        <li>Monitoring and follow-up consultations</li>
+                                        <li>Allied health referral when appropriate</li>
+                                    </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Before you attend</h4>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
-                                            <li>Bring current medications and recent health results if relevant</li>
-                                            <li>Think about your main goal and the main barriers you are facing</li>
-                                            <li>Ask for enough time if the review needs to cover several health issues</li>
-                                            <li>Expect the plan to be practical and review-based rather than instant</li>
-                                        </ul>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Suitable For</h4>
+                                        <p style="color: #555; line-height: 1.8;">
+                                            Patients looking for weight reduction, metabolic health improvement, or long-term support with lifestyle change and chronic condition risk reduction.
+                                        </p>
+                                        <a href="/appointments" class="btn mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">
+                                            Book Review
+                                        </a>
                                     </div>
                                 </div>
                             </div>

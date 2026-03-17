@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
 <record id="page_allied_health" model="website.page">
     <field name="name">Our Health Team - Allied Health</field>
@@ -10,42 +10,41 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_allied_health">
             <t t-call="website.layout">
-                <t t-set="additional_title">Allied Health | Seaford East Medical Clinic</t>
+                <t t-set="additional_title">Allied Health</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Allied Health</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Allied health support connected to your broader GP care plan</h1>
-                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
-                                Allied health at Seaford East Medical Clinic is most useful when it sits inside a clear GP-led pathway. This page explains how referrals, goals, and follow-up can work together rather than as isolated appointments.
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Allied Health Team</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Multidisciplinary support for comprehensive patient care
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb48" data-snippet="s_text_block">
+                    <section class="pt80 pb80" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4 justify-content-center">
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
                                         <i class="fa fa-cutlery d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Nutrition and diet support</h5>
-                                        <p style="color: #555; line-height: 1.7; margin: 0;">Useful for diabetes, weight-related care, gastrointestinal issues, and broader metabolic health planning.</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Dietitian</h5>
+                                        <p style="color: #555; line-height: 1.7;">Nutrition support for diabetes, weight management, and gastrointestinal health.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
                                         <i class="fa fa-comments-o d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Mental health support</h5>
-                                        <p style="color: #555; line-height: 1.7; margin: 0;">Allied input can support stress, mood, and longer-term mental health plans when this fits the clinical picture.</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Psychology</h5>
+                                        <p style="color: #555; line-height: 1.7;">Support for stress, anxiety, mood concerns, and mental health care plans.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                    <div class="bg-white rounded-3 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
                                         <i class="fa fa-heartbeat d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic condition support</h5>
-                                        <p style="color: #555; line-height: 1.7; margin: 0;">Allied pathways can complement chronic disease management, exercise, recovery, and self-management planning.</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Diabetes Education</h5>
+                                        <p style="color: #555; line-height: 1.7;">Self-management guidance, medication education, and lifestyle planning.</p>
                                     </div>
                                 </div>
                             </div>
@@ -56,25 +55,27 @@
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Referral pathway</h4>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Referral Pathway</h4>
                                         <ol style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
-                                            <li>Start with a GP review to clarify the problem and the goal.</li>
-                                            <li>Work out which allied stream is most relevant.</li>
-                                            <li>Coordinate referral, timing, and follow-up expectations.</li>
-                                            <li>Review progress within the wider care plan.</li>
+                                            <li>Book GP review to confirm clinical goals.</li>
+                                            <li>Determine the right allied health stream.</li>
+                                            <li>Coordinate referral and follow-up timeline.</li>
+                                            <li>Review progress with your GP.</li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Related services</h4>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Related Services</h4>
                                         <p style="color: #555; line-height: 1.8;">
-                                            Allied health most often works alongside preventive care, chronic disease review, exercise physiology, and weight-related support.
+                                            Allied health often works alongside chronic disease care, exercise physiology, and weight management programs.
                                         </p>
-                                        <p style="margin: 0; line-height: 1.9;">
-                                            <a href="/chronic-disease-management" style="color: #3899ac; font-weight: 700; text-decoration: none;">Chronic Disease Management</a><br/>
-                                            <a href="/exercise-physiology" style="color: #3899ac; font-weight: 700; text-decoration: none;">Exercise Physiology</a><br/>
+                                        <p style="margin: 0;">
+                                            <a href="/chronic-disease-management" style="color: #3899ac; font-weight: 700; text-decoration: none;">Chronic Disease</a>
+                                            <span style="color: #9aa;"> | </span>
+                                            <a href="/exercise-physiology" style="color: #3899ac; font-weight: 700; text-decoration: none;">Exercise Physiology</a>
+                                            <span style="color: #9aa;"> | </span>
                                             <a href="/weight-loss" style="color: #3899ac; font-weight: 700; text-decoration: none;">Weight Management</a>
                                         </p>
                                     </div>

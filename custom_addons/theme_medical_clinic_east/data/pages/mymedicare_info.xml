@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
 <record id="page_mymedicare_info" model="website.page">
     <field name="name">MyMedicare Info</field>
@@ -10,73 +10,46 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_mymedicare_info">
             <t t-call="website.layout">
-                <t t-set="additional_title">MyMedicare Info | Seaford East Medical Clinic</t>
+                <t t-set="additional_title">MyMedicare Info</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">MyMedicare</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">General information about registering your regular practice</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
-                                MyMedicare is a government-run registration program linked to continuity of care. This page gives a simple overview and points patients to official sources for current eligibility and registration details.
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">MyMedicare Information</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Learn how voluntary registration can support continuity of care
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb48" data-snippet="s_text_block">
+                    <section class="pt80 pb80" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <h3 style="font-weight: 700; color: #1a4a54;">What this page is for</h3>
+                                    <h3 style="font-weight: 700; color: #1a4a54;">What is MyMedicare?</h3>
                                     <p style="color: #555; line-height: 1.8;">
-                                        The purpose of this page is to explain the program at a high level. Because program rules, eligibility, and registration steps can change over time, patients should use official government information for the current version.
+                                        MyMedicare is a voluntary patient registration model that helps strengthen the relationship between patients, their preferred GP, and their regular clinic.
                                     </p>
-                                    <h4 style="font-weight: 700; color: #1a4a54;">Why patients may be interested</h4>
-                                    <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
-                                        <li>It supports the idea of nominating your regular practice</li>
-                                        <li>It aligns with continuity of care through your usual clinic team</li>
-                                        <li>It may matter for some program settings or future funded pathways</li>
+                                    <h4 style="font-weight: 700; color: #1a4a54;">Potential Benefits</h4>
+                                    <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
+                                        <li>Improved continuity and coordination of care</li>
+                                        <li>Better support for long-term health needs</li>
+                                        <li>Potential access to additional funded services over time</li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">How to check current details</h4>
-                                        <ol style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin-bottom: 1rem;">
-                                            <li>Review the current official MyMedicare information.</li>
-                                            <li>Confirm whether you are eligible and whether registration suits your situation.</li>
-                                            <li>If needed, contact reception for general practice-level assistance.</li>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How to Register</h4>
+                                        <ol style="padding-left: 1.2rem; line-height: 1.9; color: #555;">
+                                            <li>Confirm you are eligible to register.</li>
+                                            <li>Register through your Medicare online account or with reception support.</li>
+                                            <li>Select Seaford East Medical Clinic as your preferred practice.</li>
                                         </ol>
                                         <a href="https://www.servicesaustralia.gov.au/mymedicare" target="_blank"
                                            class="btn mt-2" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">
                                             Visit Official MyMedicare
                                         </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb64" data-snippet="s_text_block" style="background:#f7fbfc;">
-                        <div class="container">
-                            <div class="row g-4 align-items-stretch">
-                                <div class="col-lg-7">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">How Seaford East uses this page</h4>
-                                        <p style="color: #555; line-height: 1.8;">
-                                            This page is intended as a patient guidance page rather than a substitute for official program documentation. It helps patients understand why continuity of care matters and where to go next if they want current registration guidance.
-                                        </p>
-                                        <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
-                                            For exact rules, timing, or online registration steps, use the official Services Australia resource linked above.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color: white; font-weight: 700;">Need general help?</h4>
-                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 0;">
-                                            Reception can help with general practice-level questions and direct you to the right clinic contact point, but official government sources remain the authority for current MyMedicare details.
-                                        </p>
                                     </div>
                                 </div>
                             </div>

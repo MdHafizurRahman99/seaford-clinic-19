@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
 <record id="page_medical_procedures" model="website.page">
     <field name="name">Medical Procedures</field>
@@ -10,96 +10,43 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_medical_procedures">
             <t t-call="website.layout">
-                <t t-set="additional_title">Medical Procedures | Seaford East Medical Clinic</t>
+                <t t-set="additional_title">Medical Procedures</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Medical Procedures</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Procedure appointments planned with the right booking time and follow-up</h1>
-                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
-                                Seaford East Medical Clinic offers a range of in-clinic procedure pathways, but these appointments usually need more preparation than a routine consultation. This page helps patients understand what to discuss before booking.
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Medical Procedures</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                In-clinic procedures with clear planning and follow-up
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb48" data-snippet="s_text_block">
+                    <section class="pt80 pb80" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Common procedure pathways</h4>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Common Procedures</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
                                             <li>Wound management and suturing</li>
-                                            <li>Cryotherapy and minor skin lesion treatment</li>
-                                            <li>Iron infusion planning and follow-up</li>
-                                            <li>Contraceptive implant insertion or removal</li>
-                                            <li>Minor procedural assessment that may lead to treatment room care</li>
+                                            <li>Cryotherapy and skin lesion treatments</li>
+                                            <li>Iron infusion appointments</li>
+                                            <li>Contraceptive implant insertion/removal</li>
+                                            <li>Minor procedural assessments and follow-up</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">What to expect before booking</h4>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>An initial assessment may be needed before the procedure is confirmed</li>
-                                            <li>Suitability, risks, and consent are usually reviewed in advance</li>
-                                            <li>Some procedures need special preparation or specific consumables</li>
-                                            <li>Follow-up dressings, reviews, or result discussions may also need separate bookings</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
-                        <div class="container">
-                            <div class="row g-4 align-items-stretch">
-                                <div class="col-lg-7">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
-                                        <h3 style="font-weight:700;color:#1a4a54;">Tell reception if your booking involves</h3>
-                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
-                                            <li>A procedure rather than a standard GP review</li>
-                                            <li>Dressings, wound review, or a recent procedure follow-up</li>
-                                            <li>Multiple concerns that may need assessment before treatment</li>
-                                            <li>Medication issues, allergies, or questions about recovery planning</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color:white;font-weight:700;">Fees and booking time matter</h4>
-                                        <p style="color:rgba(255,255,255,0.88);line-height:1.8;">Procedure appointments often need specific appointment lengths and may involve additional billing elements. It is better to confirm this early than arrive in the wrong slot.</p>
-                                        <a href="/fees" class="btn mt-2" style="background:#ffffff;color:#1a4a54;font-weight:700;border-radius:12px 0 12px 0;">Fees Guidance</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb64" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Related procedure services</h4>
-                                        <p style="margin:0;line-height:1.9;">
-                                            <a href="/iron-infusions" style="color:#3899ac;font-weight:700;text-decoration:none;">Iron Infusions</a><br/>
-                                            <a href="/contraceptive-implant" style="color:#3899ac;font-weight:700;text-decoration:none;">Contraceptive Implant</a><br/>
-                                            <a href="/skin-landing-page" style="color:#3899ac;font-weight:700;text-decoration:none;">Skin Checks</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Before you attend</h4>
-                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
-                                            <li>Bring relevant reports, medication details, and recent letters</li>
-                                            <li>Ask if an initial review is needed before the procedure itself</li>
-                                            <li>Check if there are preparation instructions or recovery considerations</li>
-                                            <li>Confirm follow-up timing before leaving the clinic</li>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">What to Expect</h4>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                            <li>Initial assessment and consent discussion</li>
+                                            <li>Procedure suitability and risk review</li>
+                                            <li>Post-procedure care instructions</li>
+                                            <li>Follow-up appointment planning</li>
+                                            <li>Fee advice before booking where applicable</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -109,12 +56,12 @@
 
                     <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
                         <div class="container text-center">
-                            <h3 style="color: white; font-weight: 800;">Need a procedure booking?</h3>
-                            <p style="color: rgba(255,255,255,0.85); max-width: 620px; margin: 0 auto 1.25rem; line-height:1.8;">
-                                Contact reception before booking if you are unsure whether the visit needs assessment first, a longer slot, or preparation instructions.
+                            <h3 style="color: white; font-weight: 800;">Need a Procedure Booking?</h3>
+                            <p style="color: rgba(255,255,255,0.85); max-width: 620px; margin: 0 auto 1.25rem;">
+                                Procedure bookings often require specific appointment lengths and preparation instructions.
                             </p>
                             <a href="/appointments" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
-                                Procedure Booking Guidance
+                                Contact for Procedure Booking
                             </a>
                         </div>
                     </section>

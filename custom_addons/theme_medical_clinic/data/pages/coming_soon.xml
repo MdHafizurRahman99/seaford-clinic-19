@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
 <record id="page_coming_soon" model="website.page">
     <field name="name">Coming Soon</field>
     <field name="is_published" eval="True"/>
     <field name="key">theme_medical_clinic.page_coming_soon</field>
-    <field name="url">/coming-soon-central</field>
+    <field name="url">/coming-soon</field>
     <field name="type">qweb</field>
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic.page_coming_soon">
@@ -13,20 +13,120 @@
                 <t t-set="additional_title">Coming Soon | Seaford Central Medical Clinic</t>
                 <div id="wrap" class="oe_structure clinic-coming-soon clinic-coming-soon--central">
 
-                    <section class="clinic-coming-soon__hero clinic-coming-soon__hero--simple">
+                    <section class="clinic-coming-soon__hero">
                         <div class="clinic-coming-soon__hero-media"
                              style="background-image: url('/theme_medical_clinic/static/src/img/content/hero_bg.jpg');"/>
                         <div class="container position-relative">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-8 col-lg-9 text-center">
+                            <div class="row align-items-center g-5">
+                                <div class="col-lg-7">
                                     <span class="clinic-coming-soon__eyebrow">Seaford Central Medical Clinic</span>
-                                    <h1 class="clinic-coming-soon__title clinic-coming-soon__title--simple">COMING SOON</h1>
-                                    <p class="clinic-coming-soon__copy clinic-coming-soon__copy--simple">
-                                        Our new website is on the way.
+                                    <h1 class="clinic-coming-soon__title">A refreshed digital clinic experience is on the way.</h1>
+                                    <p class="clinic-coming-soon__copy">
+                                        We are preparing a calm, easy-to-use launch page for patients who want quick access
+                                        to appointments, services, and trusted clinic information.
                                     </p>
                                     <div class="clinic-coming-soon__actions">
-                                        <a href="/" class="btn btn-light">View Current Homepage</a>
+                                        <a href="tel:+61300000000" class="btn btn-light">Call the Clinic</a>
+                                        <a href="/contact" class="btn btn-outline-light">Contact Us</a>
                                     </div>
+                                    <div class="clinic-coming-soon__highlights">
+                                        <div class="clinic-coming-soon__highlight">
+                                            <strong>Family-first</strong>
+                                            <span>Designed around everyday care and preventive health.</span>
+                                        </div>
+                                        <div class="clinic-coming-soon__highlight">
+                                            <strong>Simple access</strong>
+                                            <span>Appointments, services and clinic details in fewer clicks.</span>
+                                        </div>
+                                        <div class="clinic-coming-soon__highlight">
+                                            <strong>Launching soon</strong>
+                                            <span>Built to reflect the same warmth patients receive in person.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="clinic-coming-soon__panel">
+                                        <p class="clinic-coming-soon__panel-label">Launch Preview</p>
+                                        <h2>What patients will find first</h2>
+                                        <ul class="clinic-coming-soon__checklist">
+                                            <li><i class="fa fa-check-circle"/>Clear appointment and contact pathways</li>
+                                            <li><i class="fa fa-check-circle"/>Fast links to primary services and care areas</li>
+                                            <li><i class="fa fa-check-circle"/>A lighter, more welcoming mobile experience</li>
+                                        </ul>
+                                        <div class="clinic-coming-soon__progress">
+                                            <div class="clinic-coming-soon__progress-bar"/>
+                                        </div>
+                                        <p class="clinic-coming-soon__panel-note">
+                                            While the new page is being prepared, our reception team remains available by phone
+                                            and email for all patient enquiries.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="clinic-coming-soon__details">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <article class="clinic-coming-soon__info-card">
+                                        <span class="clinic-coming-soon__info-icon">
+                                            <i class="fa fa-stethoscope"/>
+                                        </span>
+                                        <p class="clinic-coming-soon__info-kicker">Care Focus</p>
+                                        <h3>Trusted family healthcare</h3>
+                                        <p>
+                                            The new landing page will guide patients toward general practice,
+                                            preventive health, chronic disease care and everyday support.
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <article class="clinic-coming-soon__info-card">
+                                        <span class="clinic-coming-soon__info-icon">
+                                            <i class="fa fa-clock-o"/>
+                                        </span>
+                                        <p class="clinic-coming-soon__info-kicker">Clinic Hours</p>
+                                        <h3>Open when patients need us</h3>
+                                        <p>
+                                            Monday to Friday 8:00 AM to 6:00 PM and Saturday 9:00 AM to 1:00 PM,
+                                            with after-hours guidance kept easy to find.
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <article class="clinic-coming-soon__info-card">
+                                        <span class="clinic-coming-soon__info-icon">
+                                            <i class="fa fa-phone"/>
+                                        </span>
+                                        <p class="clinic-coming-soon__info-kicker">Stay Connected</p>
+                                        <h3>Help is already available</h3>
+                                        <p>
+                                            Call <a href="tel:+61300000000">(03) 0000 0000</a> or email
+                                            <a href="mailto:info@seafordmedical.com.au">info@seafordmedical.com.au</a>
+                                            for appointments and general enquiries.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="clinic-coming-soon__support">
+                        <div class="container">
+                            <div class="clinic-coming-soon__support-inner">
+                                <div>
+                                    <p class="clinic-coming-soon__support-label">Still Taking Bookings</p>
+                                    <h2>Need assistance before the new site goes live?</h2>
+                                    <p class="clinic-coming-soon__support-copy">
+                                        Our team can still help with bookings, questions and clinic directions while the
+                                        upcoming launch page is being finalised.
+                                    </p>
+                                </div>
+                                <div class="clinic-coming-soon__support-actions">
+                                    <a href="mailto:info@seafordmedical.com.au" class="btn btn-light">Email Reception</a>
+                                    <a href="/services" class="btn btn-outline-light">View Services</a>
                                 </div>
                             </div>
                         </div>

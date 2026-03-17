@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
 <record id="page_about_us" model="website.page">
     <field name="name">About Us</field>
@@ -10,82 +10,81 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_about_us">
             <t t-call="website.layout">
-                <t t-set="additional_title">About Seaford East Medical Clinic</t>
+                <t t-set="additional_title">About Us</t>
                 <div id="wrap" class="oe_structure">
 
+                    <!-- Page Banner -->
                     <section class="pt80 pb80" data-snippet="s_text_block"
-                             style="background: linear-gradient(135deg, rgba(26,74,84,0.95) 0%, rgba(56,153,172,0.78) 100%), #3899ac;">
+                             style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%), #3899ac;">
                         <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Seaford East Medical Clinic</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Local care built around continuity and practical support</h1>
-                            <p style="color: rgba(255,255,255,0.88); font-size: 1.1rem; max-width: 760px; margin: 0 auto 1.5rem;">
-                                We are a Seaford-based general practice focused on family medicine, preventive health, treatment room care, and clear follow-up for patients who want a reliable local clinic.
-                            </p>
-                            <a href="/appointments" style="display: inline-block; background: #ffffff; color: #3899ac; text-decoration: none; font-weight: 700; padding: 0.85rem 2.2rem; border-radius: 14px 0 14px 0;">
-                                Book an Appointment
+                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">About Our Clinic</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">Caring for the Seaford community with dedication and expertise</p>
+                            <a href="/appointments" style="color: #3899ac; text-decoration: none; font-weight: 600;">
+                                <i class="fa fa-calendar me-1"/> Book An Appointment
                             </a>
                         </div>
                     </section>
 
+                    <!-- About Content -->
                     <section class="pt80 pb80" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row align-items-center g-5">
                                 <div class="col-lg-6">
-                                    <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">Who We Are</p>
-                                    <h2 style="font-weight: 800; color: #1a4a54;">A community clinic for everyday health needs and longer-term care</h2>
-                                    <div style="width: 60px; height: 3px; background: #3899ac; border-radius: 2px; margin: 1rem 0;"/>
+                                    <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">OUR STORY</p>
+                                    <h2 style="font-weight: 800; color: #1a4a54;">Caring for Seaford Since Day One</h2>
+                                    <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #3899ac, #3899ac); border-radius: 2px; margin: 1rem 0;"/>
                                     <p style="color: #555; line-height: 1.8;">
-                                        Seaford East Medical Clinic is designed to support routine appointments, preventive health reviews, chronic condition management, and treatment room care in one connected practice.
+                                        Seaford East Medical Clinic is a modern, fully equipped medical practice
+                                        dedicated to providing quality healthcare to individuals and families in the
+                                        Seaford community and surrounding areas.
                                     </p>
                                     <p style="color: #555; line-height: 1.8;">
-                                        Our goal is not to rush patients through short transactions. We aim to build familiarity over time, explain options clearly, and make it easier for individuals and families to return to a clinic that already understands their history.
+                                        Our clinic features multiple consulting rooms, a treatment room, and modern
+                                        diagnostic equipment. We are committed to creating a welcoming, comfortable
+                                        environment where patients feel at ease.
                                     </p>
-                                    <p style="color: #555; line-height: 1.8; margin-bottom: 0;">
-                                        That means practical booking advice, coordinated referrals when needed, and a team culture built around calm communication and reliable follow-up.
+                                    <p style="color: #555; line-height: 1.8;">
+                                        We pride ourselves on our patient-centred approach, taking the time to listen,
+                                        understand and address your health concerns thoroughly.
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
-                                        <img src="/theme_medical_clinic_east/static/src/img/content/clinic/clinic-reception-01.jpg"
-                                             class="img-fluid w-100" alt="Seaford East Medical Clinic" style="height: 420px; object-fit: cover;"/>
+                                    <div class="rounded-3 overflow-hidden" style="box-shadow: 0 12px 40px rgba(56,153,172,0.15);">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/hero_bg.jpg"
+                                             class="img-fluid w-100" alt="Our Clinic" style="height: 400px; object-fit: cover;"/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block" style="background-color: #f7fbfc;">
+                    <!-- Vision, Mission, Values -->
+                    <section class="pt80 pb80" data-snippet="s_text_block" style="background-color: #e8f4f6;">
                         <div class="container">
                             <div class="text-center mb-5">
-                                <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">What Patients Can Expect</p>
-                                <h2 style="font-weight: 800; color: #1a4a54;">How we want care to feel at Seaford East</h2>
+                                <h2 style="font-weight: 800; color: #1a4a54;">Our Vision, Mission &amp; Values</h2>
+                                <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #3899ac, #3899ac); border-radius: 2px; margin: 1rem auto;"/>
                             </div>
                             <div class="row g-4">
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <i class="fa fa-refresh d-block mb-3" style="font-size: 2.2rem; color: #3899ac;"/>
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Continuity</h4>
-                                        <p style="color: #555; line-height: 1.8; margin: 0;">
-                                            We value ongoing doctor-patient relationships, consistent notes, and follow-up that makes sense from one appointment to the next.
-                                        </p>
+                                    <div class="bg-white rounded-3 p-4 h-100 text-center" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <i class="fa fa-eye d-block mb-3" style="font-size: 2.5rem; color: #3899ac;"/>
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Our Vision</h4>
+                                        <p style="color: #555; line-height: 1.7;">To be the leading community medical clinic in Seaford, recognised for excellence in patient care and health outcomes.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <i class="fa fa-comments d-block mb-3" style="font-size: 2.2rem; color: #3899ac;"/>
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Clarity</h4>
-                                        <p style="color: #555; line-height: 1.8; margin: 0;">
-                                            We want patients to leave understanding the plan, the next step, and when they should book again or escalate a concern.
-                                        </p>
+                                    <div class="bg-white rounded-3 p-4 h-100 text-center" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <i class="fa fa-bullseye d-block mb-3" style="font-size: 2.5rem; color: #3899ac;"/>
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Our Mission</h4>
+                                        <p style="color: #555; line-height: 1.7;">To promote health and wellness through excellence in clinical practice, compassionate care, and a commitment to continuous improvement.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <i class="fa fa-users d-block mb-3" style="font-size: 2.2rem; color: #3899ac;"/>
-                                        <h4 style="font-weight: 700; color: #1a4a54;">Connected Care</h4>
-                                        <p style="color: #555; line-height: 1.8; margin: 0;">
-                                            General practice, nursing, procedures, preventive care, and allied support are presented as one joined-up patient journey.
-                                        </p>
+                                    <div class="bg-white rounded-3 p-4 h-100 text-center" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <i class="fa fa-heart d-block mb-3" style="font-size: 2.5rem; color: #3899ac;"/>
+                                        <h4 style="font-weight: 700; color: #1a4a54;">Our Values</h4>
+                                        <p style="color: #555; line-height: 1.7;">Patient-first approach, integrity, inclusivity, teamwork, and a commitment to evidence-based medicine and ethical practice.</p>
                                     </div>
                                 </div>
                             </div>
@@ -96,21 +95,21 @@
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">How We Work</h4>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">How We Work With Patients</h4>
                                         <ol style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>Start with your main concern and the context around it.</li>
-                                            <li>Recommend a clear treatment, review, or referral pathway.</li>
-                                            <li>Coordinate tests, procedures, care plans, or allied support when appropriate.</li>
-                                            <li>Make follow-up expectations clear so nothing important gets missed.</li>
+                                            <li>Understand your concern and health priorities.</li>
+                                            <li>Provide clear diagnosis and treatment options.</li>
+                                            <li>Coordinate follow-up, referrals, and continuity of care.</li>
+                                            <li>Review progress with practical long-term planning.</li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">If You Are New to the Clinic</h4>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h4 style="font-weight: 700; color: #1a4a54;">New to the Clinic?</h4>
                                         <p style="color: #555; line-height: 1.8;">
-                                            New patients can review appointment guidance, clinic fees, and patient information before attending. For complex issues, call reception so we can help allocate the right appointment length from the start.
+                                            If you are visiting for the first time, review patient information, fees, and appointment guidance before attending.
                                         </p>
                                         <p style="margin: 0;">
                                             <a href="/patient-information" style="color: #3899ac; font-weight: 700; text-decoration: none;">Patient Information</a>
@@ -125,18 +124,17 @@
                         </div>
                     </section>
 
-                    <section class="pt64 pb64" data-snippet="s_text_block" style="background-color: #e8f4f6;">
-                        <div class="container">
-                            <div class="text-center mb-4">
-                                <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">Practice Principles</p>
-                                <h3 style="font-weight: 700; color: #1a4a54;">What guides our decisions</h3>
-                            </div>
-                            <div class="row justify-content-center g-3 text-center">
-                                <div class="col-md-4 col-lg-2"><span class="d-block bg-white rounded-pill py-3 px-3 fw-bold text-muted" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">Evidence-based care</span></div>
-                                <div class="col-md-4 col-lg-2"><span class="d-block bg-white rounded-pill py-3 px-3 fw-bold text-muted" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">Respectful communication</span></div>
-                                <div class="col-md-4 col-lg-2"><span class="d-block bg-white rounded-pill py-3 px-3 fw-bold text-muted" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">Privacy and trust</span></div>
-                                <div class="col-md-4 col-lg-2"><span class="d-block bg-white rounded-pill py-3 px-3 fw-bold text-muted" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">Preventive focus</span></div>
-                                <div class="col-md-4 col-lg-2"><span class="d-block bg-white rounded-pill py-3 px-3 fw-bold text-muted" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">Inclusive access</span></div>
+                    <!-- Accreditations -->
+                    <section class="pt64 pb64" data-snippet="s_text_block">
+                        <div class="container text-center">
+                            <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">TRUSTED &amp; ACCREDITED</p>
+                            <h3 style="font-weight: 700; color: #1a4a54;">Our Affiliations</h3>
+                            <div class="row justify-content-center align-items-center mt-4 g-4">
+                                <div class="col-4 col-md-2"><span class="fw-bold text-muted">AGPAL</span></div>
+                                <div class="col-4 col-md-2"><span class="fw-bold text-muted">RACGP</span></div>
+                                <div class="col-4 col-md-2"><span class="fw-bold text-muted">AMA</span></div>
+                                <div class="col-4 col-md-2"><span class="fw-bold text-muted">Medicare</span></div>
+                                <div class="col-4 col-md-2"><span class="fw-bold text-muted">AHPRA</span></div>
                             </div>
                         </div>
                     </section>

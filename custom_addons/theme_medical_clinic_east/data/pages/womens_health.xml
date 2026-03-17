@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 <record id="page_womens_health" model="website.page">
     <field name="name">Women's Health</field>
     <field name="is_published" eval="True"/>
@@ -9,117 +9,10 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_womens_health">
             <t t-call="website.layout">
-                <t t-set="additional_title">Women's Health | Seaford East Medical Clinic</t>
+                <t t-set="additional_title">Women's Health</t>
                 <div id="wrap" class="oe_structure">
-                    <section class="pt80 pb80" data-snippet="s_text_block" style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
-                        <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Women's Health</p>
-                            <h1 style="color:white;font-weight:800;font-size:2.6rem;">Women's health care across screening, reproductive care, and life-stage change</h1>
-                            <p style="color:rgba(255,255,255,0.88);font-size:1.05rem;max-width:760px;margin:0 auto;line-height:1.8;">Seaford East Medical Clinic offers practical women's health care that supports preventive screening, contraception and fertility conversations, pregnancy-related care, and menopause or perimenopause reviews in a familiar general practice setting.</p>
-                        </div>
-                    </section>
-
-                    <section class="pt64 pb24" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
-                                        <img src="/theme_medical_clinic_east/static/src/img/content/services/service-womens-health-01.jpg"
-                                             class="img-fluid w-100" alt="Women's health consultation" style="height: 420px; object-fit: cover;"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb48" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Preventive care</h4>
-                                        <p style="color:#555;line-height:1.8;margin:0;">Routine check-ups, cervical screening, preventive reviews, and follow-up planning when symptoms or risk factors change.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Reproductive health</h4>
-                                        <p style="color:#555;line-height:1.8;margin:0;">Contraception reviews, fertility support discussions, family planning, and pregnancy-related GP care pathways.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Life-stage support</h4>
-                                        <p style="color:#555;line-height:1.8;margin:0;">Perimenopause, menopause, postnatal follow-up, and longer reviews when several concerns need to be discussed properly.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb48" data-snippet="s_text_block" style="background:#f7fbfc;">
-                        <div class="container">
-                            <div class="row g-4 align-items-stretch">
-                                <div class="col-lg-7">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
-                                        <h3 style="font-weight:700;color:#1a4a54;">Common reasons patients book</h3>
-                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
-                                            <li>Cervical screening and preventive review appointments</li>
-                                            <li>Contraception advice or contraceptive implant planning</li>
-                                            <li>Fertility support and family planning discussions</li>
-                                            <li>Perimenopause and menopause symptom review</li>
-                                            <li>Pregnancy, breastfeeding, or postnatal follow-up with the GP team</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color:white;font-weight:700;">When to book a longer consultation</h4>
-                                        <p style="color:rgba(255,255,255,0.88);line-height:1.8;">Please ask for a longer appointment if you need to discuss several issues, complex symptoms, mental health concerns, or major changes in hormones, fertility, or general health.</p>
-                                        <a href="/appointments" class="btn mt-2" style="background:#ffffff;color:#1a4a54;font-weight:700;border-radius:12px 0 12px 0;">Appointment Guidance</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt48 pb64" data-snippet="s_text_block">
-                        <div class="container">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Related women's health pathways</h4>
-                                        <p style="color:#555;line-height:1.8;">Some concerns are better explored through dedicated service pages if you know the main reason for your visit.</p>
-                                        <p style="margin:0;line-height:1.9;">
-                                            <a href="/menopause-perimenopause-care" style="color:#3899ac;font-weight:700;text-decoration:none;">Menopause and Perimenopause Care</a><br/>
-                                            <a href="/fertility-support-family-planning" style="color:#3899ac;font-weight:700;text-decoration:none;">Fertility Support and Family Planning</a><br/>
-                                            <a href="/pregnancy-breastfeeding" style="color:#3899ac;font-weight:700;text-decoration:none;">Pregnancy and Breastfeeding</a><br/>
-                                            <a href="/contraceptive-implant" style="color:#3899ac;font-weight:700;text-decoration:none;">Contraceptive Implant</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight:700;color:#1a4a54;">Before you attend</h4>
-                                        <ul style="padding-left:1.2rem;line-height:1.9;color:#555;margin:0;">
-                                            <li>Bring recent results, letters, and medication details if relevant</li>
-                                            <li>Ask for extra time if the issue is sensitive or complex</li>
-                                            <li>Review fees and billing if a longer consult may be needed</li>
-                                            <li>Let reception know if your booking needs treatment room support</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
-                        <div class="container text-center">
-                            <h3 style="color:white;font-weight:800;">Need a women's health consultation?</h3>
-                            <p style="color:rgba(255,255,255,0.85);max-width:680px;margin:0 auto 1.25rem;">Book a routine review online or contact reception if you want help choosing the right appointment length or doctor.</p>
-                            <a href="/appointments" class="btn" style="background:#ffffff;color:#3899ac;font-weight:700;border-radius:12px 0 12px 0;padding:0.8rem 2.2rem;">Book Consultation</a>
-                        </div>
-                    </section>
+                    <section class="pt80 pb80" data-snippet="s_text_block" style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);"><div class="container text-center"><h1 style="color:white;font-weight:800;font-size:2.6rem;">Women's Health</h1><p style="color:rgba(255,255,255,0.85);font-size:1.05rem;">Preventive, reproductive, and life-stage focused care</p></div></section>
+                    <section class="pt80 pb80" data-snippet="s_text_block"><div class="container"><div class="row g-4"><div class="col-lg-6"><ul style="padding-left:1.2rem;line-height:1.9;color:#555;"><li>Cervical screening and preventive checks</li><li>Contraception counseling</li><li>Fertility and family planning support</li><li>Perimenopause and menopause care</li><li>Pregnancy and postnatal follow-up</li></ul></div><div class="col-lg-6"><div class="bg-white rounded-3 p-4 h-100" style="box-shadow:0 2px 10px rgba(0,0,0,0.06);"><h4 style="font-weight:700;color:#1a4a54;">Related Services</h4><p><a href="/menopause-perimenopause-care">Menopause/Perimenopause Care</a><br/><a href="/fertility-support-family-planning">Fertility Support</a></p><a href="/appointments" class="btn mt-2" style="background:#3899ac;color:white;font-weight:700;border-radius:12px 0 12px 0;">Book Consultation</a></div></div></div></div></section>
                 </div>
             </t>
         </t>

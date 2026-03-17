@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 
 <record id="page_womens_mens_health" model="website.page">
     <field name="name">Women's and Men's Health</field>
@@ -10,44 +10,43 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_womens_mens_health">
             <t t-call="website.layout">
-                <t t-set="additional_title">Women's and Men's Health | Seaford East Medical Clinic</t>
+                <t t-set="additional_title">Women's and Men's Health</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Women's and Men's Health</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">A shared overview of life-stage, preventive, and long-term health pathways</h1>
-                            <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
-                                This page acts as a simple overview for patients who know they need a gender-focused health review but have not yet decided whether the women's health or men's health pathway is the better starting point.
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Women's &amp; Men's Health</h1>
+                            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                                Preventive and ongoing health care across all life stages
                             </p>
                         </div>
                     </section>
 
-                    <section class="pt80 pb48" data-snippet="s_text_block">
+                    <section class="pt80 pb80" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h3 style="font-weight: 700; color: #1a4a54;">Women's health pathway</h3>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>Cervical screening and preventive review</li>
-                                            <li>Contraception, fertility, and family planning discussions</li>
-                                            <li>Pregnancy, postnatal, and breastfeeding support</li>
-                                            <li>Perimenopause and menopause review</li>
-                                            <li>Longer consultations for broader overlapping women's health concerns</li>
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h3 style="font-weight: 700; color: #1a4a54;">Women's Health</h3>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
+                                            <li>Cervical screening and preventive checks</li>
+                                            <li>Contraception and family planning advice</li>
+                                            <li>Pregnancy, postnatal and breastfeeding support</li>
+                                            <li>Perimenopause and menopause care</li>
+                                            <li>Mental and emotional wellbeing support</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h3 style="font-weight: 700; color: #1a4a54;">Men's health pathway</h3>
-                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
+                                    <div class="bg-white rounded-3 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+                                        <h3 style="font-weight: 700; color: #1a4a54;">Men's Health</h3>
+                                        <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem;">
                                             <li>Cardiovascular and metabolic risk review</li>
                                             <li>General preventive health checks</li>
-                                            <li>Age-related screening and longer-term planning</li>
-                                            <li>Mental health and wellbeing review where relevant</li>
-                                            <li>Longer consultations for broad preventive or chronic-care discussions</li>
+                                            <li>Prostate and age-related screening guidance</li>
+                                            <li>Mental health consultations and care plans</li>
+                                            <li>Lifestyle medicine and long-term condition support</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -55,31 +54,15 @@
                         </div>
                     </section>
 
-                    <section class="pt48 pb64" data-snippet="s_text_block" style="background:#f7fbfc;">
-                        <div class="container">
-                            <div class="row g-4 align-items-stretch">
-                                <div class="col-lg-7">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
-                                        <h4 style="font-weight: 700; color: #1a4a54;">How to use this page</h4>
-                                        <ul style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
-                                            <li>Use it as a starting point if the issue is broad rather than highly specific</li>
-                                            <li>Move to the dedicated women's or men's health page once the main focus is clearer</li>
-                                            <li>Ask for a longer review if several preventive or life-stage issues need discussion</li>
-                                            <li>Return to the broader services page if you want to compare related pathways</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color: white; font-weight: 700;">Go to dedicated pages</h4>
-                                        <p style="margin: 0; line-height: 1.9; color: rgba(255,255,255,0.88);">
-                                            <a href="/womens-health" style="color: #ffffff; font-weight: 700; text-decoration: none;">Women's Health</a><br/>
-                                            <a href="/mens-health" style="color: #ffffff; font-weight: 700; text-decoration: none;">Men's Health</a><br/>
-                                            <a href="/appointments" style="color: #ffffff; font-weight: 700; text-decoration: none;">Appointments</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                    <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
+                        <div class="container text-center">
+                            <h3 style="color: white; font-weight: 800;">Need a Dedicated Health Review?</h3>
+                            <p style="color: rgba(255,255,255,0.85); max-width: 620px; margin: 0 auto 1.25rem;">
+                                For preventive screening and complex concerns, please book a longer consultation.
+                            </p>
+                            <a href="/appointments" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
+                                Book Consultation
+                            </a>
                         </div>
                     </section>
 

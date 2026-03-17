@@ -815,7 +815,7 @@
                             <div class="row align-items-center g-5">
                                 <div class="col-lg-6">
                                     <div class="clinic-img-wrap">
-                                        <img src="/theme_medical_clinic_east/static/src/img/content/clinic/clinic-interior-01.jpg" alt="Our modern clinic interior"/>
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/hero_bg.jpg" alt="Our modern clinic interior"/>
                                         <div class="clinic-img-badge">
                                             <div class="clinic-img-badge-icon"><i class="fa fa-trophy"></i></div>
                                             <div>
@@ -886,7 +886,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="doctor-card">
                                         <div class="doctor-img-wrap">
-                                            <img src="/theme_medical_clinic_east/static/src/img/content/team/doctor-amelia-hart.jpg" alt="Dr Amelia Hart"/>
+                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr Amelia Hart"/>
                                             <span class="doctor-specialty-badge">Family Medicine</span>
                                         </div>
                                         <div class="doctor-body">
@@ -898,7 +898,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="doctor-card">
                                         <div class="doctor-img-wrap">
-                                            <img src="/theme_medical_clinic_east/static/src/img/content/team/doctor-priya-menon.jpg" alt="Dr Priya Menon"/>
+                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr Priya Menon"/>
                                             <span class="doctor-specialty-badge">Women's &amp; Preventive Health</span>
                                         </div>
                                         <div class="doctor-body">
@@ -910,7 +910,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="doctor-card">
                                         <div class="doctor-img-wrap">
-                                            <img src="/theme_medical_clinic_east/static/src/img/content/team/doctor-cameron-wells.jpg" alt="Dr Cameron Wells"/>
+                                            <img src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png" alt="Dr Cameron Wells"/>
                                             <span class="doctor-specialty-badge">Skin &amp; Procedure Care</span>
                                         </div>
                                         <div class="doctor-body">
