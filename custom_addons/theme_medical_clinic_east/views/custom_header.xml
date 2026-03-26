@@ -24,21 +24,13 @@
                         <!-- Quick Links & Contact - Right -->
                         <div class="col text-md-end">
                             <div class="top-quick-links">
-                                <a href="/appointments" class="top-link d-none d-lg-inline-block">
-                                    <i class="fa fa-venus me-1"/>
-                                    <span>Peri/Menopause Appointment</span>
+                                <a href="https://www.hotdoc.com.au/medical-centres/seaford-VIC-3198/seaford-central-medical-clinic/doctors" target="_blank" rel="noopener noreferrer" class="top-link d-none d-lg-inline-block">
+                                    <i class="fa fa-medkit me-1"/>
+                                    <span>Book Flu Vaccine</span>
                                 </a>
-                                <a href="/patient-information" class="top-link d-none d-lg-inline-block">
-                                    <i class="fa fa-flag me-1"/>
-                                    <span>Request A Script</span>
-                                </a>
-                                <a href="/patient-information" class="top-link d-none d-lg-inline-block">
-                                    <i class="fa fa-users me-1"/>
-                                    <span>Request A Referral</span>
-                                </a>
-                                <a href="tel:0398756222" class="top-contact">
+                                <a href="tel:0397860002" class="top-contact">
                                     <i class="fa fa-phone me-1"/>
-                                    <span class="d-none d-lg-inline">(03) 9875 6222</span>
+                                    <span class="d-none d-lg-inline">(03) 9786 0002</span>
                                 </a>
                                 <a href="mailto:reception@seafordmedical.com.au" class="top-contact">
                                     <i class="fa fa-envelope me-1"/>
@@ -55,9 +47,7 @@
                 <div class="container-fluid px-4">
                     <!-- Logo & Brand -->
                     <a href="/" class="navbar-brand d-flex align-items-center text-decoration-none" data-name="Brand">
-                        <div class="logo-icon me-2">
-                            <i class="fa fa-plus-square"/>
-                        </div>
+                        <img src="/theme_medical_clinic_east/static/src/img/logo-seaford-east.svg" class="logo-mark me-2" alt="Seaford East Medical Clinic logo"/>
                         <div class="brand-text">
                             <span class="brand-name">SEAFORD EAST MEDICAL CLINIC</span>
                         </div>

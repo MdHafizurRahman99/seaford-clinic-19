@@ -128,7 +128,7 @@
                                             <span style="display: inline-block; background: #fdf6e5; color: #8a6513; font-size: 0.75rem; font-weight: 700; padding: 5px 10px; border-radius: 999px;">Returning Soon</span>
                                             <p class="text-muted mt-3" style="line-height: 1.7;">Family medicine, adolescent support, and prevention-first reviews for ongoing care.</p>
                                             <div class="d-flex justify-content-center flex-wrap" style="gap: 8px;">
-                                                <a href="tel:0398756222" class="btn btn-sm" style="background: #1a4a54; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Call</a>
+                                                <a href="tel:0397860002" class="btn btn-sm" style="background: #1a4a54; color: white; font-weight: 700; border-radius: 10px 0 10px 0;">Call</a>
                                                 <a href="/our-health-team-doctors/dr-grace-nguyen" class="btn btn-sm" style="background: #fff; color: #3899ac; border: 2px solid #3899ac; font-weight: 700; border-radius: 10px 0 10px 0;">Read Profile</a>
                                             </div>
                                         </div>
@@ -192,7 +192,7 @@
                             </p>
                             <div class="d-flex justify-content-center flex-wrap" style="gap: 12px;">
                                 <a href="/appointments" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.4rem;">Book Appointment</a>
-                                <a href="tel:0398756222" class="btn btn-lg" style="background: transparent; color: white; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.4rem;">Call Reception</a>
+                                <a href="tel:0397860002" class="btn btn-lg" style="background: transparent; color: white; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.4rem;">Call Reception</a>
                             </div>
                         </div>
                     </section>

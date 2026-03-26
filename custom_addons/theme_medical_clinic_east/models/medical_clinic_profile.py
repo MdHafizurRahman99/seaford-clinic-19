@@ -42,7 +42,7 @@ class MedicalClinicProfile(models.Model):
     )
     booking_url = fields.Char(help='External or internal booking link.')
     phone_fallback = fields.Char(
-        default='0398756222',
+        default='0397860002',
         help='Digits only. Used when online booking is not available.',
     )
     show_in_listing = fields.Boolean(default=True)

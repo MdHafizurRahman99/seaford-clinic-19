@@ -43,7 +43,7 @@
                                             <li>Routine review appointments</li>
                                             <li>Non-urgent care planning</li>
                                         </ul>
-                                        <a href="#online-booking-guide" class="btn" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">Online Booking Steps</a>
+                                        <a href="#online-booking-guide" class="btn" style="background: #3899ac; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">Book Online</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4" id="contact-reception">
@@ -58,7 +58,7 @@
                                             <li>Procedures or treatment room bookings</li>
                                             <li>Complex or time-sensitive concerns</li>
                                         </ul>
-                                        <a href="tel:0398756222" class="btn" style="background: #1a4a54; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">Call (03) 9875 6222</a>
+                                        <a href="tel:0397860002" class="btn" style="background: #1a4a54; color: white; font-weight: 700; border-radius: 12px 0 12px 0;">Call (03) 9786 0002</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -73,7 +73,7 @@
                                             <li>Ask for a longer appointment if needed</li>
                                             <li>Bring clinical history documents</li>
                                         </ul>
-                                        <a href="/patient-information" class="btn" style="background: #ffffff; color: #3899ac; font-weight: 700; border: 2px solid #3899ac; border-radius: 12px 0 12px 0;">Prepare for Your Visit</a>
+                                        <a href="https://www.hotdoc.com.au/medical-centres/signup?returnUrl=%2Fmedical-centres%2Fseaford-VIC-3198%2Fseaford-central-medical-clinic%2Fdoctors" target="_blank" rel="noopener noreferrer" class="btn" style="background: #ffffff; color: #3899ac; font-weight: 700; border: 2px solid #3899ac; border-radius: 12px 0 12px 0;">Patient Registration</a>
                                     </div>
                                 </div>
                             </div>
@@ -82,30 +82,28 @@
 
                     <section id="online-booking-guide" class="pt48 pb48" data-snippet="s_text_block" style="background: #f7fbfc;">
                         <div class="container">
-                            <div class="row g-4 align-items-stretch">
-                                <div class="col-lg-7">
-                                    <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 4px 18px rgba(0,0,0,0.05);">
-                                        <h3 style="font-weight: 700; color: #1a4a54;">Online Booking Guide</h3>
-                                        <ol style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>Choose the most accurate appointment reason and preferred clinician.</li>
-                                            <li>Select a time that fits the type of review you need.</li>
-                                            <li>If you cannot find a suitable option, contact reception for manual booking support.</li>
-                                        </ol>
-                                        <p style="margin: 14px 0 0; color: #555; line-height: 1.75;">
-                                            Telehealth, procedures, mental health care plans, and complex reviews often need different booking lengths than a routine GP slot.
-                                        </p>
+                            <div class="text-center" style="margin-bottom: 32px;">
+                                <p class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 2px; color: #3899ac; font-weight: 700; margin-bottom: 8px;">Online Booking</p>
+                                <h3 style="font-weight: 800; color: #1a4a54; margin-bottom: 0;">Book your appointment and register as a patient</h3>
+                            </div>
+                            <div class="row g-4 align-items-start">
+                                <div class="col-lg-8">
+                                    <div class="bg-white rounded-4 p-3 h-100" style="box-shadow: 0 4px 18px rgba(0,0,0,0.05); border: 1px solid rgba(56,153,172,0.12);">
+                                        <iframe src="https://www.hotdoc.com.au/medical-centres/seaford-VIC-3198/seaford-central-medical-clinic/doctors?wp=w_iframe" data-hotdoc-widget="iframe" width="100%" height="800" frameBorder="0" allow="payment"/>
+                                        <script async="async" src="https://cdn.hotdoc.com.au/static/assets/js/hotdoc-widgets.min.js" charset="utf-8"></script>
                                     </div>
                                 </div>
-                                <div class="col-lg-5">
+                                <div class="col-lg-4">
                                     <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color: white; font-weight: 700;">Urgent but not emergency?</h4>
+                                        <h4 style="color: white; font-weight: 700;">Patient Registration</h4>
                                         <p style="color: rgba(255,255,255,0.88); line-height: 1.8;">
-                                            If symptoms are worsening, or if you are unsure what category your problem fits into, call reception first so we can guide you to the safest next step.
+                                            If you are booking for the first time, complete your patient registration before selecting an appointment.
                                         </p>
+                                        <a href="https://www.hotdoc.com.au/medical-centres/signup?returnUrl=%2Fmedical-centres%2Fseaford-VIC-3198%2Fseaford-central-medical-clinic%2Fdoctors" target="_blank" rel="noopener noreferrer" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0; margin-bottom: 1rem;">Register Now</a>
                                         <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1rem;">
-                                            For emergencies, chest pain, severe breathing difficulty, stroke symptoms, or major trauma, call 000 immediately.
+                                            Need help with booking? Our reception team can guide you to the right appointment type.
                                         </p>
-                                        <a href="tel:0398756222" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0;">Call Reception</a>
+                                        <a href="tel:0397860002" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0;">Call Reception</a>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +148,7 @@
                                 Our reception team can help match your concern to the right clinician and booking length before you attend.
                             </p>
                             <div class="d-flex justify-content-center flex-wrap" style="gap: 12px;">
-                                <a href="tel:0398756222" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.2rem;">Call Reception</a>
+                                <a href="tel:0397860002" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.2rem;">Call Reception</a>
                                 <a href="/patient-information" class="btn btn-lg" style="background: transparent; color: white; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.2rem;">Patient Information</a>
                             </div>
                         </div>

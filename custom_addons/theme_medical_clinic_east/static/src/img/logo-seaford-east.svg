@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="542" height="344" viewBox="0 0 542 344" role="img" aria-label="Seaford East Medical Clinic logo">
+  <title>Seaford East Medical Clinic</title>
+  <g fill="none" stroke="#3d959d" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="198" cy="208" r="104" stroke-width="14"/>
+    <circle cx="318" cy="208" r="104" stroke-width="14"/>
+  </g>
+
+  <g fill="#3d959d">
+    <rect x="248" y="39" width="28" height="72" rx="2"/>
+    <rect x="226" y="61" width="72" height="28" rx="2"/>
+    <rect x="128" y="162" width="28" height="72" rx="2"/>
+    <rect x="106" y="184" width="72" height="28" rx="2"/>
+  </g>
+
+  <g fill="none" stroke="#3d959d" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="258" cy="162" r="8" stroke-width="8"/>
+    <line x1="258" y1="170" x2="258" y2="260" stroke-width="8"/>
+    <path d="M258 184 C241 174 222 176 207 191 C223 197 239 197 252 189" stroke-width="6"/>
+    <path d="M258 184 C275 174 294 176 309 191 C293 197 277 197 264 189" stroke-width="6"/>
+    <path d="M247 201 C258 210 258 220 247 230 C258 238 258 248 247 257" stroke-width="6"/>
+    <path d="M269 201 C258 210 258 220 269 230 C258 238 258 248 269 257" stroke-width="6"/>
+  </g>
+</svg>
