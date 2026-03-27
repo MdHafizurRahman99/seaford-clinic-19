@@ -19,7 +19,7 @@
                         healthcare services with warmth and professionalism.
                     </p>
                     <div class="mt-4">
-                        <a href="/contactus" class="btn btn-lg me-2 mb-2"
+                        <a href="/appointments" class="btn btn-lg me-2 mb-2"
                            style="background-color: #66CDAA; color: #1A3C34; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.25rem;">
                             Book Appointment
                         </a>

@@ -19,7 +19,7 @@
                         <div class="container text-center">
                             <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">About Our Clinic</h1>
                             <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">Caring for the Seaford community with dedication and expertise</p>
-                            <a href="/contactus" style="color: #66CDAA; text-decoration: none; font-weight: 600;">
+                            <a href="/appointments" style="color: #66CDAA; text-decoration: none; font-weight: 600;">
                                 <i class="fa fa-calendar me-1"/> Book An Appointment
                             </a>
                         </div>

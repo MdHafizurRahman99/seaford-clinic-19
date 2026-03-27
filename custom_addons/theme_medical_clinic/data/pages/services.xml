@@ -100,7 +100,7 @@
                             <p style="color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 1.5rem;">
                                 Book an appointment with our experienced team today.
                             </p>
-                            <a href="/contactus" class="btn btn-lg" style="background-color: #FFFFFF; color: #2E8B57; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.5rem;">
+                            <a href="/appointments" class="btn btn-lg" style="background-color: #FFFFFF; color: #2E8B57; border-radius: 14px 0px 14px 0px; font-weight: 700; padding: 0.85rem 2.5rem;">
                                 Book Appointment
                             </a>
                         </div>

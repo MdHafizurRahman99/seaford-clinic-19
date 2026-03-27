@@ -37,6 +37,15 @@
         <field name="sequence" type="int">40</field>
     </record>
 
+    <!-- Appointments -->
+    <record id="menu_appointments" model="website.menu">
+        <field name="name">Appointments</field>
+        <field name="url">/appointments</field>
+        <field name="page_id" ref="theme_medical_clinic.page_appointments"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">45</field>
+    </record>
+
     <!-- Contact Us -->
     <record id="menu_contact" model="website.menu">
         <field name="name">Contact Us</field>

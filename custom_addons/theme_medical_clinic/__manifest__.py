@@ -21,6 +21,7 @@
         'data/pages/about.xml',
         'data/pages/services.xml',
         'data/pages/team.xml',
+        'data/pages/appointments.xml',
         'data/pages/contact.xml',
         'data/pages/coming_soon.xml',
         'data/menu.xml',
