@@ -2,7 +2,7 @@
 <odoo>
 
 <!-- Custom Two-Tier Medical Clinic Header -->
-<template id="custom_medical_header" inherit_id="website.layout" name="Medical Clinic Custom Header" active="True">
+<template id="custom_medical_header" inherit_id="website.layout" name="Medical Clinic Custom Header" active="False">
     <xpath expr="//header" position="replace">
         <header id="medical-clinic-header" class="medical-clinic-header">
             <!-- Top Info Bar -->
