@@ -26,6 +26,9 @@
 
 <!-- Custom footer with clinic info -->
 <template id="custom_footer" inherit_id="website.layout" name="Medical Clinic Footer" active="False">
+    <xpath expr="//div[hasclass('o_footer_copyright')]" position="before">
+        <t t-set="no_copyright" t-value="True"/>
+    </xpath>
     <xpath expr="//div[@id='footer']" position="replace">
         <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
             <!-- Main Footer -->
