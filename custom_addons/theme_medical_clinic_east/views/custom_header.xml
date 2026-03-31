@@ -21,13 +21,9 @@
                             </div>
                         </div>
                         
-                        <!-- Quick Links & Contact - Right -->
+                        <!-- Contact - Right -->
                         <div class="col text-md-end">
                             <div class="top-quick-links">
-                                <a href="https://www.hotdoc.com.au/medical-centres/seaford-VIC-3198/seaford-central-medical-clinic/doctors" target="_blank" rel="noopener noreferrer" class="top-link d-none d-lg-inline-block">
-                                    <i class="fa fa-medkit me-1"/>
-                                    <span>Book Flu Vaccine</span>
-                                </a>
                                 <a href="tel:0397860002" class="top-contact">
                                     <i class="fa fa-phone me-1"/>
                                     <span class="d-none d-lg-inline">(03) 9786 0002</span>
@@ -105,7 +101,6 @@
                                     <li><a class="dropdown-item" href="/iron-infusions">Iron Infusions</a></li>
                                     <li><a class="dropdown-item" href="/shingles-vaccine">Shingles Vaccine</a></li>
                                     <li><a class="dropdown-item" href="/contraceptive-implant">Contraceptive Implant</a></li>
-                                    <li><a class="dropdown-item" href="/menopause-perimenopause-care">Menopause/Perimenopause Care</a></li>
                                     <li><a class="dropdown-item" href="/fertility-support-family-planning">Fertility Support + Family Planning</a></li>
                                     <li><a class="dropdown-item" href="/skin-landing-page">Skin Checks</a></li>
                                     <li><a class="dropdown-item" href="/sexual-health">Sexual Health</a></li>

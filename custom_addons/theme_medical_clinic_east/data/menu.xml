@@ -293,13 +293,6 @@
         <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
         <field name="sequence" type="int">250</field>
     </record>
-    <record id="menu_menopause_perimenopause_care" model="website.menu">
-        <field name="name">Menopause/Perimenopause Care</field>
-        <field name="url">/menopause-perimenopause-care</field>
-        <field name="page_id" ref="theme_medical_clinic_east.page_menopause_perimenopause_care"/>
-        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
-        <field name="sequence" type="int">260</field>
-    </record>
     <record id="menu_fertility_support_family_planning" model="website.menu">
         <field name="name">Fertility Support + Family Planning</field>
         <field name="url">/fertility-support-family-planning</field>
