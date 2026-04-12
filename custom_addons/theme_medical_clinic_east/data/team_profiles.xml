@@ -3,7 +3,7 @@
 
     <!-- Doctor profiles -->
     <record id="profile_doctor_dr_amir_abbass" model="medical.clinic.profile">
-        <field name="name">Dr Amelia Hart</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-amelia-hart</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -15,7 +15,7 @@
     </record>
 
     <record id="profile_doctor_dr_alvin_ng" model="medical.clinic.profile">
-        <field name="name">Dr Lucas Bennett</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-lucas-bennett</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -27,7 +27,7 @@
     </record>
 
     <record id="profile_doctor_dr_naomi_kilov" model="medical.clinic.profile">
-        <field name="name">Dr Priya Menon</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-priya-menon</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -40,7 +40,7 @@
     </record>
 
     <record id="profile_doctor_dr_xinyu_liang" model="medical.clinic.profile">
-        <field name="name">Dr Ethan Cole</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-ethan-cole</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -52,7 +52,7 @@
     </record>
 
     <record id="profile_doctor_dr_laura_robson" model="medical.clinic.profile">
-        <field name="name">Dr Grace Nguyen</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-grace-nguyen</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -65,7 +65,7 @@
     </record>
 
     <record id="profile_doctor_dr_greg_scher" model="medical.clinic.profile">
-        <field name="name">Dr Samuel Brooks</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-samuel-brooks</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -77,7 +77,7 @@
     </record>
 
     <record id="profile_doctor_dr_gemma_miller" model="medical.clinic.profile">
-        <field name="name">Dr Zara Patel</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-zara-patel</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -89,7 +89,7 @@
     </record>
 
     <record id="profile_doctor_dr_srishti_dhir" model="medical.clinic.profile">
-        <field name="name">Dr Daniel Kim</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-daniel-kim</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -102,7 +102,7 @@
     </record>
 
     <record id="profile_doctor_dr_elizabeth_zammit" model="medical.clinic.profile">
-        <field name="name">Dr Olivia Marsh</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-olivia-marsh</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -115,7 +115,7 @@
     </record>
 
     <record id="profile_doctor_dr_claire_langford" model="medical.clinic.profile">
-        <field name="name">Dr Nathan Reid</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-nathan-reid</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -127,7 +127,7 @@
     </record>
 
     <record id="profile_doctor_dr_trisha_nicholls" model="medical.clinic.profile">
-        <field name="name">Dr Chloe Mercer</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-chloe-mercer</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -139,7 +139,7 @@
     </record>
 
     <record id="profile_doctor_dr_cora_mayer" model="medical.clinic.profile">
-        <field name="name">Dr Sophie Tran</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-sophie-tran</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -151,7 +151,7 @@
     </record>
 
     <record id="profile_doctor_dr_roxana_courtney" model="medical.clinic.profile">
-        <field name="name">Dr Cameron Wells</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-cameron-wells</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -164,7 +164,7 @@
     </record>
 
     <record id="profile_doctor_dr_kachig_malyan" model="medical.clinic.profile">
-        <field name="name">Dr Neha Kapoor</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-neha-kapoor</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -176,7 +176,7 @@
     </record>
 
     <record id="profile_doctor_dr_jason_rajakulendran" model="medical.clinic.profile">
-        <field name="name">Dr Aiden Clarke</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-aiden-clarke</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -189,7 +189,7 @@
     </record>
 
     <record id="profile_doctor_dr_peter_cheng" model="medical.clinic.profile">
-        <field name="name">Dr Hannah Lewis</field>
+        <field name="name">xxxx</field>
         <field name="slug">dr-hannah-lewis</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
@@ -201,7 +201,7 @@
     </record>
 
     <record id="profile_doctor_gp_registrar" model="medical.clinic.profile">
-        <field name="name">GP Registrar Clinic</field>
+        <field name="name">xxxx</field>
         <field name="slug">gp-registrar-clinic</field>
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS</field>
