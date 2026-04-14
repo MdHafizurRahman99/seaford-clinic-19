@@ -14,6 +14,22 @@
         <field name="sequence">10</field>
     </record>
 
+    <record id="profile_doctor_dr_sabiha_rimi" model="medical.clinic.profile">
+        <field name="name">Dr Sabiha Rimi</field>
+        <field name="slug">dr-sabiha-rimi</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS, FRACGP</field>
+        <field name="summary">Principal General Practitioner with broad experience across women's health, child health, chronic disease, mental health, and travel medicine.</field>
+        <field name="bio" type="html">
+            <p>Dr Sabiha Rimi is a Principal General Practitioner with more than nine years of experience practising in Australia. She has worked across general practices and regional hospitals, including rural communities in South Australia and Victoria, and brings a continuity-focused approach to everyday family medicine.</p>
+            <p>Her clinical interests include women's health, child health, chronic disease care, mental health, and travel medicine. She also has experience in menstrual disorders, perimenopause and menopause care, family planning, adolescent mental health, emergency medicine, sports medicine, minor surgical procedures, and care for older patients.</p>
+        </field>
+        <field name="special_interests">Women's health,Child health,Chronic disease care,Mental health,Travel medicine,Family planning,Perimenopause and menopause care,Minor surgical procedures,Aged care</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">15</field>
+    </record>
+
     <record id="profile_doctor_dr_alvin_ng" model="medical.clinic.profile">
         <field name="name">xxxx</field>
         <field name="slug">dr-lucas-bennett</field>

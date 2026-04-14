@@ -435,14 +435,23 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 14px 0;
+                        gap: 16px;
+                        padding: 16px 18px;
                         border-bottom: 1px solid rgba(56,153,172,0.08);
                         font-size: 0.925rem;
+                        border-radius: 14px;
                     }
                     .hours-row:last-child { border-bottom: none; }
                     .hours-day { font-weight: 600; color: var(--ink); }
-                    .hours-time { color: var(--teal-700); font-weight: 500; }
-                    .hours-closed { color: #b0c4c3; }
+                    .hours-time { color: var(--teal-700); font-weight: 700; }
+                    .hours-closed { color: #7a9392; font-weight: 700; }
+                    .hours-row--highlight {
+                        background: linear-gradient(135deg, rgba(56,153,172,0.16) 0%, rgba(95,179,194,0.10) 100%);
+                        box-shadow: inset 0 0 0 1px rgba(56,153,172,0.18);
+                    }
+                    .hours-row--closed {
+                        background: rgba(255,255,255,0.72);
+                    }
                     .today-row {
                         background: rgba(56,153,172,0.05);
                         border-radius: 10px;
@@ -620,11 +629,32 @@
                         transform: translateX(2px);
                     }
                     .hours-card {
-                        background: var(--white);
-                        border: 1px solid rgba(56,153,172,0.1);
+                        background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(240,249,249,0.96) 100%);
+                        border: 1px solid rgba(56,153,172,0.16);
                         border-radius: 20px;
                         padding: 28px;
                         max-width: 440px;
+                        box-shadow: 0 22px 48px rgba(26,74,84,0.10);
+                    }
+                    .hours-badge {
+                        display: inline-flex;
+                        align-items: center;
+                        font-size: 0.74rem;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: var(--teal-900);
+                        background: rgba(56,153,172,0.12);
+                        padding: 8px 14px;
+                        border-radius: 999px;
+                        margin-bottom: 16px;
+                    }
+                    .hours-intro {
+                        color: var(--slate);
+                        font-size: 1rem;
+                        line-height: 1.75;
+                        max-width: 440px;
+                        margin: 0 0 22px;
                     }
 
                     @media (max-width: 991px) {
@@ -712,7 +742,7 @@
                                         </div>
                                         <div class="hero-card-item">
                                             <div class="hero-card-icon"><i class="fa fa-clock-o"></i></div>
-                                            Mon-Fri: 8:00 AM - 6:00 PM
+                                            Mon-Fri: 09:00 AM - 5:00 PM
                                         </div>
                                         <div class="hero-card-item">
                                             <div class="hero-card-icon"><i class="fa fa-phone"></i></div>
@@ -720,7 +750,7 @@
                                         </div>
                                         <div class="hero-card-item">
                                             <div class="hero-card-icon"><i class="fa fa-map-marker"></i></div>
-                                            Seaford, VIC 3198
+                                            272 Seaford Road, Seaford, Vic, 3198
                                         </div>
                                         <a href="/appointments" class="btn-teal" style="margin-top: 24px; display: block; text-align: center;">
                                             Book Now ->
@@ -1092,36 +1122,24 @@
                             <div class="row g-5">
                                 <div class="col-lg-6">
                                     <span class="tag-label">Visit Us</span>
+                                    <div class="hours-badge">Highlighted Hours</div>
                                     <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; margin-bottom: 0;">
                                         Opening Hours
                                     </h2>
                                     <div class="rule"></div>
+                                    <p class="hours-intro">
+                                        Current trading hours are highlighted first so patients can scan the schedule quickly.
+                                    </p>
                                     <div class="hours-card">
-                                        <div class="hours-row">
-                                            <span class="hours-day">Monday</span>
-                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
+                                        <div class="hours-row hours-row--highlight">
+                                            <span class="hours-day">Mon-Friday</span>
+                                            <span class="hours-time">09:00 AM - 5:00 PM</span>
                                         </div>
-                                        <div class="hours-row">
-                                            <span class="hours-day">Tuesday</span>
-                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
-                                        </div>
-                                        <div class="hours-row">
-                                            <span class="hours-day">Wednesday</span>
-                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
-                                        </div>
-                                        <div class="hours-row">
-                                            <span class="hours-day">Thursday</span>
-                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
-                                        </div>
-                                        <div class="hours-row">
-                                            <span class="hours-day">Friday</span>
-                                            <span class="hours-time">8:00 AM - 6:00 PM</span>
-                                        </div>
-                                        <div class="hours-row">
+                                        <div class="hours-row hours-row--closed">
                                             <span class="hours-day">Saturday</span>
-                                            <span class="hours-time">9:00 AM - 1:00 PM</span>
+                                            <span class="hours-closed">Closed</span>
                                         </div>
-                                        <div class="hours-row">
+                                        <div class="hours-row hours-row--closed">
                                             <span class="hours-day">Sunday</span>
                                             <span class="hours-closed">Closed</span>
                                         </div>
@@ -1138,7 +1156,7 @@
                                         <h5><i class="fa fa-map-marker me-2" style="color: var(--teal-700);"></i>Our Location</h5>
                                         <div class="contact-line">
                                             <div class="contact-line-icon"><i class="fa fa-building"></i></div>
-                                            Seaford East Medical Clinic, Seaford VIC 3198
+                                            Seaford East Medical Clinic, 272 Seaford Road, Seaford, Vic, 3198
                                         </div>
                                         <div class="contact-line">
                                             <div class="contact-line-icon"><i class="fa fa-phone"></i></div>

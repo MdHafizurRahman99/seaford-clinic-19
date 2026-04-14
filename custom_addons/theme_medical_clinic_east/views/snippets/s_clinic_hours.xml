@@ -9,35 +9,23 @@
                     <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">
                         VISIT US
                     </p>
+                    <span class="s_hours_badge">Clinic Hours</span>
                     <h2 class="h2-fs s_section_heading text-start" style="font-weight: 800; color: #1a4a54;">
                         Opening Hours
                     </h2>
+                    <p class="s_hours_intro mb-0">
+                        Current trading hours are highlighted below for a quick, at-a-glance view.
+                    </p>
                     <div class="s_hours_table mt-4">
-                        <div class="s_hours_row">
-                            <span class="s_day">Monday</span>
-                            <span class="s_time">8:00 AM - 6:00 PM</span>
+                        <div class="s_hours_row s_hours_row--highlight">
+                            <span class="s_day">Mon-Friday</span>
+                            <span class="s_time">09:00 AM - 5:00 PM</span>
                         </div>
-                        <div class="s_hours_row">
-                            <span class="s_day">Tuesday</span>
-                            <span class="s_time">8:00 AM - 6:00 PM</span>
-                        </div>
-                        <div class="s_hours_row">
-                            <span class="s_day">Wednesday</span>
-                            <span class="s_time">8:00 AM - 6:00 PM</span>
-                        </div>
-                        <div class="s_hours_row">
-                            <span class="s_day">Thursday</span>
-                            <span class="s_time">8:00 AM - 6:00 PM</span>
-                        </div>
-                        <div class="s_hours_row">
-                            <span class="s_day">Friday</span>
-                            <span class="s_time">8:00 AM - 6:00 PM</span>
-                        </div>
-                        <div class="s_hours_row">
+                        <div class="s_hours_row s_hours_row--closed">
                             <span class="s_day">Saturday</span>
-                            <span class="s_time">9:00 AM - 1:00 PM</span>
+                            <span class="s_time">Closed</span>
                         </div>
-                        <div class="s_hours_row">
+                        <div class="s_hours_row s_hours_row--closed">
                             <span class="s_day">Sunday</span>
                             <span class="s_time">Closed</span>
                         </div>
@@ -60,7 +48,8 @@
                             Our Location
                         </h5>
                         <p class="text-muted mb-0">
-                            Seaford, VIC 3198<br/>
+                            272 Seaford Road<br/>
+                            Seaford, Vic, 3198<br/>
                             Australia
                         </p>
                     </div>

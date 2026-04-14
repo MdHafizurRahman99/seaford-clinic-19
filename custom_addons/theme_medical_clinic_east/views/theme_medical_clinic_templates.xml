@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <i class="fa fa-map-marker me-1" style="color: #3899ac;"/> Seaford, VIC, Australia
+                        <i class="fa fa-map-marker me-1" style="color: #3899ac;"/> 272 Seaford Road, Seaford, Vic, 3198, Australia
                     </div>
                     <div class="col text-end">
                         <a href="tel:0397860002" class="me-3" style="color: #3899ac; text-decoration: none;">
@@ -43,7 +43,7 @@
                                 with compassion and professionalism.
                             </p>
                             <ul class="clinic-footer-list">
-                                <li><i class="fa fa-map-marker"/>Seaford, VIC 3198, Australia</li>
+                                <li><i class="fa fa-map-marker"/>272 Seaford Road, Seaford, Vic, 3198, Australia</li>
                                 <li><i class="fa fa-phone"/>(03) 9786 0002</li>
                                 <li><i class="fa fa-envelope"/>hello@seafordeastmedical.com.au</li>
                             </ul>
@@ -74,8 +74,8 @@
                         <div class="col-lg-3 col-md-6">
                             <h5 class="clinic-footer-heading">Opening Hours</h5>
                             <ul class="clinic-footer-hours">
-                                <li>Mon - Fri: <strong>8:00 AM - 6:00 PM</strong></li>
-                                <li>Saturday: <strong>9:00 AM - 1:00 PM</strong></li>
+                                <li>Mon - Friday: <strong>09:00 AM - 5:00 PM</strong></li>
+                                <li>Saturday: <span>Closed</span></li>
                                 <li>Sunday: <span>Closed</span></li>
                             </ul>
                             <div class="mt-3">

@@ -24,9 +24,6 @@
                                     <p class="clinic-coming-soon__copy clinic-coming-soon__copy--simple">
                                         Our new website is on the way.
                                     </p>
-                                    <div class="clinic-coming-soon__actions">
-                                        <a href="/homepage" class="btn btn-light">View Current Homepage</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
