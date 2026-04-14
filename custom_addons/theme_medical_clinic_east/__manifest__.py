@@ -14,6 +14,7 @@
         'views/custom_header.xml',
         'views/team_profile_templates.xml',
         'views/team_profile_backend_views.xml',
+        'views/contact_request_backend_views.xml',
         'views/snippets/s_medical_hero.xml',
         'views/snippets/s_services_grid.xml',
         'views/snippets/s_doctor_cards.xml',
