@@ -242,8 +242,41 @@ $book-btn-hover-b: #256f7d;
 }
 
 @media (min-width: 992px) {
-    .medical-clinic-header .header-main-bar .dropdown:hover > .dropdown-menu {
-        display: block;
+    .medical-clinic-header .header-main-bar {
+        .navbar-nav {
+            .dropdown {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    height: 0.7rem;
+                }
+            }
+
+            .dropdown-menu {
+                margin-top: 0;
+                top: calc(100% + 0.08rem);
+            }
+        }
+
+        .dropdown:hover > .dropdown-menu,
+        .dropdown:focus-within > .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown:hover > .nav-link,
+        .dropdown:focus-within > .nav-link {
+            color: $header-main-hover;
+        }
+
+        .dropdown:hover > .nav-link::before,
+        .dropdown:focus-within > .nav-link::before {
+            transform: scaleX(1);
+        }
     }
 }
 
