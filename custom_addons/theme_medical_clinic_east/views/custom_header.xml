@@ -66,7 +66,7 @@
                                     About Us
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-                                    <li><a class="dropdown-item" href="/about-us">Philosophy</a></li>
+                                    <li><a class="dropdown-item" href="/about-us#philosophy">Philosophy</a></li>
                                     <li><a class="dropdown-item" href="/patient-information">Patient Information</a></li>
                                     <li><a class="dropdown-item" href="/fees">Fees</a></li>
                                     <li><a class="dropdown-item" href="/patient-links">Patient Links</a></li>

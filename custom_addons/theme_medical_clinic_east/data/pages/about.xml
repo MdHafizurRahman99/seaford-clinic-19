@@ -54,7 +54,7 @@
                         </div>
                     </section>
 
-                    <section class="pt80 pb80" data-snippet="s_text_block" style="background-color: #f7fbfc;">
+                    <section id="philosophy" class="pt80 pb80" data-snippet="s_text_block" style="background-color: #f7fbfc;">
                         <div class="container">
                             <div class="text-center mb-5">
                                 <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">What Patients Can Expect</p>
