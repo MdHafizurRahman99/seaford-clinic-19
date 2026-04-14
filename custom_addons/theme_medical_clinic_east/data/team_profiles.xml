@@ -20,9 +20,12 @@
         <field name="profile_type">doctor</field>
         <field name="qualification">MBBS, FRACGP</field>
         <field name="summary">Principal General Practitioner with broad experience across women's health, child health, chronic disease, mental health, and travel medicine.</field>
+        <field name="image_1920" type="base64" file="theme_medical_clinic_east/static/src/img/content/team/doctor-sabiha-rimi.jpg"/>
         <field name="bio" type="html">
-            <p>Dr Sabiha Rimi is a Principal General Practitioner with more than nine years of experience practising in Australia. She has worked across general practices and regional hospitals, including rural communities in South Australia and Victoria, and brings a continuity-focused approach to everyday family medicine.</p>
-            <p>Her clinical interests include women's health, child health, chronic disease care, mental health, and travel medicine. She also has experience in menstrual disorders, perimenopause and menopause care, family planning, adolescent mental health, emergency medicine, sports medicine, minor surgical procedures, and care for older patients.</p>
+            <p>Dr. Rimi is an experienced General Practitioner with over nine years of practice in Australia. She has worked in a variety of general practices and regional hospitals, including rural areas in South Australia and Victoria. As a Fellow of the Royal Australian College of General Practitioners (FRACGP), she brings a wealth of expertise and a passion for patient care.</p>
+            <p>Her special interests include Women's Health, Child Health, Chronic Diseases, Mental Health, and Travel Medicine. Dr. Rimi is skilled in managing menstrual disorders, perimenopause, menopause, post-menopause care, and family planning. She also has significant experience working with adolescent patients facing mental health issues.</p>
+            <p>In addition to her work in general practice, Dr. Rimi has experience in emergency medicine, sports medicine, and minor surgical procedures. She is particularly passionate about caring for the elderly, ensuring they receive the attention and support they deserve.</p>
+            <p>Outside of work, Dr. Rimi enjoys spending time with her family, including her two young children and elderly parents, whom she personally cares for. She loves cooking, exploring different cuisines and reading books.</p>
         </field>
         <field name="special_interests">Women's health,Child health,Chronic disease care,Mental health,Travel medicine,Family planning,Perimenopause and menopause care,Minor surgical procedures,Aged care</field>
         <field name="availability_status">accepting</field>
