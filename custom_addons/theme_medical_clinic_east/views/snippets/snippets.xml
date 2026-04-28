@@ -2,7 +2,7 @@
 <odoo>
 
 <template id="snippets" inherit_id="website.snippets">
-    <!-- Register snippets in the Structure section -->
+
     <xpath expr="//snippets[@id='snippet_structure']" position="inside">
         <t t-snippet="theme_medical_clinic_east.s_medical_hero"
            string="Medical Hero Banner">

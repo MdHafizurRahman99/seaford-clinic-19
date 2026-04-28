@@ -88,8 +88,6 @@
     ],
     'configurator_snippets': {
         'homepage': [],
-        # 'homepage': ['s_medical_hero', 's_services_grid', 's_doctor_cards',
-        #              's_patient_testimonials', 's_appointment_cta'],
     },
     'new_page_templates': {
         'basic': {

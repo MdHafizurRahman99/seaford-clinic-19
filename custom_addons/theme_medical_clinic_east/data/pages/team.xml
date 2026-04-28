@@ -13,7 +13,6 @@
                 <t t-set="additional_title">Our Team</t>
                 <div id="wrap" class="oe_structure">
 
-                    <!-- Page Banner -->
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,60,52,0.92) 0%, rgba(56,153,172,0.75) 100%); background-size: cover; background-position: center;">
                         <div class="container text-center">
@@ -22,7 +21,6 @@
                         </div>
                     </section>
 
-                    <!-- Doctors -->
                     <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
                             <div class="text-center mb-5">
@@ -65,7 +63,6 @@
                         </div>
                     </section>
 
-                    <!-- Support Staff -->
                     <section class="pt48 pb80" data-snippet="s_text_block" style="background-color: #F0FAF5;">
                         <div class="container">
                             <div class="text-center mb-5">

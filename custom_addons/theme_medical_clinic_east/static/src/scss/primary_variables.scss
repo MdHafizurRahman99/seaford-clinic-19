@@ -1,21 +1,16 @@
-// ============================================================
-// Seaford East Medical Clinic - Teal Color Palette
-// ============================================================
 
-// Base color variables (used directly by Odoo)
-$o-color-1: #3899ac !default;  // Teal (Primary)
-$o-color-2: #5fb3c2 !default;  // Light Teal (Accent)
-$o-color-3: #e8f4f6 !default;  // Light Teal Background
-$o-color-4: #FFFFFF !default;  // White
-$o-color-5: #1a4a54 !default;  // Dark Teal (Dark)
 
-// Extended brand colors
+$o-color-1: #3899ac !default;  
+$o-color-2: #5fb3c2 !default;  
+$o-color-3: #e8f4f6 !default;  
+$o-color-4: #FFFFFF !default;  
+$o-color-5: #1a4a54 !default;  
+
 $clinic-teal: #3899ac !default;
 $clinic-teal-light: #5fb3c2 !default;
 $clinic-teal-dark: #1a4a54 !default;
 $clinic-teal-pale: #e8f4f6 !default;
 
-// Color Palette for Website Builder
 $o-color-palettes: (
     'medical-clinic': (
         'o-color-1': $o-color-1,
@@ -29,7 +24,6 @@ $o-color-palettes: (
     ),
 ) !default;
 
-// User color palette override
 $o-user-color-palette: (
     'o-color-1': $o-color-1,
     'o-color-2': $o-color-2,
@@ -38,7 +32,6 @@ $o-user-color-palette: (
     'o-color-5': $o-color-5,
 ) !default;
 
-// Typography
 $o-theme-font-configs: (
     'Montserrat': (
         'family': ('Montserrat', sans-serif),
@@ -46,14 +39,11 @@ $o-theme-font-configs: (
     ),
 ) !default;
 
-// Override Bootstrap colors
 $primary: $o-color-1 !default;
 $secondary: $o-color-5 !default;
 
-// Button customization
 $btn-border-radius: 0.375rem !default;
 $btn-font-weight: 600 !default;
 
-// Card customization
 $card-border-radius: 0.75rem !default;
 $card-border-color: #e9ecef !default;

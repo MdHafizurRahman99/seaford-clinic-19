@@ -19,7 +19,6 @@ class ThemeMedicalClinicEast(models.AbstractModel):
     def _ensure_page_for_website(self, page, website):
         page = page.sudo().with_context(active_test=False)
         if not page.website_id:
-            # Move generic page to the target website without triggering COW.
             page.with_context(no_cow=True).write({'website_id': website.id})
             return page
 
@@ -78,7 +77,6 @@ class ThemeMedicalClinicEast(models.AbstractModel):
                 target_menu.write(values)
 
     def _theme_medical_clinic_east_post_copy(self, mod):
-        # The custom header view already provides the top utility bar.
         self.disable_view('theme_medical_clinic_east.header_top_bar')
         self.enable_view('theme_medical_clinic_east.custom_medical_header')
         self.enable_view('theme_medical_clinic_east.custom_footer')

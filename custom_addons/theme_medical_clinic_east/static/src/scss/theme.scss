@@ -1,6 +1,4 @@
-// ============================================================
-// Seaford East Medical Clinic - Global Theme Layer
-// ============================================================
+
 
 :root {
     --clinic-primary: #3899ac;
@@ -157,9 +155,6 @@ section[data-snippet],
     z-index: 0;
 }
 
-// ============================================================
-// Coming soon landing page
-// ============================================================
 .clinic-coming-soon--east {
     --coming-primary: #3899ac;
     --coming-accent: #8be0ec;
@@ -508,9 +503,6 @@ section[data-snippet],
     padding: 0.95rem 1.6rem;
 }
 
-// ============================================================
-// Footer - class-based modern styling
-// ============================================================
 .clinic-footer {
     .clinic-footer-main {
         background: linear-gradient(160deg, #12353c 0%, #1b4b56 100%);

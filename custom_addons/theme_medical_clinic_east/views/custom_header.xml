@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- Custom Two-Tier Medical Clinic Header -->
 <template id="custom_medical_header" inherit_id="website.layout" name="Medical Clinic Custom Header" active="False">
     <xpath expr="//header" position="replace">
         <header id="medical-clinic-header" class="medical-clinic-header">
-            <!-- Top Info Bar -->
+
             <div class="header-top-bar o_top_bar">
                 <div class="container-fluid px-4">
                     <div class="row align-items-center">
-                        <!-- Social Icons - Left -->
+
                         <div class="col-auto d-none d-md-block">
                             <div class="social-icons">
                                 <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="me-2">
@@ -20,8 +19,7 @@
                                 </a>
                             </div>
                         </div>
-                        
-                        <!-- Contact - Right -->
+
                         <div class="col text-md-end">
                             <div class="top-quick-links">
                                 <a href="tel:0397860002" class="top-contact">
@@ -37,29 +35,26 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Main Navigation Bar -->
+
             <nav class="navbar navbar-expand-lg header-main-bar" data-name="Custom Header">
                 <div class="container-fluid px-4">
-                    <!-- Logo & Brand -->
+
                     <a href="/" class="navbar-brand d-flex align-items-center text-decoration-none" data-name="Brand">
                         <img src="/theme_medical_clinic_east/static/src/img/logo-seaford-east.svg" class="logo-mark me-2" alt="Seaford East Medical Clinic logo"/>
                         <div class="brand-text">
                             <span class="brand-name">SEAFORD EAST MEDICAL CLINIC</span>
                         </div>
                     </a>
-                    
-                    <!-- Mobile Toggle Button -->
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                             data-bs-target="#medicalMainMenu" aria-controls="medicalMainMenu" 
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    
-                    <!-- Main Menu -->
+
                     <div class="collapse navbar-collapse" id="medicalMainMenu" data-name="Main Menu">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <!-- About Us with Dropdown -->
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/about-us" id="aboutUsDropdown" 
                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,13 +71,11 @@
                                     <li><a class="dropdown-item" href="/terms-of-service">Terms of Service</a></li>
                                 </ul>
                             </li>
-                            
-                            <!-- Doctors (Flat) -->
+
                             <li class="nav-item">
                                 <a href="/our-health-team-doctors" class="nav-link">Doctors</a>
                             </li>
-                            
-                            <!-- Services with Dropdown -->
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/services" id="servicesDropdown" 
                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -108,29 +101,24 @@
                                     <li><a class="dropdown-item" href="/pregnancy-breastfeeding">Pregnancy &amp; Breastfeeding</a></li>
                                 </ul>
                             </li>
-                            
-                            <!-- Allied Health (Flat) -->
+
                             <li class="nav-item">
                                 <a href="/our-health-team-allied-health" class="nav-link">Allied Health</a>
                             </li>
-                            
-                            <!-- News (Flat) -->
+
                             <li class="nav-item">
                                 <a href="/newsletter" class="nav-link">News</a>
                             </li>
-                            
-                            <!-- GP Vacancies (Flat) -->
+
                             <li class="nav-item">
                                 <a href="/career" class="nav-link">GP Vacancies</a>
                             </li>
-                            
-                            <!-- Contact (Flat) -->
+
                             <li class="nav-item">
                                 <a href="/contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
-                        
-                        <!-- Book Online Button -->
+
                         <a href="/appointments" class="btn btn-book-online" data-name="Book Online Button">
                             <i class="fa fa-calendar-check-o me-1"/>
                             <span>Book Online</span>

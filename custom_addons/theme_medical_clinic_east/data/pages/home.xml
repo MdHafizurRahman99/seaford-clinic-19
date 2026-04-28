@@ -12,28 +12,25 @@
             <t t-call="website.layout">
                 <t t-set="additional_title">Seaford East Medical Clinic</t>
 
-                <!-- ====== GLOBAL STYLES ====== -->
                 <style>
-                    /* â”€â”€ Palette â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
                     :root {
-                        --teal-900: #0d2e33;   /* darkest - hero, nav */
-                        --teal-700: #3899ac;   /* primary brand teal  */
-                        --teal-500: #5fb3c2;   /* hover / accent       */
-                        --teal-200: #b2e8e7;   /* light accent         */
-                        --teal-50:  #f0f9f9;   /* section backgrounds  */
-                        --slate:    #4a6e6d;   /* body text muted      */
-                        --ink:      #0d1f1e;   /* headings             */
+                        --teal-900: #0d2e33;   
+                        --teal-700: #3899ac;   
+                        --teal-500: #5fb3c2;   
+                        --teal-200: #b2e8e7;   
+                        --teal-50:  #f0f9f9;   
+                        --slate:    #4a6e6d;   
+                        --ink:      #0d1f1e;   
                         --white:    #ffffff;
                     }
 
-                    /* â”€â”€ Typography â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700');
                     @import url('https://fonts.googleapis.com/css2?family=Sora:wght@700;800');
 
                     body { font-family: 'DM Sans', sans-serif; color: #2e3e3e; }
                     h1, h2, h3, h4 { font-family: 'Sora', sans-serif; color: var(--ink); }
 
-                    /* â”€â”€ Utility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .py-section { padding: 100px 0; }
                     .tag-label {
                         display: inline-block;
@@ -55,7 +52,6 @@
                     }
                     .rule-center { margin: 18px auto 28px; }
 
-                    /* â”€â”€ Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .btn-teal {
                         background: var(--teal-700);
                         color: var(--white);
@@ -108,7 +104,6 @@
                         color: var(--white);
                     }
 
-                    /* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .hero-section {
                         position: relative;
                         min-height: 760px;
@@ -224,7 +219,6 @@
                         font-size: 0.85rem;
                     }
 
-                    /* â”€â”€ Services â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .service-card {
                         background: var(--white);
                         border: 1px solid rgba(56,153,172,0.1);
@@ -266,7 +260,6 @@
                         margin: 0;
                     }
 
-                    /* â”€â”€ Why Choose Us â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .feature-item {
                         display: flex;
                         align-items: flex-start;
@@ -338,7 +331,6 @@
                         margin: 0;
                     }
 
-                    /* â”€â”€ Doctors â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .doctor-card {
                         background: var(--white);
                         border: 1px solid rgba(56,153,172,0.1);
@@ -389,7 +381,6 @@
                         margin: 0;
                     }
 
-                    /* â”€â”€ Testimonials â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .testi-card {
                         background: var(--white);
                         border: 1px solid rgba(56,153,172,0.08);
@@ -430,7 +421,6 @@
                         color: var(--slate);
                     }
 
-                    /* â”€â”€ Hours â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .hours-row {
                         display: flex;
                         justify-content: space-between;
@@ -506,7 +496,6 @@
                     .emergency-banner p { font-size: 0.875rem; color: rgba(255,255,255,0.78); margin: 0; }
                     .emergency-banner strong { color: #4eecea; }
 
-                    /* â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
                     .cta-section {
                         background: linear-gradient(135deg, var(--teal-900) 0%, var(--teal-700) 100%);
                         position: relative;
@@ -536,7 +525,6 @@
                         box-shadow: 0 8px 24px rgba(0,0,0,0.15);
                     }
 
-                    /* Home-specific polish */
                     .hero-actions {
                         display: flex;
                         gap: 16px;
@@ -686,7 +674,6 @@
 
                 <div id="wrap" class="oe_structure">
 
-                    <!-- ==================== HERO ==================== -->
                     <section class="hero-section">
                         <div class="hero-bg"></div>
                         <div class="hero-mesh"></div>
@@ -761,7 +748,6 @@
                         </div>
                     </section>
 
-                    <!-- ==================== SERVICES ==================== -->
                     <section class="py-section" style="background: var(--teal-50);">
                         <div class="container">
                             <div class="text-center" style="margin-bottom: 64px;">
@@ -839,7 +825,6 @@
                         </div>
                     </section>
 
-                    <!-- ==================== WHY CHOOSE US ==================== -->
                     <section class="py-section" style="background: var(--white);">
                         <div class="container">
                             <div class="row align-items-center g-5">
@@ -899,7 +884,6 @@
                         </div>
                     </section>
 
-                    <!-- ==================== TESTIMONIALS ==================== -->
                     <section class="py-section" style="background: var(--white);">
                         <div class="container">
                             <div class="text-center" style="margin-bottom: 64px;">
@@ -956,7 +940,6 @@
                         </div>
                     </section>
 
-                    <!-- ==================== PATIENT PATHWAYS ==================== -->
                     <section class="py-section" style="background: var(--teal-50);">
                         <div class="container">
                             <div class="text-center" style="margin-bottom: 56px;">
@@ -1004,7 +987,6 @@
                         </div>
                     </section>
 
-                    <!-- ==================== TRUST + COMPLIANCE ==================== -->
                     <section class="py-section" style="background: var(--white);">
                         <div class="container">
                             <div class="row g-4 align-items-stretch">
@@ -1059,7 +1041,6 @@
                         </div>
                     </section>
 
-                    <!-- ==================== HOURS + LOCATION ==================== -->
                     <section class="py-section" style="background: var(--teal-50);">
                         <div class="container">
                             <div class="row g-5">
@@ -1118,7 +1099,6 @@
                         </div>
                     </section>
 
-                    <!-- ==================== CTA ==================== -->
                     <section class="cta-section py-section">
                         <div class="cta-mesh"></div>
                         <div class="container text-center position-relative" style="z-index: 1;">
@@ -1145,5 +1125,4 @@
 </record>
 
 </odoo>
-
 

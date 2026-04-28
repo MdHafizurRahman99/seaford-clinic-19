@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Doctor profiles -->
     <record id="profile_doctor_dr_amir_abbass" model="medical.clinic.profile">
         <field name="name">xxxx</field>
         <field name="slug">dr-amelia-hart</field>
@@ -232,7 +231,6 @@
         <field name="sequence">170</field>
     </record>
 
-    <!-- Allied health profiles -->
     <record id="profile_allied_dr_alicia_papas" model="medical.clinic.profile">
         <field name="name">Olivia Brooks</field>
         <field name="slug">olivia-brooks</field>

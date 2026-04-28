@@ -17,7 +17,7 @@
                 </p>
             </div>
             <div class="row g-4">
-                <!-- Service 1: General Practice -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
@@ -28,7 +28,7 @@
                         health assessments and chronic disease management.</p>
                     </div>
                 </div>
-                <!-- Service 2: Family Health -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
@@ -39,7 +39,7 @@
                         assessments and complete family healthcare.</p>
                     </div>
                 </div>
-                <!-- Service 3: Women's Health -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
@@ -50,7 +50,7 @@
                         postnatal support and menopause management.</p>
                     </div>
                 </div>
-                <!-- Service 4: Men's Health -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
@@ -61,7 +61,7 @@
                         health support and preventive care.</p>
                     </div>
                 </div>
-                <!-- Service 5: Skin Checks -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
@@ -72,7 +72,7 @@
                         and excision of suspicious lesions.</p>
                     </div>
                 </div>
-                <!-- Service 6: Mental Health -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
@@ -83,7 +83,7 @@
                         anxiety and depression management.</p>
                     </div>
                 </div>
-                <!-- Service 7: Travel Medicine -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
@@ -94,7 +94,7 @@
                         prevention and travel health advice.</p>
                     </div>
                 </div>
-                <!-- Service 8: Minor Procedures -->
+
                 <div class="col-lg-3 col-md-6" data-name="Service">
                     <div class="s_service_card bg-white h-100 rounded-3">
                         <div class="s_service_icon">
