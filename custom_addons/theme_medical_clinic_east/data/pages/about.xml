@@ -46,8 +46,8 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="rounded-4 overflow-hidden" style="box-shadow: 0 14px 40px rgba(26,74,84,0.12);">
-                                        <img src="/theme_medical_clinic_east/static/src/img/content/clinic/clinic-reception-01.jpg"
-                                             class="img-fluid w-100" alt="Seaford East Medical Clinic" style="height: 420px; object-fit: cover;"/>
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/clinic/seaford-east-clinic-inside.jpg"
+                                             class="img-fluid w-100" alt="Seaford East Medical Clinic reception desk" style="height: 420px; object-fit: cover; object-position: center;"/>
                                     </div>
                                 </div>
                             </div>

@@ -89,6 +89,29 @@
                         </div>
                     </section>
 
+                    <section class="pt16 pb64" data-snippet="s_text_block">
+                        <div class="container">
+                            <div class="row align-items-center g-5">
+                                <div class="col-lg-7">
+                                    <div class="rounded-4 overflow-hidden" style="box-shadow: 0 18px 48px rgba(26,74,84,0.14);">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/clinic/seaford-east-clinic-outside.jpg"
+                                             class="img-fluid w-100" alt="Exterior of Seaford East Medical Clinic" style="height: 420px; object-fit: cover; object-position: center;"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">Finding The Clinic</p>
+                                    <h2 style="font-weight: 800; color: #1a4a54;">Know what to look for before you arrive</h2>
+                                    <p style="color: #5b6a6e; line-height: 1.85;">
+                                        The clinic entrance is clearly signed from Seaford Road, with Seaford East Medical Clinic branding visible at the front of the property.
+                                    </p>
+                                    <p style="color: #5b6a6e; line-height: 1.85; margin-bottom: 0;">
+                                        If you are attending for the first time, arriving a few minutes early can help with parking, access, and reception check-in.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     <section class="pt80 pb64" data-snippet="s_text_block">
                         <div class="container">
                             <div class="row g-4">
