@@ -89,7 +89,7 @@
                             <div class="row g-4 align-items-start">
                                 <div class="col-lg-8">
                                     <div class="bg-white rounded-4 p-3 h-100" style="box-shadow: 0 4px 18px rgba(0,0,0,0.05); border: 1px solid rgba(56,153,172,0.12);">
-                                        <iframe src="https://www.hotdoc.com.au/medical-centres/seaford-VIC-3198/seaford-central-medical-clinic/doctors?wp=w_iframe" data-hotdoc-widget="iframe" width="100%" height="800" frameBorder="0" allow="payment"/>
+                                        <iframe src="https://www.hotdoc.com.au/medical-centres/seaford-VIC-3198/seaford-east-medical-clinic/doctors?wp=w_iframe" data-hotdoc-widget="iframe" width="100%" height="800" frameBorder="0" allow="payment"/>
                                         <script async="async" src="https://cdn.hotdoc.com.au/static/assets/js/hotdoc-widgets.min.js" charset="utf-8"></script>
                                     </div>
                                 </div>
