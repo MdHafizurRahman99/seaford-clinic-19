@@ -23,6 +23,7 @@
         'views/snippets/s_patient_testimonials.xml',
         'views/snippets/s_accreditations.xml',
         'views/snippets/snippets.xml',
+        'data/pages/coming_soon.xml',
         'data/pages/home.xml',
         'data/pages/about.xml',
         'data/pages/services.xml',
@@ -68,7 +69,6 @@
         'data/pages/fertility_support_family_planning.xml',
         'data/pages/privacy_policy.xml',
         'data/pages/terms_of_service.xml',
-        'data/pages/coming_soon.xml',
         'data/menu.xml',
     ],
     'assets': {
