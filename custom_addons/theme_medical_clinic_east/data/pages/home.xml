@@ -218,6 +218,40 @@
                         color: #4eecea;
                         font-size: 0.85rem;
                     }
+                    .bulk-billing-spotlight {
+                        margin-top: 28px;
+                        background: rgba(255,255,255,0.1);
+                        border: 1px solid rgba(255,255,255,0.14);
+                        border-radius: 20px;
+                        padding: 16px;
+                        display: flex;
+                        align-items: center;
+                        gap: 18px;
+                        max-width: 560px;
+                    }
+                    .bulk-billing-spotlight img {
+                        width: 190px;
+                        max-width: 42%;
+                        border-radius: 14px;
+                        box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+                        flex-shrink: 0;
+                    }
+                    .bulk-billing-copy {
+                        color: var(--white);
+                    }
+                    .bulk-billing-copy strong {
+                        display: block;
+                        font-family: 'Sora', sans-serif;
+                        font-size: 1.05rem;
+                        line-height: 1.3;
+                        margin-bottom: 8px;
+                    }
+                    .bulk-billing-copy p {
+                        margin: 0;
+                        color: rgba(255,255,255,0.82);
+                        font-size: 0.95rem;
+                        line-height: 1.7;
+                    }
 
                     .service-card {
                         background: var(--white);
@@ -668,6 +702,14 @@
                             padding-top: 24px;
                             flex-wrap: wrap;
                         }
+                        .bulk-billing-spotlight {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        .bulk-billing-spotlight img {
+                            width: 100%;
+                            max-width: 260px;
+                        }
                         .clinic-img-wrap img { height: 360px; }
                     }
                 </style>
@@ -695,6 +737,14 @@
                                     <div class="hero-actions">
                                         <a href="/appointments" class="btn-teal">Book Appointment</a>
                                         <a href="/services" class="btn-ghost">Our Services</a>
+                                    </div>
+                                    <div class="bulk-billing-spotlight">
+                                        <img src="/theme_medical_clinic_east/static/src/img/content/bulk-billing-medicare.jpg"
+                                             alt="Medicare Bulk Billing Practice sign"/>
+                                        <div class="bulk-billing-copy">
+                                            <strong>Fully bulk billed for Medicare card holders</strong>
+                                            <p>Patients can see straight away that Seaford East Medical Clinic is a bulk billing practice. Speak with reception if your booking involves a procedure or special appointment planning.</p>
+                                        </div>
                                     </div>
                                     <div class="hero-trust-list">
                                         <span class="hero-trust-item"><i class="fa fa-check-circle"></i>Same-Day Appointments</span>

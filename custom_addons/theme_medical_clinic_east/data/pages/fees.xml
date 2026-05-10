@@ -15,19 +15,29 @@
 
                     <section class="pt80 pb80" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
-                        <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Billing Information</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Fees and billing guidance before you attend</h1>
-                            <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 760px; margin: 0 auto;">
-                                We want patients to understand how billing works before arriving. Consultation fees can vary by doctor, appointment length, Medicare eligibility, and whether procedures or clinical paperwork are involved.
-                            </p>
+                        <div class="container">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8 text-center text-lg-start">
+                                    <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Billing Information</p>
+                                    <h1 style="color: white; font-weight: 800; font-size: 2.8rem;">Bulk billed care for Medicare card holders</h1>
+                                    <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 760px; margin: 0;">
+                                        Seaford East Medical Clinic is a fully bulk billed medical clinic for all Medicare card holders. We still encourage patients to check booking type, procedure requirements, and any practical details with reception before attending.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <img src="/theme_medical_clinic_east/static/src/img/content/bulk-billing-medicare.jpg"
+                                         alt="Medicare Bulk Billing Practice sign"
+                                         class="img-fluid rounded-4"
+                                         style="max-width: 300px; box-shadow: 0 18px 42px rgba(0,0,0,0.2);"/>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
                     <section class="pt80 pb48" data-snippet="s_text_block">
                         <div class="container">
                             <div class="alert rounded-4" role="alert" style="background: #e8f4f6; border: 1px solid rgba(56,153,172,0.25); color: #1a4a54;">
-                                Current fees should always be confirmed with reception before booking. This page explains the billing structure and the questions patients should ask in advance.
+                                Medicare card holders are fully bulk billed. If your booking involves a procedure, consumables, paperwork, or a service with extra planning requirements, please confirm the appointment details with reception in advance.
                             </div>
                             <div class="table-responsive mt-4">
                                 <table class="table table-bordered bg-white" style="border-color: rgba(56,153,172,0.25);">
@@ -35,34 +45,34 @@
                                         <tr>
                                             <th>Appointment Type</th>
                                             <th>How Billing Usually Works</th>
-                                            <th>What Can Affect Cost</th>
+                                            <th>What Patients Should Confirm</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>Standard GP consultation</td>
-                                            <td>Private billing may apply, with Medicare rebates where eligible.</td>
-                                            <td>Doctor policy, consult length, concession status</td>
+                                            <td>Fully bulk billed for Medicare card holders.</td>
+                                            <td>Consult length and whether more than one issue needs to be covered</td>
                                         </tr>
                                         <tr>
                                             <td>Long or extended consultation</td>
-                                            <td>Usually billed higher than a standard appointment because of increased time and complexity.</td>
-                                            <td>Time used, number of issues, documentation needs</td>
+                                            <td>Bulk billed for Medicare card holders, with a longer booking arranged when needed.</td>
+                                            <td>Time required, number of issues, documentation needs</td>
                                         </tr>
                                         <tr>
                                             <td>Care plans and health assessments</td>
-                                            <td>Billing depends on the clinical item used and whether review components are included.</td>
+                                            <td>Usually bulk billed for Medicare card holders when clinically appropriate.</td>
                                             <td>Item type, review needs, follow-up structure</td>
                                         </tr>
                                         <tr>
                                             <td>Procedure appointments</td>
-                                            <td>May include consultation, procedure, and consumable-related billing elements.</td>
-                                            <td>Treatment type, facility use, dressings or consumables</td>
+                                            <td>Appointment planning is required before the procedure itself.</td>
+                                            <td>Treatment type, timing, consent, treatment room support, and preparation</td>
                                         </tr>
                                         <tr>
                                             <td>Third-party or insurer matters</td>
-                                            <td>WorkCover, TAC, and insurer matters may follow different billing workflows.</td>
-                                            <td>Claim status, paperwork, pre-approval rules</td>
+                                            <td>WorkCover, TAC, and insurer matters may follow separate billing and paperwork workflows.</td>
+                                            <td>Claim status, paperwork, and pre-approval rules</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -77,10 +87,10 @@
                                     <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
                                         <h4 style="font-weight: 700; color: #1a4a54;">What patients should expect</h4>
                                         <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
-                                            <li>Private billing may apply unless advised otherwise</li>
-                                            <li>Payment is generally required on the day of service</li>
-                                            <li>Medicare rebates depend on eligibility and item type</li>
-                                            <li>Bulk billing or reduced-gap arrangements may vary by doctor and visit type</li>
+                                            <li>All Medicare card holders are fully bulk billed</li>
+                                            <li>Reception can help confirm the right appointment length before you attend</li>
+                                            <li>Procedures and complex bookings may need extra planning before they are booked</li>
+                                            <li>Non-Medicare and third-party matters may follow different billing processes</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -114,15 +124,15 @@
                                             <tbody>
                                                 <tr>
                                                     <td>Is this a standard or long consultation?</td>
-                                                    <td>Time allocation usually affects billing and the quality of the review.</td>
+                                                    <td>Time allocation affects the quality of the review and helps the clinic book the right format.</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Will any additional procedure or consumable fee apply?</td>
-                                                    <td>Procedure bookings can include more than one billing component.</td>
+                                                    <td>Does this booking need procedure planning or treatment room support?</td>
+                                                    <td>Some services need consent, preparation, or specific timing before they can be booked properly.</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Is Medicare claiming available for this visit?</td>
-                                                    <td>Eligibility and item type influence the rebate process.</td>
+                                                    <td>Am I eligible for bulk billed care under Medicare for this visit?</td>
+                                                    <td>This confirms the clinic can use your Medicare details correctly at the time of booking.</td>
                                                 </tr>
                                                 <tr>
                                                     <td>What happens if I need to cancel or move the booking?</td>
@@ -136,6 +146,7 @@
                                     <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
                                         <h4 style="font-weight: 700; color: #1a4a54;">Before you book</h4>
                                         <ul style="color: #555; line-height: 1.9; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                            <li>Have your Medicare details ready when booking</li>
                                             <li>Ask about the expected consult length</li>
                                             <li>Explain if multiple problems need to be discussed</li>
                                             <li>Mention if forms, reports, or procedures are likely</li>
@@ -150,9 +161,9 @@
 
                     <section class="pt64 pb64" data-snippet="s_text_block" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
                         <div class="container text-center">
-                            <h2 style="color: white; font-weight: 800;">Need a fee estimate before attending?</h2>
+                            <h2 style="color: white; font-weight: 800;">Need help choosing the right appointment?</h2>
                             <p style="color: rgba(255,255,255,0.85); max-width: 640px; margin: 0 auto 1.5rem;">
-                                Contact reception before booking if you want help understanding likely billing for a consultation, procedure, or longer review.
+                                Contact reception before booking if you want help confirming bulk billing eligibility, appointment length, or the right booking pathway for a procedure or longer review.
                             </p>
                             <a href="/contact" class="btn btn-lg" style="background-color: #ffffff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700; padding: 0.85rem 2.5rem;">
                                 Contact Reception

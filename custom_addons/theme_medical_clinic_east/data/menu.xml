@@ -254,13 +254,6 @@
         <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
         <field name="sequence" type="int">230</field>
     </record>
-    <record id="menu_shingles_vaccine" model="website.menu">
-        <field name="name">Shingles Vaccine</field>
-        <field name="url">/shingles-vaccine</field>
-        <field name="page_id" ref="theme_medical_clinic_east.page_shingles_vaccine"/>
-        <field name="parent_id" ref="theme_medical_clinic_east.menu_services"/>
-        <field name="sequence" type="int">240</field>
-    </record>
     <record id="menu_contraceptive_implant" model="website.menu">
         <field name="name">Contraceptive Implant</field>
         <field name="url">/contraceptive-implant</field>
