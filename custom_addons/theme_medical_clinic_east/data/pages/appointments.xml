@@ -24,7 +24,37 @@
                         </div>
                     </section>
 
-                    <section class="pt80 pb48" data-snippet="s_text_block">
+                    <section id="online-booking-guide" class="pt80 pb48" data-snippet="s_text_block" style="background: #f7fbfc;">
+                        <div class="container">
+                            <div class="text-center" style="margin-bottom: 32px;">
+                                <p class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 2px; color: #3899ac; font-weight: 700; margin-bottom: 8px;">Online Booking</p>
+                                <h3 style="font-weight: 800; color: #1a4a54; margin-bottom: 0;">Book your appointment and register as a patient</h3>
+                            </div>
+                            <div class="row g-4 align-items-start">
+                                <div class="col-lg-8">
+                                    <div class="bg-white rounded-4 p-3 h-100" style="box-shadow: 0 4px 18px rgba(0,0,0,0.05); border: 1px solid rgba(56,153,172,0.12);">
+                                        <iframe src="https://www.hotdoc.com.au/medical-centres/seaford-VIC-3198/seaford-east-medical-clinic/doctors?wp=w_iframe" data-hotdoc-widget="iframe" width="100%" height="800" frameBorder="0" allow="payment"/>
+                                        <script async="async" src="https://cdn.hotdoc.com.au/static/assets/js/hotdoc-widgets.min.js" charset="utf-8"></script>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
+                                        <h4 style="color: white; font-weight: 700;">Patient Registration</h4>
+                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8;">
+                                            If you are booking for the first time, complete your patient registration before selecting an appointment.
+                                        </p>
+                                        <a href="https://www.hotdoc.com.au/forms/seaford-east-medical-clinic-new-patient-registration-form" target="_blank" rel="noopener noreferrer" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0; margin-bottom: 1rem;">Register Now</a>
+                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1rem;">
+                                            Need help with booking? Our reception team can guide you to the right appointment type.
+                                        </p>
+                                        <a href="tel:0397860002" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0;">Call Reception</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt48 pb48" data-snippet="s_text_block">
                         <div class="container">
                             <div class="text-center" style="margin-bottom: 44px;">
                                 <p class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 2px; color: #3899ac; font-weight: 700; margin-bottom: 8px;">Booking Pathways</p>
@@ -74,36 +104,6 @@
                                             <li>Bring clinical history documents</li>
                                         </ul>
                                         <a href="https://www.hotdoc.com.au/forms/seaford-east-medical-clinic-new-patient-registration-form" target="_blank" rel="noopener noreferrer" class="btn" style="background: #ffffff; color: #3899ac; font-weight: 700; border: 2px solid #3899ac; border-radius: 12px 0 12px 0;">Patient Registration</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="online-booking-guide" class="pt48 pb48" data-snippet="s_text_block" style="background: #f7fbfc;">
-                        <div class="container">
-                            <div class="text-center" style="margin-bottom: 32px;">
-                                <p class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 2px; color: #3899ac; font-weight: 700; margin-bottom: 8px;">Online Booking</p>
-                                <h3 style="font-weight: 800; color: #1a4a54; margin-bottom: 0;">Book your appointment and register as a patient</h3>
-                            </div>
-                            <div class="row g-4 align-items-start">
-                                <div class="col-lg-8">
-                                    <div class="bg-white rounded-4 p-3 h-100" style="box-shadow: 0 4px 18px rgba(0,0,0,0.05); border: 1px solid rgba(56,153,172,0.12);">
-                                        <iframe src="https://www.hotdoc.com.au/medical-centres/seaford-VIC-3198/seaford-east-medical-clinic/doctors?wp=w_iframe" data-hotdoc-widget="iframe" width="100%" height="800" frameBorder="0" allow="payment"/>
-                                        <script async="async" src="https://cdn.hotdoc.com.au/static/assets/js/hotdoc-widgets.min.js" charset="utf-8"></script>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="rounded-4 p-4 h-100" style="background: linear-gradient(135deg, #1a4a54, #2f8ea1); color: white;">
-                                        <h4 style="color: white; font-weight: 700;">Patient Registration</h4>
-                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8;">
-                                            If you are booking for the first time, complete your patient registration before selecting an appointment.
-                                        </p>
-                                        <a href="https://www.hotdoc.com.au/forms/seaford-east-medical-clinic-new-patient-registration-form" target="_blank" rel="noopener noreferrer" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0; margin-bottom: 1rem;">Register Now</a>
-                                        <p style="color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1rem;">
-                                            Need help with booking? Our reception team can guide you to the right appointment type.
-                                        </p>
-                                        <a href="tel:0397860002" class="btn" style="background: #ffffff; color: #1a4a54; font-weight: 700; border-radius: 12px 0 12px 0;">Call Reception</a>
                                     </div>
                                 </div>
                             </div>
