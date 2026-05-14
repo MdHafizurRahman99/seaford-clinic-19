@@ -10,6 +10,7 @@
         <field name="special_interests">Family medicine,Women's health,Preventive health,Chronic disease care</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">10</field>
     </record>
 
@@ -41,6 +42,7 @@
         <field name="special_interests">Preventive screening,Chronic disease management,Men's health,General practice</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">20</field>
     </record>
 
@@ -54,6 +56,7 @@
         <field name="availability_status">limited</field>
         <field name="availability_note">New patient appointments are currently limited.</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">30</field>
     </record>
 
@@ -66,6 +69,7 @@
         <field name="special_interests">Men's health,Cardiovascular risk,Diabetes care,Health checks</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">40</field>
     </record>
 
@@ -79,6 +83,7 @@
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
         <field name="languages">English, Vietnamese</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">50</field>
     </record>
 
@@ -91,6 +96,7 @@
         <field name="special_interests">Chronic disease care,Weight management,Preventive medicine,Men's health</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">60</field>
     </record>
 
@@ -103,6 +109,7 @@
         <field name="special_interests">General practice,Women's health,Preventive screening,Family medicine</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">70</field>
     </record>
 
@@ -116,6 +123,7 @@
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
         <field name="languages">English, Korean</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">80</field>
     </record>
 
@@ -129,6 +137,7 @@
         <field name="availability_status">limited</field>
         <field name="availability_note">Best suited to pre-booked long consults and follow-up reviews.</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">90</field>
     </record>
 
@@ -141,6 +150,7 @@
         <field name="special_interests">Children's health,Family medicine,Immunisations,Preventive health</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">100</field>
     </record>
 
@@ -153,6 +163,7 @@
         <field name="special_interests">Sexual health,Women's health,Contraception,Preventive screening</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">110</field>
     </record>
 
@@ -165,6 +176,7 @@
         <field name="special_interests">Travel medicine,Immunisations,Preventive health,General practice</field>
         <field name="availability_status">on_leave</field>
         <field name="availability_note">Travel clinics are temporarily covered by the wider Seaford East GP team.</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">120</field>
     </record>
 
@@ -178,6 +190,7 @@
         <field name="availability_status">limited</field>
         <field name="availability_note">Skin clinic appointments are limited and may require a longer booking.</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">130</field>
     </record>
 
@@ -190,6 +203,7 @@
         <field name="special_interests">Chronic disease management,Health checks,Women's health,Preventive care</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">140</field>
     </record>
 
@@ -203,6 +217,7 @@
         <field name="availability_status">limited</field>
         <field name="availability_note">Appointments are mainly reserved for planned review and care coordination consults.</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">150</field>
     </record>
 
@@ -215,6 +230,7 @@
         <field name="special_interests">Pregnancy care,Postnatal care,Women's health,Family medicine</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">160</field>
     </record>
 
@@ -228,6 +244,7 @@
         <field name="availability_status">limited</field>
         <field name="availability_note">Registrar appointments are released in selected sessions only.</field>
         <field name="booking_url">/appointments</field>
+        <field name="is_published" eval="False"/>
         <field name="sequence">170</field>
     </record>
 
