@@ -77,8 +77,8 @@
                                 <li>Sunday: <span>Closed</span></li>
                             </ul>
                             <div class="mt-3">
-                                <p class="mb-1">Emergency: <strong>000</strong></p>
-                                <p class="mb-0">After Hours: <strong>1800 022 222</strong></p>
+                                <p class="mb-1">Emergency: <strong>(03) 9786 0002</strong></p>
+                                <p class="mb-0">After Hours: <strong>(03) 9786 0002</strong></p>
                             </div>
                         </div>
                     </div>
@@ -105,4 +105,3 @@
 </template>
 
 </odoo>
-
