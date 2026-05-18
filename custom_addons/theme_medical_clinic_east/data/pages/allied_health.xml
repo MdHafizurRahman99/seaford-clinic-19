@@ -17,9 +17,9 @@
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.92) 0%, rgba(56,153,172,0.75) 100%);">
                         <div class="container text-center">
                             <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Allied Health</p>
-                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Allied health support connected to your broader GP care plan</h1>
+                            <h1 style="color: white; font-weight: 800; font-size: 2.6rem;">Physiotherapy and podiatry support connected to your broader GP care plan</h1>
                             <p style="color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 760px; margin: 0 auto; line-height: 1.8;">
-                                Allied health at Seaford East Medical Clinic is most useful when it sits inside a clear GP-led pathway. This page explains how referrals, goals, and follow-up can work together rather than as isolated appointments.
+                                Our allied health services currently include physiotherapy managed by Nirav Sanjanwala from Go Run Go Physio and podiatry provided by Stephen Devenish from LiveWell Podiatry, with coordination alongside broader GP care when needed.
                             </p>
                         </div>
                     </section>
@@ -29,23 +29,23 @@
                             <div class="row g-4 justify-content-center">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <i class="fa fa-cutlery d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Nutrition and diet support</h5>
-                                        <p style="color: #555; line-height: 1.7; margin: 0;">Useful for diabetes, weight-related care, gastrointestinal issues, and broader metabolic health planning.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
-                                        <i class="fa fa-comments-o d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Mental health support</h5>
-                                        <p style="color: #555; line-height: 1.7; margin: 0;">Allied input can support stress, mood, and longer-term mental health plans when this fits the clinical picture.</p>
+                                        <i class="fa fa-universal-access d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Physiotherapy with Nirav Sanjanwala</h5>
+                                        <p style="color: #555; line-height: 1.7; margin: 0;">Go Run Go Physio describes Nirav's service as evidence-based care for musculoskeletal, sports, spinal, neurological, and orthopaedic rehabilitation.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
                                         <i class="fa fa-heartbeat d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
-                                        <h5 style="font-weight: 700; color: #1a4a54;">Chronic condition support</h5>
-                                        <p style="color: #555; line-height: 1.7; margin: 0;">Allied pathways can complement chronic disease management, exercise, recovery, and self-management planning.</p>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Podiatry with Stephen Devenish</h5>
+                                        <p style="color: #555; line-height: 1.7; margin: 0;">LiveWell Podiatry highlights foot and lower-limb care including heel pain, diabetes foot health checks, sports injuries, ingrown nails, and gait assessments.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-white rounded-4 p-4 text-center h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
+                                        <i class="fa fa-link d-block mb-2" style="font-size: 2rem; color: #3899ac;"/>
+                                        <h5 style="font-weight: 700; color: #1a4a54;">Coordinated care planning</h5>
+                                        <p style="color: #555; line-height: 1.7; margin: 0;">These services work best when goals, referrals, and GP follow-up are clear, especially for recovery, mobility, and long-term self-management.</p>
                                     </div>
                                 </div>
                             </div>
@@ -59,10 +59,10 @@
                                     <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
                                         <h4 style="font-weight: 700; color: #1a4a54;">Referral pathway</h4>
                                         <ol style="padding-left: 1.2rem; line-height: 1.9; color: #555; margin: 0;">
-                                            <li>Start with a GP review to clarify the problem and the goal.</li>
-                                            <li>Work out which allied stream is most relevant.</li>
-                                            <li>Coordinate referral, timing, and follow-up expectations.</li>
-                                            <li>Review progress within the wider care plan.</li>
+                                            <li>Start with reception or a GP review to clarify the problem and the goal.</li>
+                                            <li>Work out whether physiotherapy or podiatry is the better fit for the concern.</li>
+                                            <li>Coordinate referral details, provider contact, and the right timing for care.</li>
+                                            <li>Review progress within the wider care plan when follow-up is needed.</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@
                                     <div class="bg-white rounded-4 p-4 h-100" style="box-shadow: 0 2px 10px rgba(0,0,0,0.06);">
                                         <h4 style="font-weight: 700; color: #1a4a54;">Related services</h4>
                                         <p style="color: #555; line-height: 1.8;">
-                                            Allied health most often works alongside preventive care, chronic disease review, exercise physiology, and weight-related support.
+                                            Physiotherapy and podiatry most often work alongside preventive care, chronic disease review, exercise physiology, and mobility-focused support.
                                         </p>
                                         <p style="margin: 0; line-height: 1.9;">
                                             <a href="/chronic-disease-management" style="color: #3899ac; font-weight: 700; text-decoration: none;">Chronic Disease Management</a><br/>

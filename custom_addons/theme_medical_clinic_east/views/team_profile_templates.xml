@@ -35,9 +35,9 @@
                                 <a href="/our-health-team-allied-health" class="text-decoration-none">
                                     <article class="h-100 bg-white p-4" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
                                         <p style="color: #3899ac; font-size: 0.8rem; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;">Allied Health</p>
-                                        <h2 style="font-size: 1.35rem; color: #1a4a54; font-weight: 800;">Integrated Support Services</h2>
+                                        <h2 style="font-size: 1.35rem; color: #1a4a54; font-weight: 800;">Physiotherapy and Podiatry</h2>
                                         <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
-                                            Psychology, nutrition, and diabetes education delivered alongside your treatment plan and GP reviews.
+                                            Partner services delivered by Nirav Sanjanwala from Go Run Go Physio and Stephen Devenish from LiveWell Podiatry.
                                         </p>
                                     </article>
                                 </a>
@@ -211,14 +211,16 @@
                                             <p style="color: #3899ac; font-size: 0.88rem; font-weight: 700; margin-bottom: 10px;">
                                                 <t t-esc="profile.qualification or 'General Practice'"/>
                                             </p>
-                                            <span
-                                                t-att-style="'display:inline-block;padding:5px 11px;border-radius:999px;font-size:0.75rem;font-weight:700;background:%s;color:%s;' % (profile.availability_bg_color, profile.availability_text_color)">
-                                                <t t-esc="profile.availability_label"/>
-                                            </span>
-                                            <t t-if="profile.availability_note">
-                                                <p style="font-size: 0.82rem; color: #5f7377; margin-top: 9px; margin-bottom: 0;">
-                                                    <t t-esc="profile.availability_note"/>
-                                                </p>
+                                            <t t-if="profile_type == 'doctor'">
+                                                <span
+                                                    t-att-style="'display:inline-block;padding:5px 11px;border-radius:999px;font-size:0.75rem;font-weight:700;background:%s;color:%s;' % (profile.availability_bg_color, profile.availability_text_color)">
+                                                    <t t-esc="profile.availability_label"/>
+                                                </span>
+                                                <t t-if="profile.availability_note">
+                                                    <p style="font-size: 0.82rem; color: #5f7377; margin-top: 9px; margin-bottom: 0;">
+                                                        <t t-esc="profile.availability_note"/>
+                                                    </p>
+                                                </t>
                                             </t>
                                             <p style="color: #555; line-height: 1.75; margin-top: 12px; margin-bottom: 16px;">
                                                 <t t-esc="profile.summary or 'Comprehensive, patient-focused care with strong continuity support.'"/>
@@ -227,26 +229,28 @@
                                                 <a
                                                     t-att-href="profile.website_url"
                                                     class="btn btn-sm"
-                                                    style="background: #fff; color: #3899ac; border: 2px solid #3899ac; border-radius: 11px 0 11px 0; font-weight: 700;">
+                                                style="background: #fff; color: #3899ac; border: 2px solid #3899ac; border-radius: 11px 0 11px 0; font-weight: 700;">
                                                     Read Profile
                                                 </a>
-                                                <t t-if="profile.booking_available">
-                                                    <a
-                                                        t-att-href="profile.booking_url"
-                                                        class="btn btn-sm"
-                                                        style="background: #3899ac; color: #fff; border-radius: 11px 0 11px 0; font-weight: 700;"
-                                                        target="_blank"
-                                                        rel="noopener">
-                                                        Book Now
-                                                    </a>
-                                                </t>
-                                                <t t-else="">
-                                                    <a
-                                                        t-att-href="'tel:%s' % (profile.phone_fallback or '0397860002')"
-                                                        class="btn btn-sm"
-                                                        style="background: #1a4a54; color: #fff; border-radius: 11px 0 11px 0; font-weight: 700;">
-                                                        Call Reception
-                                                    </a>
+                                                <t t-if="profile_type == 'doctor'">
+                                                    <t t-if="profile.booking_available">
+                                                        <a
+                                                            t-att-href="profile.booking_url"
+                                                            class="btn btn-sm"
+                                                            style="background: #3899ac; color: #fff; border-radius: 11px 0 11px 0; font-weight: 700;"
+                                                            target="_blank"
+                                                            rel="noopener">
+                                                            Book Now
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a
+                                                            t-att-href="'tel:%s' % (profile.phone_fallback or '0397860002')"
+                                                            class="btn btn-sm"
+                                                            style="background: #1a4a54; color: #fff; border-radius: 11px 0 11px 0; font-weight: 700;">
+                                                            Call Reception
+                                                        </a>
+                                                    </t>
                                                 </t>
                                             </div>
                                         </article>
@@ -259,14 +263,18 @@
 
                 <section class="pt64 pb64" style="background: linear-gradient(135deg, #1a4a54, #3899ac);">
                     <div class="container text-center">
-                        <h2 style="color: #fff; font-weight: 800;">Need Help Choosing the Right Clinician?</h2>
+                        <h2 style="color: #fff; font-weight: 800;">
+                            <t t-esc="'Need Help Choosing the Right Clinician?' if profile_type == 'doctor' else 'Need Help Connecting With the Right Service?'"/>
+                        </h2>
                         <p style="color: rgba(255,255,255,0.86); max-width: 700px; margin: 0 auto 1.4rem; line-height: 1.8;">
-                            Our reception team can help match your concern with the right doctor or allied health practitioner.
+                            <t t-esc="'Our reception team can help match your concern with the right doctor or allied health practitioner.' if profile_type == 'doctor' else 'Our reception team can help direct you to the current physiotherapy or podiatry service and the best next step for follow-up.'"/>
                         </p>
                         <div class="d-flex justify-content-center flex-wrap" style="gap: 10px;">
-                            <a href="/appointments" class="btn btn-lg" style="background: #fff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700;">
-                                Book Appointment
-                            </a>
+                            <t t-if="profile_type == 'doctor'">
+                                <a href="/appointments" class="btn btn-lg" style="background: #fff; color: #3899ac; border-radius: 14px 0 14px 0; font-weight: 700;">
+                                    Book Appointment
+                                </a>
+                            </t>
                             <a href="tel:0397860002" class="btn btn-lg" style="background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.7); border-radius: 14px 0 14px 0; font-weight: 700;">
                                 Call Reception
                             </a>
@@ -320,35 +328,37 @@
                                     <p style="font-size: 0.93rem; color: #3899ac; font-weight: 700; margin-bottom: 8px;">
                                         <t t-esc="profile.qualification or 'General Practice'"/>
                                     </p>
-                                    <span
-                                        t-att-style="'display:inline-block;padding:6px 12px;border-radius:999px;font-size:0.75rem;font-weight:700;background:%s;color:%s;' % (profile.availability_bg_color, profile.availability_text_color)">
-                                        <t t-esc="profile.availability_label"/>
-                                    </span>
-                                    <t t-if="profile.availability_note">
-                                        <p style="margin-top: 10px; font-size: 0.85rem; color: #5f7377;">
-                                            <t t-esc="profile.availability_note"/>
-                                        </p>
+                                    <t t-if="profile_type == 'doctor'">
+                                        <span
+                                            t-att-style="'display:inline-block;padding:6px 12px;border-radius:999px;font-size:0.75rem;font-weight:700;background:%s;color:%s;' % (profile.availability_bg_color, profile.availability_text_color)">
+                                            <t t-esc="profile.availability_label"/>
+                                        </span>
+                                        <t t-if="profile.availability_note">
+                                            <p style="margin-top: 10px; font-size: 0.85rem; color: #5f7377;">
+                                                <t t-esc="profile.availability_note"/>
+                                            </p>
+                                        </t>
+                                        <div class="d-grid gap-2 mt-3">
+                                            <t t-if="profile.booking_available">
+                                                <a
+                                                    t-att-href="profile.booking_url"
+                                                    class="btn"
+                                                    style="background: #3899ac; color: #fff; border-radius: 12px 0 12px 0; font-weight: 700;"
+                                                    target="_blank"
+                                                    rel="noopener">
+                                                    Book Now
+                                                </a>
+                                            </t>
+                                            <t t-else="">
+                                                <a
+                                                    t-att-href="'tel:%s' % (profile.phone_fallback or '0397860002')"
+                                                    class="btn"
+                                                    style="background: #1a4a54; color: #fff; border-radius: 12px 0 12px 0; font-weight: 700;">
+                                                    Call Reception
+                                                </a>
+                                            </t>
+                                        </div>
                                     </t>
-                                    <div class="d-grid gap-2 mt-3">
-                                        <t t-if="profile.booking_available">
-                                            <a
-                                                t-att-href="profile.booking_url"
-                                                class="btn"
-                                                style="background: #3899ac; color: #fff; border-radius: 12px 0 12px 0; font-weight: 700;"
-                                                target="_blank"
-                                                rel="noopener">
-                                                Book Now
-                                            </a>
-                                        </t>
-                                        <t t-else="">
-                                            <a
-                                                t-att-href="'tel:%s' % (profile.phone_fallback or '0397860002')"
-                                                class="btn"
-                                                style="background: #1a4a54; color: #fff; border-radius: 12px 0 12px 0; font-weight: 700;">
-                                                Call Reception
-                                            </a>
-                                        </t>
-                                    </div>
                                 </div>
                             </div>
 

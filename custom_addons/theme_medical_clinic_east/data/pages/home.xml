@@ -163,26 +163,6 @@
                         max-width: 540px;
                         margin-bottom: 40px;
                     }
-                    .hero-stats {
-                        display: flex;
-                        gap: 40px;
-                        margin-top: 56px;
-                        padding-top: 40px;
-                        border-top: 1px solid rgba(255,255,255,0.1);
-                    }
-                    .hero-stat-num {
-                        font-family: 'Sora', sans-serif;
-                        font-size: 2rem;
-                        font-weight: 800;
-                        color: #4eecea;
-                        line-height: 1;
-                    }
-                    .hero-stat-label {
-                        font-size: 0.8rem;
-                        color: rgba(255,255,255,0.55);
-                        margin-top: 4px;
-                        letter-spacing: 0.5px;
-                    }
                     .hero-card {
                         background: rgba(255,255,255,0.06);
                         backdrop-filter: blur(20px);
@@ -682,7 +662,6 @@
                     @media (max-width: 991px) {
                         .py-section { padding: 84px 0; }
                         .hero-section { min-height: 690px; }
-                        .hero-stats { gap: 20px; }
                     }
 
                     @media (max-width: 767px) {
@@ -696,11 +675,6 @@
                         .cta-section .btn-ghost {
                             width: 100%;
                             text-align: center;
-                        }
-                        .hero-stats {
-                            margin-top: 34px;
-                            padding-top: 24px;
-                            flex-wrap: wrap;
                         }
                         .bulk-billing-spotlight {
                             flex-direction: column;
@@ -748,22 +722,7 @@
                                     </div>
                                     <div class="hero-trust-list">
                                         <span class="hero-trust-item"><i class="fa fa-check-circle"></i>Same-Day Appointments</span>
-                                        <span class="hero-trust-item"><i class="fa fa-shield"></i>Accredited GP Care</span>
                                         <span class="hero-trust-item"><i class="fa fa-heartbeat"></i>Family-Centred Practice</span>
-                                    </div>
-                                    <div class="hero-stats">
-                                        <div>
-                                            <div class="hero-stat-num">15+</div>
-                                            <div class="hero-stat-label">Years Experience</div>
-                                        </div>
-                                        <div>
-                                            <div class="hero-stat-num">5K+</div>
-                                            <div class="hero-stat-label">Patients Served</div>
-                                        </div>
-                                        <div>
-                                            <div class="hero-stat-num">8</div>
-                                            <div class="hero-stat-label">Specialities</div>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-block">

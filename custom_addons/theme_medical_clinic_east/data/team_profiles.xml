@@ -249,27 +249,40 @@
     </record>
 
     <record id="profile_allied_dr_alicia_papas" model="medical.clinic.profile">
-        <field name="name">Olivia Brooks</field>
-        <field name="slug">olivia-brooks</field>
+        <field name="name">Nirav Sanjanwala</field>
+        <field name="slug">nirav-sanjanwala</field>
         <field name="profile_type">allied</field>
-        <field name="qualification">Senior Clinical Psychologist</field>
-        <field name="summary">Psychology support for stress, anxiety, adjustment, and everyday emotional wellbeing.</field>
-        <field name="special_interests">Anxiety,Stress management,Adjustment support,Emotional wellbeing</field>
-        <field name="availability_status">limited</field>
-        <field name="availability_note">Psychology sessions are limited and often booked in advance.</field>
-        <field name="booking_url">/appointments</field>
+        <field name="qualification">Physiotherapist | Go Run Go Physio</field>
+        <field name="summary">Our physiotherapy service is managed by Nirav Sanjanwala from Go Run Go Physio, with a practical, evidence-based focus on musculoskeletal, sports, spinal, and rehabilitation care.</field>
+        <field name="bio" type="html">
+            <p>Our physiotherapy service is managed by <a href="https://gorungophysio.com.au/" target="_blank" rel="noopener">Nirav Sanjanwala from Go Run Go Physio</a>.</p>
+            <p>According to Go Run Go Physio, Nirav is a qualified physiotherapist with over two decades of experience as a private practitioner. He holds a Physiotherapy Degree and a Post Graduate Diploma of Physiotherapy in Musculo-Skeletal from the University of Melbourne.</p>
+            <p>His work focuses on evidence-based assessment, treatment, and rehabilitation for sports and spinal conditions, along with neurological and orthopaedic presentations. The Go Run Go Physio service also highlights support for acute and chronic musculoskeletal conditions, post-surgical rehabilitation, neck and low back injuries, and tailored recovery planning.</p>
+            <p>Nirav's approach is collaborative and outcome-focused, with the goal of helping patients move better, regain function, and build confidence in their recovery.</p>
+        </field>
+        <field name="special_interests">Musculoskeletal rehabilitation,Sports injuries,Spinal conditions,Neurological rehabilitation,Orthopaedic rehabilitation,Post-surgical rehab,Neck pain,Low back injuries</field>
+        <field name="availability_status">accepting</field>
+        <field name="availability_note" eval="False"/>
+        <field name="booking_url" eval="False"/>
         <field name="sequence">210</field>
     </record>
 
     <record id="profile_allied_gabriela_hercman" model="medical.clinic.profile">
-        <field name="name">Maya Dsouza</field>
-        <field name="slug">maya-dsouza</field>
+        <field name="name">Stephen Devenish</field>
+        <field name="slug">stephen-devenish</field>
         <field name="profile_type">allied</field>
-        <field name="qualification">Clinical Psychologist</field>
-        <field name="summary">Evidence-based psychological care delivered alongside GP review and care planning.</field>
-        <field name="special_interests">Mental health,Coping skills,Behaviour support,Wellbeing planning</field>
+        <field name="qualification">Owner / Podiatrist | LiveWell Podiatry</field>
+        <field name="summary">Our podiatry service is provided by Stephen Devenish from LiveWell Podiatry, supporting foot and lower-limb care with a focus on function, comfort, and long-term mobility.</field>
+        <field name="bio" type="html">
+            <p>Our podiatry service is provided by <a href="https://livewellpodiatry.com.au/" target="_blank" rel="noopener">Stephen Devenish from LiveWell Podiatry</a>.</p>
+            <p>LiveWell Podiatry describes Stephen as the owner and podiatrist who is passionate about helping people get back on their feet and return to the things they love, whether that is sport, time with grandkids, or everyday mobility.</p>
+            <p>The service covers podiatry issues affecting the feet and lower limbs, including nails, callouses and corns, warts, ingrown nails, diabetes foot health assessments, heel pain, sports injuries, children's feet, and gait or running assessments.</p>
+            <p>LiveWell Podiatry also notes that Stephen bulk bills eligible EPC/Medicare, DVA, and TAC referrals, provides home visits in the Carrum Downs, Seaford, and Frankston area, and seeks to address the cause of the issue rather than offering only a short-term fix.</p>
+        </field>
+        <field name="special_interests">Heel pain,Sports injuries,Diabetes foot health assessments,Ingrown nails,Children's feet,Gait assessments,Running assessments,General foot care</field>
         <field name="availability_status">accepting</field>
-        <field name="booking_url">/appointments</field>
+        <field name="availability_note" eval="False"/>
+        <field name="booking_url" eval="False"/>
         <field name="sequence">220</field>
     </record>
 
@@ -282,6 +295,8 @@
         <field name="special_interests">Nutrition,Gut health,Weight management,Chronic disease support</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="show_in_listing" eval="False"/>
+        <field name="is_published" eval="False"/>
         <field name="sequence">230</field>
     </record>
 
@@ -294,6 +309,8 @@
         <field name="special_interests">Diabetes education,Self-management support,Lifestyle planning,Chronic disease care</field>
         <field name="availability_status">accepting</field>
         <field name="booking_url">/appointments</field>
+        <field name="show_in_listing" eval="False"/>
+        <field name="is_published" eval="False"/>
         <field name="sequence">240</field>
     </record>
 
