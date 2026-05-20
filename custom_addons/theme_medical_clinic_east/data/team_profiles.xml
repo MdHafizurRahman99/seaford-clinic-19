@@ -253,10 +253,10 @@
         <field name="slug">nirav-sanjanwala</field>
         <field name="profile_type">allied</field>
         <field name="image_1920" type="base64" file="theme_medical_clinic_east/static/src/img/content/team/nirav-sanjanwala.jpg"/>
-        <field name="qualification">Physiotherapist</field>
-        <field name="summary">Nirav Sanjanwala is a qualified physiotherapist with over two decades of private practice experience, providing evidence-based care for musculoskeletal, sports, spinal, neurological, and orthopaedic rehabilitation.</field>
+        <field name="qualification">Physiotherapist | Go Run Go Physio</field>
+        <field name="summary">Nirav Sanjanwala from Go Run Go Physio is a qualified physiotherapist with over two decades of private practice experience, providing evidence-based care for musculoskeletal, sports, spinal, neurological, and orthopaedic rehabilitation.</field>
         <field name="bio" type="html">
-            <p>Nirav Sanjanwala is a qualified physiotherapist with over two decades of experience as a private practitioner.</p>
+            <p>Nirav Sanjanwala from Go Run Go Physio is a qualified physiotherapist with over two decades of experience as a private practitioner.</p>
             <p>He holds a physiotherapy degree and a postgraduate diploma in musculoskeletal physiotherapy from the University of Melbourne.</p>
             <p>His clinical work includes sports injuries, spinal conditions, neurological disorders, orthopaedic rehabilitation, and structured support for chronic and complex conditions. He has also worked in post-acute care and community health physiotherapy.</p>
             <p>Nirav uses an evidence-based, collaborative approach focused on improving function, restoring independence, and helping patients achieve measurable recovery outcomes.</p>
@@ -272,11 +272,11 @@
         <field name="name">Stephen Devenish</field>
         <field name="slug">stephen-devenish</field>
         <field name="profile_type">allied</field>
-        <field name="external_image_url">https://livewellpodiatry.com.au/wp-content/uploads/2021/06/Steve.jpg</field>
-        <field name="qualification">Podiatrist</field>
-        <field name="summary">Stephen Devenish is a podiatrist focused on foot and lower-limb care, helping patients improve comfort, mobility, and function across everyday activity, sport, and longer-term recovery.</field>
+        <field name="image_1920" type="base64" file="theme_medical_clinic_east/static/src/img/content/team/stephen-devenish.jpg"/>
+        <field name="qualification">Podiatrist | LiveWell Podiatry</field>
+        <field name="summary">Stephen Devenish from LiveWell Podiatry is a podiatrist focused on foot and lower-limb care, helping patients improve comfort, mobility, and function across everyday activity, sport, and longer-term recovery.</field>
         <field name="bio" type="html">
-            <p>Stephen Devenish is a podiatrist who enjoys helping people get back on their feet and return to the activities that matter to them, whether that is sport, time with grandkids, or everyday mobility.</p>
+            <p>Stephen Devenish from LiveWell Podiatry is a podiatrist who enjoys helping people get back on their feet and return to the activities that matter to them, whether that is sport, time with grandkids, or everyday mobility.</p>
             <p>He takes a practical approach centred on movement, comfort, and long-term function, with a focus on identifying the cause of the issue rather than offering only a short-term fix.</p>
             <p>His podiatry care covers a wide range of foot and lower-limb concerns including nails, callouses and corns, warts, ingrown nails, diabetes foot health assessments, heel pain, sports injuries, children's feet, and gait or running assessments.</p>
             <p>Stephen also bulk bills eligible EPC/Medicare, DVA, and TAC referrals, and offers home visits in the Carrum Downs, Seaford, and Frankston area.</p>
