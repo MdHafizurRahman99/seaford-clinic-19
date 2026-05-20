@@ -50,9 +50,14 @@ class MedicalClinicProfile(models.Model):
     sequence = fields.Integer(default=10)
 
     image_1920 = fields.Image(max_width=1920, max_height=1920)
+    external_image_url = fields.Char(
+        help='Optional public image URL used on the website when no local image is stored.',
+    )
     website_id = fields.Many2one('website', string='Website')
 
     website_url = fields.Char(compute='_compute_website_url')
+    website_image_url = fields.Char(compute='_compute_website_image_url')
+    website_qualification = fields.Char(compute='_compute_website_qualification')
     availability_label = fields.Char(compute='_compute_availability_ui')
     availability_bg_color = fields.Char(compute='_compute_availability_ui')
     availability_text_color = fields.Char(compute='_compute_availability_ui')
@@ -73,6 +78,28 @@ class MedicalClinicProfile(models.Model):
                 profile.website_url = '/our-health-team-doctors/%s' % profile.slug
             else:
                 profile.website_url = '/our-health-team-allied-health/%s' % profile.slug
+
+    @api.depends('image_1920', 'external_image_url')
+    def _compute_website_image_url(self):
+        for profile in self:
+            if profile.image_1920:
+                profile.website_image_url = (
+                    '/web/image/medical.clinic.profile/%s/image_1920' % profile.id
+                )
+            else:
+                profile.website_image_url = profile.external_image_url
+
+    @api.depends('slug', 'qualification')
+    def _compute_website_qualification(self):
+        override_map = {
+            'nirav-sanjanwala': 'Physiotherapist',
+            'stephen-devenish': 'Podiatrist',
+        }
+        for profile in self:
+            profile.website_qualification = override_map.get(
+                profile.slug,
+                profile.qualification,
+            )
 
     @api.depends('availability_status')
     def _compute_availability_ui(self):

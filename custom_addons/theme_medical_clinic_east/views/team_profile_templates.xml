@@ -37,7 +37,7 @@
                                         <p style="color: #3899ac; font-size: 0.8rem; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase;">Allied Health</p>
                                         <h2 style="font-size: 1.35rem; color: #1a4a54; font-weight: 800;">Physiotherapy and Podiatry</h2>
                                         <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
-                                            Partner services delivered by Nirav Sanjanwala from Go Run Go Physio and Stephen Devenish from LiveWell Podiatry.
+                                            Partner services delivered by Nirav Sanjanwala and Stephen Devenish.
                                         </p>
                                     </article>
                                 </a>
@@ -117,7 +117,7 @@
                                                     </a>
                                                 </h4>
                                                 <p style="font-size: 0.86rem; color: #3899ac; font-weight: 700;">
-                                                    <t t-esc="profile.qualification"/>
+                                                    <t t-esc="profile.website_qualification"/>
                                                 </p>
                                                 <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
                                                     <t t-esc="profile.summary"/>
@@ -142,7 +142,7 @@
                                                     </a>
                                                 </h4>
                                                 <p style="font-size: 0.86rem; color: #3899ac; font-weight: 700;">
-                                                    <t t-esc="profile.qualification"/>
+                                                    <t t-esc="profile.website_qualification"/>
                                                 </p>
                                                 <p style="color: #555; line-height: 1.75; margin-bottom: 0;">
                                                     <t t-esc="profile.summary"/>
@@ -190,18 +190,10 @@
                                     <div class="col-xl-4 col-md-6">
                                         <article class="h-100 bg-white p-4" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(20,65,75,0.08);">
                                             <div class="text-center mb-3">
-                                                <t t-if="profile.image_1920">
-                                                    <img
-                                                        t-att-src="'/web/image/medical.clinic.profile/%s/image_1920' % profile.id"
-                                                        t-att-alt="profile.name"
-                                                        style="width: 150px; height: 150px; object-fit: cover; border-radius: 999px; border: 4px solid #3899ac;"/>
-                                                </t>
-                                                <t t-else="">
-                                                    <img
-                                                        src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png"
-                                                        t-att-alt="profile.name"
-                                                        style="width: 150px; height: 150px; object-fit: cover; border-radius: 999px; border: 4px solid #3899ac;"/>
-                                                </t>
+                                                <img
+                                                    t-att-src="profile.website_image_url or '/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png'"
+                                                    t-att-alt="profile.name"
+                                                    style="width: 150px; height: 150px; object-fit: cover; border-radius: 999px; border: 4px solid #3899ac;"/>
                                             </div>
                                             <h3 style="font-size: 1.2rem; font-weight: 800; color: #1a4a54; margin-bottom: 3px;">
                                                 <a t-att-href="profile.website_url" style="color: inherit; text-decoration: none;">
@@ -209,7 +201,7 @@
                                                 </a>
                                             </h3>
                                             <p style="color: #3899ac; font-size: 0.88rem; font-weight: 700; margin-bottom: 10px;">
-                                                <t t-esc="profile.qualification or 'General Practice'"/>
+                                                <t t-esc="profile.website_qualification or 'General Practice'"/>
                                             </p>
                                             <t t-if="profile_type == 'doctor'">
                                                 <span
@@ -310,23 +302,15 @@
                         <div class="row g-4 align-items-start">
                             <div class="col-lg-4">
                                 <div class="bg-white p-4 text-center" style="border-radius: 16px; box-shadow: 0 10px 28px rgba(20,65,75,0.08);">
-                                    <t t-if="profile.image_1920">
-                                        <img
-                                            t-att-src="'/web/image/medical.clinic.profile/%s/image_1920' % profile.id"
-                                            t-att-alt="profile.name"
-                                            style="width: 190px; height: 190px; object-fit: cover; border-radius: 999px; border: 5px solid #3899ac;"/>
-                                    </t>
-                                    <t t-else="">
-                                        <img
-                                            src="/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png"
-                                            t-att-alt="profile.name"
-                                            style="width: 190px; height: 190px; object-fit: cover; border-radius: 999px; border: 5px solid #3899ac;"/>
-                                    </t>
+                                    <img
+                                        t-att-src="profile.website_image_url or '/theme_medical_clinic_east/static/src/img/content/doctor_placeholder.png'"
+                                        t-att-alt="profile.name"
+                                        style="width: 190px; height: 190px; object-fit: cover; border-radius: 999px; border: 5px solid #3899ac;"/>
                                     <h1 style="font-size: 1.7rem; color: #1a4a54; font-weight: 800; margin-top: 16px; margin-bottom: 5px;">
                                         <t t-esc="profile.name"/>
                                     </h1>
                                     <p style="font-size: 0.93rem; color: #3899ac; font-weight: 700; margin-bottom: 8px;">
-                                        <t t-esc="profile.qualification or 'General Practice'"/>
+                                        <t t-esc="profile.website_qualification or 'General Practice'"/>
                                     </p>
                                     <t t-if="profile_type == 'doctor'">
                                         <span
@@ -417,7 +401,7 @@
                                                 </a>
                                             </h4>
                                             <p style="font-size: 0.86rem; color: #3899ac; font-weight: 700;">
-                                                <t t-esc="related.qualification or 'General Practice'"/>
+                                                <t t-esc="related.website_qualification or 'General Practice'"/>
                                             </p>
                                             <p style="color: #555; line-height: 1.7; margin-bottom: 0;">
                                                 <t t-esc="related.summary or 'Patient-focused continuity care.'"/>
