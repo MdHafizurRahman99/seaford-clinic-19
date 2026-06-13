@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_medical_clinic_test_page_submission_list" model="ir.ui.view">
+        <field name="name">medical.clinic.test.page.submission.list</field>
+        <field name="model">medical.clinic.test.page.submission</field>
+        <field name="arch" type="xml">
+            <list string="Test Page Submissions" default_order="submitted_on desc">
+                <field name="submitted_on"/>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="signature_name"/>
+                <field name="website_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_medical_clinic_test_page_submission_form" model="ir.ui.view">
+        <field name="name">medical.clinic.test.page.submission.form</field>
+        <field name="model">medical.clinic.test.page.submission</field>
+        <field name="arch" type="xml">
+            <form string="Test Page Submission">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="email"/>
+                            <field name="phone"/>
+                            <field name="signature_name"/>
+                        </group>
+                        <group>
+                            <field name="submitted_on" readonly="1"/>
+                            <field name="website_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="signature" widget="image" class="oe_avatar"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_medical_clinic_test_page_submissions" model="ir.actions.act_window">
+        <field name="name">Test Page Submissions</field>
+        <field name="res_model">medical.clinic.test.page.submission</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem
+        id="menu_medical_clinic_test_page_submissions"
+        name="Test Page Submissions"
+        parent="website.menu_website_global_configuration"
+        action="action_medical_clinic_test_page_submissions"
+        groups="website.group_website_designer,base.group_system"
+        sequence="87"/>
+
+</odoo>

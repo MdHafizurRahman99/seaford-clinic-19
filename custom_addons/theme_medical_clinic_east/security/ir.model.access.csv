@@ -3,3 +3,5 @@ access_medical_clinic_profile_designer,medical.clinic.profile.designer,model_med
 access_medical_clinic_profile_system,medical.clinic.profile.system,model_medical_clinic_profile,base.group_system,1,1,1,1
 access_medical_clinic_contact_request_designer,medical.clinic.contact.request.designer,model_medical_clinic_contact_request,website.group_website_designer,1,1,1,0
 access_medical_clinic_contact_request_system,medical.clinic.contact.request.system,model_medical_clinic_contact_request,base.group_system,1,1,1,1
+access_medical_clinic_test_page_submission_designer,medical.clinic.test.page.submission.designer,model_medical_clinic_test_page_submission,website.group_website_designer,1,1,1,0
+access_medical_clinic_test_page_submission_system,medical.clinic.test.page.submission.system,model_medical_clinic_test_page_submission,base.group_system,1,1,1,1
