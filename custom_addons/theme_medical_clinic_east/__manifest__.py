@@ -81,8 +81,6 @@
             'theme_medical_clinic_east/static/src/scss/secondary_variables.scss',
         ],
         'web.assets_frontend': [
-            'theme_medical_clinic_east/static/src/js/test_page_signature.js',
-            'theme_medical_clinic_east/static/src/xml/test_page_signature.xml',
             'theme_medical_clinic_east/static/src/scss/theme.scss',
             'theme_medical_clinic_east/static/src/scss/snippets/*.scss',
         ],

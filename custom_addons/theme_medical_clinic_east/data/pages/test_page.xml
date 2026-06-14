@@ -10,16 +10,16 @@
     <field name="arch" type="xml">
         <t t-name="theme_medical_clinic_east.page_test_page">
             <t t-call="website.layout">
-                <t t-set="additional_title">Test Page</t>
+                <t t-set="additional_title">Patient Information and Signature Form</t>
                 <div id="wrap" class="oe_structure">
 
                     <section class="pt80 pb64" data-snippet="s_text_block"
                              style="background: linear-gradient(135deg, rgba(26,74,84,0.96) 0%, rgba(56,153,172,0.82) 100%);">
                         <div class="container text-center">
-                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Demo Form</p>
-                            <h1 style="color: #ffffff; font-weight: 800; font-size: 2.8rem;">Test Page</h1>
+                            <p class="text-uppercase small fw-bold mb-2" style="color: rgba(255,255,255,0.78); letter-spacing: 2px;">Seaford East Medical Clinic</p>
+                            <h1 style="color: #ffffff; font-weight: 800; font-size: 2.8rem;">Patient Information and Signature Form</h1>
                             <p style="color: rgba(255,255,255,0.88); font-size: 1.08rem; max-width: 720px; margin: 0 auto;">
-                                This sample page shows a website form inside your Seaford East Medical Clinic theme, including an Odoo-powered signature field for typed or drawn signatures.
+                                Please complete the required details below and provide your signature before submitting.
                             </p>
                         </div>
                     </section>
@@ -32,10 +32,10 @@
                                          style="background: linear-gradient(180deg, #f8fcfc 0%, #ffffff 100%); border: 1px solid rgba(56,153,172,0.16); box-shadow: 0 18px 48px rgba(26,74,84,0.10);">
                                         <div class="row g-5 align-items-start">
                                             <div class="col-lg-5">
-                                                <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">Form Preview</p>
-                                                <h2 style="font-weight: 800; color: #1a4a54;">Collect signed website submissions</h2>
+                                                <p class="text-uppercase small fw-bold mb-2" style="color: #3899ac; letter-spacing: 2px;">Submission Form</p>
+                                                <h2 style="font-weight: 800; color: #1a4a54;">Patient details and authorisation</h2>
                                                 <p style="color: #5b6a6e; line-height: 1.85; margin-bottom: 0;">
-                                                    Visitors can complete their details, add a typed or drawn signature through Odoo&apos;s built-in signing interface, and submit the finished form from this page.
+                                                    Enter your information accurately and confirm the submission with your signature.
                                                 </p>
                                             </div>
                                             <div class="col-lg-7">
@@ -46,7 +46,7 @@
                                                 </t>
                                                 <t t-if="request.params.get('error')">
                                                     <div class="alert alert-danger border-0 rounded-4 mb-4" style="background: #fff1f1; color: #b54747;">
-                                                        Please complete all required fields, including the signature, before submitting.
+                                                        Please complete all required fields and provide your signature before submitting.
                                                     </div>
                                                 </t>
                                                 <form action="/test-page/submit" method="post">
@@ -69,13 +69,85 @@
                                                         </div>
                                                         <div class="col-12">
                                                             <label class="form-label" style="font-weight: 700; color: #1a4a54;">Signature</label>
-                                                            <div class="o_test_page_signature_mount"
-                                                                 data-full-name-input-id="test_page_full_name"/>
+                                                            <div class="o_test_page_signature_widget rounded-4 p-4"
+                                                                 data-full-name-input-id="test_page_full_name"
+                                                                 style="border: 1px solid rgba(26,74,84,0.15); background: linear-gradient(180deg, #fbfefe 0%, #f3fbfc 100%);">
+                                                                <input type="hidden" name="signature"/>
+                                                                <input type="hidden" name="signature_name"/>
+
+                                                                <div class="d-flex flex-wrap mb-3" style="gap: 10px;">
+                                                                    <button type="button"
+                                                                            class="btn btn-outline-secondary o_signature_mode_btn active"
+                                                                            data-mode="type"
+                                                                            style="border-radius: 12px; font-weight: 600;">
+                                                                        Typed Signature
+                                                                    </button>
+                                                                    <button type="button"
+                                                                            class="btn btn-outline-secondary o_signature_mode_btn"
+                                                                            data-mode="draw"
+                                                                            style="border-radius: 12px; font-weight: 600;">
+                                                                        Draw Signature
+                                                                    </button>
+                                                                </div>
+
+                                                                <div class="o_signature_mode o_signature_mode_type">
+                                                                    <label class="form-label" style="font-weight: 700; color: #1a4a54;">Typed Signature Name</label>
+                                                                    <input type="text"
+                                                                           class="form-control o_signature_typed_name"
+                                                                           placeholder="Enter the name to appear in the signature"
+                                                                           style="border-radius: 14px; border: 1px solid rgba(26,74,84,0.15); padding: 0.85rem 1rem;"/>
+                                                                    <div class="d-flex flex-wrap align-items-center justify-content-between mt-3" style="gap: 12px;">
+                                                                        <span style="margin: 0; color: #6c7d80; font-size: 0.92rem;">Confirm the typed signature below.</span>
+                                                                        <button type="button"
+                                                                                class="btn btn-outline-secondary o_signature_apply_typed"
+                                                                                style="border-radius: 12px; font-weight: 600;">
+                                                                            Apply Typed Signature
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="o_signature_mode o_signature_mode_draw d-none">
+                                                                    <div class="rounded-4 p-2 bg-white"
+                                                                         style="border: 1px dashed rgba(56,153,172,0.35);">
+                                                                        <canvas class="o_signature_canvas"
+                                                                                style="display: block; width: 100%; height: 200px; touch-action: none; border-radius: 12px;"/>
+                                                                    </div>
+                                                                    <div class="d-flex flex-wrap align-items-center justify-content-between mt-3" style="gap: 12px;">
+                                                                        <span style="margin: 0; color: #6c7d80; font-size: 0.92rem;">Provide your handwritten signature.</span>
+                                                                        <div class="d-flex flex-wrap" style="gap: 10px;">
+                                                                            <button type="button"
+                                                                                    class="btn btn-link o_signature_clear_draw"
+                                                                                    style="color: #b54747; text-decoration: none; font-weight: 600;">
+                                                                                Clear
+                                                                            </button>
+                                                                            <button type="button"
+                                                                                    class="btn btn-outline-secondary o_signature_apply_draw"
+                                                                                    style="border-radius: 12px; font-weight: 600;">
+                                                                                Apply Drawn Signature
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="rounded-4 mt-3 d-flex align-items-center justify-content-center o_signature_preview"
+                                                                     style="min-height: 140px; border: 1px dashed rgba(56,153,172,0.35); background: #ffffff;">
+                                                                    <div class="o_signature_preview_placeholder text-center px-3">
+                                                                        <i class="fa fa-pencil-square-o d-block mb-2" style="font-size: 1.9rem; color: #3899ac;"/>
+                                                                        <p style="margin: 0; color: #5b6a6e;">Signature required.</p>
+                                                                    </div>
+                                                                    <img class="o_signature_preview_image d-none"
+                                                                         alt="Signature preview"
+                                                                         style="max-height: 110px; max-width: 100%; object-fit: contain;"/>
+                                                                </div>
+
+                                                                <div class="alert alert-danger border-0 rounded-4 mt-3 mb-0 o_signature_error d-none"
+                                                                     style="background: #fff1f1; color: #b54747;"/>
+                                                            </div>
                                                         </div>
                                                         <div class="col-12 d-flex flex-wrap justify-content-end">
                                                             <button type="submit" class="btn"
                                                                     style="background: linear-gradient(135deg, #3899ac, #1a4a54); color: #ffffff; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 14px 0 14px 0;">
-                                                                Submit
+                                                                Submit Form
                                                             </button>
                                                         </div>
                                                     </div>
@@ -87,6 +159,204 @@
                             </div>
                         </div>
                     </section>
+
+                    <script type="text/javascript" src="/web/static/lib/signature_pad/signature_pad.umd.js"></script>
+                    <script type="text/javascript"><![CDATA[
+                        (function () {
+                            function initializeSignatureWidgets() {
+                                var widgets = document.querySelectorAll('.o_test_page_signature_widget');
+                                widgets.forEach(function (widget) {
+                                    if (widget.dataset.signatureInitialized === '1') {
+                                        return;
+                                    }
+                                    widget.dataset.signatureInitialized = '1';
+
+                                    var fullNameInput = document.getElementById(widget.dataset.fullNameInputId);
+                                    var form = widget.closest('form');
+                                    var hiddenSignatureInput = widget.querySelector('input[name="signature"]');
+                                    var hiddenSignatureNameInput = widget.querySelector('input[name="signature_name"]');
+                                    var typedInput = widget.querySelector('.o_signature_typed_name');
+                                    var canvas = widget.querySelector('.o_signature_canvas');
+                                    var previewImage = widget.querySelector('.o_signature_preview_image');
+                                    var previewPlaceholder = widget.querySelector('.o_signature_preview_placeholder');
+                                    var errorBox = widget.querySelector('.o_signature_error');
+                                    var modeButtons = widget.querySelectorAll('.o_signature_mode_btn');
+                                    var typeMode = widget.querySelector('.o_signature_mode_type');
+                                    var drawMode = widget.querySelector('.o_signature_mode_draw');
+                                    var clearDrawButton = widget.querySelector('.o_signature_clear_draw');
+                                    var useTypedButton = widget.querySelector('.o_signature_apply_typed');
+                                    var useDrawButton = widget.querySelector('.o_signature_apply_draw');
+                                    var signaturePad = null;
+
+                                    function showError(message) {
+                                        errorBox.textContent = message;
+                                        errorBox.classList.remove('d-none');
+                                    }
+
+                                    function clearError() {
+                                        errorBox.textContent = '';
+                                        errorBox.classList.add('d-none');
+                                    }
+
+                                    function syncTypedName(force) {
+                                        if (!fullNameInput) {
+                                            return;
+                                        }
+                                        if (force || !typedInput.value || typedInput.dataset.userEdited !== '1') {
+                                            typedInput.value = fullNameInput.value || '';
+                                        }
+                                    }
+
+                                    function setPreview(signatureDataUrl, signatureName) {
+                                        hiddenSignatureInput.value = signatureDataUrl;
+                                        hiddenSignatureNameInput.value = signatureName || (fullNameInput && fullNameInput.value) || '';
+                                        previewImage.src = signatureDataUrl;
+                                        previewImage.classList.remove('d-none');
+                                        previewPlaceholder.classList.add('d-none');
+                                        clearError();
+                                    }
+
+                                    function setMode(mode) {
+                                        modeButtons.forEach(function (button) {
+                                            var isActive = button.dataset.mode === mode;
+                                            button.classList.toggle('active', isActive);
+                                        });
+                                        typeMode.classList.toggle('d-none', mode !== 'type');
+                                        drawMode.classList.toggle('d-none', mode !== 'draw');
+                                        if (mode === 'draw') {
+                                            resizeCanvas();
+                                        }
+                                    }
+
+                                    function resizeCanvas() {
+                                        if (!canvas || !window.SignaturePad) {
+                                            return;
+                                        }
+                                        var ratio = Math.max(window.devicePixelRatio || 1, 1);
+                                        var width = canvas.offsetWidth;
+                                        var height = canvas.offsetHeight;
+                                        canvas.width = width * ratio;
+                                        canvas.height = height * ratio;
+                                        canvas.getContext('2d').scale(ratio, ratio);
+                                        if (!signaturePad) {
+                                            signaturePad = new window.SignaturePad(canvas, {
+                                                penColor: '#1a4a54',
+                                                minWidth: 1.5,
+                                                maxWidth: 2.2,
+                                                backgroundColor: 'rgba(255,255,255,0)',
+                                            });
+                                        } else {
+                                            signaturePad.clear();
+                                        }
+                                    }
+
+                                    function createTypedSignature(name) {
+                                        var text = (name || '').trim();
+                                        if (!text) {
+                                            showError('Please type a name for the signature first.');
+                                            return;
+                                        }
+
+                                        var typedCanvas = document.createElement('canvas');
+                                        typedCanvas.width = 780;
+                                        typedCanvas.height = 220;
+                                        var ctx = typedCanvas.getContext('2d');
+                                        var fontSize = 76;
+
+                                        ctx.clearRect(0, 0, typedCanvas.width, typedCanvas.height);
+                                        ctx.fillStyle = '#1a4a54';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'middle';
+
+                                        while (fontSize > 34) {
+                                            ctx.font = 'italic ' + fontSize + 'px cursive';
+                                            if (ctx.measureText(text).width <= 680) {
+                                                break;
+                                            }
+                                            fontSize -= 4;
+                                        }
+
+                                        ctx.font = 'italic ' + fontSize + 'px cursive';
+                                        ctx.fillText(text, typedCanvas.width / 2, typedCanvas.height / 2);
+
+                                        setPreview(typedCanvas.toDataURL('image/png'), text);
+                                    }
+
+                                    modeButtons.forEach(function (button) {
+                                        button.addEventListener('click', function () {
+                                            setMode(button.dataset.mode);
+                                        });
+                                    });
+
+                                    typedInput.addEventListener('input', function () {
+                                        typedInput.dataset.userEdited = '1';
+                                    });
+
+                                    if (fullNameInput) {
+                                        syncTypedName(true);
+                                        fullNameInput.addEventListener('input', function () {
+                                            syncTypedName(false);
+                                        });
+                                    }
+
+                                    useTypedButton.addEventListener('click', function () {
+                                        createTypedSignature(typedInput.value || (fullNameInput && fullNameInput.value) || '');
+                                    });
+
+                                    clearDrawButton.addEventListener('click', function () {
+                                        if (signaturePad) {
+                                            signaturePad.clear();
+                                        }
+                                        clearError();
+                                    });
+
+                                    useDrawButton.addEventListener('click', function () {
+                                        if (!signaturePad || signaturePad.isEmpty()) {
+                                            showError('Please draw your signature before using it.');
+                                            return;
+                                        }
+                                        setPreview(
+                                            signaturePad.toDataURL('image/png'),
+                                            typedInput.value || (fullNameInput && fullNameInput.value) || ''
+                                        );
+                                    });
+
+                                    if (form) {
+                                        form.addEventListener('submit', function (ev) {
+                                            if (!hiddenSignatureInput.value) {
+                                                ev.preventDefault();
+                                                showError('Please choose a typed or drawn signature before submitting.');
+                                                widget.scrollIntoView({
+                                                    behavior: 'smooth',
+                                                    block: 'center',
+                                                });
+                                            }
+                                        });
+                                    }
+
+                                    if (!window.SignaturePad) {
+                                        widget.querySelector('[data-mode="draw"]').disabled = true;
+                                        widget.querySelector('[data-mode="draw"]').title = 'Draw mode is currently unavailable.';
+                                    } else {
+                                        resizeCanvas();
+                                        window.addEventListener('resize', function () {
+                                            if (!drawMode.classList.contains('d-none')) {
+                                                resizeCanvas();
+                                            }
+                                        });
+                                    }
+
+                                    setMode('type');
+                                });
+                            }
+
+                            if (document.readyState === 'loading') {
+                                document.addEventListener('DOMContentLoaded', initializeSignatureWidgets);
+                            } else {
+                                initializeSignatureWidgets();
+                            }
+                        })();
+                    ]]></script>
 
                 </div>
             </t>
