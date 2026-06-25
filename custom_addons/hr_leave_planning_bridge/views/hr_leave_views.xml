@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_leave_view_form_planning_bridge" model="ir.ui.view">
+        <field name="name">hr.leave.view.form.planning.bridge</field>
+        <field name="model">hr.leave</field>
+        <field name="inherit_id" ref="hr_holidays.hr_leave_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='col_left']/field[@name='name']" position="after">
+                <group string="Planning Link" name="planning_bridge_group">
+                    <field name="planning_slot_id" readonly="1"/>
+                    <field name="planning_slot_title" readonly="1"/>
+                    <field name="planning_role_name" readonly="1"/>
+                    <field name="planning_company_name" readonly="1"/>
+                    <field name="planning_start_datetime" readonly="1"/>
+                    <field name="planning_end_datetime" readonly="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
