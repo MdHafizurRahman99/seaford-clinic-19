@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_weekly_availability" model="ir.ui.view">
+        <field name="name">hr.employee.form.weekly.availability</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr_homeworking.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[field[@name='monday_location_id']]" position="after">
+                <group string="Weekly Availability" col="2">
+                    <label string="Flexible Rules"/>
+                    <div class="text-muted">
+                        Add multiple weekly lines. Example: Available full day plus Unavailable 13:00 to 14:00, or Unavailable full day plus Available 09:00 to 12:00.
+                    </div>
+                    <field name="weekly_availability_line_ids" nolabel="1" colspan="2">
+                        <list string="Weekly Availability">
+                            <field name="sequence" widget="handle"/>
+                            <field name="day_of_week"/>
+                            <field name="availability_type"/>
+                            <field name="time_range_display" string="Time"/>
+                        </list>
+                        <form string="Weekly Availability Line">
+                            <group>
+                                <field name="employee_id" invisible="1"/>
+                                <field name="day_of_week"/>
+                                <field name="availability_type"/>
+                                <field name="is_full_day"/>
+                                <label for="start_time" string="Time Range" invisible="is_full_day"/>
+                                <div class="o_row" invisible="is_full_day">
+                                    <field name="start_time" widget="float_time" class="oe_inline"/>
+                                    <span class="mx-1">to</span>
+                                    <field name="end_time" widget="float_time" class="oe_inline"/>
+                                </div>
+                            </group>
+                        </form>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
