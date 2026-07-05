@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='sunday_location_id']" position="after">
                 <group string="Weekly Availability" invisible="not employee_id or share" col="2">
-                    <label string="Flexible Rules"/>
+                    <div class="o_form_label">Flexible Rules</div>
                     <div class="text-muted">
                         Add multiple weekly lines. Example: Available full day plus Unavailable 13:00 to 14:00, or Unavailable full day plus Available 09:00 to 12:00.
                     </div>
@@ -45,7 +45,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='sunday_location_id']" position="after">
                 <group string="Weekly Availability" invisible="not employee_id" col="2">
-                    <label string="Flexible Rules"/>
+                    <div class="o_form_label">Flexible Rules</div>
                     <div class="text-muted">
                         Add multiple weekly lines. Example: Available full day plus Unavailable 13:00 to 14:00, or Unavailable full day plus Available 09:00 to 12:00.
                     </div>
