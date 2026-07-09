@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <record id="view_employee_form_company_assignments" model="ir.ui.view">
+        <field name="name">hr.employee.form.company.assignments</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr_homeworking.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[field[@name='work_location_id']]" position="after">
+                <group string="Company Coverage" col="2">
+                    <field name="company_assignment_scope"/>
+                    <field
+                        name="work_company_ids"
+                        widget="many2many_tags"
+                        readonly="1"
+                        options="{'no_create_edit': True}"
+                        invisible="company_assignment_scope == 'single'"
+                    />
+                    <div class="o_form_label">Assignments</div>
+                    <div class="text-muted">
+                        Keep the main Company, Work Address, and Work Location above as the primary setup. Add rows below when an employee can work for selected companies, or switch to all companies and keep location rows only where you want a saved company-specific location.
+                    </div>
+                    <field
+                        name="company_assignment_line_ids"
+                        nolabel="1"
+                        colspan="2"
+                        context="{
+                            'default_employee_id': id,
+                            'default_company_id': company_id,
+                            'default_address_id': address_id,
+                            'default_work_location_id': work_location_id
+                        }"
+                    >
+                        <list string="Company Assignments">
+                            <field name="sequence" widget="handle"/>
+                            <field name="is_primary"/>
+                            <field name="company_id" domain="[('id', 'in', available_company_ids)]"/>
+                            <field
+                                name="address_id"
+                                context="{'show_address': 1}"
+                                options='{"highlight_first_line": True}'
+                            />
+                            <field name="work_location_id"/>
+                        </list>
+                        <form string="Company Assignment">
+                            <group>
+                                <field name="employee_id" invisible="1"/>
+                                <field name="available_company_ids" invisible="1"/>
+                                <field name="sequence" invisible="1"/>
+                                <field name="is_primary"/>
+                                <field name="company_id" domain="[('id', 'in', available_company_ids)]"/>
+                                <field
+                                    name="address_id"
+                                    context="{'show_address': 1}"
+                                    options='{"highlight_first_line": True}'
+                                />
+                                <field
+                                    name="work_location_id"
+                                    context="{'default_address_id': address_id}"
+                                />
+                            </group>
+                        </form>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
     <record id="view_employee_form_weekly_availability" model="ir.ui.view">
         <field name="name">hr.employee.form.weekly.availability</field>
         <field name="model">hr.employee</field>
