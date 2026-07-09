@@ -15,16 +15,16 @@
                         options="{'no_create_edit': True}"
                         invisible="company_assignment_scope == 'single'"
                     />
-                    <div class="o_form_label">Assignments</div>
+                    <div class="o_form_label" invisible="company_assignment_scope == 'single'">Assignments</div>
                     <field
                         name="company_assignment_line_ids"
                         nolabel="1"
                         colspan="2"
+                        invisible="company_assignment_scope == 'single'"
                         context="{
                             'default_employee_id': id,
                             'default_company_id': company_id,
-                            'default_address_id': address_id,
-                            'default_work_location_id': work_location_id
+                            'default_address_id': address_id
                         }"
                     >
                         <list string="Company Assignments">

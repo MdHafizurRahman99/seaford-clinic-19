@@ -123,8 +123,18 @@ class HrEmployee(models.Model):
     def _sync_company_assignment_state_from_primary_fields(self):
         if self.env.context.get('skip_company_assignment_sync'):
             return
-        self._ensure_primary_company_assignment_line()
+        self._normalize_company_assignment_state()
         self._sync_user_company_access()
+
+    def _normalize_company_assignment_state(self):
+        for employee in self:
+            if employee.company_assignment_scope == 'single':
+                if employee.company_assignment_line_ids:
+                    employee.company_assignment_line_ids.with_context(
+                        skip_company_assignment_sync=True
+                    ).unlink()
+                continue
+            employee._ensure_primary_company_assignment_line()
 
     def _ensure_primary_company_assignment_line(self):
         Assignment = self.env['hr.employee.company.assignment']

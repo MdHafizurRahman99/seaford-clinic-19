@@ -38,8 +38,6 @@ class HrEmployeeCompanyAssignment(models.Model):
     work_location_id = fields.Many2one(
         'hr.work.location',
         string='Work Location',
-        domain="[('company_id', '=', company_id), ('address_id', '=', address_id)]",
-        check_company=True,
         tracking=True,
     )
     is_primary = fields.Boolean(string='Primary Assignment')
@@ -72,17 +70,8 @@ class HrEmployeeCompanyAssignment(models.Model):
         for line in self:
             if not line.company_id:
                 line.address_id = False
-                line.work_location_id = False
                 continue
             line.address_id = line.company_id.partner_id
-            if line.work_location_id and line.work_location_id.company_id != line.company_id:
-                line.work_location_id = False
-
-    @api.onchange('address_id')
-    def _onchange_address_id(self):
-        for line in self:
-            if line.work_location_id and line.work_location_id.address_id != line.address_id:
-                line.work_location_id = False
 
     @api.constrains('employee_id', 'is_primary')
     def _check_primary_assignment(self):
@@ -99,14 +88,6 @@ class HrEmployeeCompanyAssignment(models.Model):
             )
             if len(duplicate_lines) > 1:
                 raise ValidationError(_('Each company can only be assigned once per employee.'))
-
-    @api.constrains('company_id', 'address_id', 'work_location_id')
-    def _check_work_location_company(self):
-        for line in self.filtered('work_location_id'):
-            if line.work_location_id.company_id != line.company_id:
-                raise ValidationError(_('The work location company must match the assignment company.'))
-            if line.address_id and line.work_location_id.address_id != line.address_id:
-                raise ValidationError(_('The work location address must match the assignment work address.'))
 
     @api.constrains('employee_id', 'salary_coverage')
     def _check_salary_coverage(self):
