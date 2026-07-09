@@ -16,9 +16,6 @@
                         invisible="company_assignment_scope == 'single'"
                     />
                     <div class="o_form_label">Assignments</div>
-                    <div class="text-muted">
-                        Keep the main Company, Work Address, and Work Location above as the primary setup. Add rows below when an employee can work for selected companies, or switch to all companies and keep location rows only where you want a saved company-specific location.
-                    </div>
                     <field
                         name="company_assignment_line_ids"
                         nolabel="1"
