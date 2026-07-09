@@ -1,5 +1,6 @@
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
+from odoo.tools.float_utils import float_compare
 
 
 class HrEmployeeCompanyAssignment(models.Model):
@@ -19,6 +20,12 @@ class HrEmployeeCompanyAssignment(models.Model):
         'res.company',
         required=True,
         default=lambda self: self.env.company,
+        tracking=True,
+    )
+    salary_coverage = fields.Float(
+        string='Salary Coverage %',
+        digits=(16, 2),
+        default=0.0,
         tracking=True,
     )
     address_id = fields.Many2one(
@@ -84,6 +91,15 @@ class HrEmployeeCompanyAssignment(models.Model):
             if len(primary_lines) > 1:
                 raise ValidationError(_('An employee can only have one primary company assignment.'))
 
+    @api.constrains('employee_id', 'company_id')
+    def _check_unique_company_assignment(self):
+        for line in self.filtered(lambda record: record.employee_id and record.company_id):
+            duplicate_lines = line.employee_id.company_assignment_line_ids.filtered(
+                lambda record: record.company_id == line.company_id
+            )
+            if len(duplicate_lines) > 1:
+                raise ValidationError(_('Each company can only be assigned once per employee.'))
+
     @api.constrains('company_id', 'address_id', 'work_location_id')
     def _check_work_location_company(self):
         for line in self.filtered('work_location_id'):
@@ -92,9 +108,34 @@ class HrEmployeeCompanyAssignment(models.Model):
             if line.address_id and line.work_location_id.address_id != line.address_id:
                 raise ValidationError(_('The work location address must match the assignment work address.'))
 
+    @api.constrains('employee_id', 'salary_coverage')
+    def _check_salary_coverage(self):
+        for line in self.filtered('employee_id'):
+            if float_compare(line.salary_coverage, 0.0, precision_digits=2) < 0:
+                raise ValidationError(_('Salary coverage cannot be negative.'))
+            if float_compare(line.salary_coverage, 100.0, precision_digits=2) > 0:
+                raise ValidationError(_('Salary coverage cannot be more than 100%.'))
+
+            total_coverage = sum(line.employee_id.company_assignment_line_ids.mapped('salary_coverage'))
+            if float_compare(total_coverage, 100.0, precision_digits=2) != 0:
+                raise ValidationError(_('Salary coverage across all assigned companies must total exactly 100%.'))
+
     @api.model_create_multi
     def create(self, vals_list):
-        records = super().create(vals_list)
+        created_line_counts = {}
+        normalized_vals_list = []
+        for vals in vals_list:
+            vals = dict(vals)
+            employee_id = vals.get('employee_id')
+            if employee_id and 'salary_coverage' not in vals:
+                employee = self.env['hr.employee'].browse(employee_id)
+                existing_count = len(employee.company_assignment_line_ids)
+                pending_count = created_line_counts.get(employee_id, 0)
+                if existing_count + pending_count == 0:
+                    vals['salary_coverage'] = 100.0
+                created_line_counts[employee_id] = pending_count + 1
+            normalized_vals_list.append(vals)
+        records = super().create(normalized_vals_list)
         if not self.env.context.get('skip_company_assignment_sync'):
             records.mapped('employee_id')._sync_primary_fields_from_company_assignments()
         return records

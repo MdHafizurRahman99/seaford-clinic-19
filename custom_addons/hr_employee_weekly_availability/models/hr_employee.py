@@ -101,12 +101,15 @@ class HrEmployee(models.Model):
 
     def _prepare_primary_company_assignment_vals(self):
         self.ensure_one()
-        return {
+        vals = {
             'company_id': self.company_id.id,
             'address_id': self.address_id.id or False,
             'work_location_id': self.work_location_id.id or False,
             'is_primary': True,
         }
+        if not self.company_assignment_line_ids:
+            vals['salary_coverage'] = 100.0
+        return vals
 
     def _get_primary_company_assignment_line(self):
         self.ensure_one()
@@ -153,8 +156,12 @@ class HrEmployee(models.Model):
         for employee in self:
             primary_line = employee._get_primary_company_assignment_line()
             if not primary_line:
-                employee._sync_user_company_access()
-                continue
+                if employee.company_assignment_scope != 'single':
+                    employee._ensure_primary_company_assignment_line()
+                    primary_line = employee._get_primary_company_assignment_line()
+                if not primary_line:
+                    employee._sync_user_company_access()
+                    continue
 
             other_primary_lines = employee.company_assignment_line_ids.filtered(
                 lambda line: line.is_primary and line != primary_line

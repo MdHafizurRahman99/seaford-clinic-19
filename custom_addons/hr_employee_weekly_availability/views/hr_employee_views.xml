@@ -31,6 +31,7 @@
                             <field name="sequence" widget="handle"/>
                             <field name="is_primary"/>
                             <field name="company_id" domain="[('id', 'in', available_company_ids)]"/>
+                            <field name="salary_coverage" sum="Total %" optional="show"/>
                             <field
                                 name="address_id"
                                 context="{'show_address': 1}"
@@ -45,6 +46,7 @@
                                 <field name="sequence" invisible="1"/>
                                 <field name="is_primary"/>
                                 <field name="company_id" domain="[('id', 'in', available_company_ids)]"/>
+                                <field name="salary_coverage"/>
                                 <field
                                     name="address_id"
                                     context="{'show_address': 1}"
