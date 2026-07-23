@@ -2,3 +2,13 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_hr_employee_weekly_availability_hr,hr.employee.weekly.availability.hr,model_hr_employee_weekly_availability,hr.group_hr_user,1,1,1,1
 access_hr_employee_weekly_availability_user,hr.employee.weekly.availability.user,model_hr_employee_weekly_availability,base.group_user,1,1,1,1
 access_hr_employee_company_assignment_hr,hr.employee.company.assignment.hr,model_hr_employee_company_assignment,hr.group_hr_user,1,1,1,1
+access_ems_schedule_template_hr,ems.schedule.template.hr,model_ems_schedule_template,hr.group_hr_user,1,1,1,1
+access_ems_schedule_template_item_hr,ems.schedule.template.item.hr,model_ems_schedule_template_item,hr.group_hr_user,1,1,1,1
+access_ems_schedule_area_hr,ems.schedule.area.hr,model_ems_schedule_area,hr.group_hr_user,1,1,1,1
+access_ems_schedule_coverage_hr,ems.schedule.coverage.hr,model_ems_schedule_coverage,hr.group_hr_user,1,1,1,1
+access_ems_schedule_day_meta_hr,ems.schedule.day.meta.hr,model_ems_schedule_day_meta,hr.group_hr_user,1,1,1,1
+access_ems_schedule_shift_break_hr,ems.schedule.shift.break.hr,model_ems_schedule_shift_break,hr.group_hr_user,1,1,1,1
+access_ems_schedule_compliance_rule_hr,ems.schedule.compliance.rule.hr,model_ems_schedule_compliance_rule,hr.group_hr_user,1,1,1,1
+access_ems_schedule_cost_rate_hr,ems.schedule.cost.rate.hr,model_ems_schedule_cost_rate,hr.group_hr_user,1,1,1,1
+access_ems_schedule_week_budget_hr,ems.schedule.week.budget.hr,model_ems_schedule_week_budget,hr.group_hr_user,1,1,1,1
+access_ems_schedule_undo_batch_hr,ems.schedule.undo.batch.hr,model_ems_schedule_undo_batch,hr.group_hr_user,1,1,1,1

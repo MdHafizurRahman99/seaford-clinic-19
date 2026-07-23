@@ -33,6 +33,22 @@
         <field name="sequence">15</field>
     </record>
 
+    <record id="profile_doctor_dr_palash_chandra_debnath" model="medical.clinic.profile">
+        <field name="name">Dr Palash Chandra Debnath</field>
+        <field name="slug">dr-palash-chandra-debnath</field>
+        <field name="profile_type">doctor</field>
+        <field name="qualification">MBBS</field>
+        <field name="summary">A devoted general practitioner with more than ten years of experience, providing individualised and holistic care for patients and families.</field>
+        <field name="bio" type="html">
+            <p>Dr Palash Chandra Debnath is a devoted general practitioner with more than ten years of experience. He promotes health and wellbeing through individualised treatment plans and a strong commitment to holistic care.</p>
+            <p>His objective is to provide compassionate, high-quality medical care for patients and their families, whether they need support for an acute issue, chronic condition management, or preventive care.</p>
+        </field>
+        <field name="special_interests">General medicine,Child health,Men's health,Chronic disease management</field>
+        <field name="availability_status">accepting</field>
+        <field name="booking_url">/appointments</field>
+        <field name="sequence">16</field>
+    </record>
+
     <record id="profile_doctor_dr_alvin_ng" model="medical.clinic.profile">
         <field name="name">xxxx</field>
         <field name="slug">dr-lucas-bennett</field>

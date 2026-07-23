@@ -1,11 +1,11 @@
 {
     'name': 'HR Employee Weekly Availability',
     'summary': 'Track employee weekday availability and unavailability windows',
-    'version': '19.0.1.0.0',
+    'version': '19.0.4.0.0',
     'category': 'Human Resources/Employees',
     'author': 'Custom',
     'license': 'LGPL-3',
-    'depends': ['hr_homeworking'],
+    'depends': ['hr_homeworking', 'planning'],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
