@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_schedule_diary" model="ir.ui.view">
+        <field name="name">hr.employee.form.schedule.diary</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr_employee_weekly_availability.view_employee_form_weekly_availability"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='weekly_availability_line_ids']" position="after">
+                <separator string="Schedule Diary"/>
+                <div class="text-muted">
+                    Date-specific availability, unavailability, and scheduling notes shared with schedule managers.
+                </div>
+                <field name="schedule_entry_ids" nolabel="1" colspan="2" context="{'default_employee_id': id}">
+                    <list string="Schedule Diary" default_order="entry_date desc, start_time">
+                        <field name="entry_date"/>
+                        <field name="entry_type"/>
+                        <field name="title"/>
+                        <field name="time_range_display" string="Time"/>
+                        <field name="active" optional="hide"/>
+                    </list>
+                    <form string="Schedule Diary Entry">
+                        <group>
+                            <field name="employee_id" invisible="1"/>
+                            <field name="entry_date"/>
+                            <field name="entry_type"/>
+                            <field name="title"/>
+                            <field name="is_full_day"/>
+                            <label for="start_time" string="Time Range" invisible="is_full_day"/>
+                            <div class="o_row" invisible="is_full_day">
+                                <field name="start_time" widget="float_time" class="oe_inline"/>
+                                <span class="mx-1">to</span>
+                                <field name="end_time" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="note"/>
+                            <field name="active"/>
+                        </group>
+                    </form>
+                </field>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_users_view_form_schedule_diary" model="ir.ui.view">
+        <field name="name">res.users.form.schedule.diary</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="hr_employee_weekly_availability.res_users_view_form_weekly_availability"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='weekly_availability_line_ids']" position="after">
+                <separator string="Schedule Diary"/>
+                <field name="schedule_entry_ids" nolabel="1" colspan="2" context="{'default_employee_id': employee_id}">
+                    <list string="Schedule Diary" default_order="entry_date desc, start_time">
+                        <field name="entry_date"/>
+                        <field name="entry_type"/>
+                        <field name="title"/>
+                        <field name="time_range_display" string="Time"/>
+                    </list>
+                </field>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_users_view_form_preferences_schedule_diary" model="ir.ui.view">
+        <field name="name">res.users.preferences.schedule.diary</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="hr_employee_weekly_availability.res_users_view_form_preferences_weekly_availability"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='weekly_availability_line_ids']" position="after">
+                <separator string="Schedule Diary"/>
+                <field name="schedule_entry_ids" nolabel="1" colspan="2" context="{'default_employee_id': employee_id}">
+                    <list string="Schedule Diary" default_order="entry_date desc, start_time">
+                        <field name="entry_date"/>
+                        <field name="entry_type"/>
+                        <field name="title"/>
+                        <field name="time_range_display" string="Time"/>
+                    </list>
+                </field>
+            </xpath>
+        </field>
+    </record>
+</odoo>

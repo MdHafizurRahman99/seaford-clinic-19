@@ -3,3 +3,4 @@ from . import company_assignment
 from . import hr_employee
 from . import res_users
 from . import schedule_management
+from . import employee_schedule_entry

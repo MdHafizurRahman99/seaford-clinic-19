@@ -12,3 +12,5 @@ access_ems_schedule_compliance_rule_hr,ems.schedule.compliance.rule.hr,model_ems
 access_ems_schedule_cost_rate_hr,ems.schedule.cost.rate.hr,model_ems_schedule_cost_rate,hr.group_hr_user,1,1,1,1
 access_ems_schedule_week_budget_hr,ems.schedule.week.budget.hr,model_ems_schedule_week_budget,hr.group_hr_user,1,1,1,1
 access_ems_schedule_undo_batch_hr,ems.schedule.undo.batch.hr,model_ems_schedule_undo_batch,hr.group_hr_user,1,1,1,1
+access_hr_employee_schedule_entry_user,hr.employee.schedule.entry.user,model_hr_employee_schedule_entry,base.group_user,1,1,1,1
+access_hr_employee_schedule_entry_hr,hr.employee.schedule.entry.hr,model_hr_employee_schedule_entry,hr.group_hr_user,1,1,1,1
