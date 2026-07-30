@@ -84,7 +84,7 @@
             'theme_medical_clinic_east/static/src/scss/theme.scss',
             'theme_medical_clinic_east/static/src/scss/snippets/*.scss',
         ],
-    },+
+    },
     'images': [
         'static/description/cover.png',
     ],
