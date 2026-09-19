@@ -269,14 +269,15 @@
         <field name="slug">steve-rees</field>
         <field name="profile_type">allied</field>
         <field name="image_1920" eval="False"/>
-        <field name="qualification">Senior Physiotherapist and Exercise Scientist | BExSc, MPhtySt, APAM</field>
+        <field name="qualification">Physiotherapist and Exercise Scientist</field>
         <field name="summary">Steve is a physiotherapist and exercise scientist with experience across Australia and the United Kingdom since 2007, helping people recover from injury, reduce pain, and return to the activities they enjoy.</field>
         <field name="bio" type="html">
             <p>Steve has been working as a physiotherapist since 2007, with experience across both Australia and the United Kingdom. He is passionate about helping people recover from injury, reduce pain, and return to the activities they enjoy.</p>
-            <p>Having participated in a wide range of sports—including lacrosse, athletics, swimming, surf lifesaving, hockey, and basketball—Steve has a particular interest in the assessment, treatment, and rehabilitation of sports injuries. He also has a special interest in managing headaches, combining hands-on therapy, education, posture advice, and individualised exercise programs to achieve lasting results.</p>
-            <p>Steve believes the best outcomes are achieved when patients understand their condition and play an active role in their recovery. He places a strong emphasis on education, empowering patients with the knowledge and skills to take control of their condition and reduce the likelihood of future problems.</p>
-            <p>His treatment approach combines evidence-informed hands-on therapy with tailored exercise rehabilitation. Steve holds a degree in Exercise Science, providing him with advanced skills in designing and progressing individualised exercise programs for people of all ages, fitness levels, and abilities. He is also a qualified Clinical Pilates instructor and incorporates corrective exercise into rehabilitation programs where appropriate.</p>
-            <p>Steve values working collaboratively with other healthcare professionals to ensure his patients receive the highest standard of care. He looks forward to welcoming patients to Seaford East Medical Clinic and helping them achieve their health and movement goals.</p>
+            <p>Having participated in a wide range of sports—including lacrosse, athletics, swimming, surf lifesaving, hockey and basketball—Steve has a particular interest in the assessment, treatment and rehabilitation of sports injuries. He also has a special interest in the management of headaches, combining hands-on therapy, education, posture advice and individualised exercise programs to achieve lasting results.</p>
+            <p>Steve believes that the best outcomes are achieved when patients understand their condition and play an active role in their recovery. He places a strong emphasis on educating patients, empowering them with the knowledge and skills to take control of their condition and reduce the likelihood of future problems.</p>
+            <p>His treatment approach combines hands-on therapy with tailored exercise rehabilitation. Steve holds a degree in Exercise Science, providing him with advanced skills in designing and progressing individualised exercise programs for people of all ages, fitness levels and abilities. He is also a qualified Clinical Pilates instructor and incorporates corrective exercise into his rehabilitation programs where appropriate.</p>
+            <p>Steve values working collaboratively with other healthcare professionals to ensure his patients receive the highest standard of care.</p>
+            <p>He looks forward to welcoming you to Seaford East Medical Clinic and helping you achieve your health and movement goals.</p>
         </field>
         <field name="special_interests">Sports injuries,Joint and muscle pain,Headaches,Falls prevention and balance training,Pre-operative rehabilitation,Post-operative rehabilitation,Exercise-based rehabilitation</field>
         <field name="availability_status">accepting</field>

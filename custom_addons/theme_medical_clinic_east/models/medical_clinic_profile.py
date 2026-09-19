@@ -92,7 +92,7 @@ class MedicalClinicProfile(models.Model):
     @api.depends('slug', 'qualification')
     def _compute_website_qualification(self):
         override_map = {
-            'steve-rees': 'Senior Physiotherapist and Exercise Scientist | BExSc, MPhtySt, APAM',
+            'steve-rees': 'Physiotherapist and Exercise Scientist',
             'stephen-devenish': 'Podiatrist | LiveWell Podiatry',
         }
         for profile in self:

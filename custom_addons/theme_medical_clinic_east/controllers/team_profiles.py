@@ -56,7 +56,7 @@ class TeamProfilesController(http.Controller):
             'with strong support across prevention, chronic disease, family care, and skin health.'
             if is_doctor
             else 'Our allied health services currently include physiotherapy with Steve Rees, '
-                 'Senior Physiotherapist and Exercise Scientist, and podiatry with Stephen Devenish '
+                 'Physiotherapist and Exercise Scientist, and podiatry with Stephen Devenish '
                  'from LiveWell Podiatry.'
         )
         profiles = request.env['medical.clinic.profile'].sudo().search(
