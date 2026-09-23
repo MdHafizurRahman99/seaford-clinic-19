@@ -268,7 +268,7 @@
         <field name="name">Steve Rees</field>
         <field name="slug">steve-rees</field>
         <field name="profile_type">allied</field>
-        <field name="image_1920" eval="False"/>
+        <field name="image_1920" type="base64" file="theme_medical_clinic_east/static/src/img/content/team/steve-rees.jpg"/>
         <field name="qualification">Physiotherapist and Exercise Scientist</field>
         <field name="summary">Steve is a physiotherapist and exercise scientist with experience across Australia and the United Kingdom since 2007, helping people recover from injury, reduce pain, and return to the activities they enjoy.</field>
         <field name="bio" type="html">
